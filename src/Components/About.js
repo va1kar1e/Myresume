@@ -14,7 +14,7 @@ class About extends Component {
       var phone= this.props.data.phone;
       var email = this.props.data.email;
       var resumeName = this.props.data.download[0].name;
-      var resumeDownload = "documents/" + this.props.data.download[1].url;
+      var resumeDownload = "documents/" + this.props.data.download[0].url;
     }
 
     return (
