@@ -66,14 +66,15 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #727272;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 0px 1px 2px rgba(142, 142, 142, 0.67);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
    color: #fff;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.67);
 }
 header .banner-text hr {
    width: 60%;
@@ -207,8 +208,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 100%;
+   height: 220px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -230,6 +231,46 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+#about, #document {
+   background: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* g. Document Section
+/* ------------------------------------------------------------------ */
+
+#document a, #document a:visited  { color: #fff; }
+#document a:hover, #document a:focus { color: #11ABB0; }
+
+#document h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#document p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+#document .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#document .main-col { padding-right: 5%; }
+#document .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#document .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#document .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
