@@ -13,8 +13,8 @@ class About extends Component {
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
-      var resumeDownload = "documents/"+ this.props.data.download[0];
-      var tsDownload = "documents/" + this.props.data.download[1];
+      var resumeName = this.props.data.download[0].name;
+      var resumeDownload = "documents/" + this.props.data.download[1].url;
     }
 
     return (
@@ -40,11 +40,11 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload.url} className="button"><i className="fa fa-download"></i>Download {resumeDownload.name}</a>
+                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download {resumeName}</a>
                   </p>
-                  <p>
-                     <a href={tsDownload.url} className="button"><i className="fa fa-download"></i>Download {tsDownload.name}</a>
-                  </p>
+                  {/* <p>
+                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download {resumeName}</a>
+                  </p> */}
                </div>
             </div>
          </div>
