@@ -18,19 +18,19 @@
     "download": [
       {
         "name":"Resume",
-        "url":"Siwanont's%20resume.pdf"
+        "url":"siwanont_resume.pdf"
       },
       {
         "name": "Transcript",
-        "url": "Siwanont's%20transcript.pdf"
+        "url": "siwanont_transcript.pdf"
       },
       {
         "name": "CCNA R&S Letter",
-        "url": "iwanont's%20CCNA%20R&S%20[Letter%20-%20not%20Cert].pdf"
+        "url": "siwanont_ccna_nocert.pdf"
       },
       {
         "name": "HCNA R&S Certification",
-        "url": "Siwanont's%20HCIA%20R&S%20[Cert].pdf"
+        "url": "siwanont_hcia.pdf"
       }
     ],
     "social": [
