@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 class About extends Component {
    render() {
-      const storagepath = "https://public.siwanont.ml/" + "XuHyresj35jIOyPma7CGyg/";
-      const cdnpath = "https://public.siwanont.ml/" + "GRHVkN5NwxcGmHUXsMOu3Q/";
-      // const storagepath = "documents/";
+      // const storagepath = "https://public.siwanont.ml/" + "XuHyresj35jIOyPma7CGyg/";
+      // const cdnpath = "https://public.siwanont.ml/" + "GRHVkN5NwxcGmHUXsMOu3Q/";
+      const storagepath = "documents/";
 
       if (this.props.data) {
          var name = this.props.data.name;
-         var profilepic = cdnpath + "image/" + this.props.data.image;
+         var profilepic = "images/" + this.props.data.image;
          var bio = this.props.data.bio;
          var street = this.props.data.address.street;
          var city = this.props.data.address.city;
