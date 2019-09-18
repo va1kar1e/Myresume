@@ -4,7 +4,7 @@ class About extends Component {
    render() {
       // const storagepath = "https://public.siwanont.ml/" + "XuHyresj35jIOyPma7CGyg/";
       // const cdnpath = "https://public.siwanont.ml/" + "GRHVkN5NwxcGmHUXsMOu3Q/";
-      const storagepath = "documents/";
+      const storagepath = "";
 
       if (this.props.data) {
          var name = this.props.data.name;
