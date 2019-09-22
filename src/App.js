@@ -6,7 +6,7 @@ import './App.css';
 import "./scss/material-kit-react.scss?v=1.8.0";
 
 // pages for this product
-import MainContent from "./components/Maincontent";
+import MainContent from "./pages/Maincontent";
 
 var hist = createBrowserHistory();
 
