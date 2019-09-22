@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem";
 import Parallax from "../../components/Parallax";
+import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
 
@@ -42,6 +43,7 @@ function MainContent(props) {
                     </GridContainer>
                 </div>
             </Parallax>
+            <Footer />
         </div>
     );
 }
