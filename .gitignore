@@ -6,7 +6,7 @@
 .pnp.js
 
 # CDN & Content
-/public/assets
+/src/assets
 
 # testing
 /coverage
