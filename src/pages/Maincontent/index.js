@@ -14,7 +14,9 @@ import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
 // Image Path For Firebase hosting
-
+const imgpath = "https://firebasestorage.googleapis.com/v0/b/valkariesite.appspot.com/o/assets%2Fbg4.jpg?alt=media&token=f46608af-eaec-4c68-ae4d-b878eb027572"
+// Image Path For Dev
+// const imgpath = process.env.PUBLIC_URL + "assets/bg4.jpg"
 function MainContent(props) {
     const classes = useStyles();
     const { ...rest } = props;
@@ -31,7 +33,7 @@ function MainContent(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={ process.env.PUBLIC_URL + "assets/bg4.jpg" } >
+            <Parallax image={ imgpath } >
                 <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
