@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import Header from "../../components/Header";
-// import GridContainer from "../../components/Grid/GridContainer.js";
-// import GridItem from "../../components/Grid/GridItem.js";
+import GridContainer from "../../components/Grid/GridContainer";
+import GridItem from "../../components/Grid/GridItem";
 import Parallax from "../../components/Parallax";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
@@ -18,7 +18,7 @@ function MainContent(props) {
     return (
         <div>
             <Header
-                brand="SIwanont's Resume"
+                brand="Siwanont's Resume"
                 rightLinks={<HeaderLinks />}
                 fixed
                 color="transparent"
@@ -28,19 +28,19 @@ function MainContent(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={require("")}>
-                {/* <div className={classes.container}>
+            <Parallax image={ process.env.PUBLIC_URL + "assets/img/bg4.jpg" } >
+                <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
                             <div className={classes.brand}>
-                                <h1 className={classes.title}>Material Kit React.</h1>
+                                <h1 className={classes.title}>Siwanont Sittinam</h1>
                                 <h3 className={classes.subtitle}>
-                                    A Badass Material-UI Kit based on Material Design.
-                </h3>
+                                    Network Engineer
+                                </h3>
                             </div>
                         </GridItem>
                     </GridContainer>
-                </div> */}
+                </div>
             </Parallax>
         </div>
     );
