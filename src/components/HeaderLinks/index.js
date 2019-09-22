@@ -26,45 +26,45 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Menu"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
+            <Link to="#home" className={classes.dropdownLink}>
+              Home
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link to="#aboutme" className={classes.dropdownLink}>
+              About Me
+            </Link>,
+            <Link to="#experience" className={classes.dropdownLink}>
+              Experience
+            </Link>,
+            <Link to="#education" className={classes.dropdownLink}>
+              Education
+            </Link>,
+            <Link to="#skill" className={classes.dropdownLink}>
+              Skill
+            </Link>,
           ]}
         />
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="https://drive.google.com/uc?authuser=0&id=1GBw-QaClxkqPa7CmaHGfxLeHYlaZyTEM&export=download"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <CloudDownload className={classes.icons} /> Download Resume
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -72,7 +72,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/booktay"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -90,7 +90,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/booktay"
             target="_blank"
             className={classes.navLink}
           >
@@ -107,7 +107,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/booktay"
             target="_blank"
             className={classes.navLink}
           >
