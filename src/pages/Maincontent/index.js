@@ -13,6 +13,8 @@ import HeaderLinks from "../../components/HeaderLinks";
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
+// Image Path For Firebase hosting
+
 function MainContent(props) {
     const classes = useStyles();
     const { ...rest } = props;
@@ -29,7 +31,7 @@ function MainContent(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={ process.env.PUBLIC_URL + "assets/img/bg4.jpg" } >
+            <Parallax image={ process.env.PUBLIC_URL + "assets/bg4.jpg" } >
                 <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
