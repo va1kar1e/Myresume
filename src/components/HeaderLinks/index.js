@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Menu"
@@ -53,7 +53,7 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
-      </ListItem> */}
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href="https://drive.google.com/uc?authuser=0&id=1GBw-QaClxkqPa7CmaHGfxLeHYlaZyTEM&export=download"
