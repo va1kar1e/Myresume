@@ -10,7 +10,8 @@ import Parallax from "../../components/Parallax";
 import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
-import AboutMe from "../AboutMe"
+import AboutMe from "../AboutMe";
+import Experience from "../Experience";
 
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
@@ -51,7 +52,12 @@ function MainContent(props) {
             </Parallax>
             
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <AboutMe />
+                <div className={classes.section}>
+                    <div className={classes.container}>
+                        <AboutMe />
+                        <Experience />
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>

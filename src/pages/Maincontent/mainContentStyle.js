@@ -1,7 +1,9 @@
 import { container } from "../../components/material-kit-react";
 
 const componentsStyle = {
-    container,
+    section: {
+        padding: "70px 0"
+    },container,
     brand: {
         color: "#FFFFFF",
         textAlign: "left"
