@@ -20,7 +20,7 @@ export default function Experience() {
   return (
     <div id="experience">
         <div className={classes.title}>
-            <h3>Experience</h3>
+            <h2>Experience</h2>
         </div>
         <GridContainer>
         <GridItem xs={12} sm={12} md={12} lg={12}>
