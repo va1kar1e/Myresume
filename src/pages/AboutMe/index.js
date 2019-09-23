@@ -11,16 +11,16 @@ import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem";
 import NavPills from "../../components/NavPills";
 
-import styles from "./pillsStyle";
+import styles from "./AboutMeStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionPills() {
+export default function AboutMe() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <div id="navigation-pills">
+        <div id="aboutme">
           <div className={classes.title}>
             <h3>Navigation Pills</h3>
           </div>
