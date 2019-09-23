@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import classNames from "classnames";
 
 // core components
 import Header from "../../components/Header";
@@ -9,6 +10,7 @@ import Parallax from "../../components/Parallax";
 import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
+import SectionPills from "../SectionPills"
 
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
@@ -47,6 +49,10 @@ function MainContent(props) {
                     </GridContainer>
                 </div>
             </Parallax>
+            
+            <div className={classNames(classes.main, classes.mainRaised)}>
+                <SectionPills />
+            </div>
             <Footer />
         </div>
     );
