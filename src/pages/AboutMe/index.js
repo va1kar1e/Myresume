@@ -14,9 +14,9 @@ import styles from "./AboutMeStyle";
 
 const useStyles = makeStyles(styles);
 
-const   image1 = "",
-        image2 = "",
-        image3 = "";
+const image1 = process.env.PUBLIC_URL  + "assets/bg.jpg",
+    image2 = process.env.PUBLIC_URL  + "assets/bg2.jpg",
+    image3 = process.env.PUBLIC_URL  + "assets/bg3.jpg";
 
 export default function Aboutme() {
   const classes = useStyles();
@@ -30,11 +30,19 @@ export default function Aboutme() {
   };
   return (
       <div id="aboutme">
-          <div className={classes.title}>
-              <h3>About Me</h3>
-          </div>
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={12}>
+                    <h2>About me</h2>
+                    <h4>
+                        I am a computer engineer. He is enthusiasm and good collaboration. 
+                        He enjoys challenging himself and he like learning new experiences to know 
+                        himself better and expose himself to new ideas. He interested in Network 
+                        and Data Analytic.
+                    </h4>
+                </GridItem>
+            </GridContainer>
             <GridContainer>
-                <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+                <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
                     <Card carousel>
                     <Carousel {...settings}>
                         <div>
@@ -70,17 +78,6 @@ export default function Aboutme() {
                         </div>
                     </Carousel>
                     </Card>
-                </GridItem>
-            </GridContainer>
-            <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8}>
-                    <h2>Completed with examples</h2>
-                    <h4>
-                    The kit comes with three pre-built pages to help you get started
-                    faster. You can change the text and images and you{"'"}re good to
-                    go. More importantly, looking at them will give you a picture of
-                    what you can build with this powerful kit.
-                    </h4>
                 </GridItem>
             </GridContainer>
       </div>
