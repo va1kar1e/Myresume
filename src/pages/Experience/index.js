@@ -3,8 +3,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard";
-import Schedule from "@material-ui/icons/Schedule";
+import School from "@material-ui/icons/School";
+import Work from "@material-ui/icons/Work";
 
 // core components
 import GridContainer from "../../components/Grid/GridContainer";
@@ -25,62 +25,116 @@ export default function Experience() {
         <GridContainer>
         <GridItem xs={12} sm={12} md={12} lg={12}>
             <NavPills
-            color="rose"
+            color="info"
             horizontal={{
                 tabsGrid: { xs: 12, sm: 2, md: 2 },
                 contentGrid: { xs: 12, sm: 10, md: 10 }
             }}
             tabs={[
                 {
-                tabButton: "Dashboard",
-                tabIcon: Dashboard,
-                tabContent: (
-                    <span>
-                    <p>
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
-                    </p>
-                    <br />
-                    <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively
-                        administrate empowered markets via plug-and-play
-                        networks. Dynamically procrastinate B2C users after
-                        installed base benefits.
-                    </p>
-                    <br />
-                    <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively
-                        administrate empowered markets via plug-and-play
-                        networks. Dynamically procrastinate B2C users after
-                        installed base benefits.
-                    </p>
-                    </span>
-                )
+                    tabButton: "Refinitiv",
+                    tabIcon: Work,
+                    tabContent: (
+                        <span>
+                            <p>
+                                <h3>Refinitiv</h3>
+                            </p>
+                            <br />
+                            <p>
+                                Refinitiv is the Company
+                            </p>
+                            <p>
+                                Position : Technology Graduate Trainee - Network Engineer
+                            </p>
+                            <p>
+                                Department : Technology Operation 
+                            </p>
+                            <p>
+                                Team : Data Center Operation Network Change
+                            </p>
+                            <p>
+                                Period : 2019 (Present)
+                            </p>
+                        </span>
+                    )
                 },
                 {
-                tabButton: "Schedule",
-                tabIcon: Schedule,
-                tabContent: (
-                    <span>
-                    <p>
-                        Efficiently unleash cross-media information without
-                        cross-media value. Quickly maximize timely
-                        deliverables for real-time schemas.
-                    </p>
-                    <br />
-                    <p>
-                        Dramatically maintain clicks-and-mortar solutions
-                        without functional solutions. Dramatically visualize
-                        customer directed convergence without revolutionary
-                        ROI. Collaboratively administrate empowered markets
-                        via plug-and-play networks. Dynamically procrastinate
-                        B2C users after installed base benefits.
-                    </p>
-                    </span>
-                )
+                    tabButton: "Kyoto Institute of Technology",
+                    tabIcon: School,
+                    tabContent: (
+                        <span>
+                            <p>
+                                <h3>Kyoto Institute of Technology</h3>
+                            </p>
+                            <br />
+                            <p>
+                                Kyoto Institute of Technology
+                            </p>
+                            <p>
+                                Position : Junior Researcher
+                            </p>
+                            <p>
+                                Department : Computer Science
+                            </p>
+                            <p>
+                                Team : Software Engineer
+                            </p>
+                            <p>
+                                Period : 2018 (2 Months - Internship)
+                            </p>
+                        </span>
+                    )
+                },
+                {
+                    tabButton: "Internet Marketing",
+                    tabIcon: Work,
+                    tabContent: (
+                        <span>
+                            <p>
+                                <h3>Internet Marketing</h3>
+                            </p>
+                            <br />
+                            <p>
+                                Internet Marketing or Pantip.com
+                            </p>
+                            <p>
+                                Position : Fullstack Developer and Data Engineer
+                            </p>
+                            <p>
+                                Team : Data Scientist
+                            </p>
+                            <p>
+                                Period : 2017 (1 Months - Internship, 3 Month - Outsourcing)
+                            </p>
+                        </span>
+                    )
+                },
+                {
+                    tabButton: "Kasetsart University",
+                    tabIcon: School,
+                    tabContent: (
+                        <span>
+                            <p>
+                                <h3>Kasetsart University</h3>
+                            </p>
+                            <br />
+                            <p>
+                                Kasetsart University
+                            </p>
+                            <p>
+                                Position : Junior Researcher
+                            </p>
+                            <p>
+                                Department : Computer Engineering
+                            </p>
+                            <p>
+                                Team : Massive Information and Knowledge Engineering
+                            </p>
+                            <p>
+                                Period : 2016-2018 (3 Years)
+                            </p>
+                        </span>
+                    )
                 }
             ]}
             />
