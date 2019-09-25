@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
-
+import firebase from "../../firebaseConfig";
 // core components
 import Header from "../../components/Header";
 import GridContainer from "../../components/Grid/GridContainer";
@@ -17,9 +17,19 @@ import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
 // Image Path For Firebase hosting
-// const imgpath = "https://firebasestorage.googleapis.com/v0/b/valkariesite.appspot.com/o/assets%2Fbg4.jpg?alt=media&token=f46608af-eaec-4c68-ae4d-b878eb027572"
+
+// Get a reference to the storage service, which is used to create references in your storage bucket
+// const storage = firebase.storage();
+
+// Create a storage reference from our storage service
+// const storageRef = storage.ref();
+// const assetsStorage = storageRef.child('assets');
+// const imgpath = assetsStorage.child('bg4.jpg').fullPath;
+
 // Image Path For Dev
 const imgpath = process.env.PUBLIC_URL + "assets/bg4.jpg"
+
+// console.log(imgpath)
 
 function MainContent(props) {
     const classes = useStyles();
