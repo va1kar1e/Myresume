@@ -27,7 +27,7 @@ const useStyles = makeStyles(styles);
 // const imgpath = assetsStorage.child('bg4.jpg').fullPath;
 
 // Image Path For Dev
-const imgpath = process.env.PUBLIC_URL + "assets/bg4.jpg"
+const imgpath = process.env.PUBLIC_URL + "assets/B.jpg"
 
 // console.log(imgpath)
 
@@ -53,9 +53,9 @@ function MainContent(props) {
                         <GridItem>
                             <div className={classes.brand}>
                                 <h1 className={classes.title}>Siwanont Sittinam</h1>
-                                <h3 className={classes.subtitle}>
+                                <h2 className={classes.subtitle}>
                                     Network Engineer
-                                </h3>
+                                </h2>
                             </div>
                         </GridItem>
                     </GridContainer>
