@@ -24,10 +24,10 @@ const useStyles = makeStyles(styles);
 // Create a storage reference from our storage service
 // const storageRef = storage.ref();
 // const assetsStorage = storageRef.child('assets');
-// const imgpath = assetsStorage.child('bg4.jpg').fullPath;
+// const imgpath = assetsStorage.child('images/headerBG.jpg').fullPath;
 
 // Image Path For Dev
-const imgpath = process.env.PUBLIC_URL + "assets/B.jpg"
+const imgpath = process.env.PUBLIC_URL + "assets/headerBG.jpg"
 
 // console.log(imgpath)
 
