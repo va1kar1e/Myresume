@@ -33,11 +33,8 @@ export default function Aboutme() {
             <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12}>
                     <h2>About me</h2>
-                    <h4>
-                        I am a computer engineer. He is enthusiasm and good collaboration. 
-                        He enjoys challenging himself and he like learning new experiences to know 
-                        himself better and expose himself to new ideas. He interested in Network 
-                        and Data Analytic.
+                    <h4 className={classes.aboutMeContent}>
+                        Hi, My name is Siwanont Sittinam. You can be called me Books. I am a Computer Engineer. I am enthusiasm, good collaboration, and enjoy challenging myself. I like learning new experiences to know myself better and expose myself to new ideas. My hobbies is a Photograph. I interested in Network, Information Security, and Data Analytics. 
                     </h4>
                 </GridItem>
             </GridContainer>

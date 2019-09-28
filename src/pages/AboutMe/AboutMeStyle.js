@@ -17,6 +17,12 @@ const ExperienceStyle = {
     marginAuto: {
         marginLeft: "auto !important",
         marginRight: "auto !important"
+    },
+    aboutMeContent: {
+        textAlign: "justify",
+        textIndent: "75px",
+        letterSpacing: "1px",
+        fontWeight: "500",
     }
 };
 
