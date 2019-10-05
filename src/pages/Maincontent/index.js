@@ -32,8 +32,10 @@ const imgpath = process.env.PUBLIC_URL + "assets/headerBG.jpg"
 // console.log(imgpath)
 
 function MainContent(props) {
+    
     const classes = useStyles();
     const { ...rest } = props;
+    
     return (
         <div>
             <Header
