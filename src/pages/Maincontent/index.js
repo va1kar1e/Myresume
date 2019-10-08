@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useReducer, useEffect } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
-import firebase from "../../firebaseConfig";
 // core components
+import firebase from "../../firebaseConfig";
 import Header from "../../components/Header";
 import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem";
@@ -11,35 +11,84 @@ import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
 import AboutMe from "../AboutMe";
-import Experience from "../Experience";
+// import Experience from "../Experience";
 
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
-// Image Path For Firebase hosting
+const dbCollection = firebase.firestore().collection("XuHyresj35jIOyPma7CGyg");
+const assetsStorage = firebase.storage().ref().child('assets');
 
-// Get a reference to the storage service, which is used to create references in your storage bucket
-// const storage = firebase.storage();
+const initialState = {
+    isFetching: false,
+    content: {},
+    link: {}
+}
 
-// Create a storage reference from our storage service
-// const storageRef = storage.ref();
-// const assetsStorage = storageRef.child('assets');
-// const imgpath = assetsStorage.child('images/headerBG.jpg').fullPath;
-
-// Image Path For Dev
-const imgpath = process.env.PUBLIC_URL + "assets/headerBG.jpg"
-
-// console.log(imgpath)
+const reducer = (state, { type, link, content }) => {
+    switch (type) {
+        case 'FETCH_PENDING':
+            return {
+                ...state,
+                isFetching: true
+            }
+        case 'FETCH_SUCCESS':
+            return {
+                ...state,
+                isFetching: false,
+                link: link,
+                content: content
+            }
+        default:
+            return state
+    }
+}
 
 function MainContent(props) {
     
     const classes = useStyles();
     const { ...rest } = props;
     
+    const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
+    const imgpath = assetsStorage.child(link.headerbg).fullPath;
+    
+    useEffect(() => {
+        dispatch({
+            type: 'FETCH_PENDING'
+        })
+
+        const unsubscribe = dbCollection.onSnapshot(ss => {
+            let docs = {}
+
+            ss.forEach(document => {
+                docs[document.id] = document.data()
+            })
+
+            dispatch({
+                type: 'FETCH_SUCCESS',
+                link: docs["53vS5ZZJjVjIp4BpEOys"],
+                content: docs["bbfUZmBQseGvDJf8dPJ7"]
+            })
+        });
+
+        return () => {
+            unsubscribe()
+        }
+
+    }, []);
+
+    if (isFetching) {
+        return (
+            <div>
+                <p>....Loading....</p>
+            </div>
+        );
+    }
+    console.log()
     return (
         <div>
             <Header
-                brand="Siwanont's Resume"
+                brand={content.headername}
                 rightLinks={<HeaderLinks />}
                 fixed
                 color="transparent"
@@ -49,26 +98,28 @@ function MainContent(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={ imgpath } >
+            
+            <Parallax image={imgpath} >
                 <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
                             <div className={classes.brand}>
-                                <h1 className={classes.title}>Siwanont Sittinam</h1>
+                                <h1 className={classes.title}>{content.name + " " + content.surname}</h1>
                                 <h2 className={classes.subtitle}>
-                                    Network Engineer
+                                    {content.job}
                                 </h2>
                             </div>
                         </GridItem>
                     </GridContainer>
                 </div>
             </Parallax>
-            
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <div className={classes.section}>
                     <div className={classes.container}>
                         <AboutMe />
-                        <Experience />
+                        {/* <pre> {JSON.stringify(content)} </pre>
+                        <pre> {JSON.stringify(link)} </pre> */}
+                        {/* <Experience /> */}
                     </div>
                 </div>
             </div>
