@@ -3,23 +3,21 @@ import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 // core components
 import firebase from "../../firebaseConfig";
-// import Header from "../../components/Header";
-// import GridContainer from "../../components/Grid/GridContainer";
-// import GridItem from "../../components/Grid/GridItem";
-// import Parallax from "../../components/Parallax";
-// import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Parallax from "../../components/Parallax";
+import GridItem from "../../components/Grid/GridItem";
+import GridContainer from "../../components/Grid/GridContainer";
+import Footer from "../../components/Footer";
 // sections for this page
-// import HeaderLinks from "../../components/HeaderLinks";
-// import AboutMe from "../AboutMe";
-// import Experience from "../Experience";
+import HeaderLinks from "../../components/HeaderLinks";
+import AboutMe from "../AboutMe";
+import Experience from "../Experience";
 
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
 const db = firebase.firestore(), 
     dbCollection = db.collection("XuHyresj35jIOyPma7CGyg");
-
-const assetsStorage = firebase.storage().ref().child('assets');
 
 const initialState = {
     isFetching: false,
@@ -52,9 +50,6 @@ function MainContent(props) {
     const { ...rest } = props;
     
     const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
-    const imgpath = link.headerbg;
-    // assetsStorage.child().fullPath;
-    console.log(imgpath);
 
     useEffect(() => {
         dispatch({
@@ -88,49 +83,50 @@ function MainContent(props) {
             </div>
         );
     }
-    
-    return (
-        <div>
-            {imgpath}
-            {/* <Header
-                brand={content.headername}
-                rightLinks={<HeaderLinks />}
-                fixed
-                color="transparent"
-                changeColorOnScroll={{
-                    height: 400,
-                    color: "white"
-                }}
-                {...rest}
-            /> */}
-            
-            {/* <Parallax image={imgpath} >
-                <div className={classes.container}>
-                    <GridContainer>
-                        <GridItem>
-                            <div className={classes.brand}>
-                                <h1 className={classes.title}>{content.name + " " + content.surname}</h1>
-                                <h2 className={classes.subtitle}>
-                                    {content.job}
-                                </h2>
-                            </div>
-                        </GridItem>
-                    </GridContainer>
-                </div>
-            </Parallax> */}
-            {/* <div className={classNames(classes.main, classes.mainRaised)}>
-                <div className={classes.section}>
+    else {
+
+        return (
+            <div>
+                <Header
+                    brand={content.headername}
+                    rightLinks={<HeaderLinks />}
+                    fixed
+                    color="transparent"
+                    changeColorOnScroll={{
+                        height: 400,
+                        color: "white"
+                    }}
+                    {...rest}
+                />
+                
+                <Parallax image={link.headerbg} >
                     <div className={classes.container}>
-                        <AboutMe /> */}
-                        {/* <pre> {JSON.stringify(content)} </pre>
-                        <pre> {JSON.stringify(link)} </pre> */}
-                        {/* <Experience /> */}
-                    {/* </div>
+                        <GridContainer>
+                            <GridItem>
+                                <div className={classes.brand}>
+                                    <h1 className={classes.title}>{content.name + " " + content.surname}</h1>
+                                    <h2 className={classes.subtitle}>
+                                        {content.job}
+                                    </h2>
+                                </div>
+                            </GridItem>
+                        </GridContainer>
+                    </div>
+                </Parallax>
+                <div className={classNames(classes.main, classes.mainRaised)}>
+                    <div className={classes.section}>
+                        <div className={classes.container}>
+                            <AboutMe />
+                            {/* <pre> {JSON.stringify(content)} </pre>
+                            <pre> {JSON.stringify(link)} </pre> */}
+                            {/* <Experience /> */}
+                        </div>
+                    </div>
                 </div>
+                <Footer />
             </div>
-            <Footer /> */}
-        </div>
-    );
+        );
+    }
 }
 
 export default MainContent;
