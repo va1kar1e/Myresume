@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from 'react';
+import React, { useState, useReducer, useEffect } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 // core components
@@ -7,11 +7,11 @@ import Header from "../../components/Header";
 import Parallax from "../../components/Parallax";
 import GridItem from "../../components/Grid/GridItem";
 import GridContainer from "../../components/Grid/GridContainer";
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
-import AboutMe from "../AboutMe";
-import Experience from "../Experience";
+// import AboutMe from "../AboutMe";
+// import Experience from "../Experience";
 
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
@@ -19,14 +19,17 @@ const useStyles = makeStyles(styles);
 const db = firebase.firestore(), 
     dbCollection = db.collection("XuHyresj35jIOyPma7CGyg");
 
+const storage = firebase.storage().ref(),
+    assetsStorage = storage.child('assets');
+
 const initialState = {
     isFetching: false,
     content: {},
     link: {}
 }
 
-const reducer = (state, { type, link, content }) => {
-    switch (type) {
+const reducer = (state, action) => {
+    switch (action.type) {
         case 'FETCH_PENDING':
             return {
                 ...state,
@@ -36,12 +39,50 @@ const reducer = (state, { type, link, content }) => {
             return {
                 ...state,
                 isFetching: false,
-                link: link,
-                content: content
+                link: action.link,
+                content: action.content
             }
+        case 'FETCH_FAILURE':
+            return {
+                ...state,
+                isLoading: false,
+                isError: true,
+            };
         default:
-            return state
+            throw new Error();
     }
+};
+
+const usePostLists = () => {
+    // const [state, dispatch] = useReducer(dataFetchReducer, {
+    //     isLoading: false,
+    //     isError: false,
+    //     data: {
+    //         posts: []
+    //     }
+    // });
+
+    // const [search, setSearch] = useState(1);
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         dispatch({ type: 'FETCH_INIT' });
+
+    //         try {
+    //             const result = await axios(
+    //                 `https://jsonplaceholder.typicode.com/posts?userId=${search}`,
+    //             );
+
+    //             dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
+    //         } catch (error) {
+    //             dispatch({ type: 'FETCH_FAILURE' });
+    //         }
+    //     };
+
+    //     fetchData();
+    // }, [search]);
+
+    // return [{ state, setSearch }];
 }
 
 function MainContent(props) {
@@ -50,13 +91,14 @@ function MainContent(props) {
     const { ...rest } = props;
     
     const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
+    let imgpath = "";
 
     useEffect(() => {
         dispatch({
             type: 'FETCH_PENDING'
         })
 
-        const unsubscribe = dbCollection.onSnapshot(ss => {
+        dbCollection.onSnapshot(ss => {
             let docs = {}
 
             ss.forEach(document => {
@@ -70,8 +112,12 @@ function MainContent(props) {
             })
         });
 
+        const imgst = assetsStorage.child(link.headerbg).getDownloadURL().then(function (url) {
+        //     imgpath = url;
+        //     console.log(imgpath)
+        // })
         return () => {
-            unsubscribe()
+            imgst()
         }
 
     }, []);
@@ -83,23 +129,29 @@ function MainContent(props) {
             </div>
         );
     }
-    else {
+    if (link.headerbg) {
+        assetsStorage.child(link.headerbg).getDownloadURL().then(function (url) {
+            imgpath = url;
+            console.log(imgpath)
+        })
+    }
+    
 
-        return (
-            <div>
-                <Header
-                    brand={content.headername}
-                    rightLinks={<HeaderLinks />}
-                    fixed
-                    color="transparent"
-                    changeColorOnScroll={{
-                        height: 400,
-                        color: "white"
-                    }}
-                    {...rest}
-                />
-                
-                <Parallax image={link.headerbg} >
+    return (
+        <div>
+            <Header
+                brand={content.headername}
+                rightLinks={<HeaderLinks />}
+                fixed
+                color="transparent"
+                changeColorOnScroll={{
+                    height: 400,
+                    color: "white"
+                }}
+                {...rest}
+            />
+            {imgpath ?
+                <Parallax image={imgpath} >
                     <div className={classes.container}>
                         <GridContainer>
                             <GridItem>
@@ -113,20 +165,20 @@ function MainContent(props) {
                         </GridContainer>
                     </div>
                 </Parallax>
-                <div className={classNames(classes.main, classes.mainRaised)}>
-                    <div className={classes.section}>
-                        <div className={classes.container}>
-                            <AboutMe />
-                            {/* <pre> {JSON.stringify(content)} </pre>
-                            <pre> {JSON.stringify(link)} </pre> */}
-                            {/* <Experience /> */}
-                        </div>
-                    </div>
+            : "AA"}
+            {/* <div className={classNames(classes.main, classes.mainRaised)}>
+                <div className={classes.section}>
+                    <div className={classes.container}>
+                        <AboutMe /> */}
+            {/* <pre> {JSON.stringify(content)} </pre>
+                        <pre> {JSON.stringify(link)} </pre> */}
+            {/* <Experience /> */}
+            {/* </div>
                 </div>
-                <Footer />
             </div>
-        );
-    }
+            <Footer /> */}
+        </div>
+    );
 }
 
 export default MainContent;
