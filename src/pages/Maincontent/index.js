@@ -47,10 +47,10 @@ const reducer = (state, { type, link, content }) => {
 
 function MainContent(props) {
     
-    const classes = useStyles();
-    const { ...rest } = props;
+    // const classes = useStyles();
+    // const { ...rest } = props;
     
-    const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
+    // const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
     const imgpath = "AA";
     // assetsStorage.child(link.headerbg).fullPath;
     
