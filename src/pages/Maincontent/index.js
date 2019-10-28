@@ -16,9 +16,10 @@ import firebase from "../../firebaseConfig";
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
-const dbCollection = firebase.firestore().collection("XuHyresj35jIOyPma7CGyg");
-console.log(dbCollection)
-// const assetsStorage = firebase.storage().ref().child('assets');
+const db = firebase.firestore(), 
+    dbCollection = db.collection("XuHyresj35jIOyPma7CGyg");
+
+const assetsStorage = firebase.storage().ref().child('assets');
 
 const initialState = {
     isFetching: false,
@@ -47,46 +48,47 @@ const reducer = (state, { type, link, content }) => {
 
 function MainContent(props) {
     
-    // const classes = useStyles();
-    // const { ...rest } = props;
+    const classes = useStyles();
+    const { ...rest } = props;
     
-    // const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
-    const imgpath = "AA";
-    // assetsStorage.child(link.headerbg).fullPath;
-    
+    const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
+    const imgpath = link.headerbg;
+    // assetsStorage.child().fullPath;
+    console.log(imgpath);
+
     useEffect(() => {
-    //     dispatch({
-    //         type: 'FETCH_PENDING'
-    //     })
+        dispatch({
+            type: 'FETCH_PENDING'
+        })
 
-    //     const unsubscribe = dbCollection.onSnapshot(ss => {
-    //         let docs = {}
+        const unsubscribe = dbCollection.onSnapshot(ss => {
+            let docs = {}
 
-    //         ss.forEach(document => {
-    //             docs[document.id] = document.data()
-    //         })
+            ss.forEach(document => {
+                docs[document.id] = document.data()
+            })
 
-    //         dispatch({
-    //             type: 'FETCH_SUCCESS',
-    //             link: docs["53vS5ZZJjVjIp4BpEOys"],
-    //             content: docs["bbfUZmBQseGvDJf8dPJ7"]
-    //         })
-    //     });
+            dispatch({
+                type: 'FETCH_SUCCESS',
+                link: docs["53vS5ZZJjVjIp4BpEOys"],
+                content: docs["bbfUZmBQseGvDJf8dPJ7"]
+            })
+        });
 
-    //     return () => {
-    //         unsubscribe()
-    //     }
+        return () => {
+            unsubscribe()
+        }
 
     }, []);
 
-    // if (isFetching) {
-    //     return (
-    //         <div>
-    //             <p>....Loading....</p>
-    //         </div>
-    //     );
-    // }
-    // console.log()
+    if (isFetching) {
+        return (
+            <div>
+                <p>....Loading....</p>
+            </div>
+        );
+    }
+    
     return (
         <div>
             {imgpath}
