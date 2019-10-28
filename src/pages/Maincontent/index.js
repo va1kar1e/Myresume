@@ -16,7 +16,8 @@ import firebase from "../../firebaseConfig";
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
 
-// const dbCollection = firebase.firestore().collection("XuHyresj35jIOyPma7CGyg");
+const dbCollection = firebase.firestore().collection("XuHyresj35jIOyPma7CGyg");
+console.log(dbCollection)
 // const assetsStorage = firebase.storage().ref().child('assets');
 
 const initialState = {
@@ -50,10 +51,10 @@ function MainContent(props) {
     const { ...rest } = props;
     
     const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
-    const imgpath = "";
+    const imgpath = "AA";
     // assetsStorage.child(link.headerbg).fullPath;
     
-    // useEffect(() => {
+    useEffect(() => {
     //     dispatch({
     //         type: 'FETCH_PENDING'
     //     })
@@ -76,7 +77,7 @@ function MainContent(props) {
     //         unsubscribe()
     //     }
 
-    // }, []);
+    }, []);
 
     // if (isFetching) {
     //     return (
