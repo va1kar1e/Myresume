@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 import Parallax from "../../components/Parallax";
 import GridItem from "../../components/Grid/GridItem";
 import GridContainer from "../../components/Grid/GridContainer";
-// import Footer from "../../components/Footer";
+import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
 // import AboutMe from "../AboutMe";
@@ -22,12 +22,6 @@ const db = firebase.firestore(),
 const storage = firebase.storage().ref(),
     assetsStorage = storage.child('assets');
 
-const initialState = {
-    isFetching: false,
-    content: {},
-    link: {}
-}
-
 const reducer = (state, action) => {
     switch (action.type) {
         case 'FETCH_PENDING':
@@ -39,8 +33,9 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 isFetching: false,
-                link: action.link,
-                content: action.content
+                data : {
+                    content: action.content
+                }
             }
         case 'FETCH_FAILURE':
             return {
@@ -54,88 +49,67 @@ const reducer = (state, action) => {
 };
 
 const usePostLists = () => {
-    // const [state, dispatch] = useReducer(dataFetchReducer, {
-    //     isLoading: false,
-    //     isError: false,
-    //     data: {
-    //         posts: []
-    //     }
-    // });
+    const [state, dispatch] = useReducer(reducer, {
+        isLoading: false,
+        isError: false,
+        data: {
+            content: []
+        }
+    });
 
-    // const [search, setSearch] = useState(1);
+    const [link, setLink] = useState({});
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         dispatch({ type: 'FETCH_INIT' });
+    useEffect(() => {
+        const fetchData = async () => {
+            dispatch({ type: 'FETCH_PENDING' });
 
-    //         try {
-    //             const result = await axios(
-    //                 `https://jsonplaceholder.typicode.com/posts?userId=${search}`,
-    //             );
+            try {
+                await dbCollection.onSnapshot(ss => {
+                    for (const [key, value] of Object.entries(ss.docs[0].data())) {
+                        console.log(key, value);
+                        assetsStorage.child(value).getDownloadURL().then(function (url) {
+                            setLink(l => ({
+                                ...l,
+                                [key] : url
+                            }));
+                        })
+                    }
 
-    //             dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
-    //         } catch (error) {
-    //             dispatch({ type: 'FETCH_FAILURE' });
-    //         }
-    //     };
+                    dispatch({
+                        type: 'FETCH_SUCCESS',
+                        content: ss.docs[1].data()
+                    })
+                });
+            } catch (error) {
+                dispatch({ type: 'FETCH_FAILURE' });
+            }
+        };
 
-    //     fetchData();
-    // }, [search]);
+        fetchData();
+    }, []);
 
-    // return [{ state, setSearch }];
-}
+    return {
+        fetching: state.isFetching,
+        link: link, 
+        content: state.data.content,
+    };
+};
 
 function MainContent(props) {
     
     const classes = useStyles();
     const { ...rest } = props;
     
-    const [{ content, link, isFetching }, dispatch] = useReducer(reducer, initialState);
-    let imgpath = "";
+    const { fetching, link, content} = usePostLists();
+    // console.log(link, content)
 
-    useEffect(() => {
-        dispatch({
-            type: 'FETCH_PENDING'
-        })
-
-        dbCollection.onSnapshot(ss => {
-            let docs = {}
-
-            ss.forEach(document => {
-                docs[document.id] = document.data()
-            })
-
-            dispatch({
-                type: 'FETCH_SUCCESS',
-                link: docs["53vS5ZZJjVjIp4BpEOys"],
-                content: docs["bbfUZmBQseGvDJf8dPJ7"]
-            })
-        });
-
-        const imgst = assetsStorage.child(link.headerbg).getDownloadURL().then(function (url) {
-        //     imgpath = url;
-        //     console.log(imgpath)
-        // })
-        return () => {
-            imgst()
-        }
-
-    }, []);
-
-    if (isFetching) {
+    if (fetching) {
         return (
             <div>
                 <p>....Loading....</p>
             </div>
         );
     }
-    if (link.headerbg) {
-        assetsStorage.child(link.headerbg).getDownloadURL().then(function (url) {
-            imgpath = url;
-            console.log(imgpath)
-        })
-    }
-    
 
     return (
         <div>
@@ -150,22 +124,20 @@ function MainContent(props) {
                 }}
                 {...rest}
             />
-            {imgpath ?
-                <Parallax image={imgpath} >
-                    <div className={classes.container}>
-                        <GridContainer>
-                            <GridItem>
-                                <div className={classes.brand}>
-                                    <h1 className={classes.title}>{content.name + " " + content.surname}</h1>
-                                    <h2 className={classes.subtitle}>
-                                        {content.job}
-                                    </h2>
-                                </div>
-                            </GridItem>
-                        </GridContainer>
-                    </div>
-                </Parallax>
-            : "AA"}
+            <Parallax image={link.headerbg} >
+                <div className={classes.container}>
+                    <GridContainer>
+                        <GridItem>
+                            <div className={classes.brand}>
+                                <h1 className={classes.title}>{content.name + " " + content.surname}</h1>
+                                <h2 className={classes.subtitle}>
+                                    {content.job}
+                                </h2>
+                            </div>
+                        </GridItem>
+                    </GridContainer>
+                </div>
+            </Parallax>
             {/* <div className={classNames(classes.main, classes.mainRaised)}>
                 <div className={classes.section}>
                     <div className={classes.container}>
@@ -175,8 +147,8 @@ function MainContent(props) {
             {/* <Experience /> */}
             {/* </div>
                 </div>
-            </div>
-            <Footer /> */}
+            </div>*/}
+            <Footer /> 
         </div>
     );
 }
