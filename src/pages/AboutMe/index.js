@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 // @material-ui/core components
@@ -19,71 +19,50 @@ const getVal = (nestedObj, pathArr) => {
         (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
 }
 
-// const image1 = process.env.PUBLIC_URL  + "assets/bg.jpg",
-//     image2 = process.env.PUBLIC_URL  + "assets/bg2.jpg",
-//     image3 = process.env.PUBLIC_URL  + "assets/bg3.jpg";
-
 export default function Aboutme(props) {
-  const classes = useStyles();
-  const {content} = props;
-  
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false
-  };
-  return (
-      <div id="aboutme">
+    const classes = useStyles();
+    const { content } = props;
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
+    };
+
+    const images = getVal(content, ['image']);
+
+    return (
+        <div id="aboutme">
             <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12}>
                     <h2>About me</h2>
                     <h4 className={classes.aboutMeContent}>
-                      {getVal(content, ['intro'])}
+                        {getVal(content, ['intro'])}
                     </h4>
                 </GridItem>
             </GridContainer>
             <GridContainer>
-                {/* <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
+                <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
                     <Card carousel>
-                    <Carousel {...settings}>
-                        <div>
-                        <img src={image1} alt="First slide" className="slick-image" />
-                        <div className="slick-caption">
-                            <h4>
-                            <LocationOn className="slick-icons" />
-                            Yellowstone National Park, United States
-                            </h4>
-                        </div>
-                        </div>
-                        <div>
-                        <img
-                            src={image2}
-                            alt="Second slide"
-                            className="slick-image"
-                        />
-                        <div className="slick-caption">
-                            <h4>
-                            <LocationOn className="slick-icons" />
-                            Somewhere Beyond, United States
-                            </h4>
-                        </div>
-                        </div>
-                        <div>
-                        <img src={image3} alt="Third slide" className="slick-image" />
-                        <div className="slick-caption">
-                            <h4>
-                            <LocationOn className="slick-icons" />
-                            Yellowstone National Park, United States
-                            </h4>
-                        </div>
-                        </div>
-                    </Carousel>
+                        <Carousel {...settings}>
+                            {images ? images.map((image, index) => (
+                                <Fragment key={index}>
+                                    <img src={image} alt={"slide" + index} className="slick-image" />
+                                    <div className="slick-caption">
+                                        <h4>
+                                            <LocationOn className="slick-icons" />
+                                            ME
+                                        </h4>
+                                    </div> 
+                                </Fragment>
+                            )) : <Fragment></Fragment> }
+                        </Carousel>
                     </Card>
-                </GridItem> */}
+                </GridItem>
             </GridContainer>
-      </div>
-  );
+        </div>
+    );
 }
