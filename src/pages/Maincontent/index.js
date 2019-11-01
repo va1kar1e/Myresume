@@ -156,7 +156,7 @@ function MainContent(props) {
                 <div className={classes.section}>
                     <div className={classes.container}>
                         <AboutMe content={content.aboutme}/> 
-                        <Experience /> 
+                        <Experience content={content.experience}/> 
                     </div>
                 </div>
             </div>
