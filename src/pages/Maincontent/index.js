@@ -11,10 +11,9 @@ import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
 import AboutMe from "../AboutMe";
-// import Experience from "../Experience";
+import Experience from "../Experience";
 
 import styles from "./mainContentStyle";
-// import { Link } from "@material-ui/core";
 const useStyles = makeStyles(styles);
 
 const db = firebase.firestore(), 
@@ -157,7 +156,7 @@ function MainContent(props) {
                 <div className={classes.section}>
                     <div className={classes.container}>
                         <AboutMe content={content.aboutme}/> 
-                        {/* <Experience />  */}
+                        <Experience /> 
                     </div>
                 </div>
             </div>
