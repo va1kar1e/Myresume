@@ -10,17 +10,23 @@ import GridContainer from "../../components/Grid/GridContainer";
 import Footer from "../../components/Footer";
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
-// import AboutMe from "../AboutMe";
+import AboutMe from "../AboutMe";
 // import Experience from "../Experience";
 
 import styles from "./mainContentStyle";
+// import { Link } from "@material-ui/core";
 const useStyles = makeStyles(styles);
 
 const db = firebase.firestore(), 
-    dbCollection = db.collection("XuHyresj35jIOyPma7CGyg");
+    dbRoot = db.collection("XuHyresj35jIOyPma7CGyg");
 
 const storage = firebase.storage().ref(),
     assetsStorage = storage.child('assets');
+
+const getVal = (nestedObj, pathArr) => {
+    return pathArr.reduce((obj, key) =>
+        (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+}
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -64,9 +70,8 @@ const usePostLists = () => {
             dispatch({ type: 'FETCH_PENDING' });
 
             try {
-                await dbCollection.onSnapshot(ss => {
+                await dbRoot.onSnapshot(ss => {
                     for (const [key, value] of Object.entries(ss.docs[0].data())) {
-                        console.log(key, value);
                         assetsStorage.child(value).getDownloadURL().then(function (url) {
                             setLink(l => ({
                                 ...l,
@@ -101,12 +106,22 @@ function MainContent(props) {
     const { ...rest } = props;
     
     const { fetching, link, content} = usePostLists();
-    // console.log(link, content)
+    // console.log(link, content);
 
     if (fetching) {
         return (
             <div>
-                <p>....Loading....</p>
+                <Parallax image="" >
+                    <div className={classes.container}>
+                        <GridContainer>
+                            <GridItem>
+                                <div className={classes.brand}>
+                                    <h1 className={classes.title}>....Loading....</h1>
+                                </div>
+                            </GridItem>
+                        </GridContainer>
+                    </div>
+                </Parallax>
             </div>
         );
     }
@@ -114,8 +129,8 @@ function MainContent(props) {
     return (
         <div>
             <Header
-                brand={content.headername}
-                rightLinks={<HeaderLinks />}
+                brand={getVal(content, ['header', 'titlename'])}
+                rightLinks={<HeaderLinks content={getVal(content, ['header'])} resumeLink={link.resume} />}
                 fixed
                 color="transparent"
                 changeColorOnScroll={{
@@ -129,25 +144,23 @@ function MainContent(props) {
                     <GridContainer>
                         <GridItem>
                             <div className={classes.brand}>
-                                <h1 className={classes.title}>{content.name + " " + content.surname}</h1>
+                                <h1 className={classes.title}>{getVal(content, ['main', 'name']) + " " + getVal(content, ['main', 'surname'])}</h1>
                                 <h2 className={classes.subtitle}>
-                                    {content.job}
+                                    {getVal(content, ['main', 'job'])}
                                 </h2>
                             </div>
                         </GridItem>
                     </GridContainer>
                 </div>
             </Parallax>
-            {/* <div className={classNames(classes.main, classes.mainRaised)}>
+            <div className={classNames(classes.main, classes.mainRaised)}>
                 <div className={classes.section}>
                     <div className={classes.container}>
-                        <AboutMe /> */}
-            {/* <pre> {JSON.stringify(content)} </pre>
-                        <pre> {JSON.stringify(link)} </pre> */}
-            {/* <Experience /> */}
-            {/* </div>
+                        <AboutMe content={content.aboutme}/> 
+                        {/* <Experience />  */}
+                    </div>
                 </div>
-            </div>*/}
+            </div>
             <Footer /> 
         </div>
     );
