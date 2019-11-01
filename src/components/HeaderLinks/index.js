@@ -20,8 +20,26 @@ import styles from "./headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
+const getVal = (nestedObj, pathArr) => {
+  return pathArr.reduce((obj, key) =>
+    (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+}
+
 export default function HeaderLinks(props) {
   const classes = useStyles();
+  const { content, resumeLink } = props;
+  let menu = []
+
+  if (content) {
+    for (const [key, value] of Object.entries(content.menu)) {
+      menu.push(
+        <Link to={"#" + key} className={classes.dropdownLink}>
+          {value}
+        </Link>
+      )
+    }
+  }
+
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -33,28 +51,12 @@ export default function HeaderLinks(props) {
             color: "transparent"
           }}
           buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              Home
-            </Link>,
-            <Link to="#aboutme" className={classes.dropdownLink}>
-              About Me
-            </Link>,
-            <Link to="#experience" className={classes.dropdownLink}>
-              Experience
-            </Link>,
-            <Link to="#education" className={classes.dropdownLink}>
-              Education
-            </Link>,
-            <Link to="#skill" className={classes.dropdownLink}>
-              Skill
-            </Link>,
-          ]}
+          dropdownList={menu}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://drive.google.com/uc?authuser=0&id=1GBw-QaClxkqPa7CmaHGfxLeHYlaZyTEM&export=download"
+          href={resumeLink}
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -70,7 +72,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/booktay"
+            href={"https://twitter.com/" + getVal(content, ['twitter'])}
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -88,7 +90,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/booktay"
+            href={"https://fb.me/" + getVal(content, ['fb'])}
             target="_blank"
             className={classes.navLink}
           >
@@ -105,7 +107,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/booktay"
+            href={"https://www.instagram.com/" + getVal(content, ['ig'])}
             target="_blank"
             className={classes.navLink}
           >
