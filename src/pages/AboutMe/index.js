@@ -14,12 +14,19 @@ import styles from "./AboutMeStyle";
 
 const useStyles = makeStyles(styles);
 
-const image1 = process.env.PUBLIC_URL  + "assets/bg.jpg",
-    image2 = process.env.PUBLIC_URL  + "assets/bg2.jpg",
-    image3 = process.env.PUBLIC_URL  + "assets/bg3.jpg";
+const getVal = (nestedObj, pathArr) => {
+    return pathArr.reduce((obj, key) =>
+        (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+}
 
-export default function Aboutme() {
+// const image1 = process.env.PUBLIC_URL  + "assets/bg.jpg",
+//     image2 = process.env.PUBLIC_URL  + "assets/bg2.jpg",
+//     image3 = process.env.PUBLIC_URL  + "assets/bg3.jpg";
+
+export default function Aboutme(props) {
   const classes = useStyles();
+  const {content} = props;
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -34,12 +41,12 @@ export default function Aboutme() {
                 <GridItem xs={12} sm={12} md={12}>
                     <h2>About me</h2>
                     <h4 className={classes.aboutMeContent}>
-                        Hi, My name is Siwanont Sittinam. You can be called me Books. I am a Computer Engineer. I am enthusiasm, good collaboration, and enjoy challenging myself. I like learning new experiences to know myself better and expose myself to new ideas. My hobbies is a Photograph. I interested in Network, Information Security, and Data Analytics. 
+                      {getVal(content, ['intro'])}
                     </h4>
                 </GridItem>
             </GridContainer>
             <GridContainer>
-                <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
+                {/* <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
                     <Card carousel>
                     <Carousel {...settings}>
                         <div>
@@ -75,7 +82,7 @@ export default function Aboutme() {
                         </div>
                     </Carousel>
                     </Card>
-                </GridItem>
+                </GridItem> */}
             </GridContainer>
       </div>
   );
