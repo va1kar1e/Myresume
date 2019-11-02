@@ -10,7 +10,6 @@ import StarIcon from "@material-ui/icons/Star";
 // core components
 import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem";
-import NavPills from "../../components/NavPills";
 
 // Timeline Component
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -25,6 +24,15 @@ const getVal = (nestedObj, pathArr) => {
 }
 
 const getTimelineExp = (value, school) => {
+    // Add data in this format
+    // className: ""
+    // content: ""
+    // contentArrowStyle: { borderRight: "" }
+    // contentStyle: { background: "", color: "" }
+    // date: ""
+    // iconStyle: { background: "", color: "" }
+    // subtitle: ""
+    // title: ""
     return (
         <VerticalTimelineElement
             className={value.className}
@@ -57,130 +65,18 @@ export default function Experience(props) {
                 <GridItem xs={12} sm={12} md={12} lg={12}>
                     <VerticalTimeline >
                         {content ? [
-                            getTimelineExp(getVal(content, ['ds']), true), 
-                            getTimelineExp(getVal(content, ['ds']), false)] 
-                            : <Fragment></Fragment>
+                            getTimelineExp(getVal(content, ['ref']), false),
+                            getTimelineExp(getVal(content, ['ku']), true),
+                            getTimelineExp(getVal(content, ['kit']), true),
+                            getTimelineExp(getVal(content, ['pt']), false),
+                            getTimelineExp(getVal(content, ['ds']), true)
+                            ] : <Fragment></Fragment>
                         }
                         <VerticalTimelineElement
                             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                             icon={<StarIcon />}
                         /> 
                     </VerticalTimeline>
-
-                    {/* <NavPills
-            color="info"
-            horizontal={{
-                tabsGrid: { xs: 12, sm: 2, md: 2 },
-                contentGrid: { xs: 12, sm: 10, md: 10 }
-            }}
-            tabs={[
-                {
-                    tabButton: "Refinitiv",
-                    tabIcon: Work,
-                    tabContent: (
-                        <span>
-                            <p>
-                                <h3>Refinitiv</h3>
-                            </p>
-                            <br />
-                            <p>
-                                Refinitiv is the Company
-                            </p>
-                            <p>
-                                Position : Technology Graduate Trainee - Network Engineer
-                            </p>
-                            <p>
-                                Department : Technology Operation 
-                            </p>
-                            <p>
-                                Team : Data Center Operation Network Change
-                            </p>
-                            <p>
-                                Period : 2019 (Present)
-                            </p>
-                        </span>
-                    )
-                },
-                {
-                    tabButton: "Kyoto Institute of Technology",
-                    tabIcon: School,
-                    tabContent: (
-                        <span>
-                            <p>
-                                <h3>Kyoto Institute of Technology</h3>
-                            </p>
-                            <br />
-                            <p>
-                                Kyoto Institute of Technology
-                            </p>
-                            <p>
-                                Position : Junior Researcher
-                            </p>
-                            <p>
-                                Department : Computer Science
-                            </p>
-                            <p>
-                                Team : Software Engineer
-                            </p>
-                            <p>
-                                Period : 2018 (2 Months - Internship)
-                            </p>
-                        </span>
-                    )
-                },
-                {
-                    tabButton: "Internet Marketing",
-                    tabIcon: Work,
-                    tabContent: (
-                        <span>
-                            <p>
-                                <h3>Internet Marketing</h3>
-                            </p>
-                            <br />
-                            <p>
-                                Internet Marketing or Pantip.com
-                            </p>
-                            <p>
-                                Position : Fullstack Developer and Data Engineer
-                            </p>
-                            <p>
-                                Team : Data Scientist
-                            </p>
-                            <p>
-                                Period : 2017 (1 Months - Internship, 3 Month - Outsourcing)
-                            </p>
-                        </span>
-                    )
-                },
-                {
-                    tabButton: "Kasetsart University",
-                    tabIcon: School,
-                    tabContent: (
-                        <span>
-                            <p>
-                                <h3>Kasetsart University</h3>
-                            </p>
-                            <br />
-                            <p>
-                                Kasetsart University
-                            </p>
-                            <p>
-                                Position : Junior Researcher
-                            </p>
-                            <p>
-                                Department : Computer Engineering
-                            </p>
-                            <p>
-                                Team : Massive Information and Knowledge Engineering
-                            </p>
-                            <p>
-                                Period : 2016-2018 (3 Years)
-                            </p>
-                        </span>
-                    )
-                }
-            ]}
-            />*/}
                 </GridItem>
             </GridContainer>
         </div>
