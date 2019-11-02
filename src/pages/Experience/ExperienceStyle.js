@@ -9,6 +9,9 @@ const ExperienceStyle = {
         minHeight: "32px",
         textDecoration: "none"
     },
+    timelinemain: {
+        color:"black"
+    }
 };
 
 export default ExperienceStyle;

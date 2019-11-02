@@ -115,7 +115,7 @@ function MainContent(props) {
                         <GridContainer>
                             <GridItem>
                                 <div className={classes.brand}>
-                                    <h1 className={classes.title}>....Loading....</h1>
+                                    <h1 className={classes.title} style={{color:"black"}}>....Loading....</h1>
                                 </div>
                             </GridItem>
                         </GridContainer>
