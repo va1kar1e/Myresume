@@ -1,5 +1,5 @@
 import { container, title } from "../../components/material-kit-react"
-import 'react-vertical-timeline-component/style.min.css';
+import './style.min.css';
 
 const ExperienceStyle = {
     container,
@@ -8,9 +8,6 @@ const ExperienceStyle = {
         marginTop: "30px",
         minHeight: "32px",
         textDecoration: "none"
-    },
-    timelinemain: {
-        color:"black"
     }
 };
 
