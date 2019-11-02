@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -19,8 +19,35 @@ import styles from "./ExperienceStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function Experience() {
+const getVal = (nestedObj, pathArr) => {
+    return pathArr.reduce((obj, key) =>
+        (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+}
+
+const getTimelineExp = (value, school) => {
+    return (
+        <VerticalTimelineElement
+            className={value.className}
+            contentStyle={{ background: value.contentStyle.background }}
+            contentArrowStyle={{ borderRight: value.contentArrowStyle.borderRight }}
+            date={value.date}
+            iconStyle={{ background: value.iconStyle.background, color: value.iconStyle.color }}
+            icon={school ? <SchoolIcon /> : <WorkIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">{value.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{value.subtitle}</h4>
+            <p>
+                {value.content}
+            </p>
+        </VerticalTimelineElement>
+    )
+}
+
+export default function Experience(props) {
     const classes = useStyles();
+    const {content} = props;
+    console.log(content)
+
     return (
         <div id="experience">
             <div className={classes.title}>
@@ -28,51 +55,16 @@ export default function Experience() {
             </div>
             <GridContainer>
                 <GridItem xs={12} sm={12} md={12} lg={12}>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{ background: 'rgb(33, 150, 243)' }}
-                            contentArrowStyle={{ borderRight: '20px solid  rgb(33, 150, 243)' }}
-                            date="2011 - present"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            icon={<WorkIcon />}
-                        >
-                            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                            <p>
-                                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            // contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                            date="2011 - present"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            icon={<WorkIcon />}
-                        >
-                            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                            <p>
-                                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--education"
-                            date="April 2013"
-                            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                            icon={<SchoolIcon />}
-                        >
-                            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                            <p>
-                                Strategy, Social Media
-                            </p>
-                        </VerticalTimelineElement>
+                    <VerticalTimeline >
+                        {content ? [
+                            getTimelineExp(getVal(content, ['ds']), true), 
+                            getTimelineExp(getVal(content, ['ds']), false)] 
+                            : <Fragment></Fragment>
+                        }
                         <VerticalTimelineElement
                             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                             icon={<StarIcon />}
-                        />
+                        /> 
                     </VerticalTimeline>
 
                     {/* <NavPills
