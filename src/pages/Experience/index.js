@@ -26,8 +26,9 @@ const getVal = (nestedObj, pathArr) => {
 export default function Experience(props) {
     const classes = useStyles();
     const {content} = props;
-
-    const getTimelineExp = (value, school) => {
+    // consoles.log(content)
+    
+    const getTimelineExp = (key, value, school) => {
         // Add data in this format
         // className: ""
         // content: ""
@@ -39,6 +40,7 @@ export default function Experience(props) {
         // title: ""
         return (
             <VerticalTimelineElement
+                key = {key}
                 className={value.className}
                 contentStyle={{ background: value.contentStyle.background, color: value.contentStyle.color }}
                 contentArrowStyle={{ borderRight: value.contentArrowStyle.borderRight }}
@@ -48,7 +50,7 @@ export default function Experience(props) {
             >
                 <h3 className="vertical-timeline-element-title">{value.title}</h3>
                 <h4 className="vertical-timeline-element-subtitle">{value.subtitle}</h4>
-                <p class={classes.contentTimeline}>
+                <p className={classes.contentTimeline}>
                     {value.content}
                 </p>
             </VerticalTimelineElement>
@@ -64,11 +66,10 @@ export default function Experience(props) {
                 <GridItem xs={12} sm={12} md={12} lg={12}>
                     <VerticalTimeline >
                         {content ? [
-                            getTimelineExp(getVal(content, ['ref']), false),
-                            getTimelineExp(getVal(content, ['ku']), true),
-                            // getTimelineExp(getVal(content, ['kit']), true),
-                            // getTimelineExp(getVal(content, ['pt']), false),
-                            // getTimelineExp(getVal(content, ['ds']), true)
+                            getTimelineExp(0, getVal(content, ['ref']), false),
+                            getTimelineExp(1, getVal(content, ['mike']), true),
+                            getTimelineExp(2, getVal(content, ['kit']), true),
+                            getTimelineExp(3, getVal(content, ['pt']), false),
                             ] : <Fragment></Fragment>
                         }
                         <VerticalTimelineElement
