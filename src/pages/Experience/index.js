@@ -23,38 +23,37 @@ const getVal = (nestedObj, pathArr) => {
         (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
 }
 
-const getTimelineExp = (value, school) => {
-    // Add data in this format
-    // className: ""
-    // content: ""
-    // contentArrowStyle: { borderRight: "" }
-    // contentStyle: { background: "", color: "" }
-    // date: ""
-    // iconStyle: { background: "", color: "" }
-    // subtitle: ""
-    // title: ""
-    return (
-        <VerticalTimelineElement
-            className={value.className}
-            contentStyle={{ background: value.contentStyle.background }}
-            contentArrowStyle={{ borderRight: value.contentArrowStyle.borderRight }}
-            date={value.date}
-            iconStyle={{ background: value.iconStyle.background, color: value.iconStyle.color }}
-            icon={school ? <SchoolIcon /> : <WorkIcon />}
-        >
-            <h3 className="vertical-timeline-element-title">{value.title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{value.subtitle}</h4>
-            <p>
-                {value.content}
-            </p>
-        </VerticalTimelineElement>
-    )
-}
-
 export default function Experience(props) {
     const classes = useStyles();
     const {content} = props;
-    console.log(content)
+
+    const getTimelineExp = (value, school) => {
+        // Add data in this format
+        // className: ""
+        // content: ""
+        // contentArrowStyle: { borderRight: "" }
+        // contentStyle: { background: "", color: "" }
+        // date: ""
+        // iconStyle: { background: "", color: "" }
+        // subtitle: ""
+        // title: ""
+        return (
+            <VerticalTimelineElement
+                className={value.className}
+                contentStyle={{ background: value.contentStyle.background, color: value.contentStyle.color }}
+                contentArrowStyle={{ borderRight: value.contentArrowStyle.borderRight }}
+                date={value.date}
+                iconStyle={{ background: value.iconStyle.background, color: value.iconStyle.color }}
+                icon={school ? <SchoolIcon /> : <WorkIcon />}
+            >
+                <h3 className="vertical-timeline-element-title">{value.title}</h3>
+                <h4 className="vertical-timeline-element-subtitle">{value.subtitle}</h4>
+                <p class={classes.contentTimeline}>
+                    {value.content}
+                </p>
+            </VerticalTimelineElement>
+        )
+    }
 
     return (
         <div id="experience">
@@ -67,9 +66,9 @@ export default function Experience(props) {
                         {content ? [
                             getTimelineExp(getVal(content, ['ref']), false),
                             getTimelineExp(getVal(content, ['ku']), true),
-                            getTimelineExp(getVal(content, ['kit']), true),
-                            getTimelineExp(getVal(content, ['pt']), false),
-                            getTimelineExp(getVal(content, ['ds']), true)
+                            // getTimelineExp(getVal(content, ['kit']), true),
+                            // getTimelineExp(getVal(content, ['pt']), false),
+                            // getTimelineExp(getVal(content, ['ds']), true)
                             ] : <Fragment></Fragment>
                         }
                         <VerticalTimelineElement
