@@ -8,6 +8,10 @@ const ExperienceStyle = {
         marginTop: "30px",
         minHeight: "32px",
         textDecoration: "none"
+    },
+    contentTimeline : {
+        textAlign: "justify",
+        textIndent: "40px"
     }
 };
 
