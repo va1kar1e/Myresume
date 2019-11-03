@@ -33,7 +33,7 @@ export default function Footer(props) {
                     <List className={classes.list}>
                         <ListItem className={classes.inlineBlock}>
                             <a
-                                href="/"
+                                href="#"
                                 className={classes.block}
                                 target="_self"
                             >
@@ -42,20 +42,11 @@ export default function Footer(props) {
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
                             <a
-                                href="/aboutus"
+                                href="#contactme"
                                 className={classes.block}
                                 target="_self"
                             >
-                                About us
-                            </a>
-                        </ListItem>
-                        <ListItem className={classes.inlineBlock}>
-                            <a
-                                href="/licenses"
-                                className={classes.block}
-                                target="_self"
-                            >
-                                Licenses
+                                Contact me
                             </a>
                         </ListItem>
                     </List>
@@ -63,7 +54,7 @@ export default function Footer(props) {
                 <div className={classes.right}>
                     Copyright@{1900 + new Date().getYear()} {" "}
                     <a
-                        href="/"
+                        href="#"
                         className={aClasses}
                         target="_self"
                     >

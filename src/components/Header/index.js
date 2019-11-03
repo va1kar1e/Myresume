@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -60,7 +60,7 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = brand ? <Button className={classes.title}>{brand}</Button> : <Fragment></Fragment>;
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

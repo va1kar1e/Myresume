@@ -1,9 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -22,11 +20,29 @@ import styles from "./headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
+const getVal = (nestedObj, pathArr) => {
+  return pathArr.reduce((obj, key) =>
+    (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+}
+
 export default function HeaderLinks(props) {
   const classes = useStyles();
+  const { content, resumeLink } = props;
+  let menu = []
+
+  if (content) {
+    for (const [key, value] of Object.entries(content.menu)) {
+      menu.push(
+        <a href={"#" + key} className={classes.dropdownLink}>
+          {value}
+        </a>
+      )
+    }
+  }
+
   return (
     <List className={classes.list}>
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Menu"
@@ -35,28 +51,12 @@ export default function HeaderLinks(props) {
             color: "transparent"
           }}
           buttonIcon={Apps}
-          dropdownList={[
-            <Link to="#home" className={classes.dropdownLink}>
-              Home
-            </Link>,
-            <Link to="#aboutme" className={classes.dropdownLink}>
-              About Me
-            </Link>,
-            <Link to="#experience" className={classes.dropdownLink}>
-              Experience
-            </Link>,
-            <Link to="#education" className={classes.dropdownLink}>
-              Education
-            </Link>,
-            <Link to="#skill" className={classes.dropdownLink}>
-              Skill
-            </Link>,
-          ]}
+          dropdownList={menu}
         />
-      </ListItem> */}
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://drive.google.com/uc?authuser=0&id=1GBw-QaClxkqPa7CmaHGfxLeHYlaZyTEM&export=download"
+          href={resumeLink}
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -67,12 +67,12 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Follow me on twitter"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/booktay"
+            href={"https://twitter.com/" + getVal(content, ['twitter'])}
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -84,13 +84,13 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title="Follow me on facebook"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/booktay"
+            href={"https://fb.me/" + getVal(content, ['fb'])}
             target="_blank"
             className={classes.navLink}
           >
@@ -101,17 +101,51 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
+          title="Follow me on instagram"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/booktay"
+            href={"https://www.instagram.com/" + getVal(content, ['ig'])}
             target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="linkedin-tooltip"
+          title="Follow me on linkedin"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href={"https://www.linkedin.com/in/" + getVal(content, ['lkn'])}
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-linkedin"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="github-tooltip"
+          title="Follow me on Github"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href={"https://www.github.com/" + getVal(content, ['gth'])}
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-github"} />
           </Button>
         </Tooltip>
       </ListItem>

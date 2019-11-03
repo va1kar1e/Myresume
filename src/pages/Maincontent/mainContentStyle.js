@@ -1,7 +1,9 @@
 import { container } from "../../components/material-kit-react";
 
 const componentsStyle = {
-    container,
+    section: {
+        padding: "70px 0"
+    },container,
     brand: {
         color: "#FFFFFF",
         textAlign: "left"
@@ -15,10 +17,10 @@ const componentsStyle = {
     subtitle: {
         fontSize: "1.313rem",
         maxWidth: "500px",
-        margin: "10px 0 0"
+        margin: "10px 0 0",
     },
     main: {
-        background: "#FFFFFF",
+        background: "white",
         position: "relative",
         zIndex: "3"
     },
