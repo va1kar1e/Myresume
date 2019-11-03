@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -33,9 +33,9 @@ export default function HeaderLinks(props) {
   if (content) {
     for (const [key, value] of Object.entries(content.menu)) {
       menu.push(
-        <Link to={"#" + key} className={classes.dropdownLink}>
+        <a href={"#" + key} className={classes.dropdownLink}>
           {value}
-        </Link>
+        </a>
       )
     }
   }
@@ -112,6 +112,23 @@ export default function HeaderLinks(props) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="linkedin-tooltip"
+          title="Follow me on linkedin"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href={"https://www.linkedin.com/in/" + getVal(content, ['lkn'])}
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-linkedin"} />
           </Button>
         </Tooltip>
       </ListItem>
