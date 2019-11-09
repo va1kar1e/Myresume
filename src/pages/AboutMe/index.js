@@ -4,8 +4,6 @@ import React, { Fragment } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-// import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem";
@@ -46,8 +44,8 @@ export default function Aboutme(props) {
                 </GridItem>
             </GridContainer>
             <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
-                    {images ? <ImageButton title="Hire Me" images={images[0]} /> : <Fragment></Fragment>}
+                {/* <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}> */}
+                {images ? <ImageButton title="Hire Me" images={images[0]} width="50%" /> : <Fragment></Fragment>}
                     {/* <Card carousel>
                         <Carousel {...settings}>
                             {images ? images.map((image, index) => (
@@ -63,7 +61,7 @@ export default function Aboutme(props) {
                             )) : <Fragment></Fragment> }
                         </Carousel>
                     </Card> */}
-                </GridItem>
+                {/* </GridItem> */}
             </GridContainer>
         </div>
     );
