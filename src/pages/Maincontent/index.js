@@ -137,7 +137,7 @@ function MainContent(props) {
     }
 
     return (
-        <div>
+        <div style={{ background: "black" }}>
             <Header
                 brand={getVal(content, ['header', 'titlename'])}
                 rightLinks={<HeaderLinks content={getVal(content, ['header'])} resumeLink={link.resume} />}
