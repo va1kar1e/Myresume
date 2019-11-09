@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -35,7 +36,7 @@ export default function RecipeReviewCard(props) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
-    const { color, logo, title, subtitle, content, keyword} = props;
+    const { contentStyle, logo, title, subtitle, content, keyword} = props;
      
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -49,12 +50,12 @@ export default function RecipeReviewCard(props) {
                 image={logo}
                 title={title}
             />
-            <CardActions style={{ background: color }}>
-                <CardContent>
+            <CardActions style={{ background: contentStyle.background }}>
+                <CardContent style={{ color: contentStyle.color }}>
                     <Typography gutterBottom variant="h6">
                         {title}
                     </Typography>
-                    <Typography variant="body1" color="textSecondary">
+                    <Typography variant="body1">
                         {subtitle}
                     </Typography>
                     <Typography variant="body2" component="p">
@@ -68,13 +69,22 @@ export default function RecipeReviewCard(props) {
                     onClick={handleExpandClick}
                     aria-expanded={expanded}
                     aria-label="show more"
+                    style={{ color: contentStyle.color }}
                 >
                     <ExpandMoreIcon />
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent style={{ background: color }}>
-                    <Typography paragraph className={classes.contentTimeline}>
+                <CardContent style={{ background: contentStyle.background }}>
+                    <CardActions>
+                        <Button size="small" color="primary">
+                            Keyword
+                        </Button>
+                        <Button size="small" color="primary">
+                            Full Text
+                         </Button>
+                    </CardActions>
+                    <Typography paragraph className={classes.contentTimeline} style={{ color: contentStyle.color }}>
                         { content }
                     </Typography>
                 </CardContent>

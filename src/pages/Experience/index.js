@@ -54,7 +54,7 @@ export default function Experience(props) {
                 iconStyle={{ background: value.iconStyle.background, color: value.iconStyle.color }}
                 icon={school ? <SchoolIcon /> : <WorkIcon />}
             >
-                <Collapse color={value.contentStyle.background} logo={logo[value.className.substring(("timeline-").length, value.className.length) + "logo"]} title={value.title} subtitle={value.subtitle} keyword={value.keyword} content={value.content} />
+                <Collapse contentStyle={value.contentStyle} logo={logo[value.className.substring(("timeline-").length, value.className.length) + "logo"]} title={value.title} subtitle={value.subtitle} keyword={value.keyword} content={value.content} />
             </VerticalTimelineElement>
         )
     }
