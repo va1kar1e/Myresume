@@ -40,6 +40,11 @@ export default function Experience(props) {
         // iconStyle: { background: "", color: "" }
         // subtitle: ""
         // title: ""
+
+        // storage/images
+        // images/...
+        // 440x140px
+        
         return (
             <VerticalTimelineElement
                 key = {key}
@@ -50,12 +55,7 @@ export default function Experience(props) {
                 iconStyle={{ background: value.iconStyle.background, color: value.iconStyle.color }}
                 icon={school ? <SchoolIcon /> : <WorkIcon />}
             >
-                <h3 className="vertical-timeline-element-title">{value.title}</h3>
-                <h4 className="vertical-timeline-element-subtitle">{value.subtitle}</h4>
-                <p>
-                    {/* {value.content} */}
-                </p>
-                <Collapse content={value.content}></Collapse>
+                <Collapse color={value.contentStyle.background} image={value.image} title={value.title} subtitle={value.subtitle} content={value.content} />
             </VerticalTimelineElement>
         )
     }
