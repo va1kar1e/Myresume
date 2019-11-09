@@ -10,6 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const useStyles = makeStyles(theme => ({
     media: {
@@ -48,12 +49,13 @@ export default function RecipeReviewCard(props) {
 
     return (
         <Card className={classes.card}>
-            <CardMedia
+            {logo ? <CardMedia
                 component="img"
                 className={classes.media}
                 image={logo}
                 title={title}
             />
+            :<CircularProgress />}
             <CardContent style={{ background: contentStyle.background, color: contentStyle.color }}>
                 <Typography gutterBottom variant="h6">
                     {title}
@@ -65,7 +67,7 @@ export default function RecipeReviewCard(props) {
             <CardActions style={{ background: contentStyle.background }}>
                 {expanded ?
                     <Button size="medium" style={{ color: contentStyle.color }}>
-                        {true ? "Keyword" : "Full Text"}
+                        { false ? "Keyword" : "Full Text"}
                     </Button>
                 :<Fragment></Fragment>}
                 <IconButton
