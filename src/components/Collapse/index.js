@@ -35,7 +35,7 @@ export default function RecipeReviewCard(props) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
-    const { color, logo, title, subtitle, content} = props;
+    const { color, logo, title, subtitle, content, keyword} = props;
      
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -58,7 +58,7 @@ export default function RecipeReviewCard(props) {
                         {subtitle}
                     </Typography>
                     <Typography variant="body2" component="p">
-                        {subtitle}
+                        {keyword}
                     </Typography>
                 </CardContent>
                 <IconButton
