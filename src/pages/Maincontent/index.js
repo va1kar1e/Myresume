@@ -8,6 +8,7 @@ import Parallax from "../../components/Parallax";
 import GridItem from "../../components/Grid/GridItem";
 import GridContainer from "../../components/Grid/GridContainer";
 import Footer from "../../components/Footer";
+
 // sections for this page
 import HeaderLinks from "../../components/HeaderLinks";
 import AboutMe from "../AboutMe";
