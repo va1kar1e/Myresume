@@ -1,0 +1,13 @@
+[debug] [2019-11-09T10:02:45.188Z] ----------------------------------------------------------------------
+[debug] [2019-11-09T10:02:45.189Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-11-09T10:02:45.189Z] CLI Version:   7.6.2
+[debug] [2019-11-09T10:02:45.189Z] Platform:      darwin
+[debug] [2019-11-09T10:02:45.189Z] Node Version:  v12.11.1
+[debug] [2019-11-09T10:02:45.190Z] Time:          Sat Nov 09 2019 17:02:45 GMT+0700 (Indochina Time)
+[debug] [2019-11-09T10:02:45.190Z] ----------------------------------------------------------------------
+[debug] [2019-11-09T10:02:45.190Z] 
+[debug] [2019-11-09T10:02:45.195Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-09T10:02:45.195Z] > authorizing via signed-in user
+[debug] [2019-11-09T10:02:45.195Z] [iam] checking project valkariesite for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-11-09T10:02:45.196Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/valkariesite:testIamPermissions  
+
