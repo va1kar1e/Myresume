@@ -27,7 +27,7 @@ const getVal = (nestedObj, pathArr) => {
 
 export default function Experience(props) {
     const classes = useStyles();
-    const {content} = props;
+    const {content, logo} = props;
     // consoles.log(content)
     
     const getTimelineExp = (key, value, school) => {
@@ -55,7 +55,7 @@ export default function Experience(props) {
                 iconStyle={{ background: value.iconStyle.background, color: value.iconStyle.color }}
                 icon={school ? <SchoolIcon /> : <WorkIcon />}
             >
-                <Collapse color={value.contentStyle.background} image={value.image} title={value.title} subtitle={value.subtitle} content={value.content} />
+                <Collapse color={value.contentStyle.background} logo={logo[value.className.substring(("timeline-").length, value.className.length) + "logo"]} title={value.title} subtitle={value.subtitle} content={value.content} />
             </VerticalTimelineElement>
         )
     }

@@ -125,6 +125,13 @@ function MainContent(props) {
         );
     }
 
+    const logoExp = {
+        reflogo: link.reflogo,
+        mikelogo: link.mikelogo,
+        kitlogo: link.kitlogo,
+        ptlogo: link.ptlogo
+    }
+
     return (
         <div>
             <Header
@@ -156,7 +163,7 @@ function MainContent(props) {
                 <div className={classes.section}>
                     <div className={classes.container}>
                         <AboutMe content={content.aboutme}/> 
-                        <Experience content={content.experience}/> 
+                        <Experience content={content.experience} logo={logoExp}/> 
                     </div>
                 </div>
             </div>

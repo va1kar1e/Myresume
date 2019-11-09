@@ -35,32 +35,32 @@ export default function RecipeReviewCard(props) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
-    const { color, image, title, subtitle, content} = props;
+    const { color, logo, title, subtitle, content} = props;
      
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
 
     return (
-        <Card className={classes.card} style={{ background:color}}>
+        <Card className={classes.card}>
             <CardMedia
                 component="img"
                 className={classes.media}
-                image={image}
+                image={logo}
                 title={title}
             />
-            <CardContent>
-                <Typography gutterBottom variant="h5">
-                    {title}
-                </Typography>
-                <Typography variant="h6" color="textSecondary">
-                    {subtitle}
-                </Typography>
-                <Typography variant="body2" component="p">
-                    {subtitle}
-                </Typography>
-            </CardContent>
-            <CardActions>
+            <CardActions style={{ background: color }}>
+                <CardContent>
+                    <Typography gutterBottom variant="h5">
+                        {title}
+                    </Typography>
+                    <Typography variant="h6" color="textSecondary">
+                        {subtitle}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        {subtitle}
+                    </Typography>
+                </CardContent>
                 <IconButton
                     className={clsx(classes.expand, {
                         [classes.expandOpen]: expanded,
@@ -73,7 +73,7 @@ export default function RecipeReviewCard(props) {
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
+                <CardContent style={{ background: color }}>
                     <Typography paragraph className={classes.contentTimeline}>
                         { content }
                     </Typography>
