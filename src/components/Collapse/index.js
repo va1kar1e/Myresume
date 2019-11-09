@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
         height: 140,
     },
     expand: {
-        float: "right",
+        display: "inline-block",
         transform: 'rotate(0deg)',
         marginLeft: 'auto',
         transition: theme.transitions.create('transform', {
@@ -28,7 +28,11 @@ const useStyles = makeStyles(theme => ({
     },
     contentTimeline: {
         textAlign: "justify",
-        textIndent: "40px"
+        textIndent: "40px",
+        padding: "0.5em"
+    },
+    contentText: { 
+        padding: "0px 10px 0px 10px"
     }
 }));
 
@@ -50,18 +54,20 @@ export default function RecipeReviewCard(props) {
                 image={logo}
                 title={title}
             />
+            <CardContent style={{ background: contentStyle.background, color: contentStyle.color }}>
+                <Typography gutterBottom variant="h6">
+                    {title}
+                </Typography>
+                <Typography variant="body1">
+                    {subtitle}
+                </Typography>
+            </CardContent>
             <CardActions style={{ background: contentStyle.background }}>
-                <CardContent style={{ color: contentStyle.color }}>
-                    <Typography gutterBottom variant="h6">
-                        {title}
-                    </Typography>
-                    <Typography variant="body1">
-                        {subtitle}
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                        {keyword}
-                    </Typography>
-                </CardContent>
+                {expanded ?
+                    <Button size="medium" style={{ color: contentStyle.color }}>
+                        {true ? "Keyword" : "Full Text"}
+                    </Button>
+                :<Fragment></Fragment>}
                 <IconButton
                     className={clsx(classes.expand, {
                         [classes.expandOpen]: expanded,
@@ -75,17 +81,9 @@ export default function RecipeReviewCard(props) {
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent style={{ background: contentStyle.background }}>
-                    <CardActions>
-                        <Button size="small" color="primary">
-                            Keyword
-                        </Button>
-                        <Button size="small" color="primary">
-                            Full Text
-                         </Button>
-                    </CardActions>
-                    <Typography paragraph className={classes.contentTimeline} style={{ color: contentStyle.color }}>
-                        { content }
+                <CardContent className={classes.contentTimeline} style={{ background: contentStyle.background }}>
+                    <Typography paragraph className={classes.contentText} style={{ color: contentStyle.color, marginTop: "0em"}} >
+                        { false ? keyword : content }
                     </Typography>
                 </CardContent>
             </Collapse>
