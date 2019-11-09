@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
@@ -9,16 +9,16 @@ const useStyles = makeStyles(styles);
 
 export default function ImageButtonBases(props) {
     const classes = useStyles();
-    const { title, images } = props
+    const { title, images, width } = props
     return (
-        <div className={classes.root}>
+        <Fragment>
             <ButtonBase
                 focusRipple
                 key={title}
                 className={classes.image}
                 focusVisibleClassName={classes.focusVisible}
                 style={{
-                    width: "40%"
+                    width: width
                 }}
             >
                 <span
@@ -42,6 +42,6 @@ export default function ImageButtonBases(props) {
                     </Typography>
                 </span>
             </ButtonBase>
-        </div>
+        </Fragment>
     );
 }
