@@ -51,10 +51,10 @@ export default function RecipeReviewCard(props) {
             />
             <CardActions style={{ background: color }}>
                 <CardContent>
-                    <Typography gutterBottom variant="h5">
+                    <Typography gutterBottom variant="h6">
                         {title}
                     </Typography>
-                    <Typography variant="h6" color="textSecondary">
+                    <Typography variant="body1" color="textSecondary">
                         {subtitle}
                     </Typography>
                     <Typography variant="body2" component="p">

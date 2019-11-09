@@ -42,7 +42,7 @@ export default function Footer(props) {
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
                             <a
-                                href="#contactme"
+                                href="#aboutme"
                                 className={classes.block}
                                 target="_self"
                             >
@@ -54,7 +54,7 @@ export default function Footer(props) {
                 <div className={classes.right}>
                     Copyright@{1900 + new Date().getYear()} {" "}
                     <a
-                        href="#"
+                        href="mailto:siwanont1@gmail.com"
                         className={aClasses}
                         target="_self"
                     >
