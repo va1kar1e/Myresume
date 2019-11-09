@@ -1,19 +1,23 @@
 import { container, title } from "../../components/material-kit-react"
-import './style.min.css';
 
-const ExperienceStyle = {
-    container,
+const RecognitionStyle = {
     title: {
         ...title,
         marginTop: "30px",
         minHeight: "32px",
         textDecoration: "none"
     },
+    section: {
+        padding: "70px 0"
+    },
+    container: {
+        ...container,
+        textAlign: "center !important"
+    },
     marginAuto: {
         marginLeft: "auto !important",
-        marginRight: "auto !important",
-        marginBottom: "3em"
+        marginRight: "auto !important"
     }
 };
 
-export default ExperienceStyle;
+export default RecognitionStyle;
