@@ -11,6 +11,8 @@ import StarIcon from "@material-ui/icons/Star";
 import GridContainer from "../../components/Grid/GridContainer";
 import GridItem from "../../components/Grid/GridItem";
 
+import Collapse from "../../components/Collapse"
+
 // Timeline Component
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 
@@ -50,9 +52,10 @@ export default function Experience(props) {
             >
                 <h3 className="vertical-timeline-element-title">{value.title}</h3>
                 <h4 className="vertical-timeline-element-subtitle">{value.subtitle}</h4>
-                <p className={classes.contentTimeline}>
-                    {value.content}
+                <p>
+                    {/* {value.content} */}
                 </p>
+                <Collapse content={value.content}></Collapse>
             </VerticalTimelineElement>
         )
     }
