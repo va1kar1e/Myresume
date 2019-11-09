@@ -1,6 +1,12 @@
 import { container, title } from "../../components/material-kit-react"
 
 const RecognitionStyle = {
+    root: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        minWidth: 300,
+        width: '100%',
+    },
     title: {
         ...title,
         marginTop: "30px",
