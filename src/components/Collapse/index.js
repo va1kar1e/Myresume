@@ -40,11 +40,16 @@ const useStyles = makeStyles(theme => ({
 export default function RecipeReviewCard(props) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
-
+    const [kw, setKw] = React.useState(true);
+    
     const { contentStyle, logo, title, subtitle, content, keyword} = props;
      
     const handleExpandClick = () => {
         setExpanded(!expanded);
+    };
+
+    const handleTextClick = () => {
+        setKw(!kw);
     };
 
     return (
@@ -66,8 +71,8 @@ export default function RecipeReviewCard(props) {
             </CardContent>
             <CardActions style={{ background: contentStyle.background }}>
                 {expanded ?
-                    <Button size="medium" style={{ color: contentStyle.color }}>
-                        { false ? "Keyword" : "Full Text"}
+                    <Button size="medium" onClick={handleTextClick} style={{ color: contentStyle.color }}>
+                        { !kw ? "Keyword" : "Full Text"}
                     </Button>
                 :<Fragment></Fragment>}
                 <IconButton
@@ -85,7 +90,7 @@ export default function RecipeReviewCard(props) {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent className={classes.contentTimeline} style={{ background: contentStyle.background }}>
                     <Typography paragraph className={classes.contentText} style={{ color: contentStyle.color, marginTop: "0em"}} >
-                        { false ? keyword : content }
+                        { kw ? keyword : content }
                     </Typography>
                 </CardContent>
             </Collapse>
