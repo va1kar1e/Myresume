@@ -64,8 +64,8 @@ export default function Experience(props) {
             <div className={classes.title}>
                 <h2>Experience</h2>
             </div>
-            <GridContainer>
-                <GridItem xs={12} sm={12} md={12} lg={12}>
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={12} lg={12} className={classes.marginAuto}>
                     <VerticalTimeline >
                         {content ? [
                             getTimelineExp(0, getVal(content, ['ref']), false),
