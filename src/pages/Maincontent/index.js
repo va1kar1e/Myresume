@@ -172,7 +172,7 @@ function MainContent(props) {
                     </div>
                 </div>
             </div>
-            <Footer /> 
+            <Footer whiteFont={true}/> 
         </div>
     );
 }
