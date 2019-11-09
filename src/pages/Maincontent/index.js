@@ -13,6 +13,7 @@ import Footer from "../../components/Footer";
 import HeaderLinks from "../../components/HeaderLinks";
 import AboutMe from "../AboutMe";
 import Experience from "../Experience";
+import Recognition from "../Recognition";
 
 import styles from "./mainContentStyle";
 const useStyles = makeStyles(styles);
@@ -167,6 +168,7 @@ function MainContent(props) {
                     <div className={classes.container}>
                         <AboutMe content={content.aboutme}/> 
                         <Experience content={content.experience} logo={logoExp}/> 
+                        <Recognition/>
                     </div>
                 </div>
             </div>
