@@ -14,7 +14,8 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 const useStyles = makeStyles(theme => ({
     media: {
-        height: 140,
+        width: 140,
+        objectFit: "fill"
     },
     expand: {
         display: "inline-block",
@@ -41,9 +42,8 @@ export default function RecipeReviewCard(props) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const [kw, setKw] = React.useState(true);
-    
     const { contentStyle, logo, title, subtitle, content, keyword} = props;
-     
+    
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
@@ -54,12 +54,14 @@ export default function RecipeReviewCard(props) {
 
     return (
         <Card className={classes.card}>
-            {logo ? <CardMedia
-                component="img"
-                className={classes.media}
-                image={logo}
-                title={title}
-            />
+            {logo ? 
+                !kw ? 
+                    <CardMedia
+                    component="img"
+                    className={classes.media}
+                    image={logo}
+                    title={title}/>
+                    : <Fragment></Fragment>
             :<CircularProgress />}
             <CardContent style={{ background: contentStyle.background, color: contentStyle.color }}>
                 <Typography gutterBottom variant="h6">
