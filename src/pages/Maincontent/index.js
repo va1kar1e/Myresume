@@ -167,8 +167,8 @@ function MainContent(props) {
                 <div className={classes.section}>
                     <div className={classes.container}>
                         <AboutMe content={content.aboutme}/> 
-                        <Experience content={content.experience} logo={logoExp}/> 
-                        <Recognition content={content.aboutme}/>
+                        {/* <Experience content={content.experience} logo={logoExp}/>  */}
+                        {/* <Recognition content={content.aboutme}/> */}
                     </div>
                 </div>
             </div>
