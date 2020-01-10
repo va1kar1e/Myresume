@@ -12,8 +12,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production v3
+# /build
 
 # misc
 .DS_Store
