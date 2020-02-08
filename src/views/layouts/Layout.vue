@@ -28,7 +28,7 @@ export default {
 }
 .main-container {
   text-align: center;
-  margin-top: 400px;
+  margin-top: 100px;
   min-height: 50vh;
 }
 </style>
