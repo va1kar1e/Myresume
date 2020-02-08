@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'AppContent'
-}
+  name: "Content"
+};
 </script>

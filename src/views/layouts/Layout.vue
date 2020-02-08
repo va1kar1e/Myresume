@@ -1,23 +1,23 @@
 <template>
   <div class="app-wrapper">
-      <navbar></navbar>
+    <Navbar></Navbar>
     <div class="main-container">
-      <app-content></app-content>
+      <Content></Content>
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
-import AppContent from "./components/AppContent";
+import Content from "./components/Content";
 
 export default {
-  name: 'Layout',
+  name: "Layout",
   components: {
     Navbar,
-    AppContent
+    Content
   }
-}
+};
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
