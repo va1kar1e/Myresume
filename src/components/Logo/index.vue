@@ -2,7 +2,7 @@
   <div class="logo-header">
     <div id="logo">
       <img src="@/assets/images/logo.png" alt="Logo" />
-      <span>Vue.js</span>
+      <span>Siwanont.ml</span>
     </div>
   </div>
 </template>
