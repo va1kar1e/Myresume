@@ -1,5 +1,5 @@
 <template>
-  <div class="hireme">
+  <div class="hireme content-container">
     <el-button type="text" @click="dialogFormVisible = true">
       Hire Me
     </el-button>

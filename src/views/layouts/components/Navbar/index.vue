@@ -1,15 +1,22 @@
 <template>
   <div class="navWrapper">
     <div id="menu" :class="{ active: isActive }">
-      <el-menu mode="horizontal" @select="handleSelect" :router="true">
-        <el-menu-item id="logo" index="/" :route="{ name: 'Home' }">
+      <el-menu mode="horizontal" :router="true">
+        <el-menu-item
+          id="logo"
+          index="/"
+          :route="{ name: 'Home' }"
+          @click="handleSelect"
+        >
           <logo></logo>
         </el-menu-item>
-        <el-menu-item index="/resume" :route="{ name: 'Resume' }">
+        <el-menu-item
+          index="/resume"
+          :route="{ name: 'Resume' }"
+          @click="handleSelect"
+          style="float: right;"
+        >
           Download Resume
-        </el-menu-item>
-        <el-menu-item index="/hireme" :route="{ name: 'Hireme' }">
-          Hire Me
         </el-menu-item>
       </el-menu>
     </div>
@@ -28,10 +35,9 @@ export default {
   components: {
     Logo
   },
-
   data() {
     return {
-      activeIndex: "/hello",
+      activeIndex: "/",
       isActive: false
     };
   },
