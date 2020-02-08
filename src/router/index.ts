@@ -29,20 +29,15 @@ const routes = [
         component: Path,
         name: "Path",
         meta: { title: "Path" }
-      },
-      {
-        path: "/resume",
-        component: Path,
-        name: "Resume",
-        meta: { title: "Download Resume" }
-      },
-      {
-        path: "/hireme",
-        component: Path,
-        name: "Hireme",
-        meta: { title: "Hire Me" }
       }
     ]
+  },
+  {
+    path: "/resume",
+    name: "Resume",
+    beforeEnter() {
+      location.href = "https://www.google.com";
+    }
   }
 ];
 
