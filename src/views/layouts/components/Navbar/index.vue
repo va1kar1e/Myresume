@@ -5,8 +5,11 @@
         <el-menu-item id="logo" index="/" :route="{ name: 'Home' }">
           <logo></logo>
         </el-menu-item>
-        <el-menu-item index="/path" :route="{ name: 'Path' }">
-          Path
+        <el-menu-item index="/resume" :route="{ name: 'Resume' }">
+          Download Resume
+        </el-menu-item>
+        <el-menu-item index="/hireme" :route="{ name: 'Hireme' }">
+          Hire Me
         </el-menu-item>
       </el-menu>
     </div>
