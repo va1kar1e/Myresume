@@ -70,11 +70,14 @@
   }
   .p-header-name-xs {
     font-size: 1em;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .content-title {
     margin-top: 2.5em;
+  }
+  .content-title-xs {
+    margin-top: 1em;
   }
 }
 #contact {
@@ -91,11 +94,18 @@
     font-size: 1.5em;
     margin-right: 1em;
   }
+  .p-xs {
+    font-size: 1em;
+    margin-right: 1em;
+  }
   .top-xl {
     margin-top: 10em;
   }
   .top-lg {
     margin-top: 6em;
+  }
+  .top-xs {
+    margin-top: 1em;
   }
   .content {
     display: -webkit-inline-box;
@@ -107,7 +117,11 @@
   }
   .content-lg {
     margin-right: 20px;
-    padding-right: 30px;
+    margin-bottom: 15px;
+  }
+  .content-xs {
+    margin-right: 10px;
+    margin-bottom: 5px;
   }
   .ico-xl {
     width: 3em;
@@ -116,6 +130,10 @@
   .ico-lg {
     width: 2em;
     height: 2em;
+  }
+  .ico-xs {
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 #profilepic {
