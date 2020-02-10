@@ -1,7 +1,6 @@
 <template>
   <div class="home content-container">
     <Header />
-    <Hireme />
   </div>
 </template>
 
@@ -11,7 +10,6 @@ import Header from "@/views/Header.vue";
 
 export default {
   components: {
-    Hireme,
     Header
   },
   data() {
