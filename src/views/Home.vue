@@ -1,23 +1,18 @@
 <template>
   <div class="home content-container">
-    <h1>{{ title }}</h1>
+    <Header />
     <Hireme />
-    <v-show-at small> 😸 </v-show-at>
-    <v-show-at medium> 😺 </v-show-at>
-    <v-show-at large> 😽 </v-show-at>
-    <v-show-at xlarge> 🐱 </v-show-at>
-    <v-show-at no-match> 😿 </v-show-at>
   </div>
 </template>
 
 <script>
 import Hireme from "@/views/Hireme.vue";
-import { VShowAt } from "vue-breakpoint-component";
+import Header from "@/views/Header.vue";
 
 export default {
   components: {
     Hireme,
-    VShowAt
+    Header
   },
   data() {
     return {

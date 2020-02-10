@@ -37,7 +37,7 @@ const routes = [
     name: "Resume",
     beforeEnter() {
       location.href =
-        "https://drive.google.com/open?id=1gtnVxvHZN4umK_pdnkXU6OkzIf6YQ0Bx";
+        "https://drive.google.com/open?id=1OF1aVZMs4qbo71npq7lUkYMafEaeqRAF";
     }
   }
 ];
