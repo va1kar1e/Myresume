@@ -6,7 +6,7 @@
 
 <script>
 import Hireme from "@/views/Hireme.vue";
-import Header from "@/views/Header.vue";
+import Header from "@/views/header/index";
 
 export default {
   components: {
