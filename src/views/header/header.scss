@@ -1,0 +1,53 @@
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  background: #99a9bf;
+}
+.bg-purple {
+  background: #d3dce6;
+}
+.bg-purple-light {
+  background: #e5e9f2;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+#header .header-name {
+  color: black;
+}
+#header .header-name-xl {
+  font-size: 5em;
+}
+#header .header-name-lg {
+  font-size: 3em;
+}
+#header .header-name-md-sm {
+  font-size: 2em;
+}
+#header .header-name-xs {
+  font-size: 2em;
+}
+#profilepic img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00adff;
+}
+#profilepic .img-xl {
+  width: 20em;
+  height: 20em;
+}
+#profilepic .img-lg {
+  width: 15em;
+  height: 15em;
+}
+#profilepic .img-md-sm {
+  width: 8em;
+  height: 8em;
+}
+#profilepic .img-xs {
+  width: 10em;
+  height: 10em;
+}
