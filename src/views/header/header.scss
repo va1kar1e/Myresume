@@ -108,8 +108,7 @@
     margin-top: 1em;
   }
   .content {
-    display: -webkit-inline-box;
-    float: right;
+    display: block;
   }
   .content-xl {
     margin-right: 50px;
@@ -128,8 +127,8 @@
     height: 3em;
   }
   .ico-lg {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
   }
   .ico-xs {
     width: 1.5em;

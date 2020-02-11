@@ -73,32 +73,46 @@
       </el-col>
       <el-col :span="6" id="contact">
         <div class="top-lg content content-lg">
-          <p class="p-lg">SIWANONT1@GMAIL.COM</p>
-          <img src="@/assets/icons/mail.png" class="ico-lg" />
+          <p class="p-lg">
+            SIWANONT1@GMAIL.COM
+            <img src="@/assets/icons/mail.png" class="ico-lg" />
+          </p>
         </div>
         <div class="content content-lg">
-          <p class="p-lg">(+66)92-686-8855</p>
-          <img src="@/assets/icons/tel.png" class="ico-lg" />
+          <p class="p-lg">
+            (+66)92-686-8855
+            <img src="@/assets/icons/tel.png" class="ico-lg" />
+          </p>
         </div>
         <div class="content content-lg">
-          <p class="p-lg">DECEMBER 05,1995</p>
-          <img src="@/assets/icons/calendar.png" class="ico-lg" />
+          <p class="p-lg">
+            DECEMBER 05,1995
+            <img src="@/assets/icons/calendar.png" class="ico-lg" />
+          </p>
         </div>
         <div class="content content-lg">
-          <p class="p-lg">www.siwanont.ml</p>
-          <img src="@/assets/icons/web.png" class="ico-lg" />
+          <p class="p-lg">
+            www.siwanont.ml
+            <img src="@/assets/icons/web.png" class="ico-lg" />
+          </p>
         </div>
         <div class="content content-lg">
-          <p class="p-lg">linkedin.com/in/siwanont</p>
-          <img src="@/assets/icons/in.png" class="ico-lg" />
+          <p class="p-lg">
+            linkedin.com/in/siwanont
+            <img src="@/assets/icons/in.png" class="ico-lg" />
+          </p>
         </div>
         <div class="content content-lg">
-          <p class="p-lg">github.com/booktay</p>
-          <img src="@/assets/icons/gh.png" class="ico-lg" />
+          <p class="p-lg">
+            github.com/booktay
+            <img src="@/assets/icons/gh.png" class="ico-lg" />
+          </p>
         </div>
         <div class="content content-lg">
-          <p class="p-lg">Thai(Native)/English</p>
-          <img src="@/assets/icons/translate.png" class="ico-lg" />
+          <p class="p-lg">
+            Thai(Native)/English
+            <img src="@/assets/icons/translate.png" class="ico-lg" />
+          </p>
         </div>
       </el-col>
     </el-row>
@@ -145,32 +159,46 @@
         </div>
         <div id="contact">
           <div class="top-xs content content-xs">
-            <p class="p-xs">SIWANONT1@GMAIL.COM</p>
-            <img src="@/assets/icons/mail.png" class="ico-xs" />
+            <p class="p-xs">
+              SIWANONT1@GMAIL.COM
+              <img src="@/assets/icons/mail.png" class="ico-xs" />
+            </p>
           </div>
           <div class="content content-xs">
-            <p class="p-xs">(+66)92-686-8855</p>
-            <img src="@/assets/icons/tel.png" class="ico-xs" />
+            <p class="p-xs">
+              (+66)92-686-8855
+              <img src="@/assets/icons/tel.png" class="ico-xs" />
+            </p>
           </div>
           <div class="content content-xs">
-            <p class="p-xs">DECEMBER 05,1995</p>
-            <img src="@/assets/icons/calendar.png" class="ico-xs" />
+            <p class="p-xs">
+              DECEMBER 05,1995
+              <img src="@/assets/icons/calendar.png" class="ico-xs" />
+            </p>
           </div>
           <div class="content content-xs">
-            <p class="p-xs">www.siwanont.ml</p>
-            <img src="@/assets/icons/web.png" class="ico-xs" />
+            <p class="p-xs">
+              www.siwanont.ml
+              <img src="@/assets/icons/web.png" class="ico-xs" />
+            </p>
           </div>
           <div class="content content-xs">
-            <p class="p-xs">linkedin.com/in/siwanont</p>
-            <img src="@/assets/icons/in.png" class="ico-xs" />
+            <p class="p-xs">
+              linkedin.com/in/siwanont
+              <img src="@/assets/icons/in.png" class="ico-xs" />
+            </p>
           </div>
           <div class="content content-xs">
-            <p class="p-xs">github.com/booktay</p>
-            <img src="@/assets/icons/gh.png" class="ico-xs" />
+            <p class="p-xs">
+              github.com/booktay
+              <img src="@/assets/icons/gh.png" class="ico-xs" />
+            </p>
           </div>
           <div class="content content-xs">
-            <p class="p-xs">Thai(Native)/English</p>
-            <img src="@/assets/icons/translate.png" class="ico-xs" />
+            <p class="p-xs">
+              Thai(Native)/English
+              <img src="@/assets/icons/translate.png" class="ico-xs" />
+            </p>
           </div>
         </div>
       </el-col>
