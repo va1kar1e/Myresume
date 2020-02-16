@@ -3,141 +3,72 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('@/assets/images/profilepic.png')"
           class="my-3"
           contain
-          height="200"
+          height="300"
         />
       </v-col>
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          SIWANONT SITTINAM
         </h1>
 
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank"
-            >Discord Community</a
-          >
+        <p class="display-1 font-weight-regular">
+          Network Engineer
         </p>
       </v-col>
 
       <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
+        <h2 class="display-1 font-weight-bold mb-3 hidden-md-and-up">
+          Contact
         </h2>
 
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
+        <v-row justify="center" class="contact-content hidden-md-and-up">
+          <div class="heading mx-3 font-weight-bold">
+            <a href="mailto:siwanont1@gmail.com" target="_blank">SIWANONT1@GMAIL.COM</a>
+            <v-icon large color="primary lighten-1">far fa-envelope</v-icon>
+          </div>
+          <div class="heading mx-3 font-weight-bold">
+            <a>(+66)92-686-8855</a>
+            <v-icon large color="primary lighten-1">fas fa-mobile-alt</v-icon>
+          </div>
+          <div class="heading mx-3 font-weight-bold">
+            <a href="https://linkedin.com/in/siwanont" target="_blank">
+              https://linkedin.com/in/siwanont
+            </a>
+            <v-icon large color="primary lighten-1">
+              fab fa-linkedin
+            </v-icon>
+          </div>
+          <div class="heading mx-3 font-weight-bold">
+            <a href="https://github.com/booktay" target="_blank">
+              https://github.com/booktay
+            </a>
+            <v-icon large color="primary lighten-1">
+              fab fa-github
+            </v-icon>
+          </div>
+          <div class="heading mx-3 font-weight-bold">
+            <a>Thai(Native)/English</a>
+            <v-icon large color="primary lighten-1">fas fa-language</v-icon>
+          </div>
         </v-row>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
+<style>
+.contact-content {
+  display: grid;
+  text-align: right;
+}
+</style>
+
 <script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  name: "HelloWorld",
-
-  data: () => ({
-    ecosystem: [
-      {
-        text: "vuetify-loader",
-        href: "https://github.com/vuetifyjs/vuetify-loader"
-      },
-      {
-        text: "github",
-        href: "https://github.com/vuetifyjs/vuetify"
-      },
-      {
-        text: "awesome-vuetify",
-        href: "https://github.com/vuetifyjs/awesome-vuetify"
-      }
-    ],
-    importantLinks: [
-      {
-        text: "Documentation",
-        href: "https://vuetifyjs.com"
-      },
-      {
-        text: "Chat",
-        href: "https://community.vuetifyjs.com"
-      },
-      {
-        text: "Made with Vuetify",
-        href: "https://madewithvuejs.com/vuetify"
-      },
-      {
-        text: "Twitter",
-        href: "https://twitter.com/vuetifyjs"
-      },
-      {
-        text: "Articles",
-        href: "https://medium.com/vuetify"
-      }
-    ],
-    whatsNext: [
-      {
-        text: "Explore components",
-        href: "https://vuetifyjs.com/components/api-explorer"
-      },
-      {
-        text: "Select a layout",
-        href: "https://vuetifyjs.com/layout/pre-defined"
-      },
-      {
-        text: "Frequently Asked Questions",
-        href: "https://vuetifyjs.com/getting-started/frequently-asked-questions"
-      }
-    ]
-  })
-});
+export default {
+  name: "Header"
+};
 </script>
