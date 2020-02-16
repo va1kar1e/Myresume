@@ -1,17 +1,11 @@
 <template>
-  <div class="home content-container">
-    <Header />
+  <div class="path content-container">
+    <h1>{{ title }}</h1>
   </div>
 </template>
 
 <script>
-import Hireme from "@/views/Hireme.vue";
-import Header from "@/views/header/index";
-
 export default {
-  components: {
-    Header
-  },
   data() {
     return {
       title: "Home"

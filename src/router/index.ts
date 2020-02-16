@@ -3,14 +3,13 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import Layout from "@/views/layouts/Layout.vue";
 import Home from "@/views/Home.vue";
 import Path from "@/views/Path.vue";
 
 const routes = [
   {
     path: "/",
-    component: Layout,
+    component: Home,
     children: [
       {
         path: "/",
@@ -21,24 +20,18 @@ const routes = [
     ]
   },
   {
-    path: "/path",
-    component: Layout,
-    children: [
-      {
-        path: "/path",
-        component: Path,
-        name: "Path",
-        meta: { title: "Path" }
-      }
-    ]
-  },
-  {
     path: "/resume",
     name: "Resume",
     beforeEnter() {
       location.href =
         "https://drive.google.com/open?id=1OF1aVZMs4qbo71npq7lUkYMafEaeqRAF";
     }
+  },
+  {
+    path: "/path",
+    component: Path,
+    name: "Path",
+    meta: { title: "Path" }
   }
 ];
 
