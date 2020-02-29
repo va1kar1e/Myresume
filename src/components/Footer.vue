@@ -1,20 +1,24 @@
 <template>
-  <v-footer color="primary lighten-1" padless>
-    <v-row justify="center" no-gutters>
-      <v-btn to="/" color="white" text rounded class="my-2">Home</v-btn>
+  <v-footer padless>
+    <v-row justify="center grey lighten-5" no-gutters>
       <v-btn
         to="/resume"
         target="_blank"
-        color="white"
         text
         rounded
         class="my-2"
       >
         Download My Resume
       </v-btn>
-      <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
+      <v-col class="py-4 text-center grey lighten-4" cols="12">
         {{ new Date().getFullYear() }} —
-        <strong>siwanont.ml</strong>
+        <v-btn
+          to="/"
+          text
+          class="my-2"
+        >
+          siwanont.ml
+        </v-btn>
       </v-col>
     </v-row>
   </v-footer>

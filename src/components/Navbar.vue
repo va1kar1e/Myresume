@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary lighten-1" dark>
+  <v-app-bar app>
     <div class="d-flex align-center">
       <v-img
         alt="Siwanont Logo"

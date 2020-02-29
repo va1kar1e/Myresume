@@ -20,6 +20,12 @@ const routes = [
     ]
   },
   {
+    path: "/path",
+    component: Path,
+    name: "Path",
+    meta: { title: "Path" }
+  },
+  {
     path: "/resume",
     name: "Resume",
     beforeEnter() {
@@ -28,10 +34,25 @@ const routes = [
     }
   },
   {
-    path: "/path",
-    component: Path,
-    name: "Path",
-    meta: { title: "Path" }
+    path: "/linkedin",
+    name: "Linkedin",
+    beforeEnter() {
+      location.href = "https://linkedin.com/in/siwanont";
+    }
+  },
+  {
+    path: "/github",
+    name: "Github",
+    beforeEnter() {
+      location.href = "https://github.com/booktay";
+    }
+  },
+  {
+    path: "/facebook",
+    name: "Facebook",
+    beforeEnter() {
+      location.href = "https://fb.me/booktay";
+    }
   }
 ];
 

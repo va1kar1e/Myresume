@@ -2,7 +2,8 @@
   <v-app>
     <Navbar />
     <v-content>
-      <HelloWorld />
+      <Header />
+      <!-- <Contact /> -->
     </v-content>
     <Footer />
   </v-app>
@@ -11,7 +12,8 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Header from "@/components/Header.vue";
+// import Contact from "@/components/Contact.vue";
 
 export default {
   data() {
@@ -21,7 +23,8 @@ export default {
   },
   components: {
     Navbar,
-    HelloWorld,
+    Header,
+    // Contact,
     Footer
   }
 };
