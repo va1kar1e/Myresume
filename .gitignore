@@ -27,3 +27,5 @@ database.rules.json
 firestore.indexes.json
 firestore.rules
 storage.rules
+/.firebaserc
+/firebase-debug.log
