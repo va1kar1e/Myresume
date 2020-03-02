@@ -3,7 +3,7 @@
     <Navbar />
     <v-content>
       <Header />
-      <!-- <Contact /> -->
+      <Content />
     </v-content>
     <Footer />
   </v-app>
@@ -13,7 +13,7 @@
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
-// import Contact from "@/components/Contact.vue";
+import Content from "@/components/Content.vue";
 
 export default {
   data() {
@@ -24,7 +24,7 @@ export default {
   components: {
     Navbar,
     Header,
-    // Contact,
+    Content,
     Footer
   }
 };
