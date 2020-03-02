@@ -8,7 +8,17 @@
           contain
           min-height="100"
           max-height="450"
-        />
+        >
+          <template v-slot:placeholder>
+            <v-row
+              class="fill-height ma-0"
+              align="center"
+              justify="center"
+            >
+              <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
       </v-col>
       <v-col class="mb-1">
         <h1 class="display-2 font-weight-bold mb-1">
