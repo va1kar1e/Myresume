@@ -14,7 +14,7 @@
           >
             <template v-slot:opposite>
               <span
-                :class="`display-1 font-weight-regular ${item.color}--text`"
+                :class="`headline font-weight-regular ${item.color}--text`"
                 v-text="item.year"
               ></span>
             </template>
@@ -28,9 +28,9 @@
                 <p class="text-capitalize font-weight-light">
                   {{ item.role[0] }}
                 </p>
-                <p :color="item.color" class="text-capitalize font-weight-thin text-left">
+                <!-- <p :class="`text-capitalize font-weight-thin text-left ${item.color}--text`">
                   Achievements/Tasks
-                </p>
+                </p> -->
               </div>
             </div>
           </v-timeline-item>
