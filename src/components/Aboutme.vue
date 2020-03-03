@@ -5,11 +5,8 @@
     </h2>
     <v-row justify="center">
       <v-col cols="12">
-        <p class="title text-capitalize font-weight-light text-left text-md-justify">
-          Hi, My nickname is Books. I am a dedicated, hardworking, and proactive Network Engineer.
-          I am interested in Networking, Cybersecurity, and Data Analytics. I constantly seek new knowledge
-          and actively develop new skills to improve myself. I seek challenging opportunities where I can
-          fully use my skills for the success of the organization.
+        <p class="title font-weight-light text-left text-md-justify">
+          {{ contentText }}
         </p>
       </v-col>
     </v-row>
@@ -24,6 +21,10 @@ p {
 
 <script lang="ts">
 export default {
-  name: "Header"
+  name: "Header",
+  data: () => ({
+    contentText:
+      "Hi, My nickname is Books. I am a dedicated, hardworking, and proactive Computer Engineer. I am interested in Networking, Cybersecurity, Data Analytics and Web Developement. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
+  })
 };
 </script>
