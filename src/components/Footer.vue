@@ -1,6 +1,6 @@
 <template>
   <v-footer padless>
-    <v-row justify="center grey lighten-5" no-gutters>
+    <v-row class="justify-center grey lighten-5" no-gutters>
       <v-btn
         to="/resume"
         target="_blank"
