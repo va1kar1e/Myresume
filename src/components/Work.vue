@@ -54,7 +54,7 @@ p {
   margin-bottom: 0px !important;
 }
 ul {
-  padding-left: 35px !important;
+  padding-left: 15px !important;
 }
 .header-content {
   margin-left: 5px;
