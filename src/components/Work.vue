@@ -33,6 +33,13 @@
                     <p
                       :class="`body-1 font-weight-light text-left black--text`"
                     >{{ task.name }}</p>
+                    <!-- <v-chip
+                      class="mr-2"
+                      @click="lights"
+                    >
+                      <v-icon left>mdi-brightness-5</v-icon>
+                      {{ task.name }}
+                    </v-chip> -->
                   </li>
                 </ul>
               </div>
