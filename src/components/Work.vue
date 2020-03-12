@@ -113,7 +113,7 @@ ul {
 
 <script lang="ts">
 export default {
-  name: "Header",
+  name: "Work",
   data: () => ({
     dialog: false,
     items: [
