@@ -4,7 +4,7 @@
       <Aboutme />
       <Work />
       <Section3 />
-      <!-- <Section4 /> -->
+      <Section4 />
     </v-row>
   </v-container>
 </template>
@@ -24,7 +24,8 @@ export default {
   components: {
     Aboutme,
     Work,
-    Section3
+    Section3,
+    Section4
   }
 };
 </script>
