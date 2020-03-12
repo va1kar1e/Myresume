@@ -19,29 +19,44 @@
                 <p class=".subtitle-2 text-capitalize font-weight-light">{{ item.role }}</p>
               </div>
               <div class="team mb-5">
-                <p :class="`text-capitalize font-weight-light text-left ${item.color}--text header-content`">Team</p>
                 <p
-                  :class="`body-1 font-weight-light text-left black--text content`"
-                >{{ item.team }}</p>
+                  :class="`text-capitalize font-weight-light text-left ${item.color}--text header-content`"
+                >
+                  Team
+                </p>
+                <p :class="`body-1 font-weight-light text-left black--text content`">{{ item.team }}</p>
               </div>
               <div class="archiev mb-5">
                 <p
                   :class="`text-capitalize font-weight-light text-left ${item.color}--text header-content`"
-                >Achievements/Tasks</p>
-                <ul>
-                  <li v-for="(task, i) in item.archiev" :key="i" :class="`content`">
-                    <p
-                      :class="`body-1 font-weight-light text-left black--text`"
-                    >{{ task.name }}</p>
-                    <!-- <v-chip
-                      class="mr-2"
-                      @click="lights"
-                    >
-                      <v-icon left>mdi-brightness-5</v-icon>
-                      {{ task.name }}
-                    </v-chip> -->
-                  </li>
-                </ul>
+                >
+                  Achievements/Tasks
+                </p>
+                <v-expansion-panels flat accordion hover>
+                  <v-expansion-panel v-for="(task, i) in item.archiev" :key="i">
+                    <div v-if="task.skill">
+                      <v-expansion-panel-header>
+                        {{ task.name }}
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        <v-row justify="left" align="left">
+                          <v-chip
+                            :ripple="false"
+                            v-for="(s, i) in task.skill"
+                            :key="i"
+                            class="ma-1"
+                            :color="s.color"
+                            small
+                            outlined
+                          >
+                            {{ s.name }}
+                          </v-chip>
+                        </v-row>
+                      </v-expansion-panel-content>
+                    </div>
+                    <div v-else>None</div>
+                  </v-expansion-panel>
+                </v-expansion-panels>
               </div>
             </div>
           </v-timeline-item>
@@ -75,9 +90,10 @@ ul {
 export default {
   name: "Header",
   data: () => ({
+    overlay: false,
     items: [
       {
-        color: "cyan",
+        color: "blue",
         year: "June 2019 - Present",
         icon: "fas fa-server",
         title: "REFINITIV",
@@ -85,10 +101,58 @@ export default {
         team: "Data Center Operation Network Change - Network Engineer",
         archiev: [
           {
-            name: "LAN Implementation"
+            name: "LAN Network Implementation",
+            skill: [
+              {
+                name: "ITIL",
+                color: "cyan darken-2"
+              },
+              {
+                name: "F5",
+                color: "green darken-1"
+              },
+              {
+                name: "Palo Alto",
+                color: "green darken-1"
+              },
+              {
+                name: "Checkpoint",
+                color: "green darken-1"
+              },
+              {
+                name: "NetScreen",
+                color: "green darken-1"
+              },
+              {
+                name: "Cisco",
+                color: "green darken-1"
+              },
+              {
+                name: "Python",
+                color: "light-blue darken-2"
+              },
+              {
+                name: "HP Network Automation",
+                color: "green darken-1"
+              }
+            ]
           },
           {
-            name: "TUMBOON : Money Donation Web Application"
+            name: "TUMBOON : Money Donation Web Application",
+            skill: [
+              {
+                name: "Backend Development",
+                color: "deep-purple darken-1"
+              },
+              {
+                name: "MEAN Stack",
+                color: "yellow darken-4"
+              },
+              {
+                name: "Omise",
+                color: "blue accent-3"
+              }
+            ]
           }
         ]
       },
@@ -101,16 +165,100 @@ export default {
         team: "Massive Information and Knowledge Engineering Laboratory",
         archiev: [
           {
-            name: "Social Network Analysis with Ego Network using Twiter Data"
+            name: "Social Network Analysis with Ego Network using Twitter Data",
+            skill: [
+              {
+                name: "Data Visualization",
+                color: "deep-purple darken-1"
+              },
+              {
+                name: "Text Analysis",
+                color: "green darken-1"
+              },
+              {
+                name: "Text Mining",
+                color: "green darken-1"
+              },
+              {
+                name: "MongoDB",
+                color: "lime darken-3"
+              },
+              {
+                name: "Express.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "D3.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "NodeJS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "Bootstrap",
+                color: "yellow darken-4"
+              },
+              {
+                name: "Google NLP",
+                color: "indigo darken-1"
+              },
+              {
+                name: "Writing Academic Paper",
+                color: "teal darken-3"
+              }
+            ]
           },
           {
-            name: "Real-Time Sentiment Change Detection of Twiter Data Stream"
+            name: "Real-Time Sentiment Change Detection of Twitter Data Stream",
+            skill: [
+              {
+                name: "Sentiment Analysis",
+                color: "green darken-1"
+              },
+              {
+                name: "Text Mining",
+                color: "green darken-1"
+              },
+              {
+                name: "Express.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "NodeJS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "Bootstrap",
+                color: "yellow darken-4"
+              }
+            ]
           },
           {
-            name: "Linux System Administrator (Ubuntu,CentOS)"
+            name: "Linux System Administrator",
+            skill: [
+              {
+                name: "Ubuntu",
+                color: "cyan darken-2"
+              },
+              {
+                name: "CentOS",
+                color: "deep-purple darken-4"
+              }
+            ]
           },
           {
-            name: "Teacher Assistant"
+            name: "Teacher Assistant",
+            skill: [
+              {
+                name: "Python",
+                color: "deep-purple darken-1"
+              },
+              {
+                name: "C#",
+                color: "green darken-1"
+              }
+            ]
           }
         ]
       },
@@ -123,13 +271,70 @@ export default {
         team: "Data Science",
         archiev: [
           {
-            name: "Social Dashboard Monitoring"
+            name: "Social Dashboard Monitoring",
+            skill: [
+              {
+                name: "Data Visualization",
+                color: "deep-purple darken-1"
+              },
+              {
+                name: "Social Influencer Analysis",
+                color: "green darken-1"
+              },
+              {
+                name: "MongoDB",
+                color: "lime darken-3"
+              },
+              {
+                name: "Express.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "D3.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "NodeJS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "Bootstrap",
+                color: "yellow darken-4"
+              }
+            ]
           },
           {
-            name: "Social Influencer Analysis with Social Graph"
-          },
-          {
-            name: "Social Trend Analysis with Wordcloud"
+            name: "Social Trend Analysis with Wordcloud",
+            skill: [
+              {
+                name: "Data Visualization",
+                color: "deep-purple darken-1"
+              },
+              {
+                name: "Trend Analysis",
+                color: "green darken-1"
+              },
+              {
+                name: "MongoDB",
+                color: "lime darken-3"
+              },
+              {
+                name: "Express.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "D3.JS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "NodeJS",
+                color: "yellow darken-4"
+              },
+              {
+                name: "Bootstrap",
+                color: "yellow darken-4"
+              }
+            ]
           }
         ]
       }
