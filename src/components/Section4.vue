@@ -9,7 +9,7 @@
 import Education from "@/components/Education.vue";
 import Internship from "@/components/Internship.vue";
 export default {
-  name: "Section3",
+  name: "Section4",
   components: {
     Education,
     Internship

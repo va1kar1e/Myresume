@@ -15,12 +15,12 @@
             </template>
             <div class="py-4">
               <div class="title">
-                <h2 :class="`headline font-weight-light mb-4 ${item.color}--text`">{{ item.title }}</h2>
-                <p class=".subtitle-2 text-capitalize font-weight-light">{{ item.role }}</p>
+                <h2 :class="`headline font-weight-light mb-4 text-uppercase ${item.color}--text`">{{ item.title }}</h2>
+                <p class="title font-weight-light">{{ item.role }}</p>
               </div>
               <div class="team mb-5">
                 <p
-                  :class="`text-capitalize font-weight-bold mb-4 text-left ${item.color}--text header-content`"
+                  :class="`font-weight-bold mb-4 text-left ${item.color}--text header-content`"
                 >
                   Team
                 </p>
@@ -28,7 +28,7 @@
               </div>
               <div class="archiev mb-5">
                 <p
-                  :class="`text-capitalize font-weight-bold text-left ${item.color}--text header-content`"
+                  :class="`font-weight-bold text-left ${item.color}--text header-content`"
                 >
                   Achievements/Tasks
                 </p>
@@ -183,9 +183,9 @@ export default {
         color: "green",
         year: "March 2016 - May 2019",
         icon: "fas fa-search",
-        title: "Computer Engineering, Kasetsart University",
+        title: "Kasetsart University",
         role: "Junior Research Student",
-        team: "Massive Information and Knowledge Engineering Laboratory",
+        team: "Massive Information and Knowledge Engineering Laboratory - Department of Computer Engineering",
         archiev: [
           {
             name: "Social Network Analysis with Ego Network using Twitter Data",
