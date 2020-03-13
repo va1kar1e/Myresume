@@ -1,6 +1,6 @@
 <template>
   <v-col class="mb-1" cols="12">
-    <h2 class="display-1 font-weight-bold mb-5">Work Experience</h2>
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Work Experience</h2>
     <v-row justify="center">
       <v-col class="mb-1" cols="12">
         <v-timeline :dense="$vuetify.breakpoint.mdAndDown">

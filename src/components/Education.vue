@@ -1,6 +1,6 @@
 <template>
   <v-col class="mb-1" cols="12" md="6" lg="6">
-    <h2 class="display-1 font-weight-bold mb-5">Education</h2>
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Education</h2>
   </v-col>
 </template>
 

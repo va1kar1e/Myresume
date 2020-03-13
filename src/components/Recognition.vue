@@ -1,6 +1,6 @@
 <template>
   <v-col class="mb-1" cols="12" md="6" lg="6">
-    <h2 class="display-1 font-weight-bold mb-5">Recognition</h2>
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Recognition</h2>
     <div v-for="(item, i) in items" :key="i" style="margin-bottom: 30px;">
       <h2 :class="`headline font-weight-light mb-4 ${item.color}--text`">{{ item.what }}</h2>
       <p class=".subtitle-2 text-capitalize font-weight-light">{{ item.where }}</p>
