@@ -20,7 +20,7 @@
               </div>
               <div class="team mb-5">
                 <p
-                  :class="`text-capitalize font-weight-light text-left ${item.color}--text header-content`"
+                  :class="`text-capitalize font-weight-bold mb-4 text-left ${item.color}--text header-content`"
                 >
                   Team
                 </p>
@@ -28,17 +28,17 @@
               </div>
               <div class="archiev mb-5">
                 <p
-                  :class="`text-capitalize font-weight-light text-left ${item.color}--text header-content`"
+                  :class="`text-capitalize font-weight-bold text-left ${item.color}--text header-content`"
                 >
                   Achievements/Tasks
                 </p>
                 <v-expansion-panels flat accordion hover>
                   <v-expansion-panel v-for="(task, i) in item.archiev" :key="i">
                     <v-expansion-panel-header>
-                      {{ task.name }}
+                      <p :class="`body-1 font-weight-light text-left black--text header-content`">{{ task.name }}</p>
                     </v-expansion-panel-header>
                     <v-expansion-panel-content>
-                      <v-row>
+                      <v-row justify="center">
                         <v-chip
                           :ripple="false"
                           v-for="(s, i) in task.skill"
@@ -95,19 +95,17 @@
 col {
   padding: 0px 40px 0px 40px;
 }
-p {
-  padding: 0px 0px 0px 0px;
-  margin-top: 5px;
-  margin-bottom: 0px !important;
-}
 ul {
   padding-left: 15px !important;
 }
 .header-content {
+  padding: 0px 0px 0px 0px !important;
+  margin-top: 5px;
+  margin-bottom: 0px !important;
   margin-left: 5px;
 }
 .content {
-  margin-left: 15px;
+  margin-left: 12px;
 }
 </style>
 
@@ -130,35 +128,35 @@ export default {
             skill: [
               {
                 name: "ITIL",
-                color: "cyan darken-2"
+                color: "blue"
               },
               {
                 name: "F5",
-                color: "green darken-1"
+                color: "blue"
               },
               {
                 name: "Palo Alto",
-                color: "green darken-1"
+                color: "blue"
               },
               {
                 name: "Checkpoint",
-                color: "green darken-1"
+                color: "blue"
               },
               {
                 name: "NetScreen",
-                color: "green darken-1"
+                color: "blue"
               },
               {
                 name: "Cisco",
-                color: "green darken-1"
+                color: "blue"
               },
               {
                 name: "Python",
-                color: "light-blue darken-2"
+                color: "blue"
               },
               {
                 name: "HP Network Automation",
-                color: "green darken-1"
+                color: "blue"
               }
             ]
           },
@@ -167,15 +165,15 @@ export default {
             skill: [
               {
                 name: "Backend Development",
-                color: "deep-purple darken-1"
+                color: "blue"
               },
               {
                 name: "MEAN Stack",
-                color: "yellow darken-4"
+                color: "blue"
               },
               {
                 name: "Omise",
-                color: "blue accent-3"
+                color: "blue"
               }
             ]
           }
@@ -194,43 +192,43 @@ export default {
             skill: [
               {
                 name: "Data Visualization",
-                color: "deep-purple darken-1"
+                color: "green"
               },
               {
                 name: "Text Analysis",
-                color: "green darken-1"
+                color: "green"
               },
               {
                 name: "Text Mining",
-                color: "green darken-1"
+                color: "green"
               },
               {
                 name: "MongoDB",
-                color: "lime darken-3"
+                color: "green"
               },
               {
                 name: "Express.JS",
-                color: "yellow darken-4"
+                color: "green"
               },
               {
                 name: "D3.JS",
-                color: "yellow darken-4"
+                color: "green"
               },
               {
                 name: "NodeJS",
-                color: "yellow darken-4"
+                color: "green"
               },
               {
                 name: "Bootstrap",
-                color: "yellow darken-4"
+                color: "green"
               },
               {
                 name: "Google NLP",
-                color: "indigo darken-1"
+                color: "green"
               },
               {
                 name: "Writing Academic Paper",
-                color: "teal darken-3"
+                color: "green"
               }
             ]
           },
@@ -239,23 +237,23 @@ export default {
             skill: [
               {
                 name: "Sentiment Analysis",
-                color: "green darken-1"
+                color: "green"
               },
               {
                 name: "Text Mining",
-                color: "green darken-1"
+                color: "green"
               },
               {
                 name: "Express.JS",
-                color: "yellow darken-4"
+                color: "green"
               },
               {
                 name: "NodeJS",
-                color: "yellow darken-4"
+                color: "green"
               },
               {
                 name: "Bootstrap",
-                color: "yellow darken-4"
+                color: "green"
               }
             ]
           },
@@ -264,11 +262,11 @@ export default {
             skill: [
               {
                 name: "Ubuntu",
-                color: "cyan darken-2"
+                color: "green"
               },
               {
                 name: "CentOS",
-                color: "deep-purple darken-4"
+                color: "green"
               }
             ]
           },
@@ -277,11 +275,11 @@ export default {
             skill: [
               {
                 name: "Python",
-                color: "deep-purple darken-1"
+                color: "green"
               },
               {
                 name: "C#",
-                color: "green darken-1"
+                color: "green"
               }
             ]
           }
@@ -300,31 +298,31 @@ export default {
             skill: [
               {
                 name: "Data Visualization",
-                color: "deep-purple darken-1"
+                color: "purple"
               },
               {
                 name: "Social Influencer Analysis",
-                color: "green darken-1"
+                color: "purple"
               },
               {
                 name: "MongoDB",
-                color: "lime darken-3"
+                color: "purple"
               },
               {
                 name: "Express.JS",
-                color: "yellow darken-4"
+                color: "purple"
               },
               {
                 name: "D3.JS",
-                color: "yellow darken-4"
+                color: "purple"
               },
               {
                 name: "NodeJS",
-                color: "yellow darken-4"
+                color: "purple"
               },
               {
                 name: "Bootstrap",
-                color: "yellow darken-4"
+                color: "purple"
               }
             ]
           },
@@ -333,31 +331,31 @@ export default {
             skill: [
               {
                 name: "Data Visualization",
-                color: "deep-purple darken-1"
+                color: "purple"
               },
               {
                 name: "Trend Analysis",
-                color: "green darken-1"
+                color: "purple"
               },
               {
                 name: "MongoDB",
-                color: "lime darken-3"
+                color: "purple"
               },
               {
                 name: "Express.JS",
-                color: "yellow darken-4"
+                color: "purple"
               },
               {
                 name: "D3.JS",
-                color: "yellow darken-4"
+                color: "purple"
               },
               {
                 name: "NodeJS",
-                color: "yellow darken-4"
+                color: "purple"
               },
               {
                 name: "Bootstrap",
-                color: "yellow darken-4"
+                color: "purple"
               }
             ]
           }
