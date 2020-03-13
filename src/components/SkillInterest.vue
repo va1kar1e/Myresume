@@ -7,7 +7,6 @@
       :key="i"
       class="ma-1"
       :color="item[0]"
-      small
       outlined
     >
       {{ item[1] }}
