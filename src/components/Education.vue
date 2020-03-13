@@ -7,7 +7,7 @@
         <p class="title font-weight-light">{{ item.deg }}</p>
         <p class="body-2 font-italic font-weight-light">{{ item.period }}</p>
       </div>
-      <div class="archiev mb-5">
+      <div class="archiev mb-5 header-content">
         <p
           :class="`text-capitalize font-weight-bold text-left ${item.color}--text`"
         >Thesis/Project</p>
