@@ -1,17 +1,17 @@
 <template>
   <v-row justify="center">
-    <Recognition />
+    <Extra />
     <SkillInterest />
   </v-row>
 </template>
 
 <script lang="ts">
-import Recognition from "@/components/Recognition.vue";
+import Extra from "@/components/Extra.vue";
 import SkillInterest from "@/components/SkillInterest.vue";
 export default {
   name: "Section3",
   components: {
-    Recognition,
+    Extra,
     SkillInterest,
   }
 };
