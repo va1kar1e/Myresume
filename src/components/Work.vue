@@ -55,7 +55,7 @@
                       <v-responsive min-height="1vh"></v-responsive>
                       <v-row>
                         <v-spacer></v-spacer>
-                        <v-dialog v-model="dialog" width="600px">
+                        <v-dialog v-model="dialog" v-if="task.images" width="600px">
                           <template v-slot:activator="{ on }">
                             <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
                           </template>
@@ -150,10 +150,7 @@ export default {
                 color: "blue"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-            ]
+            images: null
           },
           {
             name: "TUMBOON : Money Donation Web Application",
@@ -171,10 +168,7 @@ export default {
                 color: "blue"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-            ]
+            images: null
           }
         ]
       },
@@ -230,10 +224,7 @@ export default {
                 color: "green"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-            ]
+            images: null
           },
           {
             name: "Real-Time Sentiment Change Detection of Twitter Data Stream",
@@ -259,10 +250,7 @@ export default {
                 color: "green"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-            ]
+            images: null
           },
           {
             name: "Linux System Administrator",
@@ -276,10 +264,7 @@ export default {
                 color: "green"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-            ]
+            images: null
           },
           {
             name: "Teacher Assistant",
@@ -293,10 +278,7 @@ export default {
                 color: "green"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-            ]
+            images: null
           }
         ]
       },
@@ -340,10 +322,7 @@ export default {
                 color: "purple"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-            ]
+            images: null
           },
           {
             name: "Social Trend Analysis with Wordcloud",
@@ -377,10 +356,7 @@ export default {
                 color: "purple"
               }
             ],
-            images: [
-              'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-              'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-            ]
+            images: null
           }
         ]
       }

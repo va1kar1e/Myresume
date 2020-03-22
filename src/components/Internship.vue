@@ -87,7 +87,6 @@ export default {
         tag: ["Face Detection", "Face Recognition", "Raspberry Pi"],
         images: [
           'intern/page-0001.jpg',
-          'intern/page-0002.jpg',
           'intern/page-0003.jpg',
           'intern/page-0004.jpg',
           'intern/page-0005.jpg',
@@ -101,10 +100,6 @@ export default {
           'intern/page-0013.jpg',
           'intern/page-0014.jpg',
           'intern/page-0015.jpg',
-          'intern/page-0016.jpg',
-          'intern/page-0017.jpg',
-          'intern/page-0018.jpg',
-          'intern/page-0019.jpg',
         ]
       }
     }
