@@ -51,7 +51,8 @@
                           {{ s.name }}
                         </v-chip>
                       </v-row>
-                      <!-- <v-row style="float: right">
+                      <v-row>
+                        <v-spacer></v-spacer>
                         <v-dialog v-model="dialog" width="600px">
                           <template v-slot:activator="{ on }">
                             <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
@@ -78,7 +79,7 @@
                             </v-card-actions>
                           </v-card>
                         </v-dialog>
-                      </v-row> -->
+                      </v-row>
                     </v-expansion-panel-content>
                   </v-expansion-panel>
                 </v-expansion-panels>
