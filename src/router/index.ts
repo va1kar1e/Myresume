@@ -53,6 +53,20 @@ const routes = [
     beforeEnter() {
       location.href = "https://fb.me/booktay";
     }
+  },
+  {
+    path: "/srclus",
+    name: "Srclus",
+    beforeEnter() {
+      location.href = "https://www.youtube.com/watch?v=eMprd8Fwt80";
+    }
+  },
+  {
+    path: "/explerercar",
+    name: "Explerer Car",
+    beforeEnter() {
+      location.href = "https://www.youtube.com/watch?v=Lg-nDld06WY";
+    }
   }
 ];
 

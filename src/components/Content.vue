@@ -3,8 +3,10 @@
     <v-row class="text-center">
       <Aboutme />
       <Work />
-      <Section3 />
-      <!-- <Section4 /> -->
+      <Section4 />
+      <Section5 />
+      <Recognition />
+      <!-- <Projects /> -->
     </v-row>
   </v-container>
 </template>
@@ -12,8 +14,10 @@
 <script>
 import Aboutme from "@/components/Aboutme.vue";
 import Work from "@/components/Work.vue";
-import Section3 from "@/components/Section3.vue";
 import Section4 from "@/components/Section4.vue";
+import Section5 from "@/components/Section5.vue";
+import Recognition from "@/components/Recognition.vue";
+// import Projects from "@/components/Projects.vue";
 
 export default {
   data() {
@@ -24,7 +28,10 @@ export default {
   components: {
     Aboutme,
     Work,
-    Section3
+    Section4,
+    Section5,
+    Recognition,
+    // Projects
   }
 };
 </script>

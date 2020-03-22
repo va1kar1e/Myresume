@@ -1,6 +1,6 @@
 <template>
   <v-col class="mb-1" cols="12">
-    <h2 class="display-1 font-weight-bold mb-1">
+    <h2 class="display-1 font-weight-bold mb-1 text-uppercase">
       About Me
     </h2>
     <v-row justify="center">
@@ -15,7 +15,7 @@
 
 <style>
 p {
-  padding: 0px 5px 0px 20px;
+  padding: 0px 10px 0px 20px !important;
 }
 </style>
 
@@ -24,7 +24,7 @@ export default {
   name: "Header",
   data: () => ({
     contentText:
-      "Hi, My nickname is Books. I am a dedicated, hardworking, and proactive Computer Engineer. I am interested in Networking, Cybersecurity, Data Analytics and Web Developement. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
+      "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Computer Engineer. I am interested in Networking, Cybersecurity, Data Analytics and Web Developement. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
   })
 };
 </script>
