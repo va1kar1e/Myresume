@@ -55,15 +55,18 @@
                       <v-responsive min-height="1vh"></v-responsive>
                       <v-row>
                         <v-spacer></v-spacer>
-                        <v-dialog v-model="dialog" v-if="task.images" width="600px">
+                        <v-dialog v-if="task.images" v-model="dialog" width="800px">
                           <template v-slot:activator="{ on }">
                             <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
                           </template>
-                          <v-carousel>
+                          <v-carousel
+                            hide-delimiters
+                            height="auto"
+                          >
                             <v-carousel-item
                               v-for="(image,i) in task.images"
                               :key="i"
-                              :src="image"
+                              :src="require('@/assets/images/' + image)"
                               reverse-transition="fade-transition"
                               transition="fade-transition"
                             ></v-carousel-item>
@@ -224,7 +227,10 @@ export default {
                 color: "green"
               }
             ],
-            images: null
+            images: [
+              'egonet/page-0001.jpg',
+              'egonet/page-0002.jpg'
+            ]
           },
           {
             name: "Real-Time Sentiment Change Detection of Twitter Data Stream",
@@ -322,7 +328,11 @@ export default {
                 color: "purple"
               }
             ],
-            images: null
+            images: [
+              'pantip/page-0001.png',
+              'pantip/page-0002.png',
+              'pantip/page-0003.png',
+            ]
           },
           {
             name: "Social Trend Analysis with Wordcloud",
@@ -356,7 +366,11 @@ export default {
                 color: "purple"
               }
             ],
-            images: null
+            images: [
+              'pantip/page-0004.png',
+              'pantip/page-0005.png',
+              'pantip/page-0006.png',
+            ]
           }
         ]
       }
