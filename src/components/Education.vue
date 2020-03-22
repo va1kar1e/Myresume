@@ -44,7 +44,7 @@
                     <v-carousel-item
                       v-for="(image,i) in task.images"
                       :key="i"
-                      :src="require(image)"
+                      :src="require('@/assets/images/' + image)"
                       reverse-transition="fade-transition"
                       transition="fade-transition"
                     ></v-carousel-item>
@@ -86,24 +86,38 @@ export default {
           name: "Search Result Clustering on Thai Internet Forum using Word2Vec Model",
           tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "Gensim", "React", "NodeJS"],
           images: [
-            '@/assets/images/intern/intern_page-0001.jpg',
-            '@/assets/images/intern/intern_page-0002.jpg',
+            'srclus/page-0000.jpg',
+            'srclus/page-0001.jpg',
+            'srclus/page-0002.jpg',
+            'srclus/page-0003.jpg',
+            'srclus/page-0004.jpg',
+            'srclus/page-0005.jpg',
+            'srclus/page-0006.jpg',
+            'srclus/page-0007.jpg',
+            'srclus/page-0008.jpg',
+            'srclus/page-0009.jpg',
+            'srclus/page-0010.jpg',
+            'srclus/page-0011.jpg',
+            'srclus/page-0012.jpg',
+            'srclus/page-0013.jpg',
+            'srclus/page-0014.jpg',
+            'srclus/page-0015.jpg',
           ]
         },
         {
           name: "Trusted Webdomain Analysis based on SSL/TLS Certificate",
           tag: ["TestSSL.sh", "SemanticUI", "Next.JS", "NodeJS"],
           images: [
-            '@/assets/images/intern/intern_page-0001.jpg',
-            '@/assets/images/intern/intern_page-0002.jpg',
+            'intern/page-0001.jpg',
+            'intern/page-0002.jpg',
           ]
         },
         {
           name: "Explore a danger area with a Robot using NodeMCU and P2P Camera",
           tag: ["Arduino", "ESP8266", "Express.JS", "NodeJS", "Bootstrap"],
           images: [
-            '@/assets/images/intern/intern_page-0001.jpg',
-            '@/assets/images/intern/intern_page-0002.jpg',
+            'intern/page-0001.jpg',
+            'intern/page-0002.jpg',
           ]
         }
       ]

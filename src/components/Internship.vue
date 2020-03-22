@@ -50,7 +50,7 @@
                     <v-carousel-item
                       v-for="(image,i) in item.task.images"
                       :key="i"
-                      :src="require(image)"
+                      :src="require('@/assets/images/' + image)"
                       reverse-transition="fade-transition"
                       transition="fade-transition"
                     ></v-carousel-item>
@@ -86,25 +86,25 @@ export default {
         name: "Making a Fault-Prones Notification for Developer Team on Raspberypi",
         tag: ["Face Detection", "Face Recognition", "Raspberry Pi"],
         images: [
-          '@/assets/images/intern/intern_page-0001.jpg',
-          '@/assets/images/intern/intern_page-0002.jpg',
-          '@/assets/images/intern/intern_page-0003.jpg',
-          '@/assets/images/intern/intern_page-0004.jpg',
-          '@/assets/images/intern/intern_page-0005.jpg',
-          '@/assets/images/intern/intern_page-0006.jpg',
-          '@/assets/images/intern/intern_page-0007.jpg',
-          '@/assets/images/intern/intern_page-0008.jpg',
-          '@/assets/images/intern/intern_page-0009.jpg',
-          '@/assets/images/intern/intern_page-0010.jpg',
-          '@/assets/images/intern/intern_page-0011.jpg',
-          '@/assets/images/intern/intern_page-0012.jpg',
-          '@/assets/images/intern/intern_page-0013.jpg',
-          '@/assets/images/intern/intern_page-0014.jpg',
-          '@/assets/images/intern/intern_page-0015.jpg',
-          '@/assets/images/intern/intern_page-0016.jpg',
-          '@/assets/images/intern/intern_page-0017.jpg',
-          '@/assets/images/intern/intern_page-0018.jpg',
-          '@/assets/images/intern/intern_page-0019.jpg',
+          'intern/page-0001.jpg',
+          'intern/page-0002.jpg',
+          'intern/page-0003.jpg',
+          'intern/page-0004.jpg',
+          'intern/page-0005.jpg',
+          'intern/page-0006.jpg',
+          'intern/page-0007.jpg',
+          'intern/page-0008.jpg',
+          'intern/page-0009.jpg',
+          'intern/page-0010.jpg',
+          'intern/page-0011.jpg',
+          'intern/page-0012.jpg',
+          'intern/page-0013.jpg',
+          'intern/page-0014.jpg',
+          'intern/page-0015.jpg',
+          'intern/page-0016.jpg',
+          'intern/page-0017.jpg',
+          'intern/page-0018.jpg',
+          'intern/page-0019.jpg',
         ]
       }
     }
