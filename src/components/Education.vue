@@ -33,7 +33,8 @@
               <v-responsive min-height="1vh"></v-responsive>
               <v-row>
                 <v-spacer></v-spacer>
-                <v-dialog v-model="dialog" width="800px">
+                <v-btn color="primary" v-if="task.video" text small :to="task.video" target="_blank">Video</v-btn>
+                <v-dialog v-if="task.images" v-model="dialog" width="800px">
                   <template v-slot:activator="{ on }">
                     <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
                   </template>
@@ -85,8 +86,8 @@ export default {
         {
           name: "Search Result Clustering on Thai Internet Forum using Word2Vec Model",
           tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "Gensim", "React", "NodeJS"],
+          video: "srclus",
           images: [
-            'srclus/page-0000.jpg',
             'srclus/page-0001.jpg',
             'srclus/page-0002.jpg',
             'srclus/page-0003.jpg',
@@ -107,17 +108,32 @@ export default {
         {
           name: "Trusted Webdomain Analysis based on SSL/TLS Certificate",
           tag: ["TestSSL.sh", "SemanticUI", "Next.JS", "NodeJS"],
+          video: null,
           images: [
-            'intern/page-0001.jpg',
-            'intern/page-0002.jpg',
+            'webtrust/page-0001.jpg',
+            'webtrust/page-0002.jpg',
+            'webtrust/page-0003.jpg',
+            'webtrust/page-0004.jpg',
+            'webtrust/page-0005.jpg',
+            'webtrust/page-0006.jpg',
+            'webtrust/page-0007.jpg',
+            'webtrust/page-0008.jpg',
+            'webtrust/page-0009.jpg',
+            'webtrust/page-0010.jpg',
+            'webtrust/page-0011.jpg',
+            'webtrust/page-0012.jpg',
+            'webtrust/page-0013.jpg',
+            'webtrust/page-0014.jpg',
+            'webtrust/page-0015.jpg',
+            'webtrust/page-0016.jpg'
           ]
         },
         {
           name: "Explore a danger area with a Robot using NodeMCU and P2P Camera",
           tag: ["Arduino", "ESP8266", "Express.JS", "NodeJS", "Bootstrap"],
+          video: "explerercar",
           images: [
-            'intern/page-0001.jpg',
-            'intern/page-0002.jpg',
+            'explorercar/page-0001.jpg'
           ]
         }
       ]
