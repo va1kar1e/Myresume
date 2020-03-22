@@ -8,7 +8,7 @@
         class="title"
       >
         <h2 :class="`headline font-weight-light mb-4 text-uppercase ${item.color}--text`">{{ c.name }}</h2>
-        <p class="title font-weight-light">{{ c.vender }}</p>
+        <p class="font-weight-light">{{ c.vender }}</p>
       </div>
     </div>
   </v-col>

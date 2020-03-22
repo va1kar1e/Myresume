@@ -1,6 +1,6 @@
 <template>
   <v-col class="mb-1" cols="12" md="6" lg="6">
-    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Skill/Interest</h2>
+    <h2 class="display-1 font-weight-bold mb-9 text-uppercase">Interested</h2>
     <v-chip
       :ripple="false"
       v-for="(item, i) in items"
