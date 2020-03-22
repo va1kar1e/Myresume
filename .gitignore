@@ -30,4 +30,4 @@ storage.rules
 /.firebaserc
 /firebase-debug.log
 
-src/assets/images/intern/
+src/assets/images/
