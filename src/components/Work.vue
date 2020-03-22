@@ -156,7 +156,7 @@ export default {
             images: null
           },
           {
-            name: "TUMBOON : Money Donation Web Application",
+            name: "TUMBUN : Money Donation Web Application",
             skill: [
               {
                 name: "Backend Development",
@@ -171,7 +171,9 @@ export default {
                 color: "blue"
               }
             ],
-            images: null
+            images: [
+              'tumbun/page-0001.png'
+            ]
           }
         ]
       },
