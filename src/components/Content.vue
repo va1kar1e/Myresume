@@ -6,7 +6,7 @@
       <Section4 />
       <Section5 />
       <Recognition />
-      <Projects />
+      <!-- <Projects /> -->
     </v-row>
   </v-container>
 </template>
@@ -17,7 +17,7 @@ import Work from "@/components/Work.vue";
 import Section4 from "@/components/Section4.vue";
 import Section5 from "@/components/Section5.vue";
 import Recognition from "@/components/Recognition.vue";
-import Projects from "@/components/Projects.vue";
+// import Projects from "@/components/Projects.vue";
 
 export default {
   data() {
@@ -31,8 +31,7 @@ export default {
     Section4,
     Section5,
     Recognition,
-    Projects
-  },
-  isActive: false,
+    // Projects
+  }
 };
 </script>
