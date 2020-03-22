@@ -36,6 +36,23 @@
                   outlined
                 >{{ s }}</v-chip>
               </v-row>
+              <v-row>
+                <v-spacer></v-spacer>
+                <v-dialog v-model="dialog" width="600px">
+                  <template v-slot:activator="{ on }">
+                    <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
+                  </template>
+                  <v-carousel>
+                    <v-carousel-item
+                      v-for="(image,i) in item.task.images"
+                      :key="i"
+                      :src="image"
+                      reverse-transition="fade-transition"
+                      transition="fade-transition"
+                    ></v-carousel-item>
+                  </v-carousel>
+                </v-dialog>
+              </v-row>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -62,7 +79,11 @@ export default {
       lab: "Software Engineering Laboratory",
       task: {
         name: "Making a Fault-Prones Notification for Developer Team on Raspberypi",
-        tag: ["Face Detection", "Face Recognition", "Raspberry Pi"]
+        tag: ["Face Detection", "Face Recognition", "Raspberry Pi"],
+        images: [
+          'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+        ]
       }
     }
   })

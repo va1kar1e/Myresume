@@ -30,6 +30,23 @@
                   outlined
                 >{{ s }}</v-chip>
               </v-row>
+              <v-row>
+                <v-spacer></v-spacer>
+                <v-dialog v-model="dialog" width="600px">
+                  <template v-slot:activator="{ on }">
+                    <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
+                  </template>
+                  <v-carousel>
+                    <v-carousel-item
+                      v-for="(image,i) in task.images"
+                      :key="i"
+                      :src="image"
+                      reverse-transition="fade-transition"
+                      transition="fade-transition"
+                    ></v-carousel-item>
+                  </v-carousel>
+                </v-dialog>
+              </v-row>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -62,15 +79,27 @@ export default {
       project: [
         {
           name: "Search Result Clustering on Thai Internet Forum using Word2Vec Model",
-          tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "Gensim", "React", "NodeJS"]
+          tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "Gensim", "React", "NodeJS"],
+          images: [
+            'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          ]
         },
         {
           name: "Trusted Webdomain Analysis based on SSL/TLS Certificate",
-          tag: ["TestSSL.sh", "SemanticUI", "Next.JS", "NodeJS"]
+          tag: ["TestSSL.sh", "SemanticUI", "Next.JS", "NodeJS"],
+          images: [
+            'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          ]
         },
         {
           name: "Explore a danger area with a Robot using NodeMCU and P2P Camera",
-          tag: ["Arduino", "ESP8266", "Express.JS", "NodeJS", "Bootstrap"]
+          tag: ["Arduino", "ESP8266", "Express.JS", "NodeJS", "Bootstrap"],
+          images: [
+            'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          ]
         }
       ]
     }
