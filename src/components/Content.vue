@@ -32,6 +32,7 @@ export default {
     Section5,
     Recognition,
     Projects
-  }
+  },
+  isActive: false,
 };
 </script>
