@@ -9,11 +9,12 @@
             :key="i"
             :color="item.color"
             :icon="item.icon"
+            style="padding-bottom: 0px"
           >
             <template v-slot:opposite>
               <span :class="`headline font-weight-regular ${item.color}--text`" v-text="item.year"></span>
             </template>
-            <div class="py-4">
+            <div class="py-4" style="padding-bottom: 0px !important;">
               <div class="title">
                 <h2 :class="`headline font-weight-light mb-4 text-uppercase ${item.color}--text`">{{ item.title }}</h2>
                 <p class="title font-weight-light">{{ item.role }}</p>
@@ -51,6 +52,7 @@
                           {{ s.name }}
                         </v-chip>
                       </v-row>
+                      <v-responsive min-height="1vh"></v-responsive>
                       <v-row>
                         <v-spacer></v-spacer>
                         <v-dialog v-model="dialog" width="600px">

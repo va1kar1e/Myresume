@@ -36,17 +36,21 @@
                   outlined
                 >{{ s }}</v-chip>
               </v-row>
+              <v-responsive min-height="1vh"></v-responsive>
               <v-row>
                 <v-spacer></v-spacer>
-                <v-dialog v-model="dialog" width="600px">
+                <v-dialog v-model="dialog" width="800px">
                   <template v-slot:activator="{ on }">
                     <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
                   </template>
-                  <v-carousel>
+                  <v-carousel
+                    hide-delimiters
+                    height="auto"
+                  >
                     <v-carousel-item
                       v-for="(image,i) in item.task.images"
                       :key="i"
-                      :src="image"
+                      :src="require('@/assets/images/intern/' + image)"
                       reverse-transition="fade-transition"
                       transition="fade-transition"
                     ></v-carousel-item>
@@ -71,6 +75,7 @@
 export default {
   name: "Internship",
   data: () => ({
+    dialog: false,
     item: {
       color: "red",
       period: "June - August 2018",
@@ -81,8 +86,25 @@ export default {
         name: "Making a Fault-Prones Notification for Developer Team on Raspberypi",
         tag: ["Face Detection", "Face Recognition", "Raspberry Pi"],
         images: [
-          'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-          'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          'intern_page-0001.jpg',
+          'intern_page-0002.jpg',
+          'intern_page-0003.jpg',
+          'intern_page-0004.jpg',
+          'intern_page-0005.jpg',
+          'intern_page-0006.jpg',
+          'intern_page-0007.jpg',
+          'intern_page-0008.jpg',
+          'intern_page-0009.jpg',
+          'intern_page-0010.jpg',
+          'intern_page-0011.jpg',
+          'intern_page-0012.jpg',
+          'intern_page-0013.jpg',
+          'intern_page-0014.jpg',
+          'intern_page-0015.jpg',
+          'intern_page-0016.jpg',
+          'intern_page-0017.jpg',
+          'intern_page-0018.jpg',
+          'intern_page-0019.jpg',
         ]
       }
     }

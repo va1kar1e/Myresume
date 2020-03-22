@@ -29,3 +29,5 @@ firestore.rules
 storage.rules
 /.firebaserc
 /firebase-debug.log
+
+src/assets/images/intern/
