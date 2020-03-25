@@ -4,8 +4,8 @@
       <Aboutme />
       <Work />
       <Section4 />
-      <Section5 />
       <Recognition />
+      <Section5 />
       <!-- <Projects /> -->
     </v-row>
   </v-container>
@@ -15,8 +15,8 @@
 import Aboutme from "@/components/Aboutme.vue";
 import Work from "@/components/Work.vue";
 import Section4 from "@/components/Section4.vue";
-import Section5 from "@/components/Section5.vue";
 import Recognition from "@/components/Recognition.vue";
+import Section5 from "@/components/Section5.vue";
 // import Projects from "@/components/Projects.vue";
 
 export default {
@@ -29,8 +29,8 @@ export default {
     Aboutme,
     Work,
     Section4,
-    Section5,
     Recognition,
+    Section5,
     // Projects
   }
 };

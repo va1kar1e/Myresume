@@ -16,7 +16,7 @@
             </template>
             <div class="py-4" style="padding-bottom: 0px !important;">
               <div class="title">
-                <h2 :class="`headline font-weight-light mb-4 text-uppercase ${item.color}--text`">{{ item.title }}</h2>
+                <h2 :class="`headline font-weight-bold mb-4 text-uppercase ${item.color}--text`">{{ item.title }}</h2>
                 <p class="title font-weight-light">{{ item.role }}</p>
               </div>
               <div class="team mb-5">
@@ -115,10 +115,10 @@ export default {
         icon: "fas fa-server",
         title: "REFINITIV",
         role: "Technology Graduate Trainee",
-        team: "Data Center Operation Network Change - Network Engineer",
+        team: "Datacenter Operation Network Change Team - TechOps",
         archiev: [
           {
-            name: "LAN Network Implementation",
+            name: "LAN Implementation - Network Engineer",
             skill: [
               {
                 name: "ITIL",
@@ -156,14 +156,22 @@ export default {
             images: null
           },
           {
-            name: "TUMBUN : Money Donation Web Application",
+            name: "TUMBUN : Donation Platform - Backend Developer - Corporate Social Responsibility Project",
             skill: [
               {
-                name: "Backend Development",
+                name: "AngularJS",
                 color: "blue"
               },
               {
-                name: "MEAN Stack",
+                name: "MongoDB",
+                color: "blue"
+              },
+              {
+                name: "ExpressJS",
+                color: "blue"
+              },
+              {
+                name: "NodeJS",
                 color: "blue"
               },
               {
@@ -205,11 +213,11 @@ export default {
                 color: "green"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "green"
               },
               {
-                name: "D3.JS",
+                name: "D3JS",
                 color: "green"
               },
               {
@@ -246,7 +254,7 @@ export default {
                 color: "green"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "green"
               },
               {
@@ -306,7 +314,7 @@ export default {
                 color: "purple"
               },
               {
-                name: "Social Influencer Analysis",
+                name: "Trend Analysis",
                 color: "purple"
               },
               {
@@ -314,11 +322,11 @@ export default {
                 color: "purple"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "purple"
               },
               {
-                name: "D3.JS",
+                name: "D3JS",
                 color: "purple"
               },
               {
@@ -344,7 +352,7 @@ export default {
                 color: "purple"
               },
               {
-                name: "Trend Analysis",
+                name: "Social Influencer Analysis",
                 color: "purple"
               },
               {
@@ -352,11 +360,11 @@ export default {
                 color: "purple"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "purple"
               },
               {
-                name: "D3.JS",
+                name: "D3JS",
                 color: "purple"
               },
               {
