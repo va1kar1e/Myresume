@@ -16,7 +16,7 @@
             </template>
             <div class="py-4" style="padding-bottom: 0px !important;">
               <div class="title">
-                <h2 :class="`headline font-weight-light mb-4 text-uppercase ${item.color}--text`">{{ item.title }}</h2>
+                <h2 :class="`headline font-weight-bold mb-4 text-uppercase ${item.color}--text`">{{ item.title }}</h2>
                 <p class="title font-weight-light">{{ item.role }}</p>
               </div>
               <div class="team mb-5">
@@ -55,15 +55,18 @@
                       <v-responsive min-height="1vh"></v-responsive>
                       <v-row>
                         <v-spacer></v-spacer>
-                        <v-dialog v-model="dialog" v-if="task.images" width="600px">
+                        <v-dialog v-if="task.images" v-model="dialog" width="800px">
                           <template v-slot:activator="{ on }">
                             <v-btn color="primary" dark v-on="on" text small>See More</v-btn>
                           </template>
-                          <v-carousel>
+                          <v-carousel
+                            hide-delimiters
+                            height="auto"
+                          >
                             <v-carousel-item
                               v-for="(image,i) in task.images"
                               :key="i"
-                              :src="image"
+                              :src="require('@/assets/images/' + image)"
                               reverse-transition="fade-transition"
                               transition="fade-transition"
                             ></v-carousel-item>
@@ -112,10 +115,10 @@ export default {
         icon: "fas fa-server",
         title: "REFINITIV",
         role: "Technology Graduate Trainee",
-        team: "Data Center Operation Network Change - Network Engineer",
+        team: "Datacenter Operation Network Change Team - TechOps",
         archiev: [
           {
-            name: "LAN Network Implementation",
+            name: "LAN Implementation - Network Engineer",
             skill: [
               {
                 name: "ITIL",
@@ -153,14 +156,22 @@ export default {
             images: null
           },
           {
-            name: "TUMBOON : Money Donation Web Application",
+            name: "TUMBUN : Donation Platform - Backend Developer - Corporate Social Responsibility Project",
             skill: [
               {
-                name: "Backend Development",
+                name: "AngularJS",
                 color: "blue"
               },
               {
-                name: "MEAN Stack",
+                name: "MongoDB",
+                color: "blue"
+              },
+              {
+                name: "ExpressJS",
+                color: "blue"
+              },
+              {
+                name: "NodeJS",
                 color: "blue"
               },
               {
@@ -168,7 +179,9 @@ export default {
                 color: "blue"
               }
             ],
-            images: null
+            images: [
+              'tumbun/page-0001.png'
+            ]
           }
         ]
       },
@@ -200,11 +213,11 @@ export default {
                 color: "green"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "green"
               },
               {
-                name: "D3.JS",
+                name: "D3JS",
                 color: "green"
               },
               {
@@ -224,7 +237,10 @@ export default {
                 color: "green"
               }
             ],
-            images: null
+            images: [
+              'egonet/page-0001.jpg',
+              'egonet/page-0002.jpg'
+            ]
           },
           {
             name: "Real-Time Sentiment Change Detection of Twitter Data Stream",
@@ -238,7 +254,7 @@ export default {
                 color: "green"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "green"
               },
               {
@@ -298,7 +314,7 @@ export default {
                 color: "purple"
               },
               {
-                name: "Social Influencer Analysis",
+                name: "Trend Analysis",
                 color: "purple"
               },
               {
@@ -306,11 +322,11 @@ export default {
                 color: "purple"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "purple"
               },
               {
-                name: "D3.JS",
+                name: "D3JS",
                 color: "purple"
               },
               {
@@ -322,7 +338,11 @@ export default {
                 color: "purple"
               }
             ],
-            images: null
+            images: [
+              'pantip/page-0001.png',
+              'pantip/page-0002.png',
+              'pantip/page-0003.png',
+            ]
           },
           {
             name: "Social Trend Analysis with Wordcloud",
@@ -332,7 +352,7 @@ export default {
                 color: "purple"
               },
               {
-                name: "Trend Analysis",
+                name: "Social Influencer Analysis",
                 color: "purple"
               },
               {
@@ -340,11 +360,11 @@ export default {
                 color: "purple"
               },
               {
-                name: "Express.JS",
+                name: "ExpressJS",
                 color: "purple"
               },
               {
-                name: "D3.JS",
+                name: "D3JS",
                 color: "purple"
               },
               {
@@ -356,7 +376,11 @@ export default {
                 color: "purple"
               }
             ],
-            images: null
+            images: [
+              'pantip/page-0004.png',
+              'pantip/page-0005.png',
+              'pantip/page-0006.png',
+            ]
           }
         ]
       }

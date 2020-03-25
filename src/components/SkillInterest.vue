@@ -22,26 +22,21 @@ export default {
     items: [
       ["primary","Networking"],
       ["primary","Cybersecurity"],
-      ["primary","Text Analysis"],
-      ["primary","Data Analytic"],
       ["primary","Data Visualization"],
-      ["primary","Vue"],
-      ["primary","React"],
-      ["primary","MongoDB"],
+      ["primary","Data Analytic"],
+      ["primary","VueJS"],
+      ["primary","ReactJS"],
       ["primary","NodeJS"],
+      ["primary","MongoDB"],
       ["primary","Python"],
-      ["primary","C#"],
       ["primary","Ruby"],
       ["primary","Go"],
       ["primary","Javascript"],
-      ["primary","MERN Stack"],
       ["primary","Internet Of Thing"],
       ["primary","Writing Academic Paper"],
       ["primary","Research"],
       ["primary","Photographic"],
-      ["primary","Photo and Video Editing"],
-      ["primary","English"],
-      ["primary","Thai(Native)"]
+      ["primary","Photo and Video Editing"]
     ]
   })
 };

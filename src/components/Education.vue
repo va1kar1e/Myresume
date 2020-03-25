@@ -85,7 +85,7 @@ export default {
       project: [
         {
           name: "Search Result Clustering on Thai Internet Forum using Word2Vec Model",
-          tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "Gensim", "React", "NodeJS"],
+          tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "GenSim", "ReactJS", "NodeJS"],
           video: "srclus",
           images: [
             'srclus/page-0001.jpg',
@@ -107,7 +107,7 @@ export default {
         },
         {
           name: "Trusted Webdomain Analysis based on SSL/TLS Certificate",
-          tag: ["TestSSL.sh", "SemanticUI", "Next.JS", "NodeJS"],
+          tag: ["Testssl.sh", "SemanticUI", "NextJS", "NodeJS"],
           video: null,
           images: [
             'webtrust/page-0001.jpg',
@@ -130,7 +130,7 @@ export default {
         },
         {
           name: "Explore a danger area with a Robot using NodeMCU and P2P Camera",
-          tag: ["Arduino", "ESP8266", "Express.JS", "NodeJS", "Bootstrap"],
+          tag: ["Arduino", "ESP8266", "ExpressJS", "NodeJS", "Bootstrap"],
           video: "explerercar",
           images: [
             'explorercar/page-0001.jpg'
