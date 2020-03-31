@@ -180,7 +180,19 @@ export default {
               }
             ],
             images: [
-              'tumbun/page-0001.png'
+              'tumbun/tumbun-page-0001.jpg',
+              'tumbun/tumbun-page-0002.jpg',
+              'tumbun/tumbun-page-0003.jpg',
+              'tumbun/tumbun-page-0004.jpg',
+              'tumbun/tumbun-page-0005.jpg',
+              'tumbun/tumbun-page-0006.jpg',
+              'tumbun/tumbun-page-0007.jpg',
+              'tumbun/tumbun-page-0008.jpg',
+              'tumbun/tumbun-page-0009.jpg',
+              'tumbun/tumbun-page-0010.jpg',
+              'tumbun/tumbun-page-0011.jpg',
+              'tumbun/tumbun-page-0012.jpg',
+              'tumbun/tumbun-page-0013.jpg',
             ]
           }
         ]
@@ -238,8 +250,8 @@ export default {
               }
             ],
             images: [
-              'egonet/page-0001.jpg',
-              'egonet/page-0002.jpg'
+              'egonet/egonet-page-0001.jpg',
+              'egonet/egonet-page-0002.jpg'
             ]
           },
           {
@@ -339,9 +351,9 @@ export default {
               }
             ],
             images: [
-              'pantip/page-0001.png',
-              'pantip/page-0002.png',
-              'pantip/page-0003.png',
+              'pantip/pantip-page-0001.png',
+              'pantip/pantip-page-0002.png',
+              'pantip/pantip-page-0003.png',
             ]
           },
           {
@@ -377,9 +389,9 @@ export default {
               }
             ],
             images: [
-              'pantip/page-0004.png',
-              'pantip/page-0005.png',
-              'pantip/page-0006.png',
+              'pantip/pantip-page-0004.png',
+              'pantip/pantip-page-0005.png',
+              'pantip/pantip-page-0006.png',
             ]
           }
         ]
