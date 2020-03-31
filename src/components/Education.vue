@@ -88,21 +88,21 @@ export default {
           tag: ["Word Embedding", "TF-IDF", "Word2Vec Model", "Python", "Flask", "GenSim", "ReactJS", "NodeJS"],
           video: "srclus",
           images: [
-            'srclus/page-0001.jpg',
-            'srclus/page-0002.jpg',
-            'srclus/page-0003.jpg',
-            'srclus/page-0004.jpg',
-            'srclus/page-0005.jpg',
-            'srclus/page-0006.jpg',
-            'srclus/page-0007.jpg',
-            'srclus/page-0008.jpg',
-            'srclus/page-0009.jpg',
-            'srclus/page-0010.jpg',
-            'srclus/page-0011.jpg',
-            'srclus/page-0012.jpg',
-            'srclus/page-0013.jpg',
-            'srclus/page-0014.jpg',
-            'srclus/page-0015.jpg',
+            'srclus/srclus-page-0001.jpg',
+            'srclus/srclus-page-0002.jpg',
+            'srclus/srclus-page-0003.jpg',
+            'srclus/srclus-page-0004.jpg',
+            'srclus/srclus-page-0005.jpg',
+            'srclus/srclus-page-0006.jpg',
+            'srclus/srclus-page-0007.jpg',
+            'srclus/srclus-page-0008.jpg',
+            'srclus/srclus-page-0009.jpg',
+            'srclus/srclus-page-0010.jpg',
+            'srclus/srclus-page-0011.jpg',
+            'srclus/srclus-page-0012.jpg',
+            'srclus/srclus-page-0013.jpg',
+            'srclus/srclus-page-0014.jpg',
+            'srclus/srclus-page-0015.jpg',
           ]
         },
         {
@@ -110,22 +110,22 @@ export default {
           tag: ["Testssl.sh", "SemanticUI", "NextJS", "NodeJS"],
           video: null,
           images: [
-            'webtrust/page-0001.jpg',
-            'webtrust/page-0002.jpg',
-            'webtrust/page-0003.jpg',
-            'webtrust/page-0004.jpg',
-            'webtrust/page-0005.jpg',
-            'webtrust/page-0006.jpg',
-            'webtrust/page-0007.jpg',
-            'webtrust/page-0008.jpg',
-            'webtrust/page-0009.jpg',
-            'webtrust/page-0010.jpg',
-            'webtrust/page-0011.jpg',
-            'webtrust/page-0012.jpg',
-            'webtrust/page-0013.jpg',
-            'webtrust/page-0014.jpg',
-            'webtrust/page-0015.jpg',
-            'webtrust/page-0016.jpg'
+            'webtrust/webtrust-page-0001.jpg',
+            'webtrust/webtrust-page-0002.jpg',
+            'webtrust/webtrust-page-0003.jpg',
+            'webtrust/webtrust-page-0004.jpg',
+            'webtrust/webtrust-page-0005.jpg',
+            'webtrust/webtrust-page-0006.jpg',
+            'webtrust/webtrust-page-0007.jpg',
+            'webtrust/webtrust-page-0008.jpg',
+            'webtrust/webtrust-page-0009.jpg',
+            'webtrust/webtrust-page-0010.jpg',
+            'webtrust/webtrust-page-0011.jpg',
+            'webtrust/webtrust-page-0012.jpg',
+            'webtrust/webtrust-page-0013.jpg',
+            'webtrust/webtrust-page-0014.jpg',
+            'webtrust/webtrust-page-0015.jpg',
+            'webtrust/webtrust-page-0016.jpg'
           ]
         },
         {
@@ -133,7 +133,7 @@ export default {
           tag: ["Arduino", "ESP8266", "ExpressJS", "NodeJS", "Bootstrap"],
           video: "explerercar",
           images: [
-            'explorercar/page-0001.jpg'
+            'explorercar/explorercar-page-0001.jpg'
           ]
         }
       ]
