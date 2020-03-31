@@ -30,7 +30,7 @@ const routes = [
     name: "Resume",
     beforeEnter() {
       location.href =
-        "https://drive.google.com/file/d/1B5qjtGRGU7qRethVKwGZvJvkM0IyTOS1/view?usp=sharing";
+        "https://drive.google.com/file/d/18cDF61FgGoWp3FCyIoEdF3H510x9Kkvb/view";
     }
   },
   {
