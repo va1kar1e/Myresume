@@ -21,7 +21,6 @@ p {
 
 <script lang="ts">
 export default {
-  name: "Header",
   data: () => ({
     contentText:
       "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Computer Engineer. I am interested in Networking, Cybersecurity, Data Analytics and Web Development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
