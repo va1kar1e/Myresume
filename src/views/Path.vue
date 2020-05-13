@@ -1,15 +1,20 @@
 <template>
-  <div class="path content-container">
-    <h1>{{ title }}</h1>
-  </div>
+  <v-app>
+    <v-content>
+      <h1>Path</h1>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
       title: "Path"
     };
+  },
+  components: {
   }
 };
 </script>
