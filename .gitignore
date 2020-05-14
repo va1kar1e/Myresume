@@ -22,7 +22,7 @@ yarn-error.log*
 
 # Firebase
 .firebase/
-FirebaseConfig.js
+/src/plugins/FirebaseConfig.ts
 database.rules.json
 firestore.indexes.json
 firestore.rules
@@ -30,6 +30,5 @@ storage.rules
 /.firebaserc
 /firebase-debug.log
 
-src/assets/
+/src/assets/
 
-/src/plugins/FirebaseConfig.ts
