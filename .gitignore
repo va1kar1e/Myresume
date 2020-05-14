@@ -32,3 +32,4 @@ storage.rules
 
 src/assets/
 
+/src/plugins/FirebaseConfig.ts
