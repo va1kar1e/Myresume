@@ -1,6 +1,6 @@
 <template>
-  <v-col class="mb-1" cols="12" md="6" lg="6">
-    <h2 class="display-1 font-weight-bold mb-9 text-uppercase">Interested</h2>
+  <v-col class="mb-1" cols="12" md="4" lg="4">
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Interested</h2>
     <v-chip
       :ripple="false"
       v-for="(item, i) in items"
@@ -29,14 +29,10 @@ export default {
       ["primary","NodeJS"],
       ["primary","MongoDB"],
       ["primary","Python"],
-      ["primary","Ruby"],
-      ["primary","Go"],
       ["primary","Javascript"],
       ["primary","Internet Of Thing"],
-      ["primary","Writing Academic Paper"],
       ["primary","Research"],
       ["primary","Photographic"],
-      ["primary","Photo and Video Editing"]
     ]
   })
 };

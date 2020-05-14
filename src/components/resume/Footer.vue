@@ -5,7 +5,7 @@
         <v-btn to="/d/resume" target="_blank" text>
           <v-icon color="grey darken-4">fas fa-cloud-download-alt</v-icon>
         </v-btn>
-         <v-btn href="mailto:siwanont1@gmail.com" text color="black" target="_blank">
+        <v-btn href="mailto:siwanont1@gmail.com" text color="black" target="_blank">
           <v-icon color="grey darken-4">fas fa-paper-plane</v-icon>
         </v-btn>
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
@@ -16,7 +16,10 @@
         </v-btn>
       </v-row>
       <v-row justify="center" class="mb-2">
-        <p class="caption font-weight-light text-center grey lighten-4" style="margin-bottom: auto;">
+        <p
+          class="caption font-weight-light text-center grey lighten-4"
+          style="margin-bottom: auto;"
+        >
           Copyright@{{ new Date().getFullYear() }} | Designed by Siwanont Sittinam
         </p>
       </v-row>

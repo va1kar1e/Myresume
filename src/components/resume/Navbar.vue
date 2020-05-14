@@ -36,7 +36,7 @@
             <v-list-item-title>Download My Resume</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item to="/d/resume" target="_blank">
+        <v-list-item href="mailto:siwanont1@gmail.com" target="_blank">
           <v-list-item-icon>
             <v-icon color="grey darken-4">fas fa-paper-plane</v-icon>
           </v-list-item-icon>
