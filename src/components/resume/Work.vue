@@ -53,7 +53,7 @@
                         </v-chip>
                       </v-row>
                       <v-responsive min-height="1vh"></v-responsive>
-                      <v-row>
+                      <!-- <v-row>
                         <v-spacer></v-spacer>
                         <v-dialog v-if="task.images" v-model="dialog" width="800px">
                           <template v-slot:activator="{ on }">
@@ -72,7 +72,7 @@
                             ></v-carousel-item>
                           </v-carousel>
                         </v-dialog>
-                      </v-row>
+                      </v-row> -->
                     </v-expansion-panel-content>
                   </v-expansion-panel>
                 </v-expansion-panels>
@@ -194,119 +194,6 @@ export default {
               'tumbun/tumbun-page-0012.jpg',
               'tumbun/tumbun-page-0013.jpg',
             ]
-          }
-        ]
-      },
-      {
-        color: "green",
-        year: "March 2016 - May 2019",
-        icon: "fas fa-search",
-        title: "Kasetsart University",
-        role: "Junior Research Student",
-        team: "Massive Information and Knowledge Engineering Laboratory - Department of Computer Engineering",
-        archiev: [
-          {
-            name: "Social Network Analysis with Ego Network using Twitter Data",
-            skill: [
-              {
-                name: "Data Visualization",
-                color: "green"
-              },
-              {
-                name: "Text Analysis",
-                color: "green"
-              },
-              {
-                name: "Text Mining",
-                color: "green"
-              },
-              {
-                name: "MongoDB",
-                color: "green"
-              },
-              {
-                name: "ExpressJS",
-                color: "green"
-              },
-              {
-                name: "D3JS",
-                color: "green"
-              },
-              {
-                name: "NodeJS",
-                color: "green"
-              },
-              {
-                name: "Bootstrap",
-                color: "green"
-              },
-              {
-                name: "Google NLP",
-                color: "green"
-              },
-              {
-                name: "Writing Academic Paper",
-                color: "green"
-              }
-            ],
-            images: [
-              'egonet/egonet-page-0001.jpg',
-              'egonet/egonet-page-0002.jpg'
-            ]
-          },
-          {
-            name: "Real-Time Sentiment Change Detection of Twitter Data Stream",
-            skill: [
-              {
-                name: "Sentiment Analysis",
-                color: "green"
-              },
-              {
-                name: "Text Mining",
-                color: "green"
-              },
-              {
-                name: "ExpressJS",
-                color: "green"
-              },
-              {
-                name: "NodeJS",
-                color: "green"
-              },
-              {
-                name: "Bootstrap",
-                color: "green"
-              }
-            ],
-            images: null
-          },
-          {
-            name: "Linux System Administrator",
-            skill: [
-              {
-                name: "Ubuntu",
-                color: "green"
-              },
-              {
-                name: "CentOS",
-                color: "green"
-              }
-            ],
-            images: null
-          },
-          {
-            name: "Teacher Assistant",
-            skill: [
-              {
-                name: "Python",
-                color: "green"
-              },
-              {
-                name: "C#",
-                color: "green"
-              }
-            ],
-            images: null
           }
         ]
       },

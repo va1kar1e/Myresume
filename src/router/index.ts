@@ -3,73 +3,92 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import Home from "@/views/Home.vue";
+import Resume from "@/views/Resume.vue";
 import Path from "@/views/Path.vue";
+
+const RESUME_LINK = "https://drive.google.com/file/d/18cDF61FgGoWp3FCyIoEdF3H510x9Kkvb/view";
 
 const routes = [
   {
     path: "/",
-    component: Home,
-    children: [
-      {
-        path: "/",
-        component: Home,
-        name: "Home",
-        meta: { title: "Home" }
-      }
-    ]
+    component: Resume,
+    name: "Home",
+    meta: { title: "Home" }
   },
   {
     path: "/path",
     component: Path,
     name: "Path",
-    meta: { title: "Path" }
+    meta: { title: "Path" },
+    children: [
+      {
+        path: "/a",
+        component: Path,
+        meta: { title: "PathA" },
+      },
+      {
+        path: "/b",
+        component: Path,
+        meta: { title: "PathB" },
+      }
+    ]
   },
   {
-    path: "/resume",
-    name: "Resume",
-    beforeEnter() {
-      location.href =
-        "https://drive.google.com/file/d/18cDF61FgGoWp3FCyIoEdF3H510x9Kkvb/view";
-    }
+    path: "/d",
+    name: "Download",
+    children: [
+      {
+        path: "resume",
+        name: "Resume",
+        beforeEnter() {
+          location.href = RESUME_LINK;
+        }
+      }
+    ]
   },
   {
-    path: "/linkedin",
-    name: "Linkedin",
-    beforeEnter() {
-      location.href = "https://linkedin.com/in/siwanont";
-    }
+    path: "/c",
+    name: "Contact",
+    children: [
+      {
+        path: "linkedin",
+        name: "Linkedin",
+        beforeEnter() {
+          location.href = "https://linkedin.com/in/siwanont";
+        }
+      },
+      {
+        path: "github",
+        name: "Github",
+        beforeEnter() {
+          location.href = "https://github.com/booktay";
+        }
+      }
+    ]
   },
   {
-    path: "/github",
-    name: "Github",
-    beforeEnter() {
-      location.href = "https://github.com/booktay";
-    }
-  },
-  {
-    path: "/facebook",
-    name: "Facebook",
-    beforeEnter() {
-      location.href = "https://fb.me/booktay";
-    }
-  },
-  {
-    path: "/srclus",
-    name: "Srclus",
-    beforeEnter() {
-      location.href = "https://www.youtube.com/watch?v=eMprd8Fwt80";
-    }
-  },
-  {
-    path: "/explerercar",
-    name: "Explerer Car",
-    beforeEnter() {
-      location.href = "https://www.youtube.com/watch?v=Lg-nDld06WY";
-    }
+    path: "/v",
+    name: "Video",
+    children: [
+      {
+        path: "srclus",
+        name: "Srclus",
+        beforeEnter() {
+          location.href = "https://www.youtube.com/watch?v=eMprd8Fwt80";
+        }
+      },
+      {
+        path: "explorercar",
+        name: "Explerer Car",
+        beforeEnter() {
+          location.href = "https://www.youtube.com/watch?v=Lg-nDld06WY";
+        }
+      }
+    ]
   }
 ];
 
-export default new VueRouter({
+export default new VueRouter({ 
+  mode: "history",
   routes: routes
 });
