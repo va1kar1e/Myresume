@@ -6,7 +6,7 @@ Vue.use(VueRouter);
 import Resume from "@/views/Resume.vue";
 import Path from "@/views/Path.vue";
 
-const RESUME_LINK = "https://drive.google.com/file/d/1yE8y45KJklIgu3P90Iwn2zdJOJ6LkjMH/view";
+const RESUME_LINK = "https://drive.google.com/file/d/1h5lZT6dXO4NleaN1OwmW-JJFXFpjVT24/view";
 
 const routes = [
   {
