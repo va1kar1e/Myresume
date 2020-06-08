@@ -1,6 +1,6 @@
 <template>
-  <v-col class="mb-1" cols="12" md="4" lg="4">
-    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Interested</h2>
+  <v-col class="mb-1" cols="12" md="6" lg="6">
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Interests</h2>
     <v-chip
       :ripple="false"
       v-for="(item, i) in items"
@@ -16,23 +16,18 @@
 
 <script lang="ts">
 export default {
-  name: "SkillInterest",
+  name: "Interest",
   data: () => ({
     dialog: false,
     items: [
-      ["primary","Networking"],
+      ["primary","Computer Network"],
       ["primary","Cybersecurity"],
       ["primary","Data Visualization"],
       ["primary","Data Analytic"],
-      ["primary","VueJS"],
-      ["primary","ReactJS"],
-      ["primary","NodeJS"],
-      ["primary","MongoDB"],
-      ["primary","Python"],
-      ["primary","Javascript"],
+      ["primary","NLP"],
+      ["primary","Web Development"],
       ["primary","Internet Of Thing"],
-      ["primary","Research"],
-      ["primary","Photographic"],
+      ["primary","Photography"]
     ]
   })
 };
