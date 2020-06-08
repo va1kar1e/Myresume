@@ -1,13 +1,9 @@
 <template>
   <v-col class="mb-1" cols="12">
-    <h2 class="display-1 font-weight-bold mb-1 text-uppercase">
-      About Me
-    </h2>
+    <h2 class="display-1 font-weight-bold mb-1 text-uppercase">About Me</h2>
     <v-row justify="center">
       <v-col cols="12">
-        <p class="title font-weight-light text-left text-md-justify">
-          {{ contentText }}
-        </p>
+        <p class="title font-weight-light text-left text-md-justify">{{ contentText }}</p>
       </v-col>
     </v-row>
   </v-col>

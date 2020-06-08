@@ -19,9 +19,7 @@
         <p
           class="caption font-weight-light text-center grey lighten-4"
           style="margin-bottom: auto;"
-        >
-          Copyright@{{ new Date().getFullYear() }} | Designed by Siwanont Sittinam
-        </p>
+        >Copyright@{{ new Date().getFullYear() }} | Designed by Siwanont Sittinam</p>
       </v-row>
     </v-col>
   </v-footer>

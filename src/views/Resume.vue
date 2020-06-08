@@ -6,10 +6,12 @@
       <v-container>
         <v-row class="text-center">
           <Aboutme />
-          <!-- <Education />
+          <Education />
           <Work />
-          <Extra />
-          <SkillInterest /> -->
+          <Recognition />
+          <Cert />
+          <Course />
+          <Interest />
         </v-row>
       </v-container>
     </v-content>
@@ -18,14 +20,16 @@
 </template>
 
 <script>
-import Navbar from "@/components/resume/Navbar.vue";
-import Footer from "@/components/resume/Footer.vue";
+import Navbar from "@/components/resume/general/Navbar.vue";
+import Footer from "@/components/resume/general/Footer.vue";
 import Header from "@/components/resume/Header.vue";
-import Aboutme from "@/components/resume/Aboutme.vue";
-// import Work from "@/components/resume/Work.vue";
-// import Education from "@/components/resume/Education.vue";
-// import Extra from "@/components/resume/Extra.vue";
-// import SkillInterest from "@/components/resume/SkillInterest.vue";
+import Aboutme from "@/components/resume/aboutme/Aboutme.vue";
+import Education from "@/components/resume/education/Education.vue";
+import Work from "@/components/resume/work/Work.vue";
+import Recognition from "@/components/resume/Recognition.vue";
+import Cert from "@/components/resume/Cert.vue";
+import Course from "@/components/resume/Course.vue";
+import Interest from "@/components/resume/Interest.vue";
 
 export default {
   data() {
@@ -37,10 +41,12 @@ export default {
     Navbar,
     Header,
     Aboutme,
-    // Work,
-    // Education,
-    // Extra,
-    // SkillInterest,
+    Education,
+    Work,
+    Recognition,
+    Cert,
+    Course,
+    Interest,
     Footer
   }
 };
