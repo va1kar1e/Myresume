@@ -1,7 +1,3 @@
-.DS_Store
-node_modules
-/dist
-
 # local env files
 .env.local
 .env.*.local
@@ -20,15 +16,5 @@ yarn-error.log*
 *.sln
 *.sw?
 
-# Firebase
-.firebase/
-/src/plugins/FirebaseConfig.ts
-database.rules.json
-firestore.indexes.json
-firestore.rules
-storage.rules
-/.firebaserc
-/firebase-debug.log
-
-/src/assets/
-
+# My Ignore
+temp/
