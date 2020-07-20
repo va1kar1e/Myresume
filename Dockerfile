@@ -1,13 +1,17 @@
-FROM node:10-alpine
+# base image
+FROM node:12.2.0-alpine
 
-RUN mkdir -p /src/app
+# set working directory
+WORKDIR /app
 
-WORKDIR /src/app
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-COPY . /src/app/package.json
-
+# install and cache app dependencies
+COPY package.json /app/package.json
 RUN npm install
+RUN npm install yarn
+RUN npm install @vue/cli@3.7.0 -g
 
-EXPOSE 3000
-
-CMD [ "yarn", "start" ]
+# start app
+CMD ["yarn", "serve"]

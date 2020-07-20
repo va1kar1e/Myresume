@@ -1,30 +1,13 @@
-# Mysite
+# My Resume Website built with VueJS
 
 ## Branch
-V1 -> React
-V2 -> React
-V3 -> BOOTSTRAP
-V4 -> VUE
 
-## Project setup
-```
-yarn install
-```
+- V1,V2 -> React
+- V3 -> BOOTSTRAP
+- V4 -> VUE
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Installation
 
-### Compiles and minifies for production
 ```
-yarn build
+docker
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

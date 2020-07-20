@@ -1,34 +1,14 @@
-.DS_Store
-node_modules
-/dist
-
-# local env files
-.env.local
-.env.*.local
-
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
-.idea
 .vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.DS_Store
 
-# Firebase
-.firebase/
-/src/plugins/FirebaseConfig.ts
-database.rules.json
-firestore.indexes.json
-firestore.rules
-storage.rules
-/.firebaserc
-/firebase-debug.log
-
-/src/assets/
-
+# VueJS
+node_modules
+/dist
+# My Ignore
+temp/
