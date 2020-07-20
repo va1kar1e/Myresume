@@ -34,7 +34,7 @@ import Interest from "@/components/resume/Interest.vue";
 export default {
   data() {
     return {
-      title: "Resume"
+      title: "Resume",
     };
   },
   components: {
@@ -47,7 +47,7 @@ export default {
     Cert,
     Course,
     Interest,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>

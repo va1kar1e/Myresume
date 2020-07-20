@@ -1,5 +1,5 @@
 <template>
-  <v-col class="mb-1" cols="12" md="6" lg="6">
+  <v-col class="mb-5" cols="12" md="6" lg="6">
     <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Interests</h2>
     <v-chip
       :ripple="false"
@@ -20,16 +20,15 @@ export default {
   data: () => ({
     dialog: false,
     items: [
-      ["primary","Computer Network"],
-      ["primary","Cybersecurity"],
-      ["primary","Data Visualization"],
-      ["primary","Data Analytic"],
-      ["primary","NLP"],
-      ["primary","Web Development"],
-      ["primary","Internet Of Thing"],
-      ["primary","Photography"]
-    ]
-  })
+      ["primary", "Computer Network"],
+      ["primary", "Cybersecurity"],
+      ["primary", "Data Visualization"],
+      ["primary", "Data Analytic"],
+      ["primary", "NLP"],
+      ["primary", "Web Development"],
+      ["primary", "Internet Of Thing"],
+      ["primary", "Photography"],
+    ],
+  }),
 };
 </script>
-
