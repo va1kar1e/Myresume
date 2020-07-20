@@ -18,7 +18,14 @@
 
 # Docker Compose
 
-```
-docker-compose up -d --build
-docker-compose stop
-```
+- Build & Run
+
+  ```
+  docker-compose up -d --build
+  ```
+
+- Stop
+
+  ```
+  docker-compose stop
+  ```
