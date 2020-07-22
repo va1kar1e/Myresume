@@ -9,9 +9,11 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
 COPY package.json /app/package.json
-RUN npm install
-RUN npm install yarn
-RUN npm install @vue/cli@3.7.0 -g
+RUN npm install @vue/cli -g
+RUN npm install --silent
+
+# install and cache Firebase
+RUN npm install -g firebase-tools
 
 # start app
-CMD ["yarn", "serve"]
+CMD ["npm", "run", "serve"]

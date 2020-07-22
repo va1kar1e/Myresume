@@ -2,12 +2,8 @@
 
 ### Branch
 
-- V1,V2 -> React
-- V3 -> BOOTSTRAP
-- V4 -> VUE
+- Branch V1,V2 -> ReactJS
+- Branch V3 -> Bootstrap
+- !!! Latest Branch V4 -> VueJS
 
 ### Installation
-
-```
-docker
-```

@@ -10,5 +10,12 @@ yarn-error.log*
 # VueJS
 node_modules
 /dist
+
+# Firebase
+.firebaserc
+.firebase/
+firebase*
+firestore*
+
 # My Ignore
 temp/
