@@ -1,8 +1,12 @@
 <template>
   <v-app>
-    <v-content>
-      <h1>Path</h1>
-    </v-content>
+    <v-main>
+      <v-container>
+        <v-row class="text-center">
+          <h1>Path</h1>
+        </v-row>
+      </v-container>
+    </v-main>
   </v-app>
 </template>
 
