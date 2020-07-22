@@ -1,8 +1,6 @@
 <template>
   <v-col class="mb-5" cols="12" md="6" lg="6">
-    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">
-      Extracuricular Course
-    </h2>
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Extracuricular Course</h2>
     <v-chip
       :ripple="false"
       v-for="(item, i) in items"
@@ -10,9 +8,7 @@
       class="ma-1"
       :color="item[0]"
       outlined
-    >
-      {{ item[1] }}
-    </v-chip>
+    >{{ item[1] }}</v-chip>
   </v-col>
 </template>
 
@@ -21,11 +17,10 @@ export default {
   name: "Course",
   data: () => ({
     items: [
-      ["primary", "Cybersecurity & Penetration (OWASP)"],
+      ["primary", "Cybersecurity Assessment and Penetration Testing"],
       ["primary", "CompTIA Pentest+"],
-      ["primary", "EC-Council: Certified Ethical Hacker"],
+      ["primary", "ECC: CEH"],
       ["primary", "CCNA: Routing & Switching"],
-      ["primary", "CCNA Intro to Cybersecurity"],
     ],
   }),
 };

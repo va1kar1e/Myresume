@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-content>
+    <v-main>
       <Header />
       <v-container>
         <v-row class="text-center">
@@ -14,7 +14,7 @@
           <Interest />
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
     <Footer />
   </v-app>
 </template>

@@ -1,14 +1,28 @@
 <template>
   <v-col class="mb-1" cols="12" md="6" lg="6">
-    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">
-      Certification
-    </h2>
-    <div v-for="(c, i) in item.course" :key="i" class="title">
-      <h2 :class="`title font-weight-bold mb-2 text-uppercase primary--text`">
-        {{ c.name }}
-      </h2>
-      <p class="subtitle-1 font-weight-light">{{ c.vender }}</p>
-    </div>
+    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Certification</h2>
+    <v-row>
+      <v-col cols="12" sm="12" md="6" lg="4" v-for="(c, i) in item.course" :key="i">
+        <v-img
+          :src="require('@/assets/images/cert/' + c.icon + '.png')"
+          class="my-3"
+          :alt="c.name"
+          contain
+          min-height="80"
+          max-height="100"
+          @click="overlay = !overlay"
+        >
+          <template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular indeterminate color="black" />
+            </v-row>
+          </template>
+          <v-overlay :absolute="absolute" :value="overlay" :opacity="0.9">
+            <p class="title-1 font-weight-bold">{{c.name}}</p>
+          </v-overlay>
+        </v-img>
+      </v-col>
+    </v-row>
   </v-col>
 </template>
 
@@ -16,15 +30,21 @@
 export default {
   name: "Cert",
   data: () => ({
+    absolute: true,
+    overlay: false,
     item: {
       course: [
         {
           name: "CompTIA Security+",
-          vender: "CompTIA",
+          icon: "secp",
         },
         {
-          name: "HCIA: Routing & Switching",
-          vender: "Huawei Certified Network Associate",
+          name: "HCIA Routing & Switching",
+          icon: "hciars",
+        },
+        {
+          name: "CCNA Intro to Cybersecurity",
+          icon: "ccna_in_sec",
         },
       ],
     },
