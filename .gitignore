@@ -13,6 +13,7 @@ node_modules
 
 # Firebase
 .firebaserc
+.firebase/
 firebase*
 firestore*
 
