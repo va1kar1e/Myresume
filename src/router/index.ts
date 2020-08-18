@@ -7,7 +7,7 @@ import Resume from "@/views/Resume.vue";
 import Path from "@/views/Path.vue";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1x3xlTlIE6gBIjTrILl7UxV1_oWJIHRts/view";
+  "https://drive.google.com/file/d/1ZVtVd-9QeiF-KC4gcgoHNHxhCgZOtDuI/view";
 
 const routes = [
   {
