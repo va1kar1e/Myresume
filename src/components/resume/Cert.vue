@@ -2,7 +2,7 @@
   <v-col class="mb-1" cols="12" md="6" lg="6">
     <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Certification</h2>
     <v-row>
-      <v-col cols="12" sm="12" md="6" lg="4" v-for="(c, i) in item.course" :key="i">
+      <v-col cols="12" sm="12" md="6" lg="6" v-for="(c, i) in item.course" :key="i">
         <v-img
           :src="require('@/assets/images/cert/' + c.icon + '.png')"
           class="my-3"
@@ -34,6 +34,10 @@ export default {
     overlay: false,
     item: {
       course: [
+        {
+          name: "CompTIA Pentest+",
+          icon: "penp",
+        },
         {
           name: "CompTIA Security+",
           icon: "secp",
