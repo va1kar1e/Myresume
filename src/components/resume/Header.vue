@@ -1,6 +1,9 @@
 <template>
   <v-container>
-    <v-row class="d-flex text-center">
+    <v-parallax
+      src=""
+    >
+      <v-row class="d-flex text-center">
       <v-col cols="12" md="12">
         <v-img
           :src="require('@/assets/images/profilepic.png')"
@@ -16,9 +19,9 @@
           </template>
         </v-img>
       </v-col>
-      <v-col class="mb-1" cols="12" md="12">
+      <v-col class="mb-1 black--text" cols="12" md="12">
         <h1 class="display-2 font-weight-bold mb-1">SIWANONT SITTINAM</h1>
-        <!-- <p class="display-1 font-weight-regular">Network Engineer</p> -->
+        <!-- <p class="display-1 font-weight-regular">Security Engineer</p> -->
       </v-col>
     </v-row>
     <v-row justify="center" class="mb-2">
@@ -34,5 +37,6 @@
         </v-btn>
       </v-row>
     </v-row>
+    </v-parallax>
   </v-container>
 </template>

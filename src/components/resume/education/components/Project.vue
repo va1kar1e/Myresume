@@ -17,7 +17,7 @@
         <p :class="`body-1 font-weight-light text-left black--text`">
           2. Explore a Danger area with a Robot using
           <b>NodeMCU</b> and
-          <b>P2P Camera</b>
+          <b>P2P Camera </b>
         </p>
         <p :class="`body-1 font-weight-light text-left black--text`">
           3. Web-based Hospital appointment management system using

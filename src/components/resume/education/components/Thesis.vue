@@ -38,7 +38,8 @@ export default {
       "&bull; Words Prioritization with <b>TF-IDF</b>.",
       "&bull; Words Grouping by transforming text to <b>Word2Vec Model</b>.",
       "&bull; Building API services calculating text similarity with <b>Word2Vec Model</b> using <b>Flask</b> and <b>GenSim Library</b>.",
-      "&bull; Building a web application to display data resulting from API services with <b>ReactJS</b>."
+      "&bull; Building a web application to display data resulting from API services with <b>ReactJS</b>.",
+      "&bull; Presentation Video <a href='v/srclus' target='blank' class='black--text'>Link</a>"
     ]
   })
 };
