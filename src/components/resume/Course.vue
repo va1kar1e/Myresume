@@ -17,7 +17,7 @@ export default {
   name: "Course",
   data: () => ({
     items: [
-      ["primary", "CompTIA CySa+"],
+      ["primary", "CompTIA CySa+/Pentest+"],
       ["primary", "ECC: CEH"],
       ["primary", "CCNA: Routing & Switching"],
       ["primary", "Cybersecurity Assessment and Penetration Testing"],

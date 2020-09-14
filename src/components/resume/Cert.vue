@@ -34,10 +34,10 @@ export default {
     overlay: false,
     item: {
       course: [
-        {
-          name: "CompTIA Pentest+",
-          icon: "penp",
-        },
+        // {
+        //   name: "CompTIA Pentest+",
+        //   icon: "penp",
+        // },
         {
           name: "CompTIA Security+",
           icon: "secp",
