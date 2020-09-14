@@ -19,7 +19,7 @@ p {
 export default {
   data: () => ({
     contentText:
-      "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Cybersecurity Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization.",
+      "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Digital Threat and Vulnerability Management Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization.",
   }),
 };
 </script>
