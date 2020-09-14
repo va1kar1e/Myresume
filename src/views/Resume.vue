@@ -25,7 +25,7 @@ import Footer from "@/components/resume/general/Footer.vue";
 import Header from "@/components/resume/Header.vue";
 import Aboutme from "@/components/resume/aboutme/Aboutme.vue";
 import Education from "@/components/resume/education/Education.vue";
-import Work from "@/components/resume/work/Work.vue";
+import Work from "@/components/resume/Work.vue";
 import Recognition from "@/components/resume/Recognition.vue";
 import Cert from "@/components/resume/Cert.vue";
 import Course from "@/components/resume/Course.vue";
