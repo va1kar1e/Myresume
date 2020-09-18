@@ -56,7 +56,7 @@
 
 <style scoped>
 .theme--dark {
-  background-color: #17222f !important;
+  background-color: #171e29 !important;
 }
 </style>
 
