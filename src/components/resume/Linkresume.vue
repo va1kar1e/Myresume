@@ -6,13 +6,20 @@
 
     <v-card-text>
       <v-row class="my-3 displayresume">
-        <qrcode-vue :value="value" :size="size" level="M"></qrcode-vue>
-        <p class="font-weight-light black--text">
+        <qrcode-vue
+          :value="value"
+          :size="size"
+          level="M"
+          :renderAs="renderAs"
+          :background="background"
+          :foreground="foreground"
+        ></qrcode-vue>
+        <p class="font-weight-light white--text">
           Scan QR Code or Click this below link
         </p>
         <v-btn to="/d/resume" target="_blank" text>
           <span class="mr-2">Downlond Link</span>
-          <v-icon color="grey darken-4">fas fa-cloud-download-alt</v-icon>
+          <v-icon color="white">fas fa-cloud-download-alt</v-icon>
         </v-btn>
       </v-row>
     </v-card-text>
@@ -20,9 +27,13 @@
 </template>
 
 <style>
+.theme--dark {
+  background-color: #171e29 !important;
+}
 .displayresume {
   display: block !important;
   text-align: center;
+  color: white;
 }
 </style>
 
@@ -35,6 +46,8 @@ export default {
       value: location.href + "d/resume",
       size: 200,
       renderAs: "svg",
+      background: "#171e29",
+      foreground: "#ffffff",
     };
   },
   components: {
