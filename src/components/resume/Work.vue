@@ -91,7 +91,9 @@ export default {
         role: "Digital Threat and Vulnerability Management Engineer",
         team:
           "Security Threat & Vulnerability Department, Security Operations Division, Technology Architecture, Security & Risk Function<br>Chief Technology Office",
-        archiev: ["&bull; Being responsible for Red Teaming"],
+        archiev: [
+          "&bull; Being responsible for Cybersecurity, Penetration Testing, Vulnerability Management, and Risk Assessment.",
+        ],
       },
       {
         year: "June 2019 - May 2020",
