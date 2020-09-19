@@ -4,10 +4,10 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import Resume from "@/views/Resume.vue";
-import Path from "@/views/Path.vue";
+// import Path from "@/views/Path.vue";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1ZVtVd-9QeiF-KC4gcgoHNHxhCgZOtDuI/view";
+  "https://drive.google.com/file/d/1cfbfqikQyDMXGXFpfzBGxSCgbqA0agQX/view";
 
 const routes = [
   {
@@ -16,24 +16,24 @@ const routes = [
     name: "Home",
     meta: { title: "Home" },
   },
-  {
-    path: "/path",
-    component: Path,
-    name: "Path",
-    meta: { title: "Path" },
-    children: [
-      {
-        path: "/a",
-        component: Path,
-        meta: { title: "PathA" },
-      },
-      {
-        path: "/b",
-        component: Path,
-        meta: { title: "PathB" },
-      },
-    ],
-  },
+  // {
+  //   path: "/path",
+  //   component: Path,
+  //   name: "Path",
+  //   meta: { title: "Path" },
+  //   children: [
+  //     {
+  //       path: "/a",
+  //       component: Path,
+  //       meta: { title: "PathA" },
+  //     },
+  //     {
+  //       path: "/b",
+  //       component: Path,
+  //       meta: { title: "PathB" },
+  //     },
+  //   ],
+  // },
   {
     path: "/d",
     name: "Download",
@@ -78,13 +78,13 @@ const routes = [
           location.href = "https://www.youtube.com/watch?v=eMprd8Fwt80";
         },
       },
-      {
-        path: "explorercar",
-        name: "Explerer Car",
-        beforeEnter() {
-          location.href = "https://www.youtube.com/watch?v=Lg-nDld06WY";
-        },
-      },
+      // {
+      //   path: "explorercar",
+      //   name: "Explerer Car",
+      //   beforeEnter() {
+      //     location.href = "https://www.youtube.com/watch?v=Lg-nDld06WY";
+      //   },
+      // },
     ],
   },
 ];

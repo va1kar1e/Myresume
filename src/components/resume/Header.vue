@@ -18,19 +18,21 @@
       </v-col>
       <v-col class="mb-1" cols="12" md="12">
         <h1 class="display-2 font-weight-bold mb-1">SIWANONT SITTINAM</h1>
-        <!-- <p class="display-1 font-weight-regular">Network Engineer</p> -->
+        <p class="display-1 font-weight-regular">
+          Digital Threat and Vulnerability Management Engineer
+        </p>
       </v-col>
     </v-row>
     <v-row justify="center" class="mb-2">
       <v-row justify="center" class="mb-1">
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
-          <v-icon large color="grey darken-4">fab fa-linkedin</v-icon>
+          <v-icon large color="white">fab fa-linkedin</v-icon>
         </v-btn>
-        <v-btn href="mailto:siwanont1@gmail.com" text color="black" target="_blank">
-          <v-icon large color="grey darken-4">fas fa-paper-plane</v-icon>
+        <v-btn href="mailto:siwanont1@gmail.com" text target="_blank">
+          <v-icon large color="white">fas fa-paper-plane</v-icon>
         </v-btn>
         <v-btn text color="primary" to="/c/github" target="_blank">
-          <v-icon large color="grey darken-4">fab fa-github</v-icon>
+          <v-icon large color="white">fab fa-github</v-icon>
         </v-btn>
       </v-row>
     </v-row>
