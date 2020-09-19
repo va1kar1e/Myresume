@@ -3,17 +3,11 @@
     <v-col class="py-2" cols="12" md="12">
       <div class="mb-5" />
       <v-row justify="center" class="mb-2">
-        <v-btn @click.stop="dialog = true" text>
-          <v-icon color="white">fas fa-cloud-download-alt</v-icon>
-        </v-btn>
-        <v-dialog v-model="dialog" min-width="200" max-width="600"
-          ><Linkresume
-        /></v-dialog>
-        <v-btn href="mailto:siwanont1@gmail.com" text target="_blank">
-          <v-icon color="white">fas fa-paper-plane</v-icon>
-        </v-btn>
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
           <v-icon color="white">fab fa-linkedin</v-icon>
+        </v-btn>
+        <v-btn href="mailto:siwanont1@gmail.com" text target="_blank">
+          <v-icon color="white">fas fa-paper-plane</v-icon>
         </v-btn>
         <v-btn text color="primary" to="/c/github" target="_blank">
           <v-icon color="white">fab fa-github</v-icon>
@@ -30,25 +24,10 @@
 </template>
 
 <style scoped>
-.theme--dark {
-  background-color: #171e29 !important;
+.v-footer {
+  background-color: #17222f !important;
 }
 .caption {
   margin-bottom: 0px !important;
 }
 </style>
-
-<script>
-import Linkresume from "./Linkresume.vue";
-
-export default {
-  data() {
-    return {
-      dialog: false,
-    };
-  },
-  components: {
-    Linkresume,
-  },
-};
-</script>

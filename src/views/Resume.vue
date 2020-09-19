@@ -3,11 +3,11 @@
     <Navbar />
     <v-main>
       <Header />
+      <Aboutme />
+      <Education />
+      <Work />
       <v-container>
-        <v-row class="text-center">
-          <Aboutme />
-          <Education />
-          <Work />
+        <v-row>
           <Recognition />
           <Cert />
           <Course />
@@ -19,11 +19,15 @@
   </v-app>
 </template>
 
+<style lang="scss">
+@import "@/styles/resume.scss";
+</style>
+
 <script>
-import Navbar from "@/components/resume/general/Navbar.vue";
-import Footer from "@/components/resume/general/Footer.vue";
+import Navbar from "@/components/resume/Navbar.vue";
+import Footer from "@/components/resume/Footer.vue";
 import Header from "@/components/resume/Header.vue";
-import Aboutme from "@/components/resume/aboutme/Aboutme.vue";
+import Aboutme from "@/components/resume/Aboutme.vue";
 import Education from "@/components/resume/education/Education.vue";
 import Work from "@/components/resume/Work.vue";
 import Recognition from "@/components/resume/Recognition.vue";
@@ -39,6 +43,7 @@ export default {
   },
   components: {
     Navbar,
+    Footer,
     Header,
     Aboutme,
     Education,
@@ -47,7 +52,6 @@ export default {
     Cert,
     Course,
     Interest,
-    Footer,
   },
 };
 </script>

@@ -55,8 +55,11 @@
 </template>
 
 <style scoped>
-.theme--dark {
-  background-color: #171e29 !important;
+.v-app-bar {
+  background-color: #17222f !important;
+}
+.v-sheet {
+  background-color: #17222f !important;
 }
 </style>
 

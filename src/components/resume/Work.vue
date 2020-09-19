@@ -1,79 +1,97 @@
 <template>
-  <v-col class="mb-1" cols="12">
-    <h2 class="display-1 font-weight-bold mb-5 text-uppercase">Work Experience</h2>
-    <v-row justify="center">
-      <v-col class="mb-1" cols="12">
-        <v-timeline dense="true" v-for="(item, i) in items" :key="i">
-          <v-timeline-item :color="item.color" :icon="item.icon">
-            <v-expansion-panels flat accordion hover>
-              <v-expansion-panel>
-                <v-col cols="12" sm="12" md="4" lg="4"></v-col>
-                <v-expansion-panel-header>
-                  <div class style="padding-bottom: 0px !important;">
-                    <div class="title">
-                      <h2
-                        :class="`headline font-weight-bold mb-4 text-uppercase`"
-                        :style="`color:` + item.color"
-                      >{{ item.name }}</h2>
-                      <p class="title font-weight-light">{{ item.role }}</p>
+  <v-container>
+    <v-col class="mb-2" cols="12">
+      <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
+        Work Experience
+      </h2>
+      <v-row justify="center">
+        <v-col cols="12">
+          <v-timeline :dense="true" v-for="(item, i) in items" :key="i">
+            <v-timeline-item :color="item.color" :icon="item.icon" large>
+              <v-expansion-panels flat accordion hover>
+                <v-expansion-panel>
+                  <v-col cols="12" sm="12" md="4" lg="4"></v-col>
+                  <v-expansion-panel-header>
+                    <div class style="padding-bottom: 0px !important">
+                      <div class="title">
+                        <h2
+                          :class="`font-weight-bold mb-4 text-uppercase text-center`"
+                          :style="`color:` + item.color"
+                        >
+                          {{ item.name }}
+                        </h2>
+                        <h3 class="title mb-5 font-weight-bold text-center">
+                          {{ item.role }}
+                        </h3>
+                        <h5 class="body-1 font-weight-light text-right">
+                          {{ item.year }}
+                        </h5>
+                      </div>
                     </div>
-                  </div>
-                </v-expansion-panel-header>
-                <v-expansion-panel-content>
-                  <div class="subtitle">
-                    <p class="body-1 font-italic text-right">{{ item.keyword }}</p>
-                    <p class="body-1 font-weight-light text-right">{{ item.year }}</p>
-                  </div>
-                  <div class="team mb-5">
-                    <p
-                      :class="`title text-capitalize font-weight-bold mb-4 text-left header-content`"
-                      :style="`color:` + item.color"
-                    >Team</p>
-                    <p
-                      :class="`body-1 font-weight-light text-left black--text`"
-                      v-html="item.team"
-                    >{{ item.team }}</p>
-                  </div>
-                  <div class="archiev mb-5">
-                    <p
-                      :class="`title text-capitalize font-weight-bold mb-4 text-left header-content`"
-                      :style="`color:` + item.color"
-                    >Achievements</p>
-                    <p
-                      v-for="(dot, i) in item.archiev"
-                      :key="i"
-                      :class="`body-1 font-weight-light text-left black--text`"
-                      v-html="dot"
-                    >{{ dot }}</p>
-                  </div>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-          </v-timeline-item>
-        </v-timeline>
-      </v-col>
-    </v-row>
-  </v-col>
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <h5 class="body-1 font-italic text-right">
+                      {{ item.keyword }}
+                    </h5>
+                    <div class="mb-5">
+                      <h5
+                        :class="`title text-capitalize font-weight-bold mb-4 text-left`"
+                        :style="`color:` + item.color"
+                      >
+                        Team
+                      </h5>
+                      <p
+                        :class="`body-1 font-weight-light text-left`"
+                        v-html="item.team"
+                      >
+                        {{ item.team }}
+                      </p>
+                    </div>
+                    <div class="mb-5">
+                      <h5
+                        :class="`title text-capitalize font-weight-bold mb-4 text-left`"
+                        :style="`color:` + item.color"
+                      >
+                        Achievements
+                      </h5>
+                      <p
+                        v-for="(dot, i) in item.archiev"
+                        :key="i"
+                        :class="`body-1 font-weight-light text-left`"
+                        v-html="dot"
+                      >
+                        {{ dot }}
+                      </p>
+                    </div>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+            </v-timeline-item>
+          </v-timeline>
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-container>
 </template>
 
-<style>
+<style scoped>
 col {
   padding: 0px 40px 0px 40px;
 }
-ul {
+p {
   padding-left: 15px !important;
 }
-.header-content {
-  padding: 0px 0px 0px 0px !important;
-  margin-top: 5px;
-  margin-bottom: 0px !important;
-  margin-left: 5px;
+.v-expansion-panel-header {
+  background-color: #17222f !important;
 }
-.content {
-  margin-left: 12px;
+.v-expansion-panel-content {
+  background-color: #17222f !important;
 }
-.title {
-  text-align: center !important;
+.v-timeline {
+  padding-top: 0px;
+}
+.v-timeline::before {
+  background: #17222f !important;
 }
 </style>
 
@@ -85,7 +103,7 @@ export default {
       {
         year: "Oct 2020 - Present",
         icon: "fas fa-user-secret",
-        color: "#4e2a82",
+        color: "#5b2bdc",
         name: "SCB",
         keyword: "Also known as Siam Commercial Bank",
         role: "Digital Threat and Vulnerability Management Engineer",
@@ -98,7 +116,7 @@ export default {
       {
         year: "June 2019 - May 2020",
         icon: "fas fa-server",
-        color: "#0c1af5",
+        color: "#1d5ff5",
         name: "REFINITIV",
         keyword: "Formerly Thomson Reuters Financial & Risk",
         role: "Technology Graduate Trainee",

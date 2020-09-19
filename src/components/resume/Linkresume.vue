@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-card-title class="headline displayresume"
+    <v-card-title class="headline displayresume text-uppercase"
       >Download My Resume</v-card-title
     >
 
@@ -26,14 +26,13 @@
   </v-card>
 </template>
 
-<style>
-.theme--dark {
-  background-color: #171e29 !important;
+<style scoped>
+.v-btn {
+  background-color: #17222f;
 }
 .displayresume {
   display: block !important;
   text-align: center;
-  color: white;
 }
 </style>
 
