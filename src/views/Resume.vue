@@ -7,12 +7,12 @@
       <Education />
       <Work />
       <v-container>
+        <Recognition />
         <v-row>
-          <Recognition />
-          <Cert />
           <Course />
           <Interest />
         </v-row>
+        <Cert />
       </v-container>
     </v-main>
     <Footer />
