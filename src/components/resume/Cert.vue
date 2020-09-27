@@ -7,8 +7,8 @@
       <v-col
         cols="6"
         sm="6"
-        md="3"
-        lg="3"
+        md="4"
+        lg="4"
         v-for="(c, i) in item.course"
         :key="i"
       >
@@ -17,8 +17,8 @@
           class="my-3"
           :alt="c.name"
           contain
-          min-height="80"
-          max-height="100"
+          min-height="100"
+          max-height="150"
           @click="overlay = !overlay"
         >
           <template v-slot:placeholder>
@@ -27,13 +27,15 @@
             </v-row>
           </template>
           <v-overlay :absolute="absolute" :value="overlay" :opacity="0.9">
-            <p class="body-1 font-weight-bold">{{ c.name }}</p>
+            <a class="body-1 font-weight-bold" :href="c.id">{{ c.name }}</a>
           </v-overlay>
         </v-img>
       </v-col>
     </v-row>
   </v-col>
 </template>
+
+<style scoped></style>
 
 <script lang="ts">
 export default {
@@ -44,20 +46,33 @@ export default {
     item: {
       course: [
         {
+          name: "CompTIA Network Vulnerability Assessment Professional",
+          icon: "cnvp",
+          id:
+            "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url",
+        },
+        {
           name: "CompTIA Pentest+",
           icon: "penp",
+          id:
+            "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url",
+          claim: "",
         },
         {
           name: "CompTIA Security+",
           icon: "secp",
+          id:
+            "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url",
         },
         {
           name: "HCIA Routing & Switching",
           icon: "hciars",
+          id: "",
         },
         {
           name: "CCNA Intro to Cybersecurity",
           icon: "ccna_in_sec",
+          id: "",
         },
       ],
     },
