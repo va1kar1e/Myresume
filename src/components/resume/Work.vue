@@ -123,7 +123,7 @@ export default {
         team: "Datacenter Operation - Network Change",
         archiev: [
           "&bull; Being responsible for <b>LAN Implementation</b> and troubleshooting to resolve the incident by following the <b>ITIL</b> process.",
-          "&bull; Working with network devices ie. <b>Cisco</b>, <b>Checkpoint</b>, <b>Netscreen</b>, <b>Palo Alto</b>, <b>F5</b>, and <b>HP Network Automation</b>.",
+          "&bull; Working with network devices and network Automation.",
           "&bull; Building auto-generate the command script by using <b>python</b>.",
           "&bull; Working with the architecture teams, management teams, and other implementation teams to follow enterprise architecture standards and company policies.",
           "&bull; Building the <b>TUMBUN Donation Platform</b> that is a part of the Company Sustainability Project to help people living in poverty. Being responsible for enabling financial services through a payment gateway; <b>OMISE</b>, logging transaction in <b>MongoDB</b>, and building API services connecting with the Front-end side by using <b>NodeJS</b> and <b>ExpressJS</b>.",

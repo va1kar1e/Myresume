@@ -24,6 +24,7 @@ export default {
     items: [
       ["primary", "CompTIA CySa+, CASP+"],
       ["primary", "ECC: CEH"],
+      ["primary", "OSCP"],
       ["primary", "CCNA: Routing & Switching"],
       ["primary", "Cybersecurity Assessment and Penetration Testing"],
     ],
