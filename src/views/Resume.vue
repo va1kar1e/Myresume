@@ -8,11 +8,11 @@
       <Work />
       <v-container>
         <Recognition />
+        <Cert />
         <v-row>
           <Course />
           <Interest />
         </v-row>
-        <Cert />
       </v-container>
     </v-main>
     <Footer />

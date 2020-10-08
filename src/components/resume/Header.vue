@@ -19,7 +19,7 @@
       <v-col class="mb-1" cols="12" md="12">
         <h1 class="display-2 font-weight-bold mb-1">SIWANONT SITTINAM</h1>
         <p class="display-1 font-weight-regular">
-          Digital Threat and Vulnerability Management Analyst
+          Digital Threat and Vulnerability Management Officer
         </p>
       </v-col>
     </v-row>

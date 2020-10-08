@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-col class="mb-2" cols="12">
-      <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
+    <v-col class="mb-1" cols="12">
+      <h2 class="display-1 font-weight-bold mb-1 text-uppercase text-center">
         Work Experience
       </h2>
       <v-row justify="center">
@@ -106,11 +106,13 @@ export default {
         color: "#5b2bdc",
         name: "SCB",
         keyword: "Also known as Siam Commercial Bank",
-        role: "Digital Threat and Vulnerability Management Engineer",
-        team:
-          "Security Threat & Vulnerability Department, Security Operations Division, Technology Architecture, Security & Risk Function<br>Chief Technology Office",
+        role: "Digital Threat and Vulnerability Management Officer",
+        team: "IT Security - SAT (Redteam)",
         archiev: [
-          "&bull; Being responsible for Cybersecurity, Penetration Testing, Vulnerability Management, and Risk Assessment.",
+          "&bull; Being responsible for <b>Cybersecurity Assessment</b>.",
+          "&bull; Being responsible for <b>Penetration Testing</b>, <b>Vulnerability Assessment</b>, and <b>Hardening</b>.",
+          // "&bull; Being responsible for <b>DevSecOps</b>.",
+          "&bull; Assessing Cybersecurity with <b>CIS Benchmark</b>.",
         ],
       },
       {
