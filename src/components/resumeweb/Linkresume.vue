@@ -29,7 +29,7 @@
 
 <style scoped>
 .v-btn {
-  background-color: #17222f;
+  background-color: #263859;
 }
 .displayresume {
   display: block !important;
@@ -47,7 +47,7 @@ export default {
       value: location.href + "d/resume",
       size: 200,
       renderAs: "svg",
-      background: "#171e29",
+      background: "#263859",
       foreground: "#ffffff",
     };
   },

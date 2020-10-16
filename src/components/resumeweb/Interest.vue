@@ -9,7 +9,7 @@
         v-for="(item, i) in items"
         :key="i"
         class="ma-1"
-        :color="item[0]"
+        color="#ffffff"
         outlined
       >
         {{ item[1] }}

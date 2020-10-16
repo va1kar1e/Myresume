@@ -33,7 +33,7 @@
 
 <style scoped>
 .theme--dark.v-expansion-panels .v-expansion-panel {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 .header-content {
   padding: 0px 0px 0px 0px !important;

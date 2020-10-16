@@ -47,10 +47,10 @@ p {
   padding-left: 15px !important;
 }
 .v-expansion-panel-header {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 .v-expansion-panel-content {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 </style>
 

@@ -7,7 +7,7 @@
           <p
             v-for="(content, i) in contentText"
             :key="i"
-            class="title font-weight-light text-left text-md-justify"
+            class="title font-weight-bold text-left text-md-justify"
             v-html="content"
           >
             {{ content }}
