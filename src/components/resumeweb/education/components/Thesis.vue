@@ -35,18 +35,12 @@
 </style>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
   name: "Thesis",
   data: () => ({
-    archieve: [
-      "&bull; Researching the <b>text clustering</b> by meaning in each context.",
-      "&bull; Words Tokenization with <b>NLTK</b> and <b>PyThaiNLP</b> Library.",
-      "&bull; Words Prioritization with <b>TF-IDF</b>.",
-      "&bull; Words Grouping by transforming text to <b>Word2Vec Model</b>.",
-      "&bull; Building API services calculating text similarity with <b>Word2Vec Model</b> using <b>Flask</b> and <b>GenSim Library</b>.",
-      "&bull; Building a web application to display data resulting from API services with <b>ReactJS</b>.",
-      "&bull; Presentation Video <a href='v/srclus' target='blank'>Link</a>",
-    ],
+    archieve: info.education.thesis.archieve
   }),
 };
 </script>

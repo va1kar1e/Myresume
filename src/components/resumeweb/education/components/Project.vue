@@ -5,25 +5,27 @@
         <p
           :class="`title text-capitalize font-weight-bold text-left green--text`"
         >
-          Internship
+          Project
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <p
-          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
-        >
-          Kyoto Institute of Technology Software Engineering Laboratory
-        </p>
-
         <p :class="`body-1 font-weight-light text-left`">
-          Making a Fault-Prones Notification for Developer Team on Raspbery Pi
+          1. Trusted Web Domain Analysis based on SSL/TLS certificate
         </p>
-
         <v-list-item v-for="(item, i) in archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
         </v-list-item>
+        <p :class="`body-1 font-weight-light text-left`">
+          2. Explore a Danger area with a Robot using
+          <b>NodeMCU</b> and
+          <b>P2P Camera </b>
+        </p>
+        <p :class="`body-1 font-weight-light text-left`">
+          3. Web-based Hospital appointment management system using
+          <b>Django</b>
+        </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
@@ -42,13 +44,12 @@
 </style>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
-  name: "Internship",
+  name: "Project",
   data: () => ({
-    archieve: [
-      "&bull; Studying <b>automated find bugs</b> with the review code process.",
-      "&bull; Studying <b>face detection</b> and <b>recognition</b> to build an authorization system with biometric on <b>Raspberry Pi</b>.",
-    ],
+    archieve: info.education.project.archieve
   }),
 };
 </script>

@@ -5,12 +5,22 @@
         <p
           :class="`title text-capitalize font-weight-bold text-left green--text`"
         >
-          Project
+          Extracurricular Work
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
+        <p
+          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
+        >
+          Massive Information and Knowledge Engineering Laboratory
+        </p>
+        <p
+          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
+        >
+          Achievements
+        </p>
         <p :class="`body-1 font-weight-light text-left`">
-          1. Trusted Web Domain Analysis based on SSL/TLS certificate
+          1. Social Network Analysis with Ego Network on Twitter Data
         </p>
         <v-list-item v-for="(item, i) in archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
@@ -18,13 +28,8 @@
           </p>
         </v-list-item>
         <p :class="`body-1 font-weight-light text-left`">
-          2. Explore a Danger area with a Robot using
-          <b>NodeMCU</b> and
-          <b>P2P Camera </b>
-        </p>
-        <p :class="`body-1 font-weight-light text-left`">
-          3. Web-based Hospital appointment management system using
-          <b>Django</b>
+          2. <b>Ubuntu</b> and <b>Centos server</b> administrator and teacher
+          assistant for Python classes.
         </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
@@ -44,14 +49,12 @@
 </style>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
-  name: "Project",
+  name: "Work",
   data: () => ({
-    archieve: [
-      "&bull; Studying the threat unawareness with the SSL/TLS certificate of the top 50 university websites.",
-      "&bull; Collecting SSL/TLS certificate and ranking web domain trust with <b>TestSSL.sh</b> and <b>Javascript</b>.",
-      "&bull; Building a web dashboard to display the rank of web domain trust with description using <b>NextJS</b> and <b>SemanticUI</b>.",
-    ],
+    archieve: info.education.work.archieve
   }),
 };
 </script>

@@ -11,13 +11,13 @@
               <h2
                 :class="`headline font-weight-bold mb-4 text-uppercase green--text text-center`"
               >
-                KASETSART UNIVERSITY
+                {{ university }}
               </h2>
               <h3 class="title font-weight-bold text-center">
-                Bachelor of Engineering, Computer Engineering
+                {{ faculty }}
               </h3>
               <h5 class="body-1 font-italic text-right">
-                August 2015 - May 2019
+                {{ period }}
               </h5>
             </div>
           </v-expansion-panel-header>
@@ -55,6 +55,7 @@ p {
 </style>
 
 <script>
+import info from "@/assets/info.json";
 import Thesis from "./components/Thesis.vue";
 import Project from "./components/Project.vue";
 import Internship from "./components/Internship.vue";
@@ -62,6 +63,11 @@ import Work from "./components/Work.vue";
 
 export default {
   name: "Education",
+  data: () => ({
+    university: info.education.main.university,
+    faculty: info.education.main.faculty,
+    period: info.education.main.period
+  }),
   components: {
     Thesis,
     Project,

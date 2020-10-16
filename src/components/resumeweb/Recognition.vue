@@ -39,26 +39,12 @@
 </template>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
   name: "Recogntion",
   data: () => ({
-    item: {
-      course: [
-        {
-          what: "CONSOLATION PRIZE AWARD",
-          when: "Huawei ICT Competition 2019 ",
-          who: "Huawei Technologies (Thailand)",
-          image: "hict",
-        },
-        {
-          what: "CREATIVE DESIGN AWARD",
-          when: "Thailand Financial Cybersecurity 2017",
-          who:
-            "ETDA, Bank of Thailand, Securities and Exchange Commission of Thailand",
-          image: "finsec",
-        },
-      ],
-    },
+    item: info.recogntion.item
   }),
 };
 </script>

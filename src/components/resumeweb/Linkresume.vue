@@ -21,6 +21,7 @@
           <span class="mr-2">Downlond Link</span>
           <v-icon color="white">fas fa-cloud-download-alt</v-icon>
         </v-btn>
+        <v-btn @click="createPDF" text><span class="mr-2">Download PDF</span></v-btn>
       </v-row>
     </v-card-text>
   </v-card>
@@ -38,6 +39,7 @@
 
 <script>
 import QrcodeVue from "qrcode.vue";
+import jsPDF from 'jspdf'
 
 export default {
   data() {
@@ -48,6 +50,14 @@ export default {
       background: "#171e29",
       foreground: "#ffffff",
     };
+  },
+  methods: {
+    createPDF () {
+      let pdfName = 'test'; 
+      var doc = new jsPDF();
+      doc.text("Hello World", 10, 10);
+      doc.save(pdfName + '.pdf');
+    }
   },
   components: {
     QrcodeVue,

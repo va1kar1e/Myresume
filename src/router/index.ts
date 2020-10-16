@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import Resume from "@/views/Resume.vue";
+import Resumeweb from "@/views/Resumeweb.vue";
 // import Path from "@/views/Path.vue";
 
 const RESUME_LINK =
@@ -12,7 +12,7 @@ const RESUME_LINK =
 const routes = [
   {
     path: "/",
-    component: Resume,
+    component: Resumeweb,
     name: "Home",
     meta: { title: "Home" },
   },

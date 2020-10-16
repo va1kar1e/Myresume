@@ -95,58 +95,13 @@ p {
 }
 </style>
 
-<script>
+<script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
   name: "Work",
   data: () => ({
-    items: [
-      {
-        year: "Oct 2020 - Present",
-        icon: "fas fa-user-secret",
-        color: "#5b2bdc",
-        name: "SCB",
-        keyword: "Also known as Siam Commercial Bank",
-        role: "Digital Threat and Vulnerability Management Officer",
-        team: "IT Security - SAT (Redteam)",
-        archiev: [
-          "&bull; Being responsible for <b>Cybersecurity Assessment</b>.",
-          "&bull; Being responsible for <b>Penetration Testing</b>, <b>Vulnerability Assessment</b>, and <b>Hardening</b>.",
-          // "&bull; Being responsible for <b>DevSecOps</b>.",
-          "&bull; Assessing Cybersecurity with <b>CIS Benchmark</b>.",
-        ],
-      },
-      {
-        year: "June 2019 - May 2020",
-        icon: "fas fa-server",
-        color: "#1d5ff5",
-        name: "REFINITIV",
-        keyword: "Formerly Thomson Reuters Financial & Risk",
-        role: "Technology Graduate Trainee",
-        team: "Datacenter Operation - Network Change",
-        archiev: [
-          "&bull; Being responsible for <b>LAN Implementation</b> and troubleshooting to resolve the incident by following the <b>ITIL</b> process.",
-          "&bull; Working with network devices and network Automation.",
-          "&bull; Building auto-generate the command script by using <b>python</b>.",
-          "&bull; Working with the architecture teams, management teams, and other implementation teams to follow enterprise architecture standards and company policies.",
-          "&bull; Building the <b>TUMBUN Donation Platform</b> that is a part of the Company Sustainability Project to help people living in poverty. Being responsible for enabling financial services through a payment gateway; <b>OMISE</b>, logging transaction in <b>MongoDB</b>, and building API services connecting with the Front-end side by using <b>NodeJS</b> and <b>ExpressJS</b>.",
-        ],
-      },
-      {
-        year: "June 2017 - August 2017",
-        icon: "fas fa-code",
-        color: "#684b90",
-        name: "INTERNET MARKETING",
-        keyword:
-          "Also known as PANTIP - The popular internet forum in Thailand",
-        role: "Fullstack Developer & Data Scientist",
-        team: "Data Science",
-        archiev: [
-          "&bull; Being responsible for building a web dashboard monitoring active users and Analyzing Social Influencer with <b>Social Graph</b> and Trend keywords with <b>Wordcloud</b>.",
-          "&bull; Building a web application with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and text visualization with D3JS.",
-          "&bull; Processing and storing data in <b>MongoDB</b>.",
-        ],
-      },
-    ],
+    items: info.work.items
   }),
 };
 </script>

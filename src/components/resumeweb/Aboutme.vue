@@ -25,12 +25,13 @@ p {
 </style>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
-  data: () => ({
-    contentText: [
-      "&nbsp;&nbsp;&nbsp;&nbsp;Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Cybersecurity Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development.",
-      "&nbsp;&nbsp;&nbsp;&nbsp;I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization.",
-    ],
-  }),
+  data() {
+    return {
+      contentText: info.aboutme.contentText,
+    };
+  },
 };
 </script>

@@ -5,32 +5,25 @@
         <p
           :class="`title text-capitalize font-weight-bold text-left green--text`"
         >
-          Extracurricular Work
+          Internship
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
         <p
           :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
         >
-          Massive Information and Knowledge Engineering Laboratory
+          Kyoto Institute of Technology Software Engineering Laboratory
         </p>
-        <p
-          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
-        >
-          Achievements
-        </p>
+
         <p :class="`body-1 font-weight-light text-left`">
-          1. Social Network Analysis with Ego Network on Twitter Data
+          Making a Fault-Prones Notification for Developer Team on Raspbery Pi
         </p>
+
         <v-list-item v-for="(item, i) in archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
         </v-list-item>
-        <p :class="`body-1 font-weight-light text-left`">
-          2. <b>Ubuntu</b> and <b>Centos server</b> administrator and teacher
-          assistant for Python classes.
-        </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
@@ -49,14 +42,12 @@
 </style>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
-  name: "Work",
+  name: "Internship",
   data: () => ({
-    archieve: [
-      "&bull; Writing a research paper in order to study the relationship of twitter users from tweets with <b>Ego Network</b>.",
-      "&bull; Classifying Twitter user behavior from user's tweets with <b>Google Cloud Natural Language</b> and Inserting results into <b>MongoDB</b>.",
-      "&bull; Building a web visualization to visualize the relationship of users with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and building an <b>Ego Network graph</b> with <b>D3JS</b>.",
-    ],
+    archieve: info.education.internship.archieve
   }),
 };
 </script>

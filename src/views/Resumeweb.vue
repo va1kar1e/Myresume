@@ -24,16 +24,16 @@
 </style>
 
 <script>
-import Navbar from "@/components/resume/Navbar.vue";
-import Footer from "@/components/resume/Footer.vue";
-import Header from "@/components/resume/Header.vue";
-import Aboutme from "@/components/resume/Aboutme.vue";
-import Education from "@/components/resume/education/Education.vue";
-import Work from "@/components/resume/Work.vue";
-import Recognition from "@/components/resume/Recognition.vue";
-import Cert from "@/components/resume/Cert.vue";
-import Course from "@/components/resume/Course.vue";
-import Interest from "@/components/resume/Interest.vue";
+import Navbar from "@/components/resumeweb/Navbar.vue";
+import Header from "@/components/resumeweb/Header.vue";
+import Footer from "@/components/resumeweb/Footer.vue";
+import Aboutme from "@/components/resumeweb/Aboutme.vue";
+import Education from "@/components/resumeweb/education/Education.vue";
+import Work from "@/components/resumeweb/Work.vue";
+import Recognition from "@/components/resumeweb/Recognition.vue";
+import Cert from "@/components/resumeweb/Cert.vue";
+import Course from "@/components/resumeweb/Course.vue";
+import Interest from "@/components/resumeweb/Interest.vue";
 
 export default {
   data() {

@@ -19,19 +19,12 @@
 </template>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
   name: "Interest",
   data: () => ({
-    items: [
-      ["primary", "Computer Network"],
-      ["primary", "Cybersecurity"],
-      ["primary", "Data Visualization"],
-      ["primary", "Data Analytic"],
-      ["primary", "NLP"],
-      ["primary", "Web Development"],
-      ["primary", "Internet Of Thing"],
-      ["primary", "Photography"],
-    ],
+    items: info.interest.items
   }),
 };
 </script>
