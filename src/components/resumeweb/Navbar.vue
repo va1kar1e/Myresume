@@ -56,10 +56,10 @@
 
 <style scoped>
 .v-app-bar {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 .v-sheet {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 </style>
 

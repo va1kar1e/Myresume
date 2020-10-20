@@ -21,6 +21,7 @@
           <span class="mr-2">Downlond Link</span>
           <v-icon color="white">fas fa-cloud-download-alt</v-icon>
         </v-btn>
+        <!-- <v-btn @click="createPDF" text><span class="mr-2">Download PDF</span></v-btn> -->
       </v-row>
     </v-card-text>
   </v-card>
@@ -28,7 +29,7 @@
 
 <style scoped>
 .v-btn {
-  background-color: #17222f;
+  background-color: #263859;
 }
 .displayresume {
   display: block !important;
@@ -38,6 +39,7 @@
 
 <script>
 import QrcodeVue from "qrcode.vue";
+import jsPDF from 'jspdf'
 
 export default {
   data() {
@@ -45,9 +47,20 @@ export default {
       value: location.href + "d/resume",
       size: 200,
       renderAs: "svg",
-      background: "#171e29",
+      background: "#263859",
       foreground: "#ffffff",
     };
+  },
+  methods: {
+    createPDF () {
+      let pdfName = 'test'; 
+      var doc = new jsPDF();
+      doc.text("Siwanont Sittinam", 10, 10);
+      doc.setDrawColor(38, 56, 89)
+      doc.setLineWidth(0.5);
+      doc.line(10, 40, 200, 40);
+      doc.save(pdfName + '.pdf');
+    }
   },
   components: {
     QrcodeVue,

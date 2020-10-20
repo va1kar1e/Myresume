@@ -38,7 +38,7 @@
 
 <style scoped>
 .theme--dark.v-expansion-panels .v-expansion-panel {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 .header-content {
   padding: 0px 0px 0px 0px !important;
@@ -49,14 +49,12 @@
 </style>
 
 <script lang="ts">
+import info from "@/assets/info.json";
+
 export default {
   name: "Work",
   data: () => ({
-    archieve: [
-      "&bull; Writing a research paper in order to study the relationship of twitter users from tweets with <b>Ego Network</b>.",
-      "&bull; Classifying Twitter user behavior from user's tweets with <b>Google Cloud Natural Language</b> and Inserting results into <b>MongoDB</b>.",
-      "&bull; Building a web visualization to visualize the relationship of users with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and building an <b>Ego Network graph</b> with <b>D3JS</b>.",
-    ],
+    archieve: info.education.work.archieve
   }),
 };
 </script>

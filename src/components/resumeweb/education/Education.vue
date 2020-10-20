@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-col class="mb-1 py-2" cols="12" md="12" lg="12">
+    <v-col class="mb-2 py-2" cols="12" md="12" lg="12">
       <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
         Education
       </h2>
@@ -11,13 +11,13 @@
               <h2
                 :class="`headline font-weight-bold mb-4 text-uppercase green--text text-center`"
               >
-                KASETSART UNIVERSITY
+                {{ university }}
               </h2>
               <h3 class="title font-weight-bold text-center">
-                Bachelor of Engineering, Computer Engineering
+                {{ faculty }}
               </h3>
               <h5 class="body-1 font-italic text-right">
-                August 2015 - May 2019
+                {{ period }}
               </h5>
             </div>
           </v-expansion-panel-header>
@@ -47,14 +47,15 @@ p {
   padding-left: 15px !important;
 }
 .v-expansion-panel-header {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 .v-expansion-panel-content {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 </style>
 
 <script>
+import info from "@/assets/info.json";
 import Thesis from "./components/Thesis.vue";
 import Project from "./components/Project.vue";
 import Internship from "./components/Internship.vue";
@@ -62,6 +63,11 @@ import Work from "./components/Work.vue";
 
 export default {
   name: "Education",
+  data: () => ({
+    university: info.education.main.university,
+    faculty: info.education.main.faculty,
+    period: info.education.main.period
+  }),
   components: {
     Thesis,
     Project,

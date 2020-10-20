@@ -17,9 +17,9 @@
         </v-img>
       </v-col>
       <v-col class="mb-1" cols="12" md="12">
-        <h1 class="display-2 font-weight-bold mb-1">SIWANONT SITTINAM</h1>
+        <h1 class="display-2 font-weight-bold mb-1">{{ fullname }}</h1>
         <p class="display-1 font-weight-regular">
-          Digital Threat and Vulnerability Management Analyst
+          {{ title }}
         </p>
       </v-col>
     </v-row>
@@ -38,3 +38,15 @@
     </v-row>
   </v-container>
 </template>
+
+<script lang="ts">
+import info from "@/assets/info.json";
+
+export default {
+  name: "Course",
+  data: () => ({
+    fullname: info.header.fullname,
+    title: info.header.title
+  }),
+};
+</script>

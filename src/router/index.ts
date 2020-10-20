@@ -3,16 +3,13 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import Resume from "@/views/Resume.vue";
-// import Path from "@/views/Path.vue";
-
-const RESUME_LINK =
-  "https://drive.google.com/file/d/1cfbfqikQyDMXGXFpfzBGxSCgbqA0agQX/view";
+import Resumeweb from "@/views/Resumeweb.vue";
+import info from "@/assets/info.json";
 
 const routes = [
   {
     path: "/",
-    component: Resume,
+    component: Resumeweb,
     name: "Home",
     meta: { title: "Home" },
   },
@@ -42,7 +39,7 @@ const routes = [
         path: "resume",
         name: "Resume",
         beforeEnter() {
-          location.href = RESUME_LINK;
+          location.href = info.urllink.resume;
         },
       },
     ],
@@ -55,14 +52,14 @@ const routes = [
         path: "linkedin",
         name: "Linkedin",
         beforeEnter() {
-          location.href = "https://linkedin.com/in/siwanont";
+          location.href = info.urllink.linkedin;
         },
       },
       {
         path: "github",
         name: "Github",
         beforeEnter() {
-          location.href = "https://github.com/va1kar1e";
+          location.href = info.urllink.github;
         },
       },
     ],
@@ -75,16 +72,16 @@ const routes = [
         path: "srclus",
         name: "Srclus",
         beforeEnter() {
-          location.href = "https://www.youtube.com/watch?v=eMprd8Fwt80";
+          location.href = info.urllink.srclusYT;
         },
       },
-      // {
-      //   path: "explorercar",
-      //   name: "Explerer Car",
-      //   beforeEnter() {
-      //     location.href = "https://www.youtube.com/watch?v=Lg-nDld06WY";
-      //   },
-      // },
+      {
+        path: "explorercar",
+        name: "Explerer Car",
+        beforeEnter() {
+          location.href = info.urllink.explorercarYT;
+        },
+      },
     ],
   },
 ];

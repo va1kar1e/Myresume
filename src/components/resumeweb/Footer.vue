@@ -25,7 +25,7 @@
 
 <style scoped>
 .v-footer {
-  background-color: #17222f !important;
+  background-color: #263859 !important;
 }
 .caption {
   margin-bottom: 0px !important;
