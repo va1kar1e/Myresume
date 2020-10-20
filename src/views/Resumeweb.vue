@@ -7,11 +7,10 @@
       <Education />
       <Work />
       <v-container>
-        <Recognition />
         <Cert />
         <v-row>
-          <Course />
-          <Interest />
+          <Recognition />
+          <CourseInterest />
         </v-row>
       </v-container>
     </v-main>
@@ -32,8 +31,7 @@ import Education from "@/components/resumeweb/education/Education.vue";
 import Work from "@/components/resumeweb/Work.vue";
 import Recognition from "@/components/resumeweb/Recognition.vue";
 import Cert from "@/components/resumeweb/Cert.vue";
-import Course from "@/components/resumeweb/Course.vue";
-import Interest from "@/components/resumeweb/Interest.vue";
+import CourseInterest from "@/components/resumeweb/CourseInterest.vue";
 
 export default {
   data() {
@@ -50,8 +48,7 @@ export default {
     Work,
     Recognition,
     Cert,
-    Course,
-    Interest,
+    CourseInterest
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-col class="mb-1" cols="12">
-      <h2 class="display-1 font-weight-bold mb-1 text-uppercase text-center">
+      <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
         Work Experience
       </h2>
       <v-row justify="center">
@@ -23,7 +23,7 @@
                         <h3 class="title mb-5 font-weight-bold text-center">
                           {{ item.role }}
                         </h3>
-                        <h5 class="body-1 font-weight-light text-right">
+                        <h5 class="body-1 text-right">
                           {{ item.year }}
                         </h5>
                       </div>
@@ -33,7 +33,7 @@
                     <h5 class="body-1 font-italic text-right">
                       {{ item.keyword }}
                     </h5>
-                    <div class="mb-5">
+                    <div class="mb-3">
                       <h5
                         :class="`title text-capitalize font-weight-bold mb-4 text-left`"
                         :style="`color:` + item.color"
@@ -41,7 +41,7 @@
                         Team
                       </h5>
                       <p
-                        :class="`body-1 font-weight-light text-left`"
+                        :class="`body-1 text-left`"
                         v-html="item.team"
                       >
                         {{ item.team }}
@@ -57,7 +57,7 @@
                       <p
                         v-for="(dot, i) in item.archiev"
                         :key="i"
-                        :class="`body-1 font-weight-light text-left`"
+                        :class="`body-1 text-left`"
                         v-html="dot"
                       >
                         {{ dot }}

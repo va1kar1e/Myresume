@@ -9,126 +9,6 @@
       "&nbsp;&nbsp;&nbsp;&nbsp;I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
     ]
   },
-  "cert": {
-    "item": {
-      "course": [
-        {
-          "name": "CompTIA Network Vulnerability Assessment Professional",
-          "icon": "cnvp",
-          "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
-        },
-        {
-          "name": "CompTIA Pentest+",
-          "icon": "penp",
-          "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url",
-          "claim": ""
-        },
-        {
-          "name": "CompTIA Security+",
-          "icon": "secp",
-          "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
-        },
-        {
-          "name": "HCIA Routing & Switching",
-          "icon": "hciars",
-          "id": ""
-        },
-        {
-          "name": "CCNA Intro to Cybersecurity",
-          "icon": "ccna_in_sec",
-          "id": ""
-        }
-      ]
-    }
-  },
-  "course": {
-    "items": [
-      ["primary", "CompTIA CySa+, CASP+"],
-      ["primary", "ECC: CEH"],
-      ["primary", "OSCP"],
-      ["primary", "CCNA: Routing & Switching"],
-      ["primary", "Cybersecurity Assessment and Penetration Testing"]
-    ]
-  },
-  "interest": {
-    "items": [
-      ["primary", "Computer Network"],
-      ["primary", "Cybersecurity"],
-      ["primary", "Data Visualization"],
-      ["primary", "Data Analytic"],
-      ["primary", "NLP"],
-      ["primary", "Web Development"],
-      ["primary", "Internet Of Thing"],
-      ["primary", "Photography"]
-    ]
-  },
-  "recogntion": {
-    "item": {
-      "course": [
-        {
-          "what": "CONSOLATION PRIZE AWARD",
-          "when": "Huawei ICT Competition 2019 ",
-          "who": "Huawei Technologies (Thailand)",
-          "image": "hict"
-        },
-        {
-          "what": "CREATIVE DESIGN AWARD",
-          "when": "Thailand Financial Cybersecurity 2017",
-          "who": "ETDA, Bank of Thailand, Securities and Exchange Commission of Thailand",
-          "image": "finsec"
-        }
-      ]
-    }
-  },
-  "work": {
-    "items": [
-      {
-        "year": "Oct 2020 - Present",
-        "icon": "fas fa-user-secret",
-        "color": "#5b2bdc",
-        "name": "SCB",
-        "keyword": "Also known as Siam Commercial Bank",
-        "role": "Digital Threat and Vulnerability Management Officer",
-        "team": "IT Security - SAT (Redteam)",
-        "archiev": [
-          "&bull; Being responsible for <b>Cybersecurity Assessment</b>.",
-          "&bull; Being responsible for <b>Penetration Testing</b>, <b>Vulnerability Assessment</b>, and <b>Hardening</b>.",
-          "&bull; Being responsible for <b>DevSecOps</b>.",
-          "&bull; Assessing Cybersecurity with <b>CIS Benchmark</b>."
-        ]
-      },
-      {
-        "year": "June 2019 - May 2020",
-        "icon": "fas fa-server",
-        "color": "#1d5ff5",
-        "name": "REFINITIV",
-        "keyword": "Formerly Thomson Reuters Financial & Risk",
-        "role": "Technology Graduate Trainee",
-        "team": "Datacenter Operation - Network Change",
-        "archiev": [
-          "&bull; Being responsible for <b>LAN Implementation</b> and troubleshooting to resolve the incident by following the <b>ITIL</b> process.",
-          "&bull; Working with network devices and network Automation.",
-          "&bull; Building auto-generate the command script by using <b>python</b>.",
-          "&bull; Working with the architecture teams, management teams, and other implementation teams to follow enterprise architecture standards and company policies.",
-          "&bull; Building the <b>TUMBUN Donation Platform</b> that is a part of the Company Sustainability Project to help people living in poverty. Being responsible for enabling financial services through a payment gateway; <b>OMISE</b>, logging transaction in <b>MongoDB</b>, and building API services connecting with the Front-end side by using <b>NodeJS</b> and <b>ExpressJS</b>."
-        ]
-      },
-      {
-        "year": "June 2017 - August 2017",
-        "icon": "fas fa-code",
-        "color": "#684b90",
-        "name": "INTERNET MARKETING",
-        "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
-        "role": "Fullstack Developer & Data Scientist",
-        "team": "Data Science",
-        "archiev": [
-          "&bull; Being responsible for building a web dashboard monitoring active users and Analyzing Social Influencer with <b>Social Graph</b> and Trend keywords with <b>Wordcloud</b>.",
-          "&bull; Building a web application with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and text visualization with D3JS.",
-          "&bull; Processing and storing data in <b>MongoDB</b>."
-        ]
-      }
-    ]
-  },
   "education": {
     "main": {
       "university": "KASETSART UNIVERSITY",
@@ -166,5 +46,111 @@
         "&bull; Building a web dashboard to display the rank of web domain trust with description using <b>NextJS</b> and <b>SemanticUI</b>."
       ]
     }
+  },
+  "work": {
+    "items": [
+      {
+        "year": "Oct 2020 - Present",
+        "icon": "fas fa-user-secret",
+        "color": "#5b2bdc",
+        "name": "SCB",
+        "keyword": "Also known as Siam Commercial Bank",
+        "role": "Digital Threat and Vulnerability Management Officer",
+        "team": "IT Security - SAT (Redteam)",
+        "archiev": [
+          "&bull; Being responsible for <b>Penetration Testing</b>, <b>Vulnerability Assessment</b> and <b>Hardening</b>.",
+          "&bull; Being responsible for <b>Cloud Security</b> and <b>Compliance Orchestration</b>."
+        ]
+      },
+      {
+        "year": "June 2019 - May 2020",
+        "icon": "fas fa-server",
+        "color": "#1d5ff5",
+        "name": "REFINITIV",
+        "keyword": "Formerly Thomson Reuters Financial & Risk",
+        "role": "Technology Graduate Trainee",
+        "team": "Datacenter Operation - Network Change",
+        "archiev": [
+          "&bull; Being responsible for <b>LAN Implementation</b> and troubleshooting to resolve the incident by following the <b>ITIL</b> process.",
+          "&bull; Working with network devices and network Automation.",
+          "&bull; Working with the architecture teams, management teams, and other implementation teams to follow enterprise architecture standards and company policies.",
+          "&bull; Building the <b>TUMBUN Donation Platform</b> that is a part of the Company Sustainability Project to help people living in poverty. Being responsible for enabling financial services through a payment gateway; <b>OMISE</b>, logging transaction in <b>MongoDB</b>, and building API services connecting with the Front-end side by using <b>NodeJS</b> and <b>ExpressJS</b>."
+        ]
+      },
+      {
+        "year": "June 2017 - August 2017",
+        "icon": "fas fa-code",
+        "color": "#684b90",
+        "name": "INTERNET MARKETING",
+        "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
+        "role": "Fullstack Developer & Data Scientist (Outsource)",
+        "team": "Data Science",
+        "archiev": [
+          "&bull; Being responsible for building a web dashboard monitoring active users and Analyzing Social Influencer with <b>Social Graph</b> and Trend keywords with <b>Wordcloud</b>.",
+          "&bull; Building a web application with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and text visualization with <b>D3JS</b>.",
+          "&bull; Processing and storing data in <b>MongoDB</b>."
+        ]
+      }
+    ]
+  },
+  "recogntion": {
+    "item": {
+      "course": [
+        {
+          "what": "CONSOLATION PRIZE AWARD",
+          "when": "Huawei ICT Competition 2019 ",
+          "who": "Huawei Technologies (Thailand)"
+        },
+        {
+          "what": "CREATIVE DESIGN AWARD",
+          "when": "Thailand Financial Cybersecurity 2017",
+          "who": "ETDA, Bank of Thailand, Securities and Exchange Commission of Thailand"
+        }
+      ]
+    }
+  },
+  "cert": {
+    "item": {
+      "course": [
+        {
+          "name": "CompTIA Network Vulnerability Assessment Professional",
+          "icon": "cnvp",
+          "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
+        },
+        {
+          "name": "CompTIA Pentest+",
+          "icon": "penp",
+          "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url",
+          "claim": ""
+        },
+        {
+          "name": "CompTIA Security+",
+          "icon": "secp",
+          "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
+        },
+        {
+          "name": "HCIA Routing & Switching",
+          "icon": "hciars",
+          "id": ""
+        }
+      ]
+    }
+  },
+  "course": {
+    "items": [
+      ["primary", "OSCP"],
+      ["primary", "CompTIA CySa+, CASP+"],
+      ["primary", "CCNA: Routing & Switching"]
+    ]
+  },
+  "interest": {
+    "items": [
+      ["primary", "Cybersecurity"],
+      ["primary", "Computer Network"],
+      ["primary", "Data Analytic & Visualization"],
+      ["primary", "Web Development"],
+      ["primary", "Internet Of Thing"],
+      ["primary", "Photography"]
+    ]
   }
 }

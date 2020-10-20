@@ -21,7 +21,7 @@
           <span class="mr-2">Downlond Link</span>
           <v-icon color="white">fas fa-cloud-download-alt</v-icon>
         </v-btn>
-        <v-btn @click="createPDF" text><span class="mr-2">Download PDF</span></v-btn>
+        <!-- <v-btn @click="createPDF" text><span class="mr-2">Download PDF</span></v-btn> -->
       </v-row>
     </v-card-text>
   </v-card>
@@ -55,7 +55,10 @@ export default {
     createPDF () {
       let pdfName = 'test'; 
       var doc = new jsPDF();
-      doc.text("Hello World", 10, 10);
+      doc.text("Siwanont Sittinam", 10, 10);
+      doc.setDrawColor(38, 56, 89)
+      doc.setLineWidth(0.5);
+      doc.line(10, 40, 200, 40);
       doc.save(pdfName + '.pdf');
     }
   },

@@ -7,8 +7,8 @@
       <v-col
         cols="6"
         sm="6"
-        md="4"
-        lg="4"
+        md="3"
+        lg="3"
         v-for="(c, i) in item.course"
         :key="i"
       >
