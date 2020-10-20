@@ -1,4 +1,11 @@
 {
+  "urllink": {
+    "resume": "https://drive.google.com/file/d/1cfbfqikQyDMXGXFpfzBGxSCgbqA0agQX/view",
+    "linkedin": "https://linkedin.com/in/siwanont",
+    "github": "https://github.com/va1kar1ehttps://github.com/va1kar1e",
+    "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
+    "explorercarYT": "https://www.youtube.com/watch?v=Lg-nDld06WY"
+  },
   "header": {
     "fullname": "SIWANONT SITTINAM",
     "title": "Digital Threat and Vulnerability Management Officer"
@@ -72,7 +79,7 @@
         "team": "Datacenter Operation - Network Change",
         "archiev": [
           "&bull; Being responsible for <b>LAN Implementation</b> and troubleshooting to resolve the incident by following the <b>ITIL</b> process.",
-          "&bull; Working with network devices and network Automation.",
+          "&bull; Working with network devices and network automation.",
           "&bull; Working with the architecture teams, management teams, and other implementation teams to follow enterprise architecture standards and company policies.",
           "&bull; Building the <b>TUMBUN Donation Platform</b> that is a part of the Company Sustainability Project to help people living in poverty. Being responsible for enabling financial services through a payment gateway; <b>OMISE</b>, logging transaction in <b>MongoDB</b>, and building API services connecting with the Front-end side by using <b>NodeJS</b> and <b>ExpressJS</b>."
         ]
@@ -83,7 +90,7 @@
         "color": "#684b90",
         "name": "INTERNET MARKETING",
         "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
-        "role": "Fullstack Developer & Data Scientist (Outsource)",
+        "role": "Fullstack Developer (Outsource)",
         "team": "Data Science",
         "archiev": [
           "&bull; Being responsible for building a web dashboard monitoring active users and Analyzing Social Influencer with <b>Social Graph</b> and Trend keywords with <b>Wordcloud</b>.",
@@ -149,7 +156,7 @@
       ["primary", "Computer Network"],
       ["primary", "Data Analytic & Visualization"],
       ["primary", "Web Development"],
-      ["primary", "Internet Of Thing"],
+      ["primary", "Internet Of Things"],
       ["primary", "Photography"]
     ]
   }
