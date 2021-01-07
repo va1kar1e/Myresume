@@ -1,5 +1,5 @@
 <template>
-  <v-col class="mb-2" cols="12" md="12" lg="12">
+  <v-col class="mb-5" cols="12" md="12" lg="12">
     <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
       Certifications
     </h2>

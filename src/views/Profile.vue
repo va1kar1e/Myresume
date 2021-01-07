@@ -2,17 +2,9 @@
   <v-app>
     <Navbar />
     <v-main>
-      <Header />
-      <Aboutme />
-      <Education />
-      <Work />
-      <!-- <v-container>
-        <Cert />
-        <v-row>
-          <Recognition />
-          <CourseInterest />
-        </v-row>
-      </v-container> -->
+      <Section1 />
+      <Section2 />
+      <Section3 />
     </v-main>
     <Footer />
   </v-app>
@@ -23,15 +15,11 @@
 </style>
 
 <script>
-import Navbar from "@/components/profile/Navbar.vue";
-import Header from "@/components/profile/Header.vue";
-import Footer from "@/components/profile/Footer.vue";
-import Aboutme from "@/components/profile/Aboutme.vue";
-import Education from "@/components/profile/education/Education.vue";
-import Work from "@/components/profile/Work.vue";
-// import Cert from "@/components/profile/Cert.vue";
-// import Recognition from "@/components/profile/Recognition.vue";
-// import CourseInterest from "@/components/profile/CourseInterest.vue";
+import Navbar from "@/components/profile/components/Navbar.vue";
+import Footer from "@/components/profile/components/Footer.vue";
+import Section1 from "@/components/profile/Section1.vue"
+import Section2 from "@/components/profile/Section2.vue"
+import Section3 from "@/components/profile/Section3.vue"
 
 export default {
   data() {
@@ -42,13 +30,9 @@ export default {
   components: {
     Navbar,
     Footer,
-    Header,
-    Aboutme,
-    Education,
-    Work,
-    // Cert,
-    // Recognition,
-    // CourseInterest
+    Section1,
+    Section2,
+    Section3
   },
 };
 </script>
