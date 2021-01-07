@@ -74,28 +74,8 @@
   </v-container>
 </template>
 
-<style scoped>
-col {
-  padding: 0px 40px 0px 40px;
-}
-p {
-  padding-left: 15px !important;
-}
-.v-expansion-panel {
-  background-color: #263859 !important;
-}
-.v-expansion-panel-header {
-  background-color: #263859 !important;
-}
-.v-expansion-panel-content {
-  background-color: #263859 !important;
-}
-.v-timeline {
-  padding-top: 0px;
-}
-.v-timeline::before {
-  background: #263859 !important;
-}
+<style scoped lang="scss">
+@import "@/styles/card.scss";
 </style>
 
 <script lang="ts">
