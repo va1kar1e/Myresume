@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless>
+  <v-footer app>
     <v-col class="py-2" cols="12" md="12">
       <div class="mb-5" />
       <v-row justify="center" class="mb-2">
