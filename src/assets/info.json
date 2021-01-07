@@ -2,7 +2,7 @@
   "urllink": {
     "resume": "https://drive.google.com/file/d/1uSe534RTMXDAfY1hWqLXo6IWoKXUJeUA/view",
     "linkedin": "https://linkedin.com/in/siwanont",
-    "github": "https://github.com/va1kar1ehttps://github.com/va1kar1e",
+    "github": "https://github.com/va1kar1e",
     "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
     "explorercarYT": "https://www.youtube.com/watch?v=Lg-nDld06WY"
   },
@@ -66,7 +66,9 @@
         "team": "IT Security - SAT (Redteam)",
         "archiev": [
           "&bull; Being responsible for <b>Penetration Testing</b>, <b>Vulnerability Assessment</b> and <b>Hardening</b>.",
-          "&bull; Being responsible for <b>Cloud Security</b> and <b>Compliance Orchestration</b>."
+          "&bull; Being responsible for DevSecOps.",
+          "&bull; Being responsible for <b>Cloud Security</b> and <b>Compliance Orchestration</b>.",
+          "&bull; Assessing Cybersecurity with CIS Benchmark."
         ]
       },
       {
