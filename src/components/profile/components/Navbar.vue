@@ -9,18 +9,18 @@
         width="40"
       />
       <v-toolbar-title class="shrink mt-1 font-weight-bold" contain
-        >Siwanont's Resume</v-toolbar-title
+        >Siwanont's Profile</v-toolbar-title
       >
     </div>
     <v-spacer></v-spacer>
     <v-toolbar-items class="d-none d-md-flex">
-      <v-btn @click.stop="dialog = true" text>
+      <!-- <v-btn @click.stop="dialog = true" text>
         <span class="mr-2">Download My Resume</span>
         <v-icon color="white">fas fa-cloud-download-alt</v-icon>
-      </v-btn>
-      <v-dialog v-model="dialog" min-width="200" max-width="600"
+      </v-btn> -->
+      <!-- <v-dialog v-model="dialog" min-width="200" max-width="600"
         ><Linkresume
-      /></v-dialog>
+      /></v-dialog> -->
       <v-btn href="mailto:siwanont1@gmail.com" text target="_blank">
         <span class="mr-2">Hire me</span>
         <v-icon color="white">fas fa-paper-plane</v-icon>
@@ -33,14 +33,14 @@
         </v-btn>
       </template>
       <v-list>
-        <v-list-item @click.stop="dialog = true">
+        <!-- <v-list-item @click.stop="dialog = true">
           <v-list-item-icon>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>Download My Resume</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
         <v-list-item href="mailto:siwanont1@gmail.com" target="_blank">
           <v-list-item-icon>
             <v-icon color="white">fas fa-paper-plane</v-icon>
@@ -54,17 +54,8 @@
   </v-app-bar>
 </template>
 
-<style scoped>
-.v-app-bar {
-  background-color: #263859 !important;
-}
-.v-sheet {
-  background-color: #263859 !important;
-}
-</style>
-
 <script>
-import Linkresume from "./Linkresume.vue";
+// import Linkresume from "./Linkresume.vue";
 
 export default {
   data() {
@@ -73,7 +64,7 @@ export default {
     };
   },
   components: {
-    Linkresume,
+    // Linkresume,
   },
 };
 </script>

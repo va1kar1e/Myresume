@@ -2,7 +2,7 @@
   "urllink": {
     "resume": "https://drive.google.com/file/d/1uSe534RTMXDAfY1hWqLXo6IWoKXUJeUA/view",
     "linkedin": "https://linkedin.com/in/siwanont",
-    "github": "https://github.com/va1kar1ehttps://github.com/va1kar1e",
+    "github": "https://github.com/va1kar1e",
     "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
     "explorercarYT": "https://www.youtube.com/watch?v=Lg-nDld06WY"
   },
@@ -59,14 +59,16 @@
       {
         "year": "Oct 2020 - Present",
         "icon": "fas fa-user-secret",
-        "color": "#5b2bdc",
+        "color": "#7c5dd0",
         "name": "SCB",
         "keyword": "Also known as Siam Commercial Bank",
         "role": "Digital Threat and Vulnerability Management Officer",
         "team": "IT Security - SAT (Redteam)",
         "archiev": [
           "&bull; Being responsible for <b>Penetration Testing</b>, <b>Vulnerability Assessment</b> and <b>Hardening</b>.",
-          "&bull; Being responsible for <b>Cloud Security</b> and <b>Compliance Orchestration</b>."
+          "&bull; Being responsible for DevSecOps.",
+          "&bull; Being responsible for <b>Cloud Security</b> and <b>Compliance Orchestration</b>.",
+          "&bull; Assessing Cybersecurity with CIS Benchmark."
         ]
       },
       {
@@ -87,7 +89,7 @@
       {
         "year": "June 2017 - August 2017",
         "icon": "fas fa-code",
-        "color": "#684b90",
+        "color": "#7959f5",
         "name": "INTERNET MARKETING",
         "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
         "role": "Fullstack Developer (Outsource)",

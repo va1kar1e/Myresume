@@ -3,34 +3,39 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import Resumeweb from "@/views/Resumeweb.vue";
+import profile from "@/views/Profile.vue";
+// import home from "@/views/Home.vue";
+// import path from "@/views/Path.vue";
+import construction from "@/views/Construction.vue";
 import info from "@/assets/info.json";
 
 const routes = [
   {
     path: "/",
-    component: Resumeweb,
+    component: construction,
     name: "Home",
     meta: { title: "Home" },
+    redirect: { name: 'Profile' }
   },
-  // {
-  //   path: "/path",
-  //   component: Path,
-  //   name: "Path",
-  //   meta: { title: "Path" },
-  //   children: [
-  //     {
-  //       path: "/a",
-  //       component: Path,
-  //       meta: { title: "PathA" },
-  //     },
-  //     {
-  //       path: "/b",
-  //       component: Path,
-  //       meta: { title: "PathB" },
-  //     },
-  //   ],
-  // },
+  {
+    path: "/profile",
+    component: profile,
+    name: "Profile",
+    meta: { title: "Profile" },
+  },
+  {
+    path: "/path",
+    component: construction,
+    name: "Path",
+    meta: { title: "Path" },
+    children: [
+      // {
+      //   path: "/a",
+      //   component: path,
+      //   meta: { title: "PathA" },
+      // }
+    ],
+  },
   {
     path: "/d",
     name: "Download",

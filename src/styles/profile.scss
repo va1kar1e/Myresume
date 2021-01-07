@@ -1,0 +1,30 @@
+@import "./variables.scss";
+// Add-on
+
+$bg-color-l1: #020913;
+$bg-color-l2: #060f1a;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: $bg-color-l1 !important;
+}
+
+.v-main {
+  background-color: $bg-color-l2 !important;
+}
+
+// .v-app-bar {
+//   background-color: #e0e1dd !important;
+// }
+
+.v-sheet {
+  background-color: $bg-color-l1 !important;
+}
+
+.v-footer {
+  background-color: $bg-color-l1 !important;
+}

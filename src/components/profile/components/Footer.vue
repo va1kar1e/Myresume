@@ -1,8 +1,8 @@
 <template>
-  <v-footer padless>
+  <v-footer app>
     <v-col class="py-2" cols="12" md="12">
-      <div class="mb-5" />
-      <v-row justify="center" class="mb-2">
+      <div class="mb-3" />
+      <v-row justify="center" class="mb-5">
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
           <v-icon color="white">fab fa-linkedin</v-icon>
         </v-btn>
@@ -13,7 +13,7 @@
           <v-icon color="white">fab fa-github</v-icon>
         </v-btn>
       </v-row>
-      <v-row justify="center" class="mb-2">
+      <v-row justify="center" class="mb-1">
         <p class="caption font-weight-light text-center">
           Copyright@{{ new Date().getFullYear() }}, Designed by Siwanont
           Sittinam with <a href="https://vuejs.org/">Vue.JS</a>
@@ -24,9 +24,6 @@
 </template>
 
 <style scoped>
-.v-footer {
-  background-color: #263859 !important;
-}
 .caption {
   margin-bottom: 0px !important;
 }
