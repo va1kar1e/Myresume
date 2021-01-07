@@ -4,16 +4,18 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import profile from "@/views/Profile.vue";
-import home from "@/views/Home.vue";
-import path from "@/views/Path.vue";
+// import home from "@/views/Home.vue";
+// import path from "@/views/Path.vue";
+import construction from "@/views/Construction.vue";
 import info from "@/assets/info.json";
 
 const routes = [
   {
     path: "/",
-    component: home,
+    component: construction,
     name: "Home",
     meta: { title: "Home" },
+    redirect: { name: 'Profile' }
   },
   {
     path: "/profile",
@@ -23,20 +25,15 @@ const routes = [
   },
   {
     path: "/path",
-    component: path,
+    component: construction,
     name: "Path",
     meta: { title: "Path" },
     children: [
-      {
-        path: "/a",
-        component: path,
-        meta: { title: "PathA" },
-      },
-      {
-        path: "/b",
-        component: path,
-        meta: { title: "PathB" },
-      },
+      // {
+      //   path: "/a",
+      //   component: path,
+      //   meta: { title: "PathA" },
+      // }
     ],
   },
   {
