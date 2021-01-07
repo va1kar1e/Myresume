@@ -1,29 +1,30 @@
 @import "./variables.scss";
 // Add-on
 
+$bg-color-l1: #020913;
+$bg-color-l2: #060f1a;
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: $bg-color-l1 !important;
 }
 
 .v-main {
-  background-color: #159e63 !important;
+  background-color: $bg-color-l2 !important;
 }
 
-.v-container {
-  background-color: #8a1e1e !important;
-}
-
-.v-app-bar {
-  background-color: #ffc273 !important;
-}
+// .v-app-bar {
+//   background-color: #e0e1dd !important;
+// }
 
 .v-sheet {
-  background-color: #b62a93 !important;
+  background-color: $bg-color-l1 !important;
 }
 
 .v-footer {
-  background-color: #3300eb !important;
+  background-color: $bg-color-l1 !important;
 }

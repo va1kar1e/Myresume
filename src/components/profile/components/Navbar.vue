@@ -33,14 +33,14 @@
         </v-btn>
       </template>
       <v-list>
-        <v-list-item @click.stop="dialog = true">
+        <!-- <v-list-item @click.stop="dialog = true">
           <v-list-item-icon>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>Download My Resume</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
         <v-list-item href="mailto:siwanont1@gmail.com" target="_blank">
           <v-list-item-icon>
             <v-icon color="white">fas fa-paper-plane</v-icon>
