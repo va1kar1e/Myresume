@@ -7,17 +7,23 @@ p {
   padding-left: 15px !important;
 }
 .v-expansion-panel {
-  background-color: #263859 !important;
+  background-color: #2b3343 !important;
 }
 .v-expansion-panel-header {
-  background-color: #263859 !important;
+  background-color: #2b3343 !important;
 }
 .v-expansion-panel-content {
-  background-color: #263859 !important;
+  background-color: #2b3343 !important;
 }
 .v-timeline {
   padding-top: 0px;
 }
 .v-timeline::before {
-  background: #263859 !important;
+  background: #2b3343 !important;
+}
+.header-content {
+  padding: 0px 0px 0px 0px !important;
+  margin-top: 5px;
+  margin-bottom: 0px !important;
+  margin-left: 5px;
 }

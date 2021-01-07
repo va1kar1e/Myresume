@@ -36,16 +36,8 @@
   </v-expansion-panels>
 </template>
 
-<style scoped>
-.theme--dark.v-expansion-panels .v-expansion-panel {
-  background-color: #263859 !important;
-}
-.header-content {
-  padding: 0px 0px 0px 0px !important;
-  margin-top: 5px;
-  margin-bottom: 0px !important;
-  margin-left: 5px;
-}
+<style scoped lang="scss">
+@import "@/styles/card.scss";
 </style>
 
 <script lang="ts">

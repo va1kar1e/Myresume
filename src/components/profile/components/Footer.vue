@@ -24,9 +24,6 @@
 </template>
 
 <style scoped>
-.v-footer {
-  background-color: #263859 !important;
-}
 .caption {
   margin-bottom: 0px !important;
 }

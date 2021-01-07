@@ -54,15 +54,6 @@
   </v-app-bar>
 </template>
 
-<style scoped>
-.v-app-bar {
-  background-color: #263859 !important;
-}
-.v-sheet {
-  background-color: #263859 !important;
-}
-</style>
-
 <script>
 // import Linkresume from "./Linkresume.vue";
 
