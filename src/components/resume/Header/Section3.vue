@@ -1,13 +1,36 @@
 <template>
-  <v-col cols="4" class="blue">
-    <h4 class="display-2 font-weight-bold text-uppercase text-center">
-      Header Section3
-    </h4>
+  <v-col cols="3" class="resume-header-section3 text-right">
+    <p
+      v-for="(content, i) in contacts"
+      :key="i"
+      class="caption text-right resume-header-section-p"
+    >
+      <a :href="content[0]" class="resume-header-section-a">{{ content[1] }}</a>
+    </p>
+    <p class="caption text-right"></p>
+    <QRResume :url="homepage" />
   </v-col>
 </template>
 
 <script>
+import info from "@/assets/info.json";
+import QRResume from "@/components/resume/Components/QRResume.vue"
+
 export default {
-  
-}
+  name: "ResumeHeaderSection3",
+  data() {
+    return {
+      homepage: location.origin,
+      contacts: [
+        ["mailto:" + info.header.email, info.header.email],
+        [info.urllink.homepage, info.urllink.homepage],
+        [info.urllink.github, info.urllink.github],
+        [info.urllink.linkedin, info.urllink.linkedin],
+      ],
+    };
+  },
+  components: {
+    QRResume,
+  }
+};
 </script>
