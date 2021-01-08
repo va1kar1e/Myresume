@@ -27,17 +27,36 @@
   padding-left: 0px !important;
 }
 
-.resume-header-section-p {
+.resume-p {
   margin-bottom: 0px !important;
 }
 
-.resume-header-section-a {
+.resume-a {
   color: #000000 !important;
 }
 
+.resume-left {
+  padding-right: 0px;
+}
+
+.resume-right {
+  padding-left: 0px;
+}
+
 .resume-header-section-img {
-  border: 0px solid rgb(0, 0, 0);
   border-radius: 100%;
+}
+
+.resume-row {
+  margin: 0px !important;
+}
+
+.resume-col {
+  padding: 0px !important;
+}
+
+.resume-col-right {
+  padding: 8px 0px 0px 0px !important;
 }
 
 .qrresume {

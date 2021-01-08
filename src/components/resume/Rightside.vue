@@ -1,24 +1,16 @@
 <template>
-  <v-col cols="6" class="red">
-    <h1 class="display-2 font-weight-bold text-uppercase text-center">
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-    </h1>
+  <v-col cols="6" class="text-left resume-right">
+    <Education />
   </v-col>
 </template>
 
 <script>
+import Education from "./Rightside/Education.vue";
 
 export default {
-  data() {
-    return {
-      title: "Right Side"
-    };
-  },
+  name: "ResumeLeftSide",
   components: {
+    Education,
   }
 };
 </script>
