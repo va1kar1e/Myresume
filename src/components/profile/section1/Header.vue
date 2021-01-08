@@ -28,7 +28,7 @@
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
           <v-icon large color="white">fab fa-linkedin</v-icon>
         </v-btn>
-        <v-btn href="mailto:siwanont1@gmail.com" text target="_blank">
+        <v-btn :href="email" text target="_blank">
           <v-icon large color="white">fas fa-paper-plane</v-icon>
         </v-btn>
         <v-btn text color="primary" to="/c/github" target="_blank">
@@ -43,10 +43,11 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Course",
+  name: "ProfileSection1Header",
   data: () => ({
     fullname: info.header.fullname,
-    title: info.header.title
+    title: info.header.title,
+    email: "mailto:" + info.header.email,
   }),
 };
 </script>

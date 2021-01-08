@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main>
+    <v-main class="profile">
       <Section1 />
       <Section2 />
       <Section3 />
@@ -15,18 +15,14 @@
 </style>
 
 <script>
-import Navbar from "@/components/profile/components/Navbar.vue";
-import Footer from "@/components/profile/components/Footer.vue";
+import Navbar from "@/components/profile/Components/Navbar.vue";
+import Footer from "@/components/profile/Components/Footer.vue";
 import Section1 from "@/components/profile/Section1.vue"
 import Section2 from "@/components/profile/Section2.vue"
 import Section3 from "@/components/profile/Section3.vue"
 
 export default {
-  data() {
-    return {
-      title: "Profile",
-    };
-  },
+  name: "Profile",
   components: {
     Navbar,
     Footer,

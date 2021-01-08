@@ -1,6 +1,6 @@
 {
   "urllink": {
-    "resume": "https://drive.google.com/file/d/1uSe534RTMXDAfY1hWqLXo6IWoKXUJeUA/view",
+    "homepage": "https://siwanont.ml",
     "linkedin": "https://linkedin.com/in/siwanont",
     "github": "https://github.com/va1kar1e",
     "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
@@ -8,7 +8,8 @@
   },
   "header": {
     "fullname": "SIWANONT SITTINAM",
-    "title": "Digital Threat and Vulnerability Management Officer"
+    "title": "Digital Threat and Vulnerability Management Officer",
+    "email": "siwanont1@gmail.com"
   },
   "aboutme": {
     "contentText": [
@@ -20,9 +21,10 @@
     "main": {
       "university": "KASETSART UNIVERSITY",
       "faculty": "Bachelor of Engineering, Computer Engineering",
-      "period": "August 2015 - May 2019"
+      "period": "Aug 2015 - May 2019"
     },
     "thesis": {
+      "name": "Search Result Clustering on Thai Internet Forum using Word2Vec Model",
       "archieve": [
         "&bull; Researching the <b>text clustering</b> by meaning in each context.",
         "&bull; Words Tokenization with <b>NLTK</b> and <b>PyThaiNLP</b> Library.",
@@ -34,23 +36,35 @@
       ]
     },
     "internship": {
+      "where": "Kyoto Institute of Technology Software Engineering Laboratory",
+      "project": "Making a Fault-Prones Notification for Developer Team on Raspbery Pi",
       "archieve": [
-        "&bull; Studying <b>automated find bugs</b> with the review code process.",
-        "&bull; Studying <b>face detection</b> and <b>recognition</b> to build an authorization system with biometric on <b>Raspberry Pi</b>."
+        "&ndash; Studying <b>automated find bugs</b> with the review code process.",
+        "&ndash; Studying <b>face detection</b> and <b>recognition</b> to build an authorization system with biometric on <b>Raspberry Pi</b>."
       ]
     },
     "work": {
+      "where": "Massive Information and Knowledge Engineering Laboratory",
+      "project": [
+        "&bull; Social Network Analysis with Ego Network on Twitter Data",
+        "&bull; <b>Ubuntu</b> and <b>Centos server</b> administrator and teacher assistant for Python classes."
+      ],
       "archieve": [
-        "&bull; Writing a research paper in order to study the relationship of twitter users from tweets with <b>Ego Network</b>.",
-        "&bull; Classifying Twitter user behavior from user's tweets with <b>Google Cloud Natural Language</b> and Inserting results into <b>MongoDB</b>.",
-        "&bull; Building a web visualization to visualize the relationship of users with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and building an <b>Ego Network graph</b> with <b>D3JS</b>."
+        "&ndash; Writing a research paper in order to study the relationship of twitter users from tweets with <b>Ego Network</b>.",
+        "&ndash; Classifying Twitter user behavior from user's tweets with <b>Google Cloud Natural Language</b> and Inserting results into <b>MongoDB</b>.",
+        "&ndash; Building a web visualization to visualize the relationship of users with <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Bootstrap</b> and building an <b>Ego Network graph</b> with <b>D3JS</b>."
       ]
     },
     "project": {
+      "name": [
+        "&bull; Trusted Web Domain Analysis based on SSL/TLS certificate",
+        "&bull; Explore a Danger area with a Robot using <b>NodeMCU</b> and <b>P2P Camera </b>",
+        "&bull; Web-based Hospital appointment management system using"
+      ],
       "archieve": [
-        "&bull; Studying the threat unawareness with the SSL/TLS certificate of the top 50 university websites.",
-        "&bull; Collecting SSL/TLS certificate and ranking web domain trust with <b>TestSSL.sh</b> and <b>Javascript</b>.",
-        "&bull; Building a web dashboard to display the rank of web domain trust with description using <b>NextJS</b> and <b>SemanticUI</b>."
+        "&ndash; Studying the threat unawareness with the SSL/TLS certificate of the top 50 university websites.",
+        "&ndash; Collecting SSL/TLS certificate and ranking web domain trust with <b>TestSSL.sh</b> and <b>Javascript</b>.",
+        "&ndash; Building a web dashboard to display the rank of web domain trust with description using <b>NextJS</b> and <b>SemanticUI</b>."
       ]
     }
   },
@@ -60,8 +74,7 @@
         "year": "Oct 2020 - Present",
         "icon": "fas fa-user-secret",
         "color": "#7c5dd0",
-        "name": "SCB",
-        "keyword": "Also known as Siam Commercial Bank",
+        "name": "Siam Commercial Bank",
         "role": "Digital Threat and Vulnerability Management Officer",
         "team": "IT Security - SAT (Redteam)",
         "archiev": [
@@ -72,27 +85,27 @@
         ]
       },
       {
-        "year": "June 2019 - May 2020",
+        "year": "Jun 2019 - May 2020",
         "icon": "fas fa-server",
         "color": "#1d5ff5",
         "name": "REFINITIV",
         "keyword": "Formerly Thomson Reuters Financial & Risk",
-        "role": "Technology Graduate Trainee",
+        "role": "Technology Graduate Trainee - Network Engineer",
         "team": "Datacenter Operation - Network Change",
         "archiev": [
           "&bull; Being responsible for <b>LAN Implementation</b> and troubleshooting to resolve the incident by following the <b>ITIL</b> process.",
           "&bull; Working with network devices and network automation.",
-          "&bull; Working with the architecture teams, management teams, and other implementation teams to follow enterprise architecture standards and company policies.",
+          "&bull; Working with the architecture teams, management teams, and other teams to follow enterprise standards and policies.",
           "&bull; Building the <b>TUMBUN Donation Platform</b> that is a part of the Company Sustainability Project to help people living in poverty. Being responsible for enabling financial services through a payment gateway; <b>OMISE</b>, logging transaction in <b>MongoDB</b>, and building API services connecting with the Front-end side by using <b>NodeJS</b> and <b>ExpressJS</b>."
         ]
       },
       {
-        "year": "June 2017 - August 2017",
+        "year": "Jun 2017 - Aug 2017",
         "icon": "fas fa-code",
         "color": "#7959f5",
         "name": "INTERNET MARKETING",
         "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
-        "role": "Fullstack Developer (Outsource)",
+        "role": "Fullstack Developer",
         "team": "Data Science",
         "archiev": [
           "&bull; Being responsible for building a web dashboard monitoring active users and Analyzing Social Influencer with <b>Social Graph</b> and Trend keywords with <b>Wordcloud</b>.",
@@ -113,7 +126,7 @@
         {
           "what": "CREATIVE DESIGN AWARD",
           "when": "Thailand Financial Cybersecurity 2017",
-          "who": "ETDA, Bank of Thailand, Securities and Exchange Commission of Thailand"
+          "who": "ETDA, BOT, SEC"
         }
       ]
     }
@@ -146,20 +159,9 @@
     }
   },
   "course": {
-    "items": [
-      ["primary", "OSCP"],
-      ["primary", "CompTIA CySa+, CASP+"],
-      ["primary", "CCNA: Routing & Switching"]
-    ]
+    "items": ["OSCP", "CompTIA CySa+, CASP+", "CCNA: Routing & Switching"]
   },
   "interest": {
-    "items": [
-      ["primary", "Cybersecurity"],
-      ["primary", "Computer Network"],
-      ["primary", "Data Analytic & Visualization"],
-      ["primary", "Web Development"],
-      ["primary", "Internet Of Things"],
-      ["primary", "Photography"]
-    ]
+    "items": ["Web Development", "Internet Of Things", "Photography"]
   }
 }

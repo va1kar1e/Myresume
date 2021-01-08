@@ -35,13 +35,11 @@
   </v-col>
 </template>
 
-<style scoped></style>
-
 <script lang="ts">
 import info from "@/assets/info.json";
 
 export default {
-  name: "Cert",
+  name: "ProfileSection3Cert",
   data: () => ({
     absolute: true,
     overlay: false,

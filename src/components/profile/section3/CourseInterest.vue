@@ -6,11 +6,11 @@
 </template>
 
 <script lang="ts">
-import Course from "./components/Course.vue";
-import Interest from "./components/Interest.vue";
+import Course from "./CourseInterest/Course.vue";
+import Interest from "./CourseInterest/Interest.vue";
 
 export default {
-  name: "CourseInterest",
+  name: "ProfileSection3CourseInterest",
   components: {
     Course,
     Interest

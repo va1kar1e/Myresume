@@ -1,7 +1,7 @@
 <template>
   <div class="mb-5">
     <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
-      Extracuricular Courses
+      Extracurricular Interests
     </h2>
     <v-row justify="center">
       <v-chip
@@ -11,8 +11,9 @@
         class="ma-1 font-weight-bold"
         color="#ffffff"
         outlined
-        >{{ item[1] }}</v-chip
       >
+        {{ item }}
+      </v-chip>
     </v-row>
   </div>
 </template>
@@ -21,9 +22,9 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Course",
+  name: "ProfileSection3CourseInterestInterest",
   data: () => ({
-    items: info.course.items
+    items: info.interest.items
   }),
 };
 </script>

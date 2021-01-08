@@ -5,25 +5,31 @@
         <p
           :class="`title text-capitalize font-weight-bold text-left green--text`"
         >
-          Internship
+          Extracurricular Work
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
         <p
           :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
         >
-          Kyoto Institute of Technology Software Engineering Laboratory
+          Massive Information and Knowledge Engineering Laboratory
         </p>
-
-        <p :class="`body-1 font-weight-light text-left`">
-          Making a Fault-Prones Notification for Developer Team on Raspbery Pi
+        <p
+          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
+        >
+          Achievements
         </p>
-
-        <v-list-item v-for="(item, i) in archieve" :key="i">
+        <p :class="`body-1 font-weight-light text-left`" v-html="work.project[0]">
+          {{work.project[0]}}
+        </p>
+        <v-list-item v-for="(item, i) in work.archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
         </v-list-item>
+        <p :class="`body-1 font-weight-light text-left`" v-html="work.project[1]">
+          {{work.project[1]}}
+        </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
@@ -37,9 +43,9 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Internship",
+  name: "ProfileSection2EducationWork",
   data: () => ({
-    archieve: info.education.internship.archieve
+    work: info.education.work
   }),
 };
 </script>

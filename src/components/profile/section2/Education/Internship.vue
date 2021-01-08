@@ -5,32 +5,25 @@
         <p
           :class="`title text-capitalize font-weight-bold text-left green--text`"
         >
-          Extracurricular Work
+          Internship
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
         <p
           :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
         >
-          Massive Information and Knowledge Engineering Laboratory
+          {{internship.where}}
         </p>
-        <p
-          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
-        >
-          Achievements
-        </p>
+
         <p :class="`body-1 font-weight-light text-left`">
-          1. Social Network Analysis with Ego Network on Twitter Data
+          {{internship.project}}
         </p>
-        <v-list-item v-for="(item, i) in archieve" :key="i">
+
+        <v-list-item v-for="(item, i) in internship.archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
         </v-list-item>
-        <p :class="`body-1 font-weight-light text-left`">
-          2. <b>Ubuntu</b> and <b>Centos server</b> administrator and teacher
-          assistant for Python classes.
-        </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
@@ -44,9 +37,9 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Work",
+  name: "ProfileSection2EducationInternship",
   data: () => ({
-    archieve: info.education.work.archieve
+    internship: info.education.internship
   }),
 };
 </script>

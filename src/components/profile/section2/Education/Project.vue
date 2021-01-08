@@ -9,22 +9,19 @@
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <p :class="`body-1 font-weight-light text-left`">
-          1. Trusted Web Domain Analysis based on SSL/TLS certificate
+        <p :class="`body-1 font-weight-light text-left`"  v-html="project.name[0]">
+          {{project.name[0]}}
         </p>
-        <v-list-item v-for="(item, i) in archieve" :key="i">
+        <v-list-item v-for="(item, i) in project.archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
         </v-list-item>
-        <p :class="`body-1 font-weight-light text-left`">
-          2. Explore a Danger area with a Robot using
-          <b>NodeMCU</b> and
-          <b>P2P Camera </b>
+        <p :class="`body-1 font-weight-light text-left`" v-html="project.name[1]">
+          {{project.name[1]}}
         </p>
-        <p :class="`body-1 font-weight-light text-left`">
-          3. Web-based Hospital appointment management system using
-          <b>Django</b>
+        <p :class="`body-1 font-weight-light text-left`" v-html="project.name[2]">
+          {{project.name[2]}}
         </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
@@ -39,9 +36,9 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Project",
+  name: "ProfileSection2EducationProject",
   data: () => ({
-    archieve: info.education.project.archieve
+    project: info.education.project
   }),
 };
 </script>

@@ -57,6 +57,7 @@
 <script>
 
 export default {
+  name: "HomeNavbar",
   data() {
     return {
     };

@@ -12,10 +12,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      title: "Construction"
-    };
-  }
+  name: "Construction",
 };
 </script>

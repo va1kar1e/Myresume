@@ -10,11 +10,11 @@
       </v-expansion-panel-header>
       <v-expansion-panel-content>
         <p :class="`body-1 font-weight-light text-left`">
-          Search Result Clustering on Thai Internet Forum using Word2Vec Model
+          {{thesis.name}}
         </p>
-        <v-list-item v-for="(item, i) in archieve" :key="i">
+        <v-list-item v-for="(item, i) in thesis.archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
-            >{{ item }}
+            {{ item }}
           </p>
         </v-list-item>
       </v-expansion-panel-content>
@@ -30,9 +30,9 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Thesis",
+  name: "ProfileSection2EducationThesis",
   data: () => ({
-    archieve: info.education.thesis.archieve
+    thesis: info.education.thesis,
   }),
 };
 </script>
