@@ -17,15 +17,12 @@
         </h1>
       </v-col>
     </v-row>
-    <v-row class="d-flex text-center">
-      <v-col cols="12">
-        <div class="horizontal-line"></div>
-      </v-col>
-    </v-row>
+    <Line />
   </div>
 </template>
 
 <script>
+import Line from "@/components/resume/components/line.vue";
 
 export default {
   data() {
@@ -34,6 +31,7 @@ export default {
     };
   },
   components: {
+    Line,
   }
 };
 </script>
