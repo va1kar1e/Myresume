@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 import profile from "@/views/Profile.vue";
 // import home from "@/views/Home.vue";
 // import path from "@/views/Path.vue";
+import resume from "@/views/Resume.vue";
 import construction from "@/views/Construction.vue";
 import info from "@/assets/info.json";
 
@@ -24,10 +25,16 @@ const routes = [
     meta: { title: "Profile" },
   },
   {
-    path: "/path",
-    component: construction,
-    name: "Path",
-    meta: { title: "Path" },
+    path: "/profile",
+    component: profile,
+    name: "Profile",
+    meta: { title: "Profile" },
+  },
+  {
+    path: "/resume",
+    component: resume,
+    name: "Resume",
+    meta: { title: "Resume" },
     children: [
       // {
       //   path: "/a",
@@ -39,19 +46,21 @@ const routes = [
   {
     path: "/d",
     name: "Download",
+    component: construction,
     children: [
-      {
-        path: "resume",
-        name: "Resume",
-        beforeEnter() {
-          location.href = info.urllink.resume;
-        },
-      },
+      // {
+        // path: "/resume",
+        // name: "resume",
+        // beforeEnter() {
+        //   location.href = info.urllink.resume;
+        // },
+      // },
     ],
   },
   {
     path: "/c",
     name: "Contact",
+    component: construction,
     children: [
       {
         path: "linkedin",

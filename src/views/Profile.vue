@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main>
+    <v-main class="profile">
       <Section1 />
       <Section2 />
       <Section3 />
