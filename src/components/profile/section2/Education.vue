@@ -45,13 +45,13 @@
 
 <script>
 import info from "@/assets/info.json";
-import Thesis from "./components/Thesis.vue";
-import Project from "./components/Project.vue";
-import Internship from "./components/Internship.vue";
-import Work from "./components/Work.vue";
+import Thesis from "./Education/Thesis.vue";
+import Project from "./Education/Project.vue";
+import Internship from "./Education/Internship.vue";
+import Work from "./Education/Work.vue";
 
 export default {
-  name: "ProfileEducation",
+  name: "ProfileSection2Education",
   data: () => ({
     university: info.education.main.university,
     faculty: info.education.main.faculty,

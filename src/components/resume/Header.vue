@@ -10,8 +10,7 @@
 </template>
 
 <script>
-import info from "@/assets/info.json";
-import HorizontalLine from "@/components/resume/components/HorizontalLine.vue";
+import HorizontalLine from "@/components/resume/Components/HorizontalLine.vue";
 import Section1 from "./Header/Section1.vue"
 import Section2 from "./Header/Section2.vue"
 import Section3 from "./Header/Section3.vue"

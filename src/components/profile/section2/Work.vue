@@ -82,7 +82,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "ProfileWork",
+  name: "ProfileSection2Work",
   data: () => ({
     items: info.work.items
   }),

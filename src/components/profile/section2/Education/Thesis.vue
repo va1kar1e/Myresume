@@ -5,23 +5,16 @@
         <p
           :class="`title text-capitalize font-weight-bold text-left green--text`"
         >
-          Internship
+          Thesis
         </p>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <p
-          :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
-        >
-          Kyoto Institute of Technology Software Engineering Laboratory
-        </p>
-
         <p :class="`body-1 font-weight-light text-left`">
-          Making a Fault-Prones Notification for Developer Team on Raspbery Pi
+          Search Result Clustering on Thai Internet Forum using Word2Vec Model
         </p>
-
         <v-list-item v-for="(item, i) in archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
-            {{ item }}
+            >{{ item }}
           </p>
         </v-list-item>
       </v-expansion-panel-content>
@@ -37,9 +30,9 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "ProfileInternship",
+  name: "ProfileSection2EducationThesis",
   data: () => ({
-    archieve: info.education.internship.archieve
+    archieve: info.education.thesis.archieve
   }),
 };
 </script>

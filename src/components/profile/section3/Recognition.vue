@@ -16,7 +16,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "ProfileRecogntion",
+  name: "ProfileSection3Recogntion",
   data: () => ({
     item: info.recogntion.item
   }),

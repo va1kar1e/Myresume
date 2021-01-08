@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Cert from "@/components/profile/section3/Cert.vue";
-import Recognition from "@/components/profile/section3/Recognition.vue";
-import CourseInterest from "@/components/profile/section3/courseInterest/CourseInterest.vue";
+import Cert from "@/components/profile/Section3/Cert.vue";
+import Recognition from "@/components/profile/Section3/Recognition.vue";
+import CourseInterest from "@/components/profile/Section3/CourseInterest.vue";
 
 export default {
   name: "ProfileSection3",

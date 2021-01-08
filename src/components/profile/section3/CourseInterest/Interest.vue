@@ -22,7 +22,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "ProfileInterest",
+  name: "ProfileSection3CourseInterestInterest",
   data: () => ({
     items: info.interest.items
   }),
