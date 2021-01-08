@@ -1,5 +1,7 @@
 <template>
   <v-col cols="3" class="resume-header-section3 text-right">
+    <QRResume :url="homepage" size="75" />
+    <p class="caption text-right"></p>
     <p
       v-for="(content, i) in contacts"
       :key="i"
@@ -7,8 +9,6 @@
     >
       <a :href="content[0]" class="resume-header-section-a">{{ content[1] }}</a>
     </p>
-    <p class="caption text-right"></p>
-    <QRResume :url="homepage" />
   </v-col>
 </template>
 

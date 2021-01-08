@@ -14,11 +14,11 @@ import QrcodeVue from "qrcode.vue";
 
 export default {
   props: {
-    url: String
+    url: String,
+    size: String,
   },
   data() {
     return {
-      size: 100,
       renderAs: "svg",
       background: "#ffffff",
       foreground: "#000000",
