@@ -1,6 +1,27 @@
 <template>
   <v-col cols="6" class="blue">
-    <h1 class="display-2 font-weight-bold mb-5 text-uppercase text-center">
+    <h1 class="display-2 font-weight-bold text-uppercase text-center">
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
+      Left Side
       Left Side
       Left Side
       Left Side

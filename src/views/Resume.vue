@@ -1,8 +1,7 @@
 <template>
   <v-app>
     <v-main class="resume">
-      <v-container>
-        <v-sheet
+      <v-sheet
           color="white"
           elevation="0"
           class="a4-paper"
@@ -13,7 +12,6 @@
             <Rightside />
           </v-row>
         </v-sheet>
-      </v-container>
     </v-main>
   </v-app>
 </template>
