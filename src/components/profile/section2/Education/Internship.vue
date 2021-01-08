@@ -12,14 +12,14 @@
         <p
           :class="`subtitle-1 text-capitalize font-weight-bold text-left green--text`"
         >
-          Kyoto Institute of Technology Software Engineering Laboratory
+          {{internship.where}}
         </p>
 
         <p :class="`body-1 font-weight-light text-left`">
-          Making a Fault-Prones Notification for Developer Team on Raspbery Pi
+          {{internship.project}}
         </p>
 
-        <v-list-item v-for="(item, i) in archieve" :key="i">
+        <v-list-item v-for="(item, i) in internship.archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
@@ -39,7 +39,7 @@ import info from "@/assets/info.json";
 export default {
   name: "ProfileSection2EducationInternship",
   data: () => ({
-    archieve: info.education.internship.archieve
+    internship: info.education.internship
   }),
 };
 </script>

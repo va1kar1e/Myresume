@@ -19,17 +19,16 @@
         >
           Achievements
         </p>
-        <p :class="`body-1 font-weight-light text-left`">
-          1. Social Network Analysis with Ego Network on Twitter Data
+        <p :class="`body-1 font-weight-light text-left`" v-html="work.project[0]">
+          {{work.project[0]}}
         </p>
-        <v-list-item v-for="(item, i) in archieve" :key="i">
+        <v-list-item v-for="(item, i) in work.archieve" :key="i">
           <p :class="`body-1 font-weight-light text-left`" v-html="item">
             {{ item }}
           </p>
         </v-list-item>
-        <p :class="`body-1 font-weight-light text-left`">
-          2. <b>Ubuntu</b> and <b>Centos server</b> administrator and teacher
-          assistant for Python classes.
+        <p :class="`body-1 font-weight-light text-left`" v-html="work.project[1]">
+          {{work.project[1]}}
         </p>
       </v-expansion-panel-content>
     </v-expansion-panel>
@@ -46,7 +45,7 @@ import info from "@/assets/info.json";
 export default {
   name: "ProfileSection2EducationWork",
   data: () => ({
-    archieve: info.education.work.archieve
+    work: info.education.work
   }),
 };
 </script>
