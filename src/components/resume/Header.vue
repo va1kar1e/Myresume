@@ -5,7 +5,9 @@
       <Section2 />
       <Section3 />
     </v-row>
+    <p></p>
     <div class="horizontal-line"></div>
+    <p></p>
   </div>
 </template>
 
