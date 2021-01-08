@@ -1,7 +1,7 @@
 <template>
   <div class="mb-5">
     <h2 class="display-1 font-weight-bold mb-5 text-uppercase text-center">
-      Interests
+      Extracurricular Interests
     </h2>
     <v-row justify="center">
       <v-chip
@@ -12,7 +12,7 @@
         color="#ffffff"
         outlined
       >
-        {{ item[1] }}
+        {{ item }}
       </v-chip>
     </v-row>
   </div>

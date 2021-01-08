@@ -160,20 +160,9 @@
     }
   },
   "course": {
-    "items": [
-      ["primary", "OSCP"],
-      ["primary", "CompTIA CySa+, CASP+"],
-      ["primary", "CCNA: Routing & Switching"]
-    ]
+    "items": ["OSCP", "CompTIA CySa+, CASP+", "CCNA: Routing & Switching"]
   },
   "interest": {
-    "items": [
-      ["primary", "Cybersecurity"],
-      ["primary", "Computer Network"],
-      ["primary", "Data Analytic & Visualization"],
-      ["primary", "Web Development"],
-      ["primary", "Internet Of Things"],
-      ["primary", "Photography"]
-    ]
+    "items": ["Web Development", "Internet Of Things", "Photography"]
   }
 }
