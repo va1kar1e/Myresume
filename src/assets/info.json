@@ -1,6 +1,6 @@
 {
   "urllink": {
-    "resume": "https://drive.google.com/file/d/1uSe534RTMXDAfY1hWqLXo6IWoKXUJeUA/view",
+    "homepage": "https://siwanont.ml",
     "linkedin": "https://linkedin.com/in/siwanont",
     "github": "https://github.com/va1kar1e",
     "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
@@ -8,7 +8,8 @@
   },
   "header": {
     "fullname": "SIWANONT SITTINAM",
-    "title": "Digital Threat and Vulnerability Management Officer"
+    "title": "Digital Threat and Vulnerability Management Officer",
+    "email": "siwanont1@gmail.com"
   },
   "aboutme": {
     "contentText": [
