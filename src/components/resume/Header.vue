@@ -1,41 +1,28 @@
 <template>
   <div class="resume-header">
-    <v-row class="d-flex text-center">
-      <v-col cols="5" class="red">
-        <h1 class="display-2 font-weight-bold mb-5 text-uppercase text-center">
-          {{fullname}}
-          {{title}}
-        </h1>
-      </v-col>
-      <v-col cols="3" class="green">
-        <h1 class="display-2 font-weight-bold mb-5 text-uppercase text-center">
-          Header Section2
-        </h1>
-      </v-col>
-      <v-col cols="4" class="blue">
-        <h1 class="display-2 font-weight-bold mb-5 text-uppercase text-center">
-          Header Section3
-        </h1>
-      </v-col>
+    <v-row class="d-flex">
+      <Section1 />
+      <Section2 />
+      <Section3 />
     </v-row>
     <HorizontalLine />
   </div>
 </template>
 
 <script>
-import HorizontalLine from "@/components/resume/components/HorizontalLine.vue";
 import info from "@/assets/info.json";
+import HorizontalLine from "@/components/resume/components/HorizontalLine.vue";
+import Section1 from "./Header/Section1.vue"
+import Section2 from "./Header/Section2.vue"
+import Section3 from "./Header/Section3.vue"
 
 export default {
   name: "ResumeHeader",
-  data() {
-    return {
-      fullname: info.header.fullname,
-      title: info.header.title
-    };
-  },
   components: {
     HorizontalLine,
+    Section1,
+    Section2,
+    Section3,
   }
 };
 </script>
