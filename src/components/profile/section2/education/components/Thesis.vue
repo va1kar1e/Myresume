@@ -30,7 +30,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Thesis",
+  name: "ProfileThesis",
   data: () => ({
     archieve: info.education.thesis.archieve
   }),

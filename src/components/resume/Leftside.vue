@@ -3,32 +3,6 @@
     <h1 class="display-2 font-weight-bold text-uppercase text-center">
       Left Side
       Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
-      Left Side
     </h1>
   </v-col>
 </template>

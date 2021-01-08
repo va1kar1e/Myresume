@@ -21,7 +21,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Course",
+  name: "ProfileCourse",
   data: () => ({
     items: info.course.items
   }),

@@ -28,6 +28,7 @@ p {
 import info from "@/assets/info.json";
 
 export default {
+  name: "ProfileAboutme",
   data() {
     return {
       contentText: info.aboutme.contentText,

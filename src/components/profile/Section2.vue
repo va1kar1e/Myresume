@@ -14,11 +14,7 @@ import Education from "@/components/profile/section2/education/Education.vue";
 import Work from "@/components/profile/section2/Work.vue";
 
 export default {
-  data() {
-    return {
-      title: "Section2",
-    };
-  },
+  name: "ProfileSection2",
   components: {
     Education,
     Work,

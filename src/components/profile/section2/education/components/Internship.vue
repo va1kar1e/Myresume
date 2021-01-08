@@ -37,7 +37,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Internship",
+  name: "ProfileInternship",
   data: () => ({
     archieve: info.education.internship.archieve
   }),

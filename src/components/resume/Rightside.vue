@@ -6,20 +6,6 @@
       Right Side
       Right Side
       Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
-      Right Side
     </h1>
   </v-col>
 </template>

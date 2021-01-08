@@ -57,6 +57,7 @@
 <script>
 
 export default {
+  name: "PathNavbar",
   data() {
     return {
     };

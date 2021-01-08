@@ -7,10 +7,10 @@
           class="a4-paper"
         >
           <Header />
-          <v-row class="d-flex text-center">
+          <!-- <v-row class="d-flex text-center">
             <Leftside />
             <Rightside />
-          </v-row>
+          </v-row> -->
         </v-sheet>
     </v-main>
   </v-app>
@@ -22,19 +22,15 @@
 
 <script>
 import Header from "@/components/resume/Header.vue"
-import Leftside from "@/components/resume/Leftside.vue"
-import Rightside from "@/components/resume/Rightside.vue"
+// import Leftside from "@/components/resume/Leftside.vue"
+// import Rightside from "@/components/resume/Rightside.vue"
 
 export default {
-  data() {
-    return {
-      title: "Resume"
-    };
-  },
+  name: "Resume",
   components: {
     Header,
-    Leftside,
-    Rightside
+    // Leftside,
+    // Rightside
   }
 };
 </script>

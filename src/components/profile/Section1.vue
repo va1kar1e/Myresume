@@ -14,11 +14,7 @@ import Header from "@/components/profile/section1/Header.vue";
 import Aboutme from "@/components/profile/section1/Aboutme.vue";
 
 export default {
-  data() {
-    return {
-      title: "Section1",
-    };
-  },
+  name: "ProfileSection1",
   components: {
     Header,
     Aboutme,

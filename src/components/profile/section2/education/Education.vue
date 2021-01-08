@@ -51,7 +51,7 @@ import Internship from "./components/Internship.vue";
 import Work from "./components/Work.vue";
 
 export default {
-  name: "Education",
+  name: "ProfileEducation",
   data: () => ({
     university: info.education.main.university,
     faculty: info.education.main.faculty,

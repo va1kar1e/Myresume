@@ -28,3 +28,9 @@
   margin-bottom: 0px !important;
 }
 </style>
+
+<script>
+export default {
+  name: "ProfileFooter",
+}
+</script>

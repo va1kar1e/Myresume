@@ -10,7 +10,7 @@ import Course from "./components/Course.vue";
 import Interest from "./components/Interest.vue";
 
 export default {
-  name: "CourseInterest",
+  name: "ProfileCourseInterest",
   components: {
     Course,
     Interest

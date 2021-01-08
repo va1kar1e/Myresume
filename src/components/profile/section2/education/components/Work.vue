@@ -44,7 +44,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Work",
+  name: "ProfileWork",
   data: () => ({
     archieve: info.education.work.archieve
   }),

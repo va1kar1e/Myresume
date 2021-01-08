@@ -39,7 +39,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Project",
+  name: "ProfileProject",
   data: () => ({
     archieve: info.education.project.archieve
   }),

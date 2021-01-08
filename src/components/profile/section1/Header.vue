@@ -43,7 +43,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Course",
+  name: "ProfileHeader",
   data: () => ({
     fullname: info.header.fullname,
     title: info.header.title

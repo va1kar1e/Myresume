@@ -22,11 +22,7 @@ import Section2 from "@/components/profile/Section2.vue"
 import Section3 from "@/components/profile/Section3.vue"
 
 export default {
-  data() {
-    return {
-      title: "Profile",
-    };
-  },
+  name: "Profile",
   components: {
     Navbar,
     Footer,

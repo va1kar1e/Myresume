@@ -41,7 +41,7 @@
 import info from "@/assets/info.json";
 
 export default {
-  name: "Cert",
+  name: "ProfileCert",
   data: () => ({
     absolute: true,
     overlay: false,
