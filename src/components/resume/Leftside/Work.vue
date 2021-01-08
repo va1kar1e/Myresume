@@ -19,21 +19,29 @@
           </p>
         </v-col>
       </v-row>
-      <p class="subtitle-2 font-weight-light resume-p">
-        {{ item.role }}
+      <p class="caption font-weight-light font-italic resume-p">
+        {{ item.keyword }}
       </p>
-      <p
-        :class="`subtitle-2 text-uppercase font-weight-bold resume-p`"
-        :style="`color:` + item.color"
-      >
-        team
-      </p>
-      <p
-        :class="`caption font-weight-regular resume-p`"
-        v-html="item.team"
-      >
-        {{ item.team }}
-      </p>
+      <v-row class="resume-row">
+        <v-col cols="2" class="resume-col">
+          <p
+            :class="`subtitle-2 text-uppercase font-weight-bold resume-p`"
+            :style="`color:` + item.color"
+          >
+            Role
+          </p>
+        </v-col>
+        <v-col cols="10" class="resume-col">
+          <p class="subtitle-2 font-weight-light text-right resume-p">
+            {{ item.role }}
+          </p>
+          <p
+            :class="`caption font-weight-regular text-right resume-p`"
+          >
+            {{ item.team }} Team
+          </p>
+        </v-col>
+      </v-row>
       <div v-if="i<3">
         <p
           :class="`subtitle-2 text-uppercase font-weight-bold resume-p`"

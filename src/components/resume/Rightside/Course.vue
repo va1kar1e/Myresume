@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="title font-weight-bold text-uppercase resume-p">
+    <p class="headline font-weight-bold text-uppercase resume-p">
       Extracurricular Courses
     </p>
     <p

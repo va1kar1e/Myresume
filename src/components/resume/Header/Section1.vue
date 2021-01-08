@@ -3,7 +3,7 @@
     <p class="headline font-weight-bold text-uppercase resume-p">
       {{fullname}}
     </p>
-    <p class="caption font-weight-bold text-uppercase">
+    <p class="body-1 font-weight-bold text-uppercase">
       {{title}}
     </p>
     <p

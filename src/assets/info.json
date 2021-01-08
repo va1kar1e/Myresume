@@ -74,8 +74,7 @@
         "year": "Oct 2020 - Present",
         "icon": "fas fa-user-secret",
         "color": "#7c5dd0",
-        "name": "SCB",
-        "keyword": "Also known as Siam Commercial Bank",
+        "name": "Siam Commercial Bank",
         "role": "Digital Threat and Vulnerability Management Officer",
         "team": "IT Security - SAT (Redteam)",
         "archiev": [
@@ -127,7 +126,7 @@
         {
           "what": "CREATIVE DESIGN AWARD",
           "when": "Thailand Financial Cybersecurity 2017",
-          "who": "ETDA, Bank of Thailand, Securities and Exchange Commission of Thailand"
+          "who": "ETDA, BOT, SEC"
         }
       ]
     }
