@@ -5,9 +5,9 @@
     <p
       v-for="(content, i) in contacts"
       :key="i"
-      class="caption text-right resume-header-section-p"
+      class="caption text-right resume-p"
     >
-      <a :href="content[0]" class="resume-header-section-a">{{ content[1] }}</a>
+      <a :href="content[0]" class="resume-a">{{ content[1] }}</a>
     </p>
   </v-col>
 </template>

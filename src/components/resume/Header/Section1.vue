@@ -1,15 +1,15 @@
 <template>
   <v-col cols="6" class="resume-header-section1">
-    <h4 class="headline font-weight-bold text-uppercase">
+    <p class="headline font-weight-bold text-uppercase resume-p">
       {{fullname}}
-    </h4>
+    </p>
     <p class="caption font-weight-bold text-uppercase">
       {{title}}
     </p>
     <p
       v-for="(content, i) in aboutme"
       :key="i"
-      class="caption text-center text-md-justify resume-header-section-p"
+      class="caption text-center text-md-justify font-weight-light resume-p"
       v-html="content"
     >
       {{ content }}
