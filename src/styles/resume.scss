@@ -7,12 +7,40 @@
   min-height: 1122px;
   width: 794px;
   height: 1122px;
-  padding: 15px;
+  padding: 10px;
   margin: auto;
 }
 
 .horizontal-line {
   border: 1px solid rgb(0, 0, 0);
+}
+
+.resume-header-section1 {
+  padding-right: 0px !important;
+}
+
+.resume-header-section2 {
+  padding: 0px !important;
+}
+
+.resume-header-section3 {
+  padding-left: 0px !important;
+}
+
+.resume-header-section-p {
+  margin-bottom: 0px !important;
+}
+
+.resume-header-section-a {
+  color: #000000 !important;
+}
+
+.resume-header-section-img {
+  border-image: 1;
+}
+
+.qrresume {
+  align-items: center;
 }
 
 .green {
