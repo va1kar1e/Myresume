@@ -9,7 +9,7 @@
     <p
       v-for="(content, i) in aboutme"
       :key="i"
-      class="caption text-center text-md-justify font-weight-light resume-p"
+      class="caption text-justify font-weight-light resume-p"
       v-html="content"
     >
       {{ content }}
