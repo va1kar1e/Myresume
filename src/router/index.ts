@@ -35,27 +35,13 @@ const routes = [
     component: construction,
     name: "Path",
     meta: { title: "Path" },
-    children: [
-      // {
-      //   path: "/a",
-      //   component: path,
-      //   meta: { title: "PathA" },
-      // }
-    ],
-  },
-  {
-    path: "/d",
-    name: "Download",
-    component: construction,
-    children: [
-      {
-        path: "/resume",
-        name: "resume",
-        beforeEnter() {
-          location.href = "";
-        },
-      },
-    ],
+    // children: [
+    //   {
+    //     path: "/a",
+    //     component: path,
+    //     meta: { title: "PathA" },
+    //   }
+    // ],
   },
   {
     path: "/c",
