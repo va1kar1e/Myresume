@@ -10,14 +10,14 @@
       <v-row class="my-3 displayresume text-center">
         <v-col cols="5" class="profile-resume-col">
           <qrcode-vue
-            :value="value2"
+            :value="resume_file_fullpath"
             :size="size"
             level="M"
             :renderAs="renderAs"
             :background="background"
             :foreground="foreground"
           ></qrcode-vue>
-          <v-btn :to='value2' target="_blank">
+          <v-btn :to='resume_file_path' target="_blank">
             <span class="mr-2">Downlond File</span>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-btn>
@@ -29,14 +29,14 @@
         </v-col>
         <v-col cols="5" class="profile-resume-col">
           <qrcode-vue
-            :value="value1"
+            :value="resume_fullpath"
             :size="size"
             level="M"
             :renderAs="renderAs"
             :background="background"
             :foreground="foreground"
           ></qrcode-vue>
-          <v-btn :to='value1' target="_blank">
+          <v-btn :to='resume_path' target="_blank">
             <span class="mr-2">See Online</span>
             <v-icon color="white">fas fa-eye</v-icon>
           </v-btn>
@@ -62,8 +62,10 @@ import info from "@/assets/info.json";
 export default {
   data() {
     return {
-      value1: '/resume',
-      value2: "/files/" + info.urllink.resume,
+      resume_path: "/resume",
+      resume_fullpath: location.origin + "/resume",
+      resume_file_path: "/files/" + info.urllink.resume,
+      resume_file_fullpath: location.origin + "/files/" + info.urllink.resume,
       size: 150,
       renderAs: "svg",
       background: "#020913",
