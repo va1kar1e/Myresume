@@ -1,29 +1,46 @@
 <template>
   <v-card>
-    <v-card-title class="headline displayresume text-uppercase"
-      >Download My Resume</v-card-title
-    >
+    <v-card-title class="headline displayresume text-uppercase">
+      My Resume
+    </v-card-title>
     <v-card-text>
-      <v-row class="my-3 displayresume">
-        <qrcode-vue
-          :value="value"
-          :size="size"
-          level="M"
-          :renderAs="renderAs"
-          :background="background"
-          :foreground="foreground"
-        ></qrcode-vue>
-        <p class="font-weight-light white--text">
-          Scan QR Code or Click this below link
-        </p>
-        <v-btn :to='value' target="_blank" text>
-          <span class="mr-2">Downlond File</span>
-          <v-icon color="white">fas fa-cloud-download-alt</v-icon>
-        </v-btn>
-        <v-btn :to='resume_path' target="_blank" text>
-          <span class="mr-2">or See Online</span>
-          <v-icon color="white">fas fa-eye</v-icon>
-        </v-btn>
+      <p class="title font-weight-light text-center white--text text-uppercase">
+        Scan QR Code or Click this below link
+      </p>
+      <v-row class="my-3 displayresume text-center">
+        <v-col cols="5" class="profile-resume-col">
+          <qrcode-vue
+            :value="value2"
+            :size="size"
+            level="M"
+            :renderAs="renderAs"
+            :background="background"
+            :foreground="foreground"
+          ></qrcode-vue>
+          <v-btn :to='value2' target="_blank">
+            <span class="mr-2">Downlond File</span>
+            <v-icon color="white">fas fa-cloud-download-alt</v-icon>
+          </v-btn>
+        </v-col>
+        <v-col cols="2">
+          <p class="title text-center font-weight-bold white--text mb-5 profile-p">
+            OR
+          </p>
+        </v-col>
+        <v-col cols="5" class="profile-resume-col">
+          <qrcode-vue
+            :value="value1"
+            :size="size"
+            level="M"
+            :renderAs="renderAs"
+            :background="background"
+            :foreground="foreground"
+          ></qrcode-vue>
+          <v-btn :to='value1' target="_blank">
+            <span class="mr-2">See Online</span>
+            <v-icon color="white">fas fa-eye</v-icon>
+          </v-btn>
+        </v-col>
       </v-row>
     </v-card-text>
   </v-card>
@@ -31,11 +48,10 @@
 
 <style scoped>
 .v-btn {
-  background-color: #263859;
+  background-color: #060f1a;
 }
 .displayresume {
-  display: block !important;
-  text-align: center;
+  justify-content: center;
 }
 </style>
 
@@ -46,11 +62,11 @@ import info from "@/assets/info.json";
 export default {
   data() {
     return {
-      resume_path: '/resume',
-      value: location.href + "/files/" + info.urllink.resume,
-      size: 200,
+      value1: '/resume',
+      value2: "/files/" + info.urllink.resume,
+      size: 150,
       renderAs: "svg",
-      background: "#263859",
+      background: "#020913",
       foreground: "#ffffff"
     };
   },
