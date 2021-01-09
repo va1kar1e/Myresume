@@ -20,7 +20,7 @@ export default {
   name: "ResumeHeaderSection3",
   data() {
     return {
-      homepage: location.origin,
+      homepage: "https://siwanont.ml/",
       contacts: [
         ["mailto:" + info.header.email, info.header.email],
         [info.urllink.homepage, info.urllink.homepage],
