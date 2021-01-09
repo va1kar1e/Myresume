@@ -14,11 +14,11 @@
     </div>
     <v-spacer></v-spacer>
     <v-toolbar-items class="d-none d-md-flex">
-      <v-btn href="/resume" text>
+      <v-btn :href="resume_path" text>
         <span class="mr-2">Download My Resume</span>
         <v-icon color="white">fas fa-cloud-download-alt</v-icon>
       </v-btn>
-      <v-btn :href="email" text target="_blank">
+      <v-btn :href="email_path" text target="_blank">
         <span class="mr-2">Hire me</span>
         <v-icon color="white">fas fa-paper-plane</v-icon>
       </v-btn>
@@ -30,7 +30,7 @@
         </v-btn>
       </template>
       <v-list>
-        <v-list-item href="/resume">
+        <v-list-item :href="resume_path">
           <v-list-item-icon>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-list-item-icon>
@@ -38,7 +38,7 @@
             <v-list-item-title>Download My Resume</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :href="email" target="_blank">
+        <v-list-item :href="email_path" target="_blank">
           <v-list-item-icon>
             <v-icon color="white">fas fa-paper-plane</v-icon>
           </v-list-item-icon>
@@ -52,12 +52,12 @@
 </template>
 
 <script>
-import info from "@/assets/info.json";
 
 export default {
   name: "ProfileNavbar",
   data: () => ({
-    email: "mailto:" + info.header.email,
+    email_path:"/c/email",
+    resume_path:"/resume"
   }),
   components: {
   },

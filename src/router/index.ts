@@ -4,7 +4,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import profile from "@/views/Profile.vue";
-// import home from "@/views/Home.vue";
+import home from "@/views/Home.vue";
 // import path from "@/views/Path.vue";
 import resume from "@/views/Resume.vue";
 import construction from "@/views/Construction.vue";
@@ -13,7 +13,7 @@ import info from "@/assets/info.json";
 const routes = [
   {
     path: "/",
-    component: construction,
+    component: home,
     name: "Home",
     meta: { title: "Home" },
     redirect: { name: 'Profile' }
@@ -25,16 +25,16 @@ const routes = [
     meta: { title: "Profile" },
   },
   {
-    path: "/profile",
-    component: profile,
-    name: "Profile",
-    meta: { title: "Profile" },
-  },
-  {
     path: "/resume",
     component: resume,
     name: "Resume",
-    meta: { title: "Resume" },
+    meta: { title: "Profile" },
+  },
+  {
+    path: "/path",
+    component: construction,
+    name: "Path",
+    meta: { title: "Path" },
     children: [
       // {
       //   path: "/a",
@@ -48,13 +48,13 @@ const routes = [
     name: "Download",
     component: construction,
     children: [
-      // {
-        // path: "/resume",
-        // name: "resume",
-        // beforeEnter() {
-        //   location.href = info.urllink.resume;
-        // },
-      // },
+      {
+        path: "/resume",
+        name: "resume",
+        beforeEnter() {
+          location.href = "";
+        },
+      },
     ],
   },
   {
@@ -62,6 +62,13 @@ const routes = [
     name: "Contact",
     component: construction,
     children: [
+      {
+        path: "email",
+        name: "Email",
+        beforeEnter() {
+          location.href = "mailto:"+info.header.email;
+        },
+      },
       {
         path: "linkedin",
         name: "Linkedin",

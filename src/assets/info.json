@@ -65,7 +65,8 @@
         "&ndash; Studying the threat unawareness with the SSL/TLS certificate of the top 50 university websites.",
         "&ndash; Collecting SSL/TLS certificate and ranking web domain trust with <b>TestSSL.sh</b> and <b>Javascript</b>.",
         "&ndash; Building a web dashboard to display the rank of web domain trust with description using <b>NextJS</b> and <b>SemanticUI</b>."
-      ]
+      ],
+      "videolink": "&ndash; Presentation Video <a href='v/explorercar' target='blank'>Link</a>"
     }
   },
   "work": {
@@ -136,23 +137,23 @@
       "course": [
         {
           "name": "CompTIA Network Vulnerability Assessment Professional",
-          "icon": "cnvp",
+          "icon": "cnvp.png",
           "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
         },
         {
           "name": "CompTIA Pentest+",
-          "icon": "penp",
+          "icon": "penp.png",
           "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url",
           "claim": ""
         },
         {
           "name": "CompTIA Security+",
-          "icon": "secp",
+          "icon": "secp.png",
           "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
         },
         {
           "name": "HCIA Routing & Switching",
-          "icon": "hciars",
+          "icon": "hciars.png",
           "id": ""
         }
       ]

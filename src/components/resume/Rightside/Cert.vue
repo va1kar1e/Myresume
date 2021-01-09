@@ -11,7 +11,7 @@
         :key="i"
       >
         <v-img
-          :src="require('@/assets/images/cert/' + c.icon + '.png')"
+          :src="require('@/assets/images/cert/' + c.icon)"
           :alt="c.name"
           contain
           min-height="80"
