@@ -16,66 +16,39 @@
 }
 
 .resume-header-section1 {
-  padding-right: 0px !important;
+  padding: 12px 0px 0px 12px !important;
 }
 
 .resume-header-section2 {
-  padding: 70px 0px 0px 0px !important;
+  padding: 12px 12px 0px 0px !important;
 }
 
-.resume-header-section3 {
-  padding-left: 0px !important;
+.resume-header-section3p1 {
+  padding-right: 0px !important;
 }
 
 .resume-p {
   margin-bottom: 0px !important;
+  padding-left: 0px !important;
+}
+
+.resume-p-list {
+  margin-bottom: 0px !important;
+  padding-left: 15px !important;
 }
 
 .resume-a {
   color: #000000 !important;
 }
 
-.resume-left {
-  padding-right: 0px;
-}
-
-.resume-right {
-  padding-left: 0px;
-}
-
-.resume-header-section-img {
-  border-radius: 100%;
-}
-
 .resume-row {
-  margin: 0px !important;
+  padding: 0px 0px 0px 0px !important;
 }
 
 .resume-col {
-  padding: 0px !important;
-}
-
-.resume-col-right {
-  padding: 8px 0px 0px 0px !important;
-}
-
-.resume-cert-col {
-  margin: 5px 0px 0px 0px !important;
-  padding: 0px 0px 0px 5px !important;
+  padding: 0px 12px 12px 12px !important;
 }
 
 .qrresume {
   align-items: center;
-}
-
-.green {
-  background-color: green;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
 }

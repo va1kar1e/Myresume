@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="6" class="resume-header-section1">
+  <v-col cols="8" class="resume-header-section1">
     <p class="headline font-weight-bold text-uppercase resume-p">
       {{fullname}}
     </p>
@@ -9,7 +9,7 @@
     <p
       v-for="(content, i) in aboutme"
       :key="i"
-      class="caption text-justify font-weight-light resume-p"
+      class="caption text-justify font-weight-light"
       v-html="content"
     >
       {{ content }}
@@ -28,6 +28,6 @@ export default {
       title: info.header.title,
       aboutme: info.aboutme.contentText,
     };
-  }
+  },
 };
 </script>
