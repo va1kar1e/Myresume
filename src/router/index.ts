@@ -28,7 +28,7 @@ const routes = [
     path: "/resume",
     component: resume,
     name: "Resume",
-    meta: { title: "Profile" },
+    meta: { title: "Resume" },
   },
   {
     path: "/path",
