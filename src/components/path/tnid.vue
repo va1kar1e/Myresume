@@ -1,17 +1,19 @@
 <template>
-  <v-row class="d-flex text-center">
-    <v-col cols="12">
-      <h1 class="display-2 font-weight-bold mb-5 text-uppercase text-center">
-        {{title}}
-      </h1>
-    </v-col>
-  </v-row> 
+  <v-sheet
+    rounded="xl"
+    class="pa-12"
+    color="grey lighten-3"
+    elevation="1"
+  >
+    <h1 class="display-2 font-weight-bold mb-5 black--text text-uppercase text-center">
+      {{title}}
+    </h1>
+  </v-sheet>
 </template>
 
 <script>
 
 export default {
-  name: "TNID",
   data() {
     return {
       title: "Thai National ID Reader",

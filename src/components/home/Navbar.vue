@@ -51,13 +51,9 @@
   </v-app-bar>
 </template>
 
-<style scoped>
-</style>
-
 <script>
 
 export default {
-  name: "HomeNavbar",
   data() {
     return {
     };

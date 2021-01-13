@@ -3,7 +3,7 @@
     <Navbar :name="title" />
     <v-main>
       <v-container>
-        <router-view v-on:childinit="onChildInit" :key="componentKey"></router-view>
+        <router-view v-on:childinit="onChildInit"></router-view>
       </v-container>
     </v-main> 
   </v-app>
@@ -13,10 +13,9 @@
 import Navbar from "@/components/path/Navbar.vue";
 
 export default {
-  name: "Path",
   data() {
     return {
-      title:"Path",
+      title:"My Tools",
     };
   },
   methods: {

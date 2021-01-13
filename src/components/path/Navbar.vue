@@ -51,15 +51,11 @@
   </v-app-bar>
 </template>
 
-<style scoped>
-</style>
-
 <script>
 
 export default {
   props: {
     name: String,
   },
-  name: "PathNavbar",
 };
 </script>
