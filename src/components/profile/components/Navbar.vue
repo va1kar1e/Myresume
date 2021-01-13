@@ -9,8 +9,11 @@
         width="40"
       />
       <v-toolbar-title class="shrink mt-1 font-weight-bold" contain
-        >Siwanont's Profile</v-toolbar-title
       >
+        <a href="/profile">
+          <span class="mr-2">Siwanont's Profile</span>
+        </a>
+      </v-toolbar-title>
     </div>
     <v-spacer></v-spacer>
     <v-toolbar-items class="d-none d-md-flex">
