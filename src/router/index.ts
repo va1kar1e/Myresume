@@ -8,6 +8,7 @@ import home from "@/views/Home.vue";
 // import path from "@/views/Path.vue";
 import resume from "@/views/Resume.vue";
 import construction from "@/views/Construction.vue";
+import notfound from "@/views/NotFound.vue";
 import info from "@/assets/info.json";
 
 const routes = [
@@ -100,6 +101,12 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/:pathMatch(.*)*",
+    component: notfound,
+    name: "Not Found",
+    meta: { title: "Not Found" },
+  }
 ];
 
 export default new VueRouter({
