@@ -3,7 +3,8 @@
     <v-row class="d-flex text-center">
       <v-col cols="12" md="12">
         <v-img
-          :src="require('@/assets/images/profilepic.png')"
+          :lazy-src="require('@/assets/images/mini/profilepic.png')"
+          :src="require('@/assets/images/full/profilepic.png')"
           class="my-3"
           contain
           min-height="80"

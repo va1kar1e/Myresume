@@ -13,7 +13,8 @@
         :key="i"
       >
         <v-img
-          :src="require('@/assets/images/cert/' + c.icon)"
+          :lazy-src="require('@/assets/images/mini/cert/' + c.icon)"
+          :src="require('@/assets/images/full/cert/' + c.icon)"
           class="my-3"
           :alt="c.name"
           contain

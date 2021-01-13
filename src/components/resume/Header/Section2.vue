@@ -4,7 +4,7 @@
       <v-col cols="2"></v-col>
       <v-col cols="5" class="resume-header-section3p1">
         <v-img
-          :src="require('@/assets/images/profilepic.png')"
+          :src="require('@/assets/images/full/profilepic.png')"
           contain
           max-height="95"
         >
