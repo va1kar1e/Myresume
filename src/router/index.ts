@@ -7,7 +7,6 @@ import profile from "@/views/Profile.vue";
 import home from "@/views/Home.vue";
 // import path from "@/views/Path.vue";
 import resume from "@/views/Resume.vue";
-import construction from "@/views/Construction.vue";
 import notfound from "@/views/NotFound.vue";
 import info from "@/assets/info.json";
 
@@ -49,14 +48,12 @@ const routes = [
   },
   {
     path: "/path",
-    component: construction,
     name: "Path",
     meta: { title: "Path" },
   },
   {
     path: "/c",
     name: "Contact",
-    component: construction,
     children: [
       {
         path: "email",
