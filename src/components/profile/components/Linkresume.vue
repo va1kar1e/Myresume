@@ -36,7 +36,7 @@
             :background="background"
             :foreground="foreground"
           ></qrcode-vue>
-          <v-btn to='/resume/general' target="_blank">
+          <v-btn to='/resume/ats' target="_blank">
             <span class="mr-2">ATS Version</span>
             <v-icon color="white">fas fa-eye</v-icon>
           </v-btn>
