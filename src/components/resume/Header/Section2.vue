@@ -6,7 +6,7 @@
         <v-img
           :src="require('@/assets/images/profilepic.png')"
           contain
-          max-height="85"
+          max-height="95"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -16,18 +16,7 @@
         </v-img>
       </v-col>
       <v-col cols="5" class="resume-header-section3p2 text-right">
-        <QRResume :url="contacts[1][1]" size="85" />
-      </v-col>
-    </v-row>
-    <v-row class="resume-header-section3">
-      <v-col cols="12" class="">
-        <p
-          v-for="(content, i) in contacts"
-          :key="i"
-          class="caption text-right font-weight-regular resume-p"
-        >
-          <a :href="content[0]" class="resume-a">{{ content[1] }}</a>
-        </p>
+        <QRResume :url="contacts[0][1]" size="95" />
       </v-col>
     </v-row>
   </v-col>
@@ -42,10 +31,7 @@ export default {
   data() {
     return {
       contacts: [
-        ["mailto:" + info.header.email, info.header.email],
         [info.urllink.homepage, info.urllink.homepage],
-        [info.urllink.github, info.urllink.github],
-        [info.urllink.linkedin, info.urllink.linkedin],
       ],
     };
   },

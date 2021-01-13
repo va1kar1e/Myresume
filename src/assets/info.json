@@ -5,7 +5,8 @@
     "github": "https://github.com/va1kar1e",
     "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
     "explorercarYT": "https://www.youtube.com/watch?v=Lg-nDld06WY",
-    "resume": "Siwanont's Resume.pdf"
+    "resume4G": "Siwanonts-Resume-For-General.pdf",
+    "resume4ATS": "Siwanonts-Resume-For-ATS.pdf"
   },
   "header": {
     "fullname": "SIWANONT SITTINAM",
@@ -15,8 +16,9 @@
   "aboutme": {
     "contentText": [
       "&nbsp;&nbsp;&nbsp;&nbsp;Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Cybersecurity Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development.",
-      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
-    ]
+      "&nbsp;&nbsp;&nbsp;&nbsp;I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
+    ],
+    "contentTextString": "&nbsp;&nbsp;&nbsp;&nbsp;Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Cybersecurity Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
   },
   "education": {
     "main": {
@@ -117,16 +119,16 @@
       }
     ]
   },
-  "recogntion": {
+  "recognition": {
     "item": {
       "course": [
         {
-          "what": "CONSOLATION PRIZE AWARD",
-          "when": "Huawei ICT Competition 2019 ",
+          "what": "Consolation Prize Award",
+          "when": "Huawei ICT Competition 2019",
           "who": "Huawei Technologies (Thailand)"
         },
         {
-          "what": "CREATIVE DESIGN AWARD",
+          "what": "Creative Design Award",
           "when": "Thailand Financial Cybersecurity 2017",
           "who": "ETDA, BOT, SEC"
         }

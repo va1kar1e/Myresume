@@ -3,6 +3,7 @@
     <p class="subtitle-1 font-weight-bold text-uppercase text-center resume-p">
       Education
     </p>
+    <div class="horizontal-line mb-3"></div>
     <v-row>
       <v-col cols="8" class="resume-col">
         <p
@@ -12,7 +13,7 @@
         </p>
       </v-col>
       <v-col cols="4" class="resume-col">
-        <p class="caption text-right font-italic font-weight-regular resume-p">
+        <p class="subtitle-2 text-right font-italic font-weight-thin resume-p">
           {{ period }}
         </p>
       </v-col>
@@ -21,7 +22,7 @@
       {{ faculty }}
     </p>
     <p
-      :class="`subtitle-2 text-uppercase font-weight-bold resume-p`"
+      :class="`caption text-uppercase font-weight-bold resume-p`"
     >
       Thesis
     </p>
@@ -30,33 +31,31 @@
     >
       {{thesis.name}}
     </p>
-    <div v-for="(item, i) in thesis.archieve" :key="i">
-      <p
-        v-if="i==0 || i==5"
-        class="caption font-weight-light resume-p"
-        v-html="item"
-      >
-        {{ item }}
-      </p>
-    </div>
     <p
-      :class="`subtitle-2 text-uppercase font-weight-bold resume-p`"
+      v-for="(archieve, l) in thesisArchieve" :key="l"
+      class="caption font-weight-light resume-p"
+      v-html="archieve"
+    >
+      {{ archieve }}
+    </p>
+    <p
+      :class="`caption text-uppercase font-weight-bold resume-p`"
     >
       Extracurricular Work
     </p>
-    <div v-for="(item, i) in works" :key="i">
+    <div v-for="(work, k) in works" :key="k">
       <p
         :class="`caption font-weight-regular resume-p`"
       >
-        {{item[0]}}
+        {{work[0]}}
       </p>
-      <div v-for="(name, i) in item[1]" :key="i">
+      <div v-for="(w, j) in work[1]" :key="j">
         <p
-          v-if="i<2"
+          v-if="j<2"
           :class="`caption font-weight-light resume-p-list`"
-          v-html="name"
+          v-html="w"
         >
-          {{name}}
+          {{w}}
         </p>
       </div>
     </div>
@@ -73,6 +72,10 @@ export default {
     faculty: info.education.main.faculty,
     period: info.education.main.period,
     thesis: info.education.thesis,
+    thesisArchieve: [
+      info.education.thesis.archieve[0],
+      info.education.thesis.archieve[5],
+    ],
     works: [
       ["1. Junior Research Student, " + info.education.work.where, info.education.work.project],
       ["2. Curricular Projects", info.education.project.name],
