@@ -4,11 +4,8 @@
       Downlond My Resume
     </v-card-title>
     <v-card-text>
-      <p class="title font-weight-light text-center white--text text-uppercase">
-        Scan QR Code or Click this below link
-      </p>
       <v-row class="my-3 displayresume text-center">
-        <v-col cols="5" class="profile-resume-col">
+        <v-col cols="12" md="5" class="profile-resume-col">
           <qrcode-vue
             :value="resume4G"
             :size="size"
@@ -22,12 +19,7 @@
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-btn>
         </v-col>
-        <v-col cols="2">
-          <p class="title text-center font-weight-bold white--text mb-5 profile-p">
-            OR
-          </p>
-        </v-col>
-        <v-col cols="5" class="profile-resume-col">
+        <v-col cols="12" md="5" class="profile-resume-col">
           <qrcode-vue
             :value="resume4ATS"
             :size="size"
