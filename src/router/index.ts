@@ -29,19 +29,28 @@ const routes = [
     component: resume,
     name: "Resume",
     meta: { title: "Resume" },
+     children: [
+      {
+        path: "general",
+        name: "General",
+        beforeEnter() {
+          location.href = location.origin + "/files/" + info.urllink.resume4G;
+        },
+       },
+       {
+        path: "ats",
+        name: "ATS",
+        beforeEnter() {
+          location.href = location.origin + "/files/" + info.urllink.resume4ATS;
+        },
+      },
+    ]
   },
   {
     path: "/path",
     component: construction,
     name: "Path",
     meta: { title: "Path" },
-    // children: [
-    //   {
-    //     path: "/a",
-    //     component: path,
-    //     meta: { title: "PathA" },
-    //   }
-    // ],
   },
   {
     path: "/c",

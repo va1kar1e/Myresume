@@ -10,14 +10,14 @@
       <v-row class="my-3 displayresume text-center">
         <v-col cols="5" class="profile-resume-col">
           <qrcode-vue
-            :value="resume_file_fullpath"
+            :value="resume4G"
             :size="size"
             level="M"
             :renderAs="renderAs"
             :background="background"
             :foreground="foreground"
           ></qrcode-vue>
-          <v-btn :to='resume_file_path' target="_blank">
+          <v-btn to='/resume/general' target="_blank">
             <span class="mr-2">General Version</span>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-btn>
@@ -29,14 +29,14 @@
         </v-col>
         <v-col cols="5" class="profile-resume-col">
           <qrcode-vue
-            :value="resume_fullpath"
+            :value="resume4ATS"
             :size="size"
             level="M"
             :renderAs="renderAs"
             :background="background"
             :foreground="foreground"
           ></qrcode-vue>
-          <v-btn :to='resume_path' target="_blank">
+          <v-btn to='/resume/general' target="_blank">
             <span class="mr-2">ATS Version</span>
             <v-icon color="white">fas fa-eye</v-icon>
           </v-btn>
@@ -57,15 +57,12 @@
 
 <script>
 import QrcodeVue from "qrcode.vue";
-import info from "@/assets/info.json";
 
 export default {
   data() {
     return {
-      resume_path: "/files/" + info.urllink.resume4ATS,
-      resume_fullpath: location.origin + "/files/" + info.urllink.resume4ATS,
-      resume_file_path: "/files/" + info.urllink.resume4G,
-      resume_file_fullpath: location.origin + "/files/" + info.urllink.resume4G,
+      resume4G: location.origin + "/resume/general",
+      resume4ATS: location.origin + "/resume/ats",
       size: 150,
       renderAs: "svg",
       background: "#020913",
