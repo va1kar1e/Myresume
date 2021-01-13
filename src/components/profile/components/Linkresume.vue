@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title class="headline displayresume text-uppercase">
-      My Resume
+      Downlond My Resume
     </v-card-title>
     <v-card-text>
       <p class="title font-weight-light text-center white--text text-uppercase">
@@ -18,7 +18,7 @@
             :foreground="foreground"
           ></qrcode-vue>
           <v-btn :to='resume_file_path' target="_blank">
-            <span class="mr-2">Downlond File</span>
+            <span class="mr-2">General Version</span>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-btn>
         </v-col>
@@ -37,7 +37,7 @@
             :foreground="foreground"
           ></qrcode-vue>
           <v-btn :to='resume_path' target="_blank">
-            <span class="mr-2">See Online</span>
+            <span class="mr-2">ATS Version</span>
             <v-icon color="white">fas fa-eye</v-icon>
           </v-btn>
         </v-col>
@@ -62,10 +62,10 @@ import info from "@/assets/info.json";
 export default {
   data() {
     return {
-      resume_path: "/resume",
-      resume_fullpath: location.origin + "/resume",
-      resume_file_path: "/files/" + info.urllink.resume,
-      resume_file_fullpath: location.origin + "/files/" + info.urllink.resume,
+      resume_path: "/files/" + info.urllink.resume4ATS,
+      resume_fullpath: location.origin + "/files/" + info.urllink.resume4ATS,
+      resume_file_path: "/files/" + info.urllink.resume4G,
+      resume_file_fullpath: location.origin + "/files/" + info.urllink.resume4G,
       size: 150,
       renderAs: "svg",
       background: "#020913",
