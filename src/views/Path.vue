@@ -1,15 +1,9 @@
 <template>
   <v-app>
-    <Navbar />
+    <Navbar :name="title" />
     <v-main>
       <v-container>
-        <v-row class="d-flex text-center">
-          <v-col cols="12">
-            <h1 class="display-2 font-weight-bold mb-5 text-uppercase text-center">
-              {{title}}
-            </h1>
-          </v-col>
-        </v-row> 
+        <router-view v-on:childinit="onChildInit" :key="componentKey"></router-view>
       </v-container>
     </v-main> 
   </v-app>
@@ -22,8 +16,13 @@ export default {
   name: "Path",
   data() {
     return {
-      title: "Path"
+      title:"Path",
     };
+  },
+  methods: {
+    onChildInit( value ){
+      this.title = value;
+    }
   },
   components: {
     Navbar,

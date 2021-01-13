@@ -3,12 +3,14 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
+import info from "@/assets/info.json";
 import profile from "@/views/Profile.vue";
 import home from "@/views/Home.vue";
-// import path from "@/views/Path.vue";
 import resume from "@/views/Resume.vue";
 import notfound from "@/views/NotFound.vue";
-import info from "@/assets/info.json";
+
+import path from "@/views/Path.vue";
+import tnid from "@/components/path/tnid.vue";
 
 const routes = [
   {
@@ -49,7 +51,18 @@ const routes = [
   {
     path: "/path",
     name: "Path",
+    component: path,
     meta: { title: "Path" },
+    children: [
+      {
+        path: "tnid",
+        name: "Thai National ID Reader",
+        component: tnid,
+        props: {
+          title: "Thai National ID Reader",
+        },
+       },
+    ]
   },
   {
     path: "/c",
