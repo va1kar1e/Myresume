@@ -1,6 +1,7 @@
 <template>
   <v-col cols="12" md="6" lg="6">
     <Course />
+    <br />
     <Interest />
   </v-col>
 </template>
