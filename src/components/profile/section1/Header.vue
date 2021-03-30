@@ -3,7 +3,8 @@
     <v-row class="d-flex text-center">
       <v-col cols="12" md="12">
         <v-img
-          :src="require('@/assets/images/profilepic.png')"
+          :lazy-src="require('@/assets/images/mini/profilepic.png')"
+          :src="require('@/assets/images/full/profilepic.png')"
           class="my-3"
           contain
           min-height="80"
@@ -28,7 +29,7 @@
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
           <v-icon large color="white">fab fa-linkedin</v-icon>
         </v-btn>
-        <v-btn :href="email" text target="_blank">
+        <v-btn href="/c/email" text target="_blank">
           <v-icon large color="white">fas fa-paper-plane</v-icon>
         </v-btn>
         <v-btn text color="primary" to="/c/github" target="_blank">
@@ -47,7 +48,6 @@ export default {
   data: () => ({
     fullname: info.header.fullname,
     title: info.header.title,
-    email: "mailto:" + info.header.email,
   }),
 };
 </script>

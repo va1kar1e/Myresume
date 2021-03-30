@@ -18,7 +18,7 @@ import info from "@/assets/info.json";
 export default {
   name: "ProfileSection3Recogntion",
   data: () => ({
-    item: info.recogntion.item
+    item: info.recognition.item
   }),
 };
 </script>

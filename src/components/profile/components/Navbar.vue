@@ -9,16 +9,22 @@
         width="40"
       />
       <v-toolbar-title class="shrink mt-1 font-weight-bold" contain
-        >Siwanont's Profile</v-toolbar-title
       >
+        <a href="/profile">
+          <span class="mr-2">Siwanont's Profile</span>
+        </a>
+      </v-toolbar-title>
     </div>
     <v-spacer></v-spacer>
     <v-toolbar-items class="d-none d-md-flex">
-      <v-btn href="/resume" text>
+      <v-btn @click.stop="dialog = true" text>
         <span class="mr-2">Download My Resume</span>
         <v-icon color="white">fas fa-cloud-download-alt</v-icon>
       </v-btn>
-      <v-btn :href="email" text target="_blank">
+      <v-dialog v-model="dialog" min-width="200" max-width="600">
+        <Linkresume/>
+      </v-dialog>
+      <v-btn :href="email_path" text target="_blank">
         <span class="mr-2">Hire me</span>
         <v-icon color="white">fas fa-paper-plane</v-icon>
       </v-btn>
@@ -30,7 +36,7 @@
         </v-btn>
       </template>
       <v-list>
-        <v-list-item href="/resume">
+        <v-list-item @click.stop="dialog = true">
           <v-list-item-icon>
             <v-icon color="white">fas fa-cloud-download-alt</v-icon>
           </v-list-item-icon>
@@ -38,7 +44,7 @@
             <v-list-item-title>Download My Resume</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :href="email" target="_blank">
+        <v-list-item :href="email_path" target="_blank">
           <v-list-item-icon>
             <v-icon color="white">fas fa-paper-plane</v-icon>
           </v-list-item-icon>
@@ -52,14 +58,17 @@
 </template>
 
 <script>
-import info from "@/assets/info.json";
+import Linkresume from "../Components/Linkresume.vue";
 
 export default {
   name: "ProfileNavbar",
   data: () => ({
-    email: "mailto:" + info.header.email,
+    dialog: false,
+    email_path:"/c/email",
+    resume_path:"/resume"
   }),
   components: {
+    Linkresume,
   },
 };
 </script>

@@ -6,7 +6,7 @@
         <v-btn text color="primary" to="/c/linkedin" target="_blank">
           <v-icon color="white">fab fa-linkedin</v-icon>
         </v-btn>
-        <v-btn href="mailto:siwanont1@gmail.com" text target="_blank">
+        <v-btn href="/c/email" text target="_blank">
           <v-icon color="white">fas fa-paper-plane</v-icon>
         </v-btn>
         <v-btn text color="primary" to="/c/github" target="_blank">

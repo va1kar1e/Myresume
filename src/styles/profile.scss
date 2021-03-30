@@ -16,14 +16,23 @@ body {
   background-color: $bg-color-l2 !important;
 }
 
-// .v-app-bar {
-//   background-color: #e0e1dd !important;
-// }
-
 .v-sheet {
   background-color: $bg-color-l1 !important;
 }
 
 .v-footer {
   background-color: $bg-color-l1 !important;
+}
+
+.profile-p {
+  margin: 80px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.profile-resume-col {
+  // border: 1px solid #ffffff;
+}
+
+a {
+  text-decoration: none;
 }

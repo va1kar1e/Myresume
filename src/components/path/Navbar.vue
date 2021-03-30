@@ -9,7 +9,7 @@
         width="40"
       />
       <v-toolbar-title class="shrink mt-1 font-weight-bold" contain
-        >Path</v-toolbar-title
+        >{{name}}</v-toolbar-title
       >
     </div>
     <v-spacer></v-spacer>
@@ -51,18 +51,11 @@
   </v-app-bar>
 </template>
 
-<style scoped>
-</style>
-
 <script>
 
 export default {
-  name: "PathNavbar",
-  data() {
-    return {
-    };
-  },
-  components: {
+  props: {
+    name: String,
   },
 };
 </script>

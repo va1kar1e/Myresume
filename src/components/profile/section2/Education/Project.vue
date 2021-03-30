@@ -23,6 +23,11 @@
         <p :class="`body-1 font-weight-light text-left`" v-html="project.name[2]">
           {{project.name[2]}}
         </p>
+        <v-list-item>
+          <p :class="`body-1 font-weight-light text-left`" v-html="project.videolink">
+            {{ project.videolink }}
+          </p>
+        </v-list-item>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>

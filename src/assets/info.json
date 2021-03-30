@@ -1,10 +1,12 @@
 {
   "urllink": {
-    "homepage": "https://siwanont.ml",
+    "homepage": "https://siwanont.ml/profile",
     "linkedin": "https://linkedin.com/in/siwanont",
     "github": "https://github.com/va1kar1e",
     "srclusYT": "https://www.youtube.com/watch?v=eMprd8Fwt80",
-    "explorercarYT": "https://www.youtube.com/watch?v=Lg-nDld06WY"
+    "explorercarYT": "https://www.youtube.com/watch?v=Lg-nDld06WY",
+    "resume4G": "Siwanonts-Resume-For-General.pdf",
+    "resume4ATS": "Siwanonts-Resume-For-ATS.pdf"
   },
   "header": {
     "fullname": "SIWANONT SITTINAM",
@@ -15,7 +17,8 @@
     "contentText": [
       "&nbsp;&nbsp;&nbsp;&nbsp;Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Cybersecurity Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development.",
       "&nbsp;&nbsp;&nbsp;&nbsp;I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
-    ]
+    ],
+    "contentTextString": "&nbsp;&nbsp;&nbsp;&nbsp;Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive Cybersecurity Engineer. I am interested in Cybersecurity, Networking, Data Analytics and Web Development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
   },
   "education": {
     "main": {
@@ -65,7 +68,8 @@
         "&ndash; Studying the threat unawareness with the SSL/TLS certificate of the top 50 university websites.",
         "&ndash; Collecting SSL/TLS certificate and ranking web domain trust with <b>TestSSL.sh</b> and <b>Javascript</b>.",
         "&ndash; Building a web dashboard to display the rank of web domain trust with description using <b>NextJS</b> and <b>SemanticUI</b>."
-      ]
+      ],
+      "videolink": "&ndash; Presentation Video <a href='v/explorercar' target='blank'>Link</a>"
     }
   },
   "work": {
@@ -115,16 +119,16 @@
       }
     ]
   },
-  "recogntion": {
+  "recognition": {
     "item": {
       "course": [
         {
-          "what": "CONSOLATION PRIZE AWARD",
-          "when": "Huawei ICT Competition 2019 ",
+          "what": "Consolation Prize Award",
+          "when": "Huawei ICT Competition 2019",
           "who": "Huawei Technologies (Thailand)"
         },
         {
-          "what": "CREATIVE DESIGN AWARD",
+          "what": "Creative Design Award",
           "when": "Thailand Financial Cybersecurity 2017",
           "who": "ETDA, BOT, SEC"
         }
@@ -136,23 +140,23 @@
       "course": [
         {
           "name": "CompTIA Network Vulnerability Assessment Professional",
-          "icon": "cnvp",
+          "icon": "cnvp.png",
           "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
         },
         {
           "name": "CompTIA Pentest+",
-          "icon": "penp",
+          "icon": "penp.png",
           "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url",
           "claim": ""
         },
         {
           "name": "CompTIA Security+",
-          "icon": "secp",
+          "icon": "secp.png",
           "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
         },
         {
           "name": "HCIA Routing & Switching",
-          "icon": "hciars",
+          "icon": "hciars.png",
           "id": ""
         }
       ]

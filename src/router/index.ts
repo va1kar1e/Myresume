@@ -3,26 +3,23 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import profile from "@/views/Profile.vue";
-// import home from "@/views/Home.vue";
-// import path from "@/views/Path.vue";
-import resume from "@/views/Resume.vue";
-import construction from "@/views/Construction.vue";
 import info from "@/assets/info.json";
+import profile from "@/views/Profile.vue";
+import home from "@/views/Home.vue";
+import resume from "@/views/Resume.vue";
+import notfound from "@/views/NotFound.vue";
+
+import path from "@/views/Path.vue";
+import tnid from "@/components/path/tnid.vue";
+import temppage from "@/components/path/temp.vue";
 
 const routes = [
   {
     path: "/",
-    component: construction,
+    component: home,
     name: "Home",
     meta: { title: "Home" },
     redirect: { name: 'Profile' }
-  },
-  {
-    path: "/profile",
-    component: profile,
-    name: "Profile",
-    meta: { title: "Profile" },
   },
   {
     path: "/profile",
@@ -36,32 +33,64 @@ const routes = [
     name: "Resume",
     meta: { title: "Resume" },
     children: [
-      // {
-      //   path: "/a",
-      //   component: path,
-      //   meta: { title: "PathA" },
-      // }
-    ],
+      {
+        path: "general",
+        name: "General",
+        beforeEnter() {
+          location.href = location.origin + "/files/" + info.urllink.resume4G;
+        },
+       },
+       {
+        path: "ats",
+        name: "ATS",
+        beforeEnter() {
+          location.href = location.origin + "/files/" + info.urllink.resume4ATS;
+        },
+      },
+    ]
   },
   {
-    path: "/d",
-    name: "Download",
-    component: construction,
+    path: "/path",
+    name: "Path",
+    component: path,
+    meta: { title: "Path" },
     children: [
-      // {
-        // path: "/resume",
-        // name: "resume",
-        // beforeEnter() {
-        //   location.href = info.urllink.resume;
-        // },
-      // },
-    ],
+      {
+        path: "tnid",
+        name: "Thai National ID Reader",
+        component: tnid,
+        props: {
+          title: "Thai National ID Reader",
+        },
+      },
+      {
+        path: "temp",
+        name: "Temporary Page",
+        component: temppage,
+        props: {
+          title: "Temporary Page",
+        },
+      },
+      {
+        path: "hassos",
+        name: "hassos",
+        beforeEnter() {
+          location.href = "http://siwanont.thddns.net:2280";
+        }
+      },
+    ]
   },
   {
     path: "/c",
     name: "Contact",
-    component: construction,
     children: [
+      {
+        path: "email",
+        name: "Email",
+        beforeEnter() {
+          location.href = "mailto:"+info.header.email;
+        },
+      },
       {
         path: "linkedin",
         name: "Linkedin",
@@ -98,6 +127,12 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/:pathMatch(.*)*",
+    component: notfound,
+    name: "Not Found",
+    meta: { title: "Not Found" },
+  }
 ];
 
 export default new VueRouter({

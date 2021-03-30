@@ -1,19 +1,22 @@
 <template>
-  <v-col cols="6" class="resume-header-section1">
+  <v-col cols="8" class="resume-header-section1 mb-5">
     <p class="headline font-weight-bold text-uppercase resume-p">
       {{fullname}}
     </p>
-    <p class="body-1 font-weight-bold text-uppercase">
+    <p class="body-1 font-weight-bold text-uppercase  resume-p">
       {{title}}
     </p>
-    <p
-      v-for="(content, i) in aboutme"
-      :key="i"
-      class="caption text-center text-md-justify font-weight-light resume-p"
-      v-html="content"
-    >
-      {{ content }}
-    </p>
+    <v-row class="resume-header-section3">
+      <v-col cols="4" v-for="(contact, i) in contacts" :key="i">
+        <p
+          v-for="(content, j) in contact"
+          :key="j"
+          class="caption font-weight-regular resume-p"
+        >
+          <a :href="content[0]" class="resume-a">{{ content[1] }}</a>
+        </p>
+      </v-col>
+    </v-row>
   </v-col>
 </template>
 
@@ -26,8 +29,17 @@ export default {
     return {
       fullname: info.header.fullname,
       title: info.header.title,
-      aboutme: info.aboutme.contentText,
+      contacts: [
+        [
+          [info.urllink.homepage, info.urllink.homepage],
+          ["mailto:" + info.header.email, info.header.email],
+        ],
+        [
+          [info.urllink.linkedin, info.urllink.linkedin],
+          [info.urllink.github, info.urllink.github],
+        ]
+      ],
     };
-  }
+  },
 };
 </script>
