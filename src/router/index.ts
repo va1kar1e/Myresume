@@ -11,6 +11,7 @@ import notfound from "@/views/NotFound.vue";
 
 import path from "@/views/Path.vue";
 import tnid from "@/components/path/tnid.vue";
+import temppage from "@/components/path/temp.vue";
 
 const routes = [
   {
@@ -31,7 +32,7 @@ const routes = [
     component: resume,
     name: "Resume",
     meta: { title: "Resume" },
-     children: [
+    children: [
       {
         path: "general",
         name: "General",
@@ -61,7 +62,22 @@ const routes = [
         props: {
           title: "Thai National ID Reader",
         },
-       },
+      },
+      {
+        path: "temp",
+        name: "Temporary Page",
+        component: temppage,
+        props: {
+          title: "Temporary Page",
+        },
+      },
+      {
+        path: "hassos",
+        name: "hassos",
+        beforeEnter() {
+          location.href = "http://siwanont.thddns.net:2280";
+        }
+      },
     ]
   },
   {
