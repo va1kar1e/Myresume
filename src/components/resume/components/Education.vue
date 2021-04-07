@@ -1,5 +1,5 @@
 <template>
-  <div class="education mt-1">
+  <div class="education mt-1 mb-1">
     <p class="subtitle-1 font-weight-bold text-uppercase text-center resume-p">
       Education
     </p>
@@ -78,7 +78,7 @@ export default {
     ],
     works: [
       ["1. Junior Research Student, " + info.education.work.where, info.education.work.project],
-      ["2. Curricular Projects", info.education.project.name],
+      ["2. Curricular Projects", [info.education.project.name[0]]],
     ]
   })
 };
