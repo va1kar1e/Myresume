@@ -1,5 +1,5 @@
 “<template>
-  <div class="work mt-2 mb-1">
+  <div class="work mt-1 mb-1">
     <p class="subtitle-1 font-weight-bold text-uppercase text-center resume-p">
       Works
     </p>
@@ -20,7 +20,7 @@
         </v-col>
       </v-row>
       <p class="body-2 font-weight-regular resume-p">
-        {{ item.role }}, Team {{ item.team }}
+        {{ item.role }}, {{ item.team }}
       </p>
       <p
         :class="`caption text-uppercase font-weight-bold resume-p`"
