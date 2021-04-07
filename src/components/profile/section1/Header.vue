@@ -8,7 +8,7 @@
           class="my-3"
           contain
           min-height="80"
-          max-height="300"
+          max-height="250"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
