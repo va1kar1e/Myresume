@@ -1,14 +1,11 @@
-import Profile from "@pages/profile/profile";
+import React, { Component } from "react";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Profile />
-      </header>
-    </div>
-  );
-}
+import Router from "./router";
 
+class App extends Component {
+  render() {
+    return <Router />;
+  }
+}
 export default App;
