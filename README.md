@@ -26,7 +26,7 @@ yarn upgrade
 ### Run
 
 ```bash
-yarn serve
+yarn start
 ```
 
 ### Build & Firebase Deploy
