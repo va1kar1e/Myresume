@@ -1,12 +1,11 @@
 import { React, Fragment } from "react";
 import ProfileImage from "./components/profileimages";
-import { Button } from "@material-ui/core";
 
 function Profile() {
   return (
     <Fragment>
+      <h1>Profile</h1>
       <ProfileImage />
-      <Button color="primary">Profile</Button>
     </Fragment>
   );
 }
