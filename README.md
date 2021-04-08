@@ -4,7 +4,8 @@
 
 - Branch V1,V2 -> ReactJS
 - Branch V3 -> Bootstrap
-- **_!!! (The Latest) Branch V4 -> VueJS_**
+- Branch V4 -> VueJS (Present)
+- **_!!! (The Latest) Branch V5 -> ReactJS (Dev)_**
 
 ### Installation
 
@@ -15,7 +16,12 @@ yarn
 firebase init
 ```
 
-- !!! Firebase -> Use existed project -> hosting -> Select dist/ -> Index Yes
+### Upgrade
+
+```bash
+yarn
+yarn upgrade
+```
 
 ### Run
 
@@ -23,7 +29,7 @@ firebase init
 yarn serve
 ```
 
-### Build & Deploy
+### Build & Firebase Deploy
 
 ```bash
 yarn build

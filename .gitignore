@@ -7,15 +7,12 @@ yarn-error.log*
 .vscode
 .DS_Store
 
-# VueJS
+# JS
 node_modules
 /dist
 
 # Firebase
-.firebaserc
 .firebase/
+.firebaserc
 firebase*
 firestore*
-
-# My Ignore
-temp/
