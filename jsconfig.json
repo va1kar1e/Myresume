@@ -7,8 +7,8 @@
       "@pages/*": [
         "./pages/*"
       ],
-      "@assets/*": [
-        "./assets/*"
+      "@mydata": [
+        "./assets/data.json"
       ],
       "@images/*": [
         "./assets/images/*"
