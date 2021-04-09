@@ -6,6 +6,7 @@ import Home from "@pages/home";
 import Profile from "@pages/profile";
 import Resume from "@pages/resume";
 import Dashboard from "@pages/dashboard";
+import Link from "@pages/link";
 import NotFound from "./notfound";
 
 function Router() {
@@ -14,7 +15,8 @@ function Router() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/profile" component={Profile} />
-        <Route path="/resume/:type" component={Resume} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/link" component={Link} />
         <Route path="/dashboard" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>

@@ -12,20 +12,15 @@ function Home() {
         <Link to="/profile" className="navbar-item">
           Profile
         </Link>
+        <Link to="/link" className="navbar-item">
+          Link
+        </Link>
         <Link to="/resume" className="navbar-item">
           Resume
         </Link>
         <Link to="/dashboard" className="navbar-item">
           Dashboard
         </Link>
-        <a
-          className="navbar-item"
-          href="https://github.com/va1kar1e"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Star on <i className="fab fa-github"></i>
-        </a>
       </div>
     </Fragment>
   );
