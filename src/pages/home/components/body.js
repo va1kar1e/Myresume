@@ -35,7 +35,7 @@ class HomeBody extends React.Component {
           <h2 className="subtitle is-size-3-tablet is-size-5-mobile is-uppercase has-text-white-bis has-text-centered">
             {jobtitle}
           </h2>
-          <h2 className="subtitle is-size-4-tablet is-size-6-mobile has-text-white-bis has-text-justified has-text-left-mobile">
+          <h2 className="subtitle is-size-3-tablet is-size-6-mobile has-text-white-bis has-text-justified has-text-left-mobile">
             &emsp;&emsp;&ensp;{intro}
           </h2>
         </div>
