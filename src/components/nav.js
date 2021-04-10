@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import mydata from "@mydata";
 import logo from "@images/logo.png";
 
-class HomeNav extends React.Component {
+class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,7 +29,7 @@ class HomeNav extends React.Component {
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="container">
+        <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={logo} height="50" alt="" className="pr-2" />
@@ -114,4 +114,4 @@ class HomeNav extends React.Component {
   }
 }
 
-export default HomeNav;
+export default Nav;

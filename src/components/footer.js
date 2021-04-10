@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class HomeFooter extends React.Component {
+class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,4 +32,4 @@ class HomeFooter extends React.Component {
   }
 }
 
-export default HomeFooter;
+export default Footer;
