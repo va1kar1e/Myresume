@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import mydata from "@mydata";
 import logo from "@images/logo.png";
@@ -24,20 +24,15 @@ class HomeNav extends React.Component {
   render() {
     var { url, linkedin, github } = this.state;
     return (
-      <Fragment>
-        <nav
-          className="navbar is-dark is-fixed-top"
-          role="navigation"
-          aria-label="main navigation"
-        >
+      <header
+        className="navbar has-background-dark"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
-              <img
-                src={logo}
-                height="50"
-                alt=""
-                style={{ marginRight: "0.5em" }}
-              />
+              <img src={logo} height="50" alt="" className="pr-2" />
               <p className="title is-4 has-text-primary">{url}</p>
             </Link>
             <div
@@ -98,10 +93,21 @@ class HomeNav extends React.Component {
                 </span>
                 <span className="has-text-primary">Github</span>
               </Link>
+              <Link
+                to="/link/contact"
+                className="navbar-item"
+                target="_blank"
+                rel="noreference"
+              >
+                <span className="icon has-text-primary">
+                  <i className="fas fa-paper-plane"></i>
+                </span>
+                <span className="has-text-primary">Contact Me</span>
+              </Link>
             </div>
           </div>
-        </nav>
-      </Fragment>
+        </div>
+      </header>
     );
   }
 }
