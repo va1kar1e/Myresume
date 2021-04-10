@@ -1,5 +1,7 @@
 import React from "react";
 import Nav from "@components/nav";
+import ProfileBody from "./components/body";
+import "./profile.scss";
 
 class Profile extends React.Component {
   constructor(props) {
@@ -17,10 +19,8 @@ class Profile extends React.Component {
         <div className="hero-head">
           <Nav />
         </div>
-        <div className="hero-body">
-          <div className="container">
-            <p className="has-text-white">Profile</p>
-          </div>
+        <div className="hero-body hero-body-profile">
+          <ProfileBody />
         </div>
         <div className="hero-foot"></div>
       </section>
