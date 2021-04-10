@@ -7,11 +7,11 @@ import Profile from "@pages/profile";
 import Resume from "@pages/resume";
 import Dashboard from "@pages/dashboard";
 import Link from "@pages/link";
-import NotFound from "./notfound";
+import NotFound from "./pages/notfound";
 
 function Router() {
   return (
-    <div className="App container">
+    <div className="App">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/profile" component={Profile} />
