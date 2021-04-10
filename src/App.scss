@@ -18,29 +18,28 @@ $grey-dark: #6b6e70;
 
 $primary: $main-green;
 $link: $main-green;
-$title-color: $main-green;
-$title-strong-color: $white;
-$subtitle-color: $white;
-$subtitle-strong-color: $white;
+$navbar-dropdown-background-color: $dark;
+$navbar-dropdown-item-hover-background-color: $grey-darker;
 $body-background-color: $grey-dark;
 
+$footer-padding: 2rem 1.5rem 2rem;
+
 // Responsive
-$gap: 40px;
-$fullhd-enabled: false; // Disable the breakpoint
 
 // Import only what you need from Bulma
-@import "bulma/sass/utilities/_all";
-@import "bulma/sass/base/_all";
-@import "bulma/sass/grid/columns";
-@import "bulma/sass/elements/title";
-@import "bulma/sass/elements/image";
-@import "bulma/sass/layout/hero";
-@import "bulma/sass/layout/section";
-@import "bulma/sass/elements/container";
-@import "bulma/sass/elements/button";
-@import "bulma/sass/elements/container";
-@import "bulma/sass/components/navbar";
-@import "bulma/sass/helpers/typography";
+@import "bulma/bulma";
+// @import "bulma/sass/utilities/_all";
+// @import "bulma/sass/base/_all";
+// @import "bulma/sass/grid/columns";
+// @import "bulma/sass/elements/title";
+// @import "bulma/sass/elements/image";
+// @import "bulma/sass/layout/hero";
+// @import "bulma/sass/layout/section";
+// @import "bulma/sass/elements/container";
+// @import "bulma/sass/elements/button";
+// @import "bulma/sass/elements/container";
+// @import "bulma/sass/components/navbar";
+// @import "bulma/sass/helpers/typography";
 
 // .App {
 //   display: flex;
