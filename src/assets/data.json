@@ -1,0 +1,177 @@
+{
+  "profile": {
+    "link": {
+      "username": {
+        "linkedin": "siwanont",
+        "github": "va1kar1e"
+      },
+      "youtube": {
+        "srclus": "emprd8fwt80",
+        "explorercar": "lg-ndld06wy"
+      },
+      "resume": {
+        "general": "siwanonts-resume-for-general.pdf",
+        "ats": "siwanonts-resume-for-ats.pdf"
+      },
+      "header": {
+        "fullname": "siwanont sittinam",
+        "title": "digital threat and vulnerability management officer",
+        "email": "siwanont1@gmail.com"
+      }
+    },
+    "aboutme": {
+      "name": "siwanont sittinam",
+      "jobtitle": "digital threat and vulnerability management engineer",
+      "intro": "hi, my name is siwanont sittinam. i am a dedicated, hardworking, and proactive cybersecurity engineer. i am interested in cybersecurity, networking, data analytics and web development. i constantly seek new knowledge and actively develop new skills to improve myself. i seek challenging chances where i can fully use my skills for the success of the organization."
+    },
+    "education": {
+      "general": {
+        "university": "kasetsart university",
+        "faculty": "bachelor of engineering, computer engineering",
+        "period": "aug 2015 - may 2019"
+      },
+      "thesis": {
+        "name": "search result clustering on thai internet forum using word2vec model",
+        "archievement": [
+          "researching the text clustering by meaning in each context.",
+          "words tokenization with nltk and pythainlp library.",
+          "words prioritization with tf-idf.",
+          "words grouping by transforming text to word2vec model.",
+          "building api services calculating text similarity with word2vec model using flask and gensim library.",
+          "building a web application to display data resulting from api services with reactjs."
+        ]
+      },
+      "internship": {
+        "university": "kyoto institute of technology",
+        "laboratory": "software engineering laboratory",
+        "project": "making a fault-prones notification for developer team on raspbery pi",
+        "archieve": [
+          "studying automated find bugs with the review code process.",
+          "studying face detection and recognition to build an authorization system with biometric on raspberry pi."
+        ]
+      },
+      "work": [
+        {
+          "where": "massive information and knowledge engineering laboratory",
+          "do": [
+            "social network analysis with ego network on twitter data project",
+            "ubuntu and centos server administrator",
+            "teacher assistant for python classes."
+          ],
+          "archieve": [
+            "writing a research paper in order to study the relationship of twitter users from tweets with ego network.",
+            "classifying twitter user behavior from user's tweets with google cloud natural language and inserting results into mongodb.",
+            "building a web visualization to visualize the relationship of users with nodejs, expressjs, and bootstrap and building an ego network graph with d3js."
+          ]
+        },
+        {
+          "where": "zeabus: autonomous underwater vehicle",
+          "do": [],
+          "archieve": []
+        }
+      ],
+      "project": [
+        {
+          "name": ["trusted web domain analysis based on ssl/tls certificate"],
+          "archieve": [
+            "studying the threat unawareness with the ssl/tls certificate of the top 50 university websites.",
+            "collecting ssl/tls certificate and ranking web domain trust with testssl.sh and javascript.",
+            "building a web dashboard to display the rank of web domain trust with description using nextjs and semantic ui."
+          ]
+        },
+        {
+          "name": [
+            "explore a danger area with a robot using nodemcu and p2p camera "
+          ],
+          "archieve": []
+        },
+        {
+          "name": ["web-based hospital appointment management system using"],
+          "archieve": []
+        }
+      ]
+    },
+    "work": [
+      {
+        "year": "oct 2020 - present",
+        "icon": "fas fa-user-secret",
+        "color": "#7c5dd0",
+        "name": "siam commercial bank",
+        "role": "digital threat and vulnerability management engineer",
+        "team": "it security - security assessment team (redteam)",
+        "archiev": [
+          "being responsible for penetration testing, vulnerability assessment and hardening.",
+          "being responsible for devsecops.",
+          "being responsible for cloud security and compliance orchestration.",
+          "assessing cybersecurity with cis benchmark."
+        ]
+      },
+      {
+        "year": "jun 2019 - may 2020",
+        "icon": "fas fa-server",
+        "color": "#1d5ff5",
+        "name": "refinitiv",
+        "keyword": "formerly thomson reuters financial & risk",
+        "role": "network engineer",
+        "team": "datacenter operation - network change team",
+        "archiev": [
+          "joining the technology graduate trainee program.",
+          "being responsible for lan implementation and troubleshooting to resolve the incident by following the itil process.",
+          "working with network devices and network automation.",
+          "working with the architecture teams, management teams, and other teams to follow enterprise standards and policies.",
+          "building the tumbun donation platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; omise, logging transaction in mongodb, and building api services connecting with the front-end side by using nodejs and expressjs."
+        ]
+      },
+      {
+        "year": "jun 2017 - aug 2017",
+        "icon": "fas fa-code",
+        "color": "#7959f5",
+        "name": "internet marketing",
+        "keyword": "also known as pantip - the popular internet forum in thailand",
+        "role": "fullstack developer",
+        "team": "data science team",
+        "archiev": [
+          "being responsible for building a web dashboard monitoring active users and analyzing social influencer with social graph and trend keywords with wordcloud.",
+          "building a web application with nodejs, expressjs, and bootstrap and text visualization with d3js.",
+          "processing and storing data in mongodb."
+        ]
+      }
+    ],
+    "recognition": [
+      {
+        "what": "consolation prize award",
+        "when": "huawei ict competition 2019",
+        "who": "huawei technologies (thailand)"
+      },
+      {
+        "what": "creative design award",
+        "when": "thailand financial cybersecurity 2017",
+        "who": "electronic transactions development agency, bank of thailand, securities and exchange commission"
+      }
+    ],
+    "cert": [
+      {
+        "name": "comptia network vulnerability assessment professional",
+        "icon": "cnvp.png",
+        "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
+      },
+      {
+        "name": "comptia pentest+",
+        "icon": "penp.png",
+        "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url"
+      },
+      {
+        "name": "comptia security+",
+        "icon": "secp.png",
+        "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
+      },
+      {
+        "name": "hcia routing & switching",
+        "icon": "hciars.png",
+        "id": ""
+      }
+    ],
+    "course": ["oscp", "comptia cysa+, casp+", "ccna: routing & switching"],
+    "interest": ["web development", "internet of things", "photography"]
+  }
+}
