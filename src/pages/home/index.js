@@ -1,7 +1,7 @@
 import React from "react";
-import HomeNav from "./components/nav";
+import Nav from "@components/nav";
 import HomeBody from "./components/body";
-import HomeFooter from "./components/footer";
+import Footer from "@components/footer";
 import "./home.scss";
 
 class Home extends React.Component {
@@ -16,15 +16,15 @@ class Home extends React.Component {
 
   render() {
     return (
-      <section class="hero is-primary is-fullheight">
-        <div class="hero-head">
-          <HomeNav />
+      <section className="hero is-fullheight">
+        <div className="hero-head">
+          <Nav />
         </div>
-        <div class="hero-body">
+        <div className="hero-body">
           <HomeBody />
         </div>
-        <div class="hero-foot">
-          <HomeFooter />
+        <div className="hero-foot">
+          <Footer />
         </div>
       </section>
     );
