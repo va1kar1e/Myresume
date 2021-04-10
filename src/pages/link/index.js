@@ -8,6 +8,7 @@ class Link extends React.Component {
     this.state = {
       linkedin: "",
       github: "",
+      email: "",
     };
   }
 
@@ -15,11 +16,12 @@ class Link extends React.Component {
     this.setState({
       linkedin: mydata["profile"]["link"]["linkedin"],
       github: mydata["profile"]["link"]["github"],
+      email: mydata["profile"]["aboutme"]["email"],
     });
   }
 
   render() {
-    var { linkedin, github } = this.state;
+    var { linkedin, github, email } = this.state;
     return (
       <Switch>
         <Route
@@ -34,6 +36,13 @@ class Link extends React.Component {
           component={() => {
             window.location.href =
               "https://linkedin.com/in/" + linkedin["username"];
+            return null;
+          }}
+        />
+        <Route
+          path="/link/contact"
+          component={() => {
+            window.location.href = "mailto:" + email;
             return null;
           }}
         />
