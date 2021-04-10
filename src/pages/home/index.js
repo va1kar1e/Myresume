@@ -20,7 +20,7 @@ class Home extends React.Component {
         <div className="hero-head">
           <Nav />
         </div>
-        <div className="hero-body">
+        <div className="hero-body hero-body-home">
           <HomeBody />
         </div>
         <div className="hero-foot">
