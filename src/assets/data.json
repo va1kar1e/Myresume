@@ -18,15 +18,11 @@
       "general": "siwanonts-resume-for-general.pdf",
       "ats": "siwanonts-resume-for-ats.pdf"
     },
-    "header": {
-      "fullname": "siwanont sittinam",
-      "jobtitle": "digital threat and vulnerability management officer",
-      "email": "siwanont1@gmail.com"
-    },
     "aboutme": {
       "name": "siwanont sittinam",
       "jobtitle": "digital threat and vulnerability management engineer",
-      "intro": "hi, my name is siwanont sittinam. i am a dedicated, hardworking, and proactive cybersecurity engineer. i am interested in cybersecurity, networking, data analytics and web development. i constantly seek new knowledge and actively develop new skills to improve myself. i seek challenging chances where i can fully use my skills for the success of the organization."
+      "email": "siwanont1@gmail.com",
+      "intro": "Hi, My name is siwanont sittinam. I am a dedicated, hardworking, and proactive cybersecurity engineer. I am interested in cybersecurity, networking, data analytics and web development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where i can fully use my skills for the success of the organization."
     },
     "education": {
       "general": {
