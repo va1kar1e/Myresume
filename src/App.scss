@@ -7,19 +7,40 @@
 // Font-Family
 $family-sans-serif: "Nunito", sans-serif;
 $family-primary: $family-sans-serif;
+
 // Color
 $main-green: #86c232;
 $second-green: #61892f;
+$white: #ffffff;
 $dark: #222629;
 $grey-darker: #474b4f;
 $grey-dark: #6b6e70;
+
 $primary: $main-green;
-$link: $second-green;
+$link: $main-green;
+$title-color: $main-green;
+$title-strong-color: $white;
+$subtitle-color: $white;
+$subtitle-strong-color: $white;
+$body-background-color: $grey-dark;
+
 // Responsive
 $gap: 40px;
 $fullhd-enabled: false; // Disable the breakpoint
 
-@import "bulma/bulma";
+// Import only what you need from Bulma
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/base/_all";
+@import "bulma/sass/grid/columns";
+@import "bulma/sass/elements/title";
+@import "bulma/sass/elements/image";
+@import "bulma/sass/layout/hero";
+@import "bulma/sass/layout/section";
+@import "bulma/sass/elements/container";
+@import "bulma/sass/elements/button";
+@import "bulma/sass/elements/container";
+@import "bulma/sass/components/navbar";
+@import "bulma/sass/helpers/typography";
 
 // .App {
 //   display: flex;
