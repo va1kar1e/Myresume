@@ -64,12 +64,9 @@ class Nav extends React.Component {
                 Profile
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link
-                  to="/"
-                  className="navbar-link has-text-white is-hidden-touch"
-                >
+                <div className="navbar-link has-text-white is-hidden-touch">
                   More
-                </Link>
+                </div>
                 <div className="navbar-dropdown">
                   <Link to="/resume" className="navbar-item has-text-white">
                     Resume
