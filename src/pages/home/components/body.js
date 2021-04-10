@@ -28,15 +28,17 @@ class HomeBody extends React.Component {
     var { name, jobtitle, intro, linkedin, github } = this.state;
     return (
       <div class="container has-text-centered">
-        <h1 className="title is-size-2-tablet is-size-4-mobile is-uppercase has-text-white has-text-centered has-text-weight-bold">
-          {name}
-        </h1>
-        <h2 className="subtitle is-size-4-tablet is-size-5-mobile is-uppercase has-text-white-bis has-text-centered">
-          {jobtitle}
-        </h2>
-        <h2 className="subtitle is-size-4-tablet is-size-5-mobile has-text-white-bis has-text-justified has-text-left-mobile">
-          &emsp;&emsp;&ensp;{intro}
-        </h2>
+        <div class="content is-large">
+          <h1 className="title is-size-1-tablet is-size-4-mobile is-uppercase has-text-white has-text-centered has-text-weight-bold">
+            {name}
+          </h1>
+          <h2 className="subtitle is-size-3-tablet is-size-5-mobile is-uppercase has-text-white-bis has-text-centered">
+            {jobtitle}
+          </h2>
+          <h2 className="subtitle is-size-4-tablet is-size-6-mobile has-text-white-bis has-text-justified has-text-left-mobile">
+            &emsp;&emsp;&ensp;{intro}
+          </h2>
+        </div>
         <div class="field is-grouped is-justify-content-center is-hidden-touch">
           <p class="control">
             <Link
