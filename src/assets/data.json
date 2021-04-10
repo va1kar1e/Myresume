@@ -93,43 +93,44 @@
     },
     "work": [
       {
-        "year": "oct 2020 - present",
+        "year": "OCT 2020 - PRESENT",
         "icon": "fas fa-user-secret",
         "color": "#7c5dd0",
         "name": "siam commercial bank",
-        "role": "digital threat and vulnerability management engineer",
-        "team": "it security - security assessment team (redteam)",
+        "keyword": "Thailand's First Indigenous Bank",
+        "role": "Digital threat and Vulnerability management engineer",
+        "team": "IT Security - Security Assessment Team (Redteam)",
         "archiev": [
-          "being responsible for penetration testing, vulnerability assessment and hardening.",
-          "being responsible for devsecops.",
-          "being responsible for cloud security and compliance orchestration.",
-          "assessing cybersecurity with cis benchmark."
+          "Being responsible for Penetration testing, Vulnerability Assessment and Hardening.",
+          "Being responsible for Devsecops.",
+          "Being responsible for Cloud Security and Compliance Orchestration.",
+          "Assessing cybersecurity with CIS benchmark."
         ]
       },
       {
-        "year": "jun 2019 - may 2020",
+        "year": "JUN 2019 - MAY 2020",
         "icon": "fas fa-server",
         "color": "#1d5ff5",
         "name": "refinitiv",
-        "keyword": "formerly thomson reuters financial & risk",
-        "role": "network engineer",
-        "team": "datacenter operation - network change team",
+        "keyword": "Formerly Thomson Reuters Financial & Risk",
+        "role": "Network engineer",
+        "team": "Datacenter Operation - Network Change Team",
         "archiev": [
-          "joining the technology graduate trainee program.",
-          "being responsible for lan implementation and troubleshooting to resolve the incident by following the itil process.",
-          "working with network devices and network automation.",
-          "working with the architecture teams, management teams, and other teams to follow enterprise standards and policies.",
-          "building the tumbun donation platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; omise, logging transaction in mongodb, and building api services connecting with the front-end side by using nodejs and expressjs."
+          "Joining the Technology Graduate Trainee program.",
+          "Being responsible for LAN Implementation and Toubleshooting to resolve the incident by following the ITIL process.",
+          "Working with Network Devices and Network Automation.",
+          "Working with the Architecture teams, Management teams, and Other teams to follow Enterprise Standards and Policies.",
+          "Building the Tumbun Donation Platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; OMISE, logging transaction in MongoDB, and building API services connecting with the Front-end side by using NodeJS and ExpressJS."
         ]
       },
       {
-        "year": "jun 2017 - aug 2017",
+        "year": "JUN 2017 - AUG 2017",
         "icon": "fas fa-code",
         "color": "#7959f5",
         "name": "internet marketing",
-        "keyword": "also known as pantip - the popular internet forum in thailand",
-        "role": "fullstack developer",
-        "team": "data science team",
+        "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
+        "role": "Full-stack Developer",
+        "team": "Data Science Team",
         "archiev": [
           "being responsible for building a web dashboard monitoring active users and analyzing social influencer with social graph and trend keywords with wordcloud.",
           "building a web application with nodejs, expressjs, and bootstrap and text visualization with d3js.",
