@@ -10,46 +10,33 @@ $family-primary: $family-sans-serif;
 
 // Color
 $main-green: #86c232;
-$second-green: #61892f;
+$green: #43611e;
 $white: #ffffff;
 $dark: #222629;
 $grey-darker: #474b4f;
 $grey-dark: #6b6e70;
 
 $primary: $main-green;
+$success: $green;
 $link: $main-green;
 $navbar-dropdown-background-color: $dark;
 $navbar-dropdown-item-hover-background-color: $grey-darker;
+$navbar-item-hover-background-color: $grey-darker;
 $body-background-color: $grey-dark;
-
 $footer-padding: 2rem 1.5rem 2rem;
 
 // Responsive
 
 // Import only what you need from Bulma
 @import "bulma/bulma";
-// @import "bulma/sass/utilities/_all";
-// @import "bulma/sass/base/_all";
-// @import "bulma/sass/grid/columns";
-// @import "bulma/sass/elements/title";
-// @import "bulma/sass/elements/image";
-// @import "bulma/sass/layout/hero";
-// @import "bulma/sass/layout/section";
-// @import "bulma/sass/elements/container";
-// @import "bulma/sass/elements/button";
-// @import "bulma/sass/elements/container";
-// @import "bulma/sass/components/navbar";
-// @import "bulma/sass/helpers/typography";
 
-// .App {
-//   display: flex;
-//   text-align: center;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
-// body {
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
