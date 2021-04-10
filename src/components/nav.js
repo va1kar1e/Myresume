@@ -39,10 +39,16 @@ class Nav extends React.Component {
             </Link>
             <div
               role="button"
-              className="navbar-burger"
+              className="navbar-burger burger"
               aria-label="menu"
               aria-expanded="false"
               data-target="navMenu"
+              onClick={() => {
+                var burger = document.querySelector(".burger");
+                var nav = document.querySelector("#navMenu");
+                burger.classList.toggle("is-active");
+                nav.classList.toggle("is-active");
+              }}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -58,7 +64,10 @@ class Nav extends React.Component {
                 Profile
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/" className="navbar-link has-text-white">
+                <Link
+                  to="/"
+                  className="navbar-link has-text-white is-hidden-touch"
+                >
                   More
                 </Link>
                 <div className="navbar-dropdown">
@@ -79,7 +88,7 @@ class Nav extends React.Component {
                 target="_blank"
                 rel="noreference"
               >
-                <span className="icon has-text-primary">
+                <span className="icon has-text-primary is-hidden-touch">
                   <i className={linkedin["icon"]}></i>
                 </span>
                 <span className="has-text-primary">Linkedin</span>
@@ -90,7 +99,7 @@ class Nav extends React.Component {
                 target="_blank"
                 rel="noreference"
               >
-                <span className="icon has-text-primary">
+                <span className="icon has-text-primary is-hidden-touch">
                   <i className={github["icon"]}></i>
                 </span>
                 <span className="has-text-primary">Github</span>
@@ -101,7 +110,7 @@ class Nav extends React.Component {
                 target="_blank"
                 rel="noreference"
               >
-                <span className="icon has-text-primary">
+                <span className="icon has-text-primary is-hidden-touch">
                   <i className="fas fa-paper-plane"></i>
                 </span>
                 <span className="has-text-primary">Contact Me</span>
