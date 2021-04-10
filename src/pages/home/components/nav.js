@@ -33,7 +33,9 @@ class HomeNav extends React.Component {
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={logo} height="50" alt="" className="pr-2" />
-              <p className="title is-4 has-text-primary">{url}</p>
+              <p className="title is-size-3-tablet is-size-5-mobile has-text-primary">
+                {url}
+              </p>
             </Link>
             <div
               role="button"
