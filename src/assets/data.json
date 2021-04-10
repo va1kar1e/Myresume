@@ -1,23 +1,27 @@
 {
   "profile": {
     "link": {
-      "username": {
-        "linkedin": "siwanont",
-        "github": "va1kar1e"
+      "linkedin": {
+        "username": "siwanont",
+        "icon": "fab fa-linkedin-in"
+      },
+      "github": {
+        "username": "va1kar1e",
+        "icon": "fab fa-github"
       },
       "youtube": {
         "srclus": "emprd8fwt80",
         "explorercar": "lg-ndld06wy"
-      },
-      "resume": {
-        "general": "siwanonts-resume-for-general.pdf",
-        "ats": "siwanonts-resume-for-ats.pdf"
-      },
-      "header": {
-        "fullname": "siwanont sittinam",
-        "title": "digital threat and vulnerability management officer",
-        "email": "siwanont1@gmail.com"
       }
+    },
+    "resume": {
+      "general": "siwanonts-resume-for-general.pdf",
+      "ats": "siwanonts-resume-for-ats.pdf"
+    },
+    "header": {
+      "fullname": "siwanont sittinam",
+      "jobtitle": "digital threat and vulnerability management officer",
+      "email": "siwanont1@gmail.com"
     },
     "aboutme": {
       "name": "siwanont sittinam",
