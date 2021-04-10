@@ -18,7 +18,9 @@ class Profile extends React.Component {
           <Nav />
         </div>
         <div className="hero-body">
-          <p>Profile</p>
+          <div className="container">
+            <p className="has-text-white">Profile</p>
+          </div>
         </div>
         <div className="hero-foot"></div>
       </section>
