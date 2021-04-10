@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import mydata from "@mydata";
 import logo from "@images/logo.png";
 
 class HomeNav extends React.Component {
@@ -7,21 +8,25 @@ class HomeNav extends React.Component {
     super(props);
     this.state = {
       url: "",
+      linkedin: "",
+      github: "",
     };
   }
 
   componentDidMount() {
     this.setState({
+      linkedin: mydata["profile"]["link"]["linkedin"],
+      github: mydata["profile"]["link"]["github"],
       url: window.location.hostname,
     });
   }
 
   render() {
-    var { url } = this.state;
+    var { url, linkedin, github } = this.state;
     return (
       <Fragment>
         <nav
-          className="navbar is-dark"
+          className="navbar is-dark is-fixed-top"
           role="navigation"
           aria-label="main navigation"
         >
@@ -33,51 +38,66 @@ class HomeNav extends React.Component {
                 alt=""
                 style={{ marginRight: "0.5em" }}
               />
-              <p className="title is-4">{url}</p>
+              <p className="title is-4 has-text-primary">{url}</p>
             </Link>
-            {/* <Link
+            <div
               role="button"
               className="navbar-burger"
               aria-label="menu"
               aria-expanded="false"
-              data-target=""
+              data-target="navMenu"
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
-            </Link> */}
+            </div>
           </div>
-          <div className="navbar-menu">
+          <div className="navbar-menu" id="navMenu">
             <div className="navbar-start">
-              <Link to="/" className="navbar-item">
+              <Link to="/" className="navbar-item has-text-white">
                 Home
               </Link>
-              <Link to="/profile" className="navbar-item">
+              <Link to="/profile" className="navbar-item has-text-white">
                 Profile
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/" className="navbar-link">
+                <Link to="/" className="navbar-link has-text-white">
                   More
                 </Link>
                 <div className="navbar-dropdown">
-                  <Link to="/resume" className="navbar-item">
+                  <Link to="/resume" className="navbar-item has-text-white">
                     Resume
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link to="/dashboard" className="navbar-item">
+                  <Link to="/dashboard" className="navbar-item has-text-white">
                     Dashboard
                   </Link>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <Link to="/" className="button is-primary">
-                  <strong>F</strong>
-                </Link>
-              </div>
+            <div className="navbar-end">
+              <Link
+                to="/link/linkedin"
+                className="navbar-item"
+                target="_blank"
+                rel="noreference"
+              >
+                <span className="icon has-text-primary">
+                  <i className={linkedin["icon"]}></i>
+                </span>
+                <span className="has-text-primary">Linkedin</span>
+              </Link>
+              <Link
+                to="/link/github"
+                className="navbar-item"
+                target="_blank"
+                rel="noreference"
+              >
+                <span className="icon has-text-primary">
+                  <i className={github["icon"]}></i>
+                </span>
+                <span className="has-text-primary">Github</span>
+              </Link>
             </div>
           </div>
         </nav>

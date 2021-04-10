@@ -8,6 +8,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       name: "",
+      jobtitle: "",
       url: "",
     };
   }
@@ -15,23 +16,25 @@ class Home extends React.Component {
   componentDidMount() {
     this.setState({
       name: mydata["profile"]["aboutme"]["name"],
+      jobtitle: mydata["profile"]["aboutme"]["jobtitle"],
       url: window.location.hostname,
     });
   }
 
   render() {
-    var { name } = this.state;
+    var { name, jobtitle } = this.state;
     return (
       <Fragment>
         <HomeNav />
-        <section className="section is-large">
-          <h1 className="title">{name}</h1>
-          <h2 className="subtitle">
-            A simple container to divide your page into{" "}
-            <strong>sections</strong>, like the one you're currently reading.
+        <section className="section is-large has-background-primary">
+          <h1 className="title is-size-1-tablet is-size-2-mobile is-uppercase has-text-white has-text-centered is-family-sans-serif has-text-weight-bold">
+            {name}
+          </h1>
+          <h2 className="subtitle is-size-3-tablet is-size-4-mobile is-uppercase has-text-white-bis has-text-centered is-family-sans-serif">
+            {jobtitle}
           </h2>
         </section>
-        <div className="columns is-desktop">
+        <div className="columns has-background-info">
           <div className="column">1</div>
           <div className="column">2</div>
           <div className="column">3</div>
