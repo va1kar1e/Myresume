@@ -28,66 +28,71 @@
       "general": {
         "university": "kasetsart university",
         "faculty": "bachelor of engineering, computer engineering",
-        "period": "aug 2015 - may 2019"
+        "period": "AUG 2015 - MAY 2019"
       },
       "thesis": {
         "name": "search result clustering on thai internet forum using word2vec model",
         "archievement": [
-          "researching the text clustering by meaning in each context.",
-          "words tokenization with nltk and pythainlp library.",
-          "words prioritization with tf-idf.",
-          "words grouping by transforming text to word2vec model.",
-          "building api services calculating text similarity with word2vec model using flask and gensim library.",
-          "building a web application to display data resulting from api services with reactjs."
+          "Researching the Text Clustering by meaning in each context.",
+          "Words Tokenization with NLTK and Pythainlp library.",
+          "Words Prioritization with TF-IDF.",
+          "Words Grouping by Transforming text to Word2Vec model.",
+          "Building API services calculating Text Similarity with Word2Vec model using Flask and Gensim library.",
+          "Building a Web application to display data resulting from API services with ReactJS."
         ]
       },
       "internship": {
         "university": "kyoto institute of technology",
         "laboratory": "software engineering laboratory",
         "project": "making a fault-prones notification for developer team on raspbery pi",
-        "archieve": [
-          "studying automated find bugs with the review code process.",
-          "studying face detection and recognition to build an authorization system with biometric on raspberry pi."
+        "archievement": [
+          "Studying automated find Bugs with the Review code process.",
+          "Studying Face Detection and Recognition to build an authorization system with biometric on Raspberry Pi."
         ]
       },
       "work": [
         {
           "where": "massive information and knowledge engineering laboratory",
           "do": [
-            "social network analysis with ego network on twitter data project",
-            "ubuntu and centos server administrator",
-            "teacher assistant for python classes."
-          ],
-          "archieve": [
-            "writing a research paper in order to study the relationship of twitter users from tweets with ego network.",
-            "classifying twitter user behavior from user's tweets with google cloud natural language and inserting results into mongodb.",
-            "building a web visualization to visualize the relationship of users with nodejs, expressjs, and bootstrap and building an ego network graph with d3js."
+            {
+              "name": "Social Network Analysis with Ego Network on Twitter data project",
+              "archievement": [
+                "Writing a research paper in order to study the relationship of Twitter users from tweets with Ego Network.",
+                "Classifying twitter user behavior from user's tweets with Google cloud natural language and Inserting results into mongodb.",
+                "Building a Web Visualization to visualize the relationship of users with NodeJS, ExpressJS, and Bootstrap and building an Ego Network Graph with D3JS."
+              ]
+            },
+            {
+              "name": "Ubuntu and Centos Server Administrator",
+              "archievement": []
+            },
+            {
+              "name": "Teacher Assistant for Python Classes.",
+              "archievement": []
+            }
           ]
         },
         {
-          "where": "zeabus: autonomous underwater vehicle",
-          "do": [],
-          "archieve": []
+          "where": "ZEABUS: Autonomous Underwater Vehicle",
+          "do": []
         }
       ],
       "project": [
         {
-          "name": ["trusted web domain analysis based on ssl/tls certificate"],
-          "archieve": [
-            "studying the threat unawareness with the ssl/tls certificate of the top 50 university websites.",
-            "collecting ssl/tls certificate and ranking web domain trust with testssl.sh and javascript.",
-            "building a web dashboard to display the rank of web domain trust with description using nextjs and semantic ui."
+          "name": "Trusted web domain analysis based on SSL/TLS Certificate",
+          "archievement": [
+            "Studying the Threat unawareness with the SSL/TLS certificate of the Top 50 university websites.",
+            "Collecting SSL/TLS Certificate and Ranking web domain trust with Testssl.sh and Javascript.",
+            "Building a Web dashboard to display the Rank of Web domain trust with description using NextJS and Semantic-UI."
           ]
         },
         {
-          "name": [
-            "explore a danger area with a robot using nodemcu and p2p camera "
-          ],
-          "archieve": []
+          "name": "Explore a Danger area with a Robot using NodeMCU and P2PCamera.",
+          "archievement": []
         },
         {
-          "name": ["web-based hospital appointment management system using"],
-          "archieve": []
+          "name": "Web-based Hospital appointment management system using Django",
+          "archievement": []
         }
       ]
     },
@@ -140,14 +145,14 @@
     ],
     "recognition": [
       {
-        "what": "consolation prize award",
-        "when": "huawei ict competition 2019",
-        "who": "huawei technologies (thailand)"
+        "what": "Consolation Prize Award",
+        "when": "Huawei ICT Competition 2019",
+        "who": "Huawei Technologies (Thailand)"
       },
       {
-        "what": "creative design award",
-        "when": "thailand financial cybersecurity 2017",
-        "who": "electronic transactions development agency, bank of thailand, securities and exchange commission"
+        "what": "Creative Design Award",
+        "when": "Thailand financial cybersecurity 2017",
+        "who": "Electronic transactions development agency, Bank of Thailand, Securities and Exchange Commission"
       }
     ],
     "cert": [
