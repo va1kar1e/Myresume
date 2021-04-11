@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
 import ReactCardCarousel from "react-card-carousel";
 import mydata from "@mydata";
 
@@ -31,13 +30,14 @@ class ProfileCert extends React.Component {
 
   CARD_STYLE() {
     return {
-      height: "200px",
-      width: "200px",
+      height: "100%",
+      width: "100%",
       textAlign: "center",
+      paddingTop: "0px",
       background: "#ffffff",
-      color: "#86c232",
+      color: "#474b4f",
       fontFamily: "sans-serif",
-      fontSize: "12px",
+      fontSize: "10px",
       textTransform: "uppercase",
       borderRadius: "10px",
       boxSizing: "border-box",
@@ -58,15 +58,24 @@ class ProfileCert extends React.Component {
                 const badge = require(`@images/cert/${c["badge"]}`);
                 return (
                   <div key={index} style={this.CARD_STYLE()} className="">
-                    <figure className="image is-square">
-                      <img src={badge["default"]} alt={c["badge"]} />
-                    </figure>
-                    <br />
-                    <Link to={c["id"]} className="is-6 has-text-centered">
-                      <p className="subtitle is-5 has-text-primary has-text-weight-bold">
-                        {c["abb"]}
-                      </p>
-                    </Link>
+                    <div className="card">
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-content">
+                            <figure className="image is-128x128">
+                              <img src={badge["default"]} alt={c["badge"]} />
+                            </figure>
+                          </div>
+                        </div>
+                        <a
+                          href={c["id"]}
+                          className="is-size-6-touch is-size-5-desktop has-text-link has-text-weight-semibold"
+                          style={{ textDecoration: "none" }}
+                        >
+                          {c["abb"]}
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 );
               })
