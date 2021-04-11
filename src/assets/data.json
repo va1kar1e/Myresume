@@ -157,22 +157,26 @@
     ],
     "cert": [
       {
-        "name": "comptia network vulnerability assessment professional",
+        "name": "Comptia Network Vulnerability Assessment Professional",
+        "abb": "CNVP",
         "icon": "cnvp.png",
         "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
       },
       {
-        "name": "comptia pentest+",
+        "name": "Comptia Pentest+",
+        "abb": "PENTEST+",
         "icon": "penp.png",
         "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url"
       },
       {
-        "name": "comptia security+",
+        "name": "Comptia Security+",
+        "abb": "SECURITY+",
         "icon": "secp.png",
         "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
       },
       {
-        "name": "hcia routing & switching",
+        "name": "HCIA Routing & Switching",
+        "abb": "HCIA R&S",
         "icon": "hciars.png",
         "id": ""
       }
