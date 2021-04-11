@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import mydata from "@mydata";
 import logo from "@images/logo.png";
+import Resume from "@pages/resume";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -68,9 +69,38 @@ class Nav extends React.Component {
                   More
                 </div>
                 <div className="navbar-dropdown">
-                  <Link to="/resume" className="navbar-item has-text-white">
+                  <div
+                    role="button"
+                    className="navbar-item has-text-white"
+                    aria-label="menu"
+                    aria-expanded="true"
+                    data-target="navMenu"
+                    onClick={() => {
+                      var modal = document.querySelector(".modal");
+                      modal.classList.toggle("is-active");
+                    }}
+                  >
                     Resume
-                  </Link>
+                  </div>
+                  <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                      <header class="modal-card-head">
+                        <p class="modal-card-title">Resume</p>
+                        <button
+                          class="delete"
+                          aria-label="close"
+                          onClick={() => {
+                            var modal = document.querySelector(".modal");
+                            modal.classList.remove("is-active");
+                          }}
+                        ></button>
+                      </header>
+                      <section class="modal-card-body">
+                        <Resume />
+                      </section>
+                    </div>
+                  </div>
                   <hr className="navbar-divider" />
                   <Link to="/dashboard" className="navbar-item has-text-white">
                     Dashboard
