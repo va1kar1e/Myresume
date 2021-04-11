@@ -26,7 +26,10 @@ class ProfileWork extends React.Component {
           {works ? (
             works.map((work, index) => (
               <article className="is-white media" key={index}>
-                <figure className="media-left" style={{ color: work["color"] }}>
+                <figure
+                  className="media-left is-hidden-mobile"
+                  style={{ color: work["color"] }}
+                >
                   <span className="icon is-large">
                     <i className={work["icon"] + " fa-2x"}></i>
                   </span>
@@ -50,6 +53,14 @@ class ProfileWork extends React.Component {
                       <br />
                       {work["keyword"]}
                     </p>
+                    <figure
+                      className="is-hidden-tablet"
+                      style={{ color: work["color"], marginTop: "0.5em" }}
+                    >
+                      <span className="icon is-small">
+                        <i className={work["icon"] + " fa-lg"}></i>
+                      </span>
+                    </figure>
                   </div>
                   <article className="media">
                     <div className="content">
