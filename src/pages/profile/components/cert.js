@@ -35,7 +35,7 @@ class ProfileCert extends React.Component {
       width: "200px",
       textAlign: "center",
       background: "#ffffff",
-      color: "#FFF",
+      color: "#86c232",
       fontFamily: "sans-serif",
       fontSize: "12px",
       textTransform: "uppercase",
@@ -61,8 +61,11 @@ class ProfileCert extends React.Component {
                     <figure className="image is-square">
                       <img src={badge["default"]} alt={c["badge"]} />
                     </figure>
+                    <br />
                     <Link to={c["id"]} className="is-6 has-text-centered">
-                      {c["abb"]}
+                      <p className="subtitle is-5 has-text-primary has-text-weight-bold">
+                        {c["abb"]}
+                      </p>
                     </Link>
                   </div>
                 );
