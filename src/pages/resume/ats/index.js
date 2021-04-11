@@ -1,10 +1,22 @@
 import React, { Fragment } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
+import Nav from "@components/nav";
 
 function ResumeATS() {
   return (
     <Fragment>
-      <h1>Resume ATS</h1>
+      <section className="hero is-fullheight">
+        <div className="hero-head">
+          <Nav />
+        </div>
+        <div className="hero-body">
+          <div className="container">
+            <p className="has-text-dark">Resume ATS</p>
+            <Link to="/resume/ats/download">ATS Version</Link>
+          </div>
+        </div>
+        <div className="hero-foot"></div>
+      </section>
       <Switch>
         <Route
           path="/resume/ats/download"

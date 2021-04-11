@@ -1,7 +1,5 @@
-import React, { Fragment } from "react";
-import { Route, Switch } from "react-router-dom";
-import ResumeGeneral from "./general";
-import ResumeATS from "./ats";
+import React from "react";
+import { Link } from "react-router-dom";
 
 class Resume extends React.Component {
   constructor(props) {
@@ -15,17 +13,13 @@ class Resume extends React.Component {
 
   render() {
     return (
-      <Fragment>
-        <section className="hero is-large has-background-white">
-          <div className="container">
-            <p className="has-text-dark">Resume</p>
-          </div>
-        </section>
-        <Switch>
-          <Route path="/resume/general" component={ResumeGeneral} />
-          <Route path="/resume/ats" component={ResumeATS} />
-        </Switch>
-      </Fragment>
+      <section className="hero is-large">
+        <div className="container">
+          <p className="has-text-white">Resume</p>
+          <Link to="/resume/general">General Version</Link>
+          <Link to="/resume/ats">ATS Version</Link>
+        </div>
+      </section>
     );
   }
 }
