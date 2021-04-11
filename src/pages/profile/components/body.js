@@ -19,12 +19,40 @@ class ProfileBody extends React.Component {
   render() {
     return (
       <div className="container has-text-left">
-        <ProfileWork />
-        <ProfileEdu />
-        <ProfileRecognition />
-        <ProfileCert />
-        <ProfileInterest />
-        <ProfileCourse />
+        <div className="tile is-ancestor">
+          <div className="tile is-parent">
+            <article className="tile is-child notification">
+              <ProfileWork />
+            </article>
+          </div>
+        </div>
+        <div className="tile is-ancestor">
+          <div className="tile is-parent">
+            <article className="tile is-child notification">
+              <ProfileEdu />
+            </article>
+          </div>
+        </div>
+        <div className="tile is-ancestor">
+          <div className="tile is-parent">
+            <article className="tile is-child notification">
+              <ProfileRecognition />
+            </article>
+          </div>
+        </div>
+        <div className="tile is-ancestor">
+          <div className="tile is-parent">
+            <article className="tile is-child notification">
+              <ProfileCert />
+            </article>
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child notification">
+              <ProfileInterest />
+              <ProfileCourse />
+            </article>
+          </div>
+        </div>
       </div>
     );
   }
