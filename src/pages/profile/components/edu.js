@@ -167,7 +167,6 @@ class ProfileEdu extends React.Component {
             </article>
           </div>
         </div>
-        <section className="section"></section>
       </Fragment>
     );
   }
