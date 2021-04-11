@@ -25,7 +25,7 @@ class ProfileInterest extends React.Component {
         <div className="tags are-medium">
           {interest ? (
             interest.map((i, index) => (
-              <span key={index} class="tag is-primary">
+              <span key={index} className="tag is-primary">
                 {i}
               </span>
             ))

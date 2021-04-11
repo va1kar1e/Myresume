@@ -25,7 +25,7 @@ class ProfileRecognition extends React.Component {
         <div className="tile is-ancestor">
           {recognition ? (
             recognition.map((r, index) => (
-              <div class="tile is-parent">
+              <div className="tile is-parent">
                 <article className="tile is-child notification">
                   <p className="title is-uppercase">{r["what"]}</p>
                   <p className="subtitle">
