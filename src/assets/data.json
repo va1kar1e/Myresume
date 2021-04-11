@@ -177,7 +177,12 @@
         "id": ""
       }
     ],
-    "course": ["oscp", "comptia cysa+, casp+", "ccna: routing & switching"],
-    "interest": ["web development", "internet of things", "photography"]
+    "course": [
+      "OSCP",
+      "Comptia CYSA+",
+      "Comptia CASP+",
+      "CCNA: Routing & Switching"
+    ],
+    "interest": ["Web Development", "Internet of Things", "Photography"]
   }
 }
