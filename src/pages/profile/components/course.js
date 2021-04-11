@@ -25,7 +25,7 @@ class ProfileCourse extends React.Component {
         <div className="tags are-medium">
           {course ? (
             course.map((c, index) => (
-              <span key={index} class="tag is-primary">
+              <span key={index} className="tag is-primary">
                 {c}
               </span>
             ))
