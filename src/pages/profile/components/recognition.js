@@ -25,14 +25,11 @@ class ProfileRecognition extends React.Component {
         <div className="tile is-ancestor">
           {recognition ? (
             recognition.map((r, index) => (
-              <div className="tile is-parent">
+              <div key={index} className="tile is-parent">
                 <article className="tile is-child notification">
                   <p className="title is-uppercase">{r["what"]}</p>
-                  <p className="subtitle">
-                    <strong className="is-italic">{r["when"]}</strong>
-                    <br />
-                    <p className="">{r["who"]}</p>
-                  </p>
+                  <p className="subtitle is-italic">{r["when"]}</p>
+                  <p className="">{r["who"]}</p>
                 </article>
               </div>
             ))
