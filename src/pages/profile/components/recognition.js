@@ -20,7 +20,7 @@ class ProfileRecognition extends React.Component {
     return (
       <Fragment>
         <div className="content">
-          <p className="title has-text-primary">Recognition</p>
+          <p className="title has-text-primary">Recognitions</p>
         </div>
         <div className="tile is-ancestor">
           {recognition ? (
