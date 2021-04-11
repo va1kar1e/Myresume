@@ -86,7 +86,9 @@ class Nav extends React.Component {
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Resume</p>
+                        <p class="modal-card-title has-text-primary has-text-weight-semibold">
+                          Resume
+                        </p>
                         <button
                           class="delete"
                           aria-label="close"
