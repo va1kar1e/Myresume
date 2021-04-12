@@ -82,15 +82,15 @@ class Nav extends React.Component {
                   >
                     Resume
                   </div>
-                  <div class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                      <header class="modal-card-head">
-                        <p class="modal-card-title has-text-primary has-text-weight-semibold">
+                  <div className="modal">
+                    <div className="modal-background"></div>
+                    <div className="modal-card">
+                      <header className="modal-card-head">
+                        <p className="modal-card-title has-text-primary has-text-weight-semibold">
                           Resume
                         </p>
                         <button
-                          class="delete"
+                          className="delete"
                           aria-label="close"
                           onClick={() => {
                             var modal = document.querySelector(".modal");
@@ -98,7 +98,7 @@ class Nav extends React.Component {
                           }}
                         ></button>
                       </header>
-                      <section class="modal-card-body">
+                      <section className="modal-card-body">
                         <Resume />
                       </section>
                     </div>
