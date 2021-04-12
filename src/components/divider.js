@@ -6,7 +6,7 @@ class Divider extends Component {
     return (
       <Fragment>
         <hr
-          class="solid"
+          className="solid"
           style={{
             border: "1px solid white",
             width: mywidth,
