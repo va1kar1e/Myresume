@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ResumeQRCode from "./components/qrcode";
-import logo from "@images/logo.png";
 
 class Resume extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ats_path: "resume/Linkts",
+      ats_path: "resume/ats",
       general_path: "/resume/general",
     };
   }
@@ -21,60 +20,56 @@ class Resume extends React.Component {
     return (
       <section className="hero is-large">
         <div className="container">
-          <div class="columns">
-            <div class="column">
+          <div className="columns">
+            <div className="column">
               <div className="card">
-                <div className="card-image is-centered">
-                  <figure class="image is-128x128">
-                    <ResumeQRCode
-                      link={window.location.href + general_path}
-                      size={128}
-                    />
-                  </figure>
-                </div>
                 <div className="card-content">
                   <div className="content">
-                    <p>General Version</p>
+                    <p className="is-size-5">General Version</p>
+                    <figure className="image is-128x128">
+                      <ResumeQRCode
+                        link={window.location.href + general_path}
+                        size={128}
+                      />
+                    </figure>
                   </div>
                 </div>
-                <footer class="card-footer">
-                  <p class="card-footer-item">
+                <footer className="card-footer">
+                  <p className="card-footer-item is-size-6">
                     <span>
-                      View on <Link to={general_path}>Web</Link>
+                      <Link to={general_path}>Web</Link>
                     </span>
                   </p>
-                  <p class="card-footer-item">
+                  <p className="card-footer-item is-size-6">
                     <span>
-                      <Link to="/">Download File</Link>
+                      <Link to="/">Download</Link>
                     </span>
                   </p>
                 </footer>
               </div>
             </div>
-            <div class="column">
+            <div className="column">
               <div className="card">
-                <div className="card-image is-centered">
-                  <figure class="image is-128x128">
-                    <ResumeQRCode
-                      link={window.location.href + ats_path}
-                      size={128}
-                    />
-                  </figure>
-                </div>
                 <div className="card-content">
                   <div className="content">
-                    <p>ATS Version</p>
+                    <p className="is-size-5">ATS Version</p>
+                    <figure className="image is-128x128">
+                      <ResumeQRCode
+                        link={window.location.href + ats_path}
+                        size={128}
+                      />
+                    </figure>
                   </div>
                 </div>
-                <footer class="card-footer">
-                  <p class="card-footer-item">
+                <footer className="card-footer">
+                  <p className="card-footer-item is-size-6">
                     <span>
-                      View on <Link to={ats_path}>Web</Link>
+                      <Link to={ats_path}>Web</Link>
                     </span>
                   </p>
-                  <p class="card-footer-item">
+                  <p className="card-footer-item is-size-6">
                     <span>
-                      <Link to="/">Download File</Link>
+                      <Link to="/">Download</Link>
                     </span>
                   </p>
                 </footer>
