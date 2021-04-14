@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ResumeQRCode from "./components/qrcode";
+// import "./resume.scss";
 
 class Resume extends React.Component {
   constructor(props) {
