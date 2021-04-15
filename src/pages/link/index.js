@@ -9,6 +9,7 @@ class Link extends React.Component {
       linkedin: "",
       github: "",
       email: "",
+      hassos: "",
     };
   }
 
@@ -17,11 +18,12 @@ class Link extends React.Component {
       linkedin: mydata["profile"]["link"]["linkedin"],
       github: mydata["profile"]["link"]["github"],
       email: mydata["profile"]["aboutme"]["email"],
+      hassos: mydata["profile"]["link"]["hassos"],
     });
   }
 
   render() {
-    var { linkedin, github, email } = this.state;
+    var { linkedin, github, email, hassos } = this.state;
     return (
       <Switch>
         <Route
@@ -43,6 +45,13 @@ class Link extends React.Component {
           path="/link/contact"
           component={() => {
             window.location.href = "mailto:" + email;
+            return null;
+          }}
+        />
+        <Route
+          path="/link/hassos"
+          component={() => {
+            window.location.href = "http://" + hassos["url"];
             return null;
           }}
         />
