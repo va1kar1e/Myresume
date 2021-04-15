@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "@components/nav";
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -13,17 +12,24 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <section className="hero is-fullheight">
-        <div className="hero-head">
-          <Nav />
+      <div className="container">
+        <div className="section is-large">
+          <p className="title is-size-1-tablet is-size-2-mobile is-uppercase has-text-weight-bold has-text-primary">
+            Not Authorize - Dashboard
+          </p>
         </div>
-        <div className="hero-body">
-          <div className="container">
-            <p className="has-text-white">Dashboard</p>
-          </div>
-        </div>
-        <div className="hero-foot"></div>
-      </section>
+      </div>
+      // <section className="hero is-fullheight">
+      //   <div className="hero-head"></div>
+      //   <div className="hero-body">
+      //     <div className="container">
+      //       <h1 className="has-text-white is-size-1">
+      //         Not Authorize - Dashboard
+      //       </h1>
+      //     </div>
+      //   </div>
+      //   <div className="hero-foot"></div>
+      // </section>
     );
   }
 }
