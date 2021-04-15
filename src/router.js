@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Route, Switch } from "react-router-dom";
 
 import Home from "@pages/home";
@@ -10,20 +9,31 @@ import ResumeATS from "@pages/resume/ats";
 import Link from "@pages/link";
 import NotFound from "./pages/notfound";
 
-function Router() {
-  return (
-    <div className="App">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/link" component={Link} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/resume/general" component={ResumeGeneral} />
-        <Route path="/resume/ats" component={ResumeATS} />
-        <Route component={NotFound} />
-      </Switch>
-    </div>
-  );
+class Router extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    this.setState({});
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/resume/general/:type" component={ResumeGeneral} />
+          <Route path="/resume/ats/:type" component={ResumeATS} />
+          <Route path="/link/:type" component={Link} />
+          <Route component={NotFound} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default Router;
