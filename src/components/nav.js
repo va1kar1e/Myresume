@@ -34,7 +34,7 @@ class Nav extends React.Component {
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={logo} height="50" alt="" className="pr-2" />
-              <p className="title is-size-3-tablet is-size-5-mobile has-text-primary">
+              <p className="title is-size-3-tablet is-size-5-mobile has-text-primary is-capitalized">
                 {url}
               </p>
             </Link>

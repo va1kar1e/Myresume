@@ -20,7 +20,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer has-background-dark">
         <div className="content has-text-centered">
-          <p className="has-text-primary">
+          <p className="has-text-primary is-capitalized">
             <strong>
               <Link to="/">{url}</Link>
             </strong>{" "}
