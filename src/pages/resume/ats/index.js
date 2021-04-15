@@ -1,40 +1,39 @@
 import React, { Fragment } from "react";
-import { Route, Switch } from "react-router-dom";
-import {
-  Page,
-  Text,
-  View,
-  Image,
-  Document,
-  StyleSheet,
-  PDFViewer,
-} from "@react-pdf/renderer";
+// import {
+//   Page,
+//   Text,
+//   View,
+//   Image,
+//   Document,
+//   StyleSheet,
+//   PDFViewer,
+// } from "@react-pdf/renderer";
 import mydata from "@mydata";
 // import ProfileImage from "@images/profile.jpg";
 
 // Create styles
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: "row",
-    backgroundColor: "#ffffff",
-    font: "12pt Times",
-    margin: 1,
-    textAlign: "justify",
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
-  },
-  img: {
-    alignItems: "center",
-    flexGrow: 1,
-  },
-  profileimg: {
-    width: "128px",
-    height: "128px",
-  },
-});
+// const styles = StyleSheet.create({
+//   page: {
+//     flexDirection: "row",
+//     backgroundColor: "#ffffff",
+//     font: "12pt Times",
+//     margin: 1,
+//     textAlign: "justify",
+//   },
+//   section: {
+//     margin: 10,
+//     padding: 10,
+//     flexGrow: 1,
+//   },
+//   img: {
+//     alignItems: "center",
+//     flexGrow: 1,
+//   },
+//   profileimg: {
+//     width: "128px",
+//     height: "128px",
+//   },
+// });
 
 class ResumeATS extends React.Component {
   constructor(props) {
@@ -50,13 +49,26 @@ class ResumeATS extends React.Component {
     });
   }
 
+  download() {
+    const { ats_link } = this.state;
+    const { type } = this.props.match.params;
+    if (type === "download" && ats_link !== undefined) {
+      window.location.href = "/files/" + ats_link;
+      return null;
+    }
+  }
+
   // Create Document Component
   render() {
-    const { innerWidth: width, innerHeight: height } = window;
-    const { ats_link } = this.state;
+    this.download();
+    // const { innerWidth: width, innerHeight: height } = window;
     return (
       <Fragment>
-        <PDFViewer width={width} height={height} className="">
+        <div className="page">
+          <h1 className="has-text-dark">Resume ATS</h1>
+          {/* <Link to="/resume/ats/download">ATS Version</Link> */}
+        </div>
+        {/* <PDFViewer width={width} height={height} className="">
           <Document title="ats" author="ss" file="/ats.pdf">
             <Page
               size="A4"
@@ -96,16 +108,7 @@ class ResumeATS extends React.Component {
               </View>
             </Page>
           </Document>
-        </PDFViewer>
-        <Switch>
-          <Route
-            path="/resume/ats/download"
-            component={() => {
-              window.location.href = "/files/" + ats_link;
-              return null;
-            }}
-          />
-        </Switch>
+        </PDFViewer> */}
       </Fragment>
     );
   }

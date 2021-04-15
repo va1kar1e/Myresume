@@ -43,7 +43,13 @@ class Resume extends React.Component {
                   </p> */}
                   <p className="card-footer-item is-size-6">
                     <span>
-                      <Link to={general_path + "/download"}>Download</Link>
+                      <Link
+                        to={general_path + "/download"}
+                        target="_blank"
+                        rel="noreference"
+                      >
+                        Download
+                      </Link>
                     </span>
                   </p>
                 </footer>
@@ -70,7 +76,13 @@ class Resume extends React.Component {
                   </p> */}
                   <p className="card-footer-item is-size-6">
                     <span>
-                      <Link to={ats_path + "/download"}>Download</Link>
+                      <Link
+                        to={ats_path + "/download"}
+                        target="_blank"
+                        rel="noreference"
+                      >
+                        Download
+                      </Link>
                     </span>
                   </p>
                 </footer>
