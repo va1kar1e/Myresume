@@ -8,7 +8,7 @@ class Resume extends React.Component {
     super(props);
     this.state = {
       ats_path: "resume/ats",
-      general_path: "/resume/general",
+      general_path: "resume/general",
     };
   }
 
@@ -29,21 +29,21 @@ class Resume extends React.Component {
                     <p className="is-size-5">General Version</p>
                     <figure className="image is-128x128">
                       <ResumeQRCode
-                        link={window.location.href + general_path}
+                        link={window.location.href + general_path + "/download"}
                         size={128}
                       />
                     </figure>
                   </div>
                 </div>
                 <footer className="card-footer">
-                  <p className="card-footer-item is-size-6">
+                  {/* <p className="card-footer-item is-size-6">
                     <span>
                       <Link to={general_path}>Web</Link>
                     </span>
-                  </p>
+                  </p> */}
                   <p className="card-footer-item is-size-6">
                     <span>
-                      <Link to="/">Download</Link>
+                      <Link to={general_path + "/download"}>Download</Link>
                     </span>
                   </p>
                 </footer>
@@ -56,21 +56,21 @@ class Resume extends React.Component {
                     <p className="is-size-5">ATS Version</p>
                     <figure className="image is-128x128">
                       <ResumeQRCode
-                        link={window.location.href + ats_path}
+                        link={window.location.href + ats_path + "/download"}
                         size={128}
                       />
                     </figure>
                   </div>
                 </div>
                 <footer className="card-footer">
-                  <p className="card-footer-item is-size-6">
+                  {/* <p className="card-footer-item is-size-6">
                     <span>
                       <Link to={ats_path}>Web</Link>
                     </span>
-                  </p>
+                  </p> */}
                   <p className="card-footer-item is-size-6">
                     <span>
-                      <Link to="/">Download</Link>
+                      <Link to={ats_path + "/download"}>Download</Link>
                     </span>
                   </p>
                 </footer>
