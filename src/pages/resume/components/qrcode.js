@@ -26,8 +26,8 @@ class ResumeQRCode extends React.Component {
           src: logo,
           x: null,
           y: null,
-          height: 30,
-          width: 30,
+          height: 60,
+          width: 60,
           excavate: true,
         }}
       />

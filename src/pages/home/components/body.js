@@ -12,6 +12,7 @@ class HomeBody extends React.Component {
       intro: "",
       linkedin: "",
       github: "",
+      resume: "",
     };
   }
 
@@ -20,13 +21,14 @@ class HomeBody extends React.Component {
       name: mydata["profile"]["aboutme"]["name"],
       jobtitle: mydata["profile"]["aboutme"]["jobtitle"],
       intro: mydata["profile"]["aboutme"]["intro"],
+      resume: mydata["profile"]["link"]["resume"],
       linkedin: mydata["profile"]["link"]["linkedin"],
       github: mydata["profile"]["link"]["github"],
     });
   }
 
   render() {
-    var { name, jobtitle, intro, linkedin, github } = this.state;
+    var { name, jobtitle, intro, resume, linkedin, github } = this.state;
     return (
       <div className="container has-text-centered">
         <div className="content is-large">
@@ -39,7 +41,7 @@ class HomeBody extends React.Component {
           <h2 className="subtitle is-size-4-tablet is-size-6-mobile has-text-white has-text-justified has-text-left-mobile">
             &emsp;&emsp;&ensp;{intro}
           </h2>
-          <Divider mywidth={"7em"} />
+          <Divider mywidth={"10em"} />
           <div className="field is-grouped is-justify-content-center">
             <p className="control">
               <Link to="/link/linkedin" target="_blank" rel="noreference">
@@ -56,6 +58,13 @@ class HomeBody extends React.Component {
               </Link>
             </p>
             <p className="control">
+              <Link to="/link/resume" target="_blank" rel="noreference">
+                <span className="icon has-text-white is-large">
+                  <i className={resume["icon"] + " fa-2x"}></i>
+                </span>
+              </Link>
+            </p>
+            <p className="control">
               <Link to="/link/contact" target="_blank" rel="noreference">
                 <span className="icon has-text-white is-large">
                   <i className="fas fa-paper-plane fa-2x"></i>
@@ -63,7 +72,7 @@ class HomeBody extends React.Component {
               </Link>
             </p>
           </div>
-          <Divider mywidth={"7em"} />
+          <Divider mywidth={"10em"} />
         </div>
       </div>
     );

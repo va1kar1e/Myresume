@@ -10,20 +10,20 @@ class Nav extends React.Component {
     this.state = {
       url: "",
       linkedin: "",
-      github: "",
+      resume: "",
     };
   }
 
   componentDidMount() {
     this.setState({
-      linkedin: mydata["profile"]["link"]["linkedin"],
-      github: mydata["profile"]["link"]["github"],
+      linkedin: mydata["profile"]["link"]["linkedin"]["icon"],
+      resume: mydata["profile"]["link"]["resume"]["icon"],
       url: window.location.hostname,
     });
   }
 
   render() {
-    var { url, linkedin, github } = this.state;
+    var { url, linkedin, resume } = this.state;
     return (
       <header
         className="navbar has-background-dark"
@@ -69,41 +69,6 @@ class Nav extends React.Component {
                   More
                 </div>
                 <div className="navbar-dropdown">
-                  <div
-                    role="button"
-                    className="navbar-item has-text-white"
-                    aria-label="menu"
-                    aria-expanded="true"
-                    data-target="navMenu"
-                    onClick={() => {
-                      var modal = document.querySelector(".modal");
-                      modal.classList.toggle("is-active");
-                    }}
-                  >
-                    Resume
-                  </div>
-                  <div className="modal">
-                    <div className="modal-background"></div>
-                    <div className="modal-card">
-                      <header className="modal-card-head">
-                        <p className="modal-card-title has-text-primary has-text-weight-semibold">
-                          Resume
-                        </p>
-                        <button
-                          className="delete"
-                          aria-label="close"
-                          onClick={() => {
-                            var modal = document.querySelector(".modal");
-                            modal.classList.remove("is-active");
-                          }}
-                        ></button>
-                      </header>
-                      <section className="modal-card-body">
-                        <Resume />
-                      </section>
-                    </div>
-                  </div>
-                  <hr className="navbar-divider" />
                   <Link to="/dashboard" className="navbar-item has-text-white">
                     Dashboard
                   </Link>
@@ -118,21 +83,47 @@ class Nav extends React.Component {
                 rel="noreference"
               >
                 <span className="icon has-text-primary is-hidden-touch">
-                  <i className={linkedin["icon"]}></i>
+                  <i className={linkedin}></i>
                 </span>
                 <span className="has-text-primary">Linkedin</span>
               </Link>
-              <Link
-                to="/link/github"
-                className="navbar-item"
-                target="_blank"
-                rel="noreference"
+              <div
+                role="button"
+                className="navbar-item has-text-white"
+                aria-label="menu"
+                aria-expanded="true"
+                data-target="navMenu"
+                onClick={() => {
+                  var modal = document.querySelector(".modal");
+                  modal.classList.toggle("is-active");
+                }}
               >
                 <span className="icon has-text-primary is-hidden-touch">
-                  <i className={github["icon"]}></i>
+                  <i className={resume}></i>
                 </span>
-                <span className="has-text-primary">Github</span>
-              </Link>
+                <span className="has-text-primary">Resume</span>
+              </div>
+              <div className="modal">
+                <div className="modal-background"></div>
+                <div className="modal-card">
+                  <header className="modal-card-head">
+                    <p className="modal-card-title has-text-primary has-text-weight-semibold">
+                      Resume
+                    </p>
+                    <button
+                      className="delete"
+                      aria-label="close"
+                      onClick={() => {
+                        var modal = document.querySelector(".modal");
+                        modal.classList.remove("is-active");
+                      }}
+                    ></button>
+                  </header>
+                  <section className="modal-card-body">
+                    <Resume />
+                  </section>
+                </div>
+              </div>
               <Link
                 to="/link/contact"
                 className="navbar-item"

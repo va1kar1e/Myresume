@@ -15,11 +15,12 @@
       },
       "hassos": {
         "url": "siwanont.thddns.net:2280"
+      },
+      "resume": {
+        "name": "siwanonts-resume.pdf",
+        "url": "https://1drv.ms/b/s!AjHDWQYnUcljg7MCzbWdEEFUdH3VqA?e=oAYTg4",
+        "icon": "fas fa-file-pdf"
       }
-    },
-    "resume": {
-      "general": "siwanonts-resume-for-general.pdf",
-      "ats": "siwanonts-resume-for-ats.pdf"
     },
     "aboutme": {
       "name": "siwanont sittinam",
@@ -47,10 +48,11 @@
       "internship": {
         "university": "kyoto institute of technology",
         "laboratory": "software engineering laboratory",
-        "project": "making a fault-prones notification for developer team on raspbery pi",
+        "project": "making a fault-prones notification for developer team on raspberry pi",
         "archievement": [
           "Studying automated find Bugs with the Review code process.",
-          "Studying Face Detection and Recognition to build an authorization system with biometric on Raspberry Pi."
+          "Studying Face Detection and Recognition to build an authorization system with biometric",
+          "Working with Raspberry PI 3b+"
         ]
       },
       "work": [
@@ -70,13 +72,13 @@
               "archievement": []
             },
             {
-              "name": "Teacher Assistant for Python Classes.",
+              "name": "Teacher Assistant for Python Classes",
               "archievement": []
             }
           ]
         },
         {
-          "where": "ZEABUS: Autonomous Underwater Vehicle",
+          "where": "ZEABUS: Autonomous Underwater Vehicle Laboratory",
           "do": []
         }
       ],
@@ -90,7 +92,7 @@
           ]
         },
         {
-          "name": "Explore a Danger area with a Robot using NodeMCU and P2PCamera.",
+          "name": "Explore a Danger area with a Robot using NodeMCU and P2P Camera",
           "archievement": []
         },
         {
@@ -107,12 +109,11 @@
         "name": "siam commercial bank",
         "keyword": "Thailand's First Indigenous Bank",
         "role": "Digital threat and Vulnerability management engineer",
-        "team": "IT Security - Security Assessment Team (Redteam)",
+        "team": "IT Security - Security Assessment Team (Red Team)",
         "archiev": [
           "Being responsible for Penetration testing, Vulnerability Assessment and Hardening.",
-          "Being responsible for Devsecops.",
-          "Being responsible for Cloud Security and Compliance Orchestration.",
-          "Assessing cybersecurity with CIS benchmark."
+          "Being responsible for Devsecops and Working with Automation Tools.",
+          "Being responsible for Cloud Security."
         ]
       },
       {
@@ -125,9 +126,9 @@
         "team": "Datacenter Operation - Network Change Team",
         "archiev": [
           "Joining the Technology Graduate Trainee program.",
-          "Being responsible for LAN Implementation and Toubleshooting to resolve the incident by following the ITIL process.",
-          "Working with Network Devices and Network Automation.",
-          "Working with the Architecture teams, Management teams, and Other teams to follow Enterprise Standards and Policies.",
+          "Being responsible for LAN Implementation and Troubleshooting to resolve the incident by following the ITIL process.",
+          "Working with Network Automation Tools.",
+          "Working with the Architecture teams, Change Management teams, and Other teams to follow Enterprise Policy Standards.",
           "Building the Tumbun Donation Platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; OMISE, logging transaction in MongoDB, and building API services connecting with the Front-end side by using NodeJS and ExpressJS."
         ]
       },
@@ -140,9 +141,8 @@
         "role": "Full-stack Developer",
         "team": "Data Science Team",
         "archiev": [
-          "being responsible for building a web dashboard monitoring active users and analyzing social influencer with social graph and trend keywords with wordcloud.",
-          "building a web application with nodejs, expressjs, and bootstrap and text visualization with d3js.",
-          "processing and storing data in mongodb."
+          "Being responsible for building a Web Dashboard. Monitoring active users and Analyzing social influencer with Social Graph and Trend Keywords with Wordcloud.",
+          "Building a Web application with nodejs, expressjs, and bootstrap and Text visualization with d3js. Processing and Storing data in mongodb."
         ]
       }
     ],

@@ -9,6 +9,7 @@ class Link extends React.Component {
       github: "",
       email: "",
       hassos: "",
+      resume: "",
     };
   }
 
@@ -18,12 +19,13 @@ class Link extends React.Component {
       github: mydata["profile"]["link"]["github"]["username"],
       email: mydata["profile"]["aboutme"]["email"],
       hassos: mydata["profile"]["link"]["hassos"]["url"],
+      resume: mydata["profile"]["link"]["resume"]["url"],
     });
   }
 
   gotolink() {
     const { type } = this.props.match.params;
-    const { linkedin, github, email, hassos } = this.state;
+    const { linkedin, github, email, hassos, resume } = this.state;
     if (type === "github") {
       window.location.href = "https://github.com/" + github;
       return null;
@@ -36,18 +38,22 @@ class Link extends React.Component {
     } else if (type === "hassos") {
       window.location.href = hassos;
       return null;
+    } else if (type === "resume") {
+      window.location.href = resume;
+      return null;
     } else {
+      window.location.href = window.location.origin;
+      return null;
     }
   }
 
   render() {
-    this.gotolink();
-
     return (
       <div className="container">
         <div className="section is-large">
           <p className="title is-size-1-tablet is-size-2-mobile is-uppercase has-text-weight-bold has-text-primary">
             Redirect to External Link
+            {this.gotolink()}
           </p>
         </div>
       </div>
