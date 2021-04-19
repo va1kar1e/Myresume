@@ -33,6 +33,7 @@ $modal-card-body-background-color: $grey-dark;
 
 // Import only what you need from Bulma
 @import "bulma/bulma";
+@import "@creativebulma/bulma-tooltip";
 
 .App {
   text-align: center;

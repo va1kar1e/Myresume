@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Divider from "@components/divider";
+
 import mydata from "@mydata";
 
 class HomeBody extends React.Component {
@@ -45,28 +46,40 @@ class HomeBody extends React.Component {
           <div className="field is-grouped is-justify-content-center">
             <p className="control">
               <Link to="/link/linkedin" target="_blank" rel="noreference">
-                <span className="icon has-text-white is-large">
+                <span
+                  className="icon has-text-white is-large has-tooltip-bottom has-tooltip-primary"
+                  data-tooltip="My Linkedin"
+                >
                   <i className={linkedin["icon"] + " fa-2x"}></i>
                 </span>
               </Link>
             </p>
             <p className="control">
               <Link to="/link/github" target="_blank" rel="noreference">
-                <span className="icon has-text-white is-large">
+                <span
+                  className="icon has-text-white is-large has-tooltip-bottom has-tooltip-primary"
+                  data-tooltip="My Github"
+                >
                   <i className={github["icon"] + " fa-2x"}></i>
                 </span>
               </Link>
             </p>
             <p className="control">
               <Link to="/link/resume" target="_blank" rel="noreference">
-                <span className="icon has-text-white is-large">
+                <span
+                  className="icon has-text-white is-large has-tooltip-bottom has-tooltip-primary"
+                  data-tooltip="Download My Resume"
+                >
                   <i className={resume["icon"] + " fa-2x"}></i>
                 </span>
               </Link>
             </p>
             <p className="control">
-              <Link to="/link/contact" target="_blank" rel="noreference">
-                <span className="icon has-text-white is-large">
+              <Link to="/contact">
+                <span
+                  className="icon has-text-white is-large has-tooltip-bottom has-tooltip-primary"
+                  data-tooltip="Contact Me"
+                >
                   <i className="fas fa-paper-plane fa-2x"></i>
                 </span>
               </Link>

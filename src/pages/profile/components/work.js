@@ -21,7 +21,7 @@ class ProfileWork extends React.Component {
       <Fragment>
         <section className="section">
           <div className="content">
-            <p className="title has-text-primary">Works</p>
+            <p className="title has-text-primary">Work</p>
           </div>
           {works ? (
             works.map((work, index) => (
@@ -71,7 +71,7 @@ class ProfileWork extends React.Component {
                   </article>
                   <article className="media has-text-grey-darker">
                     <div className="content">
-                      <p className="has-text-weight-bold">Archievement</p>
+                      <p className="has-text-weight-bold">Responsibility</p>
                       <ol>
                         {work["archiev"].map((arch, index) => (
                           <li key={index}>{arch}</li>

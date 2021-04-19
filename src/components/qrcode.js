@@ -2,32 +2,28 @@ import React from "react";
 import QRCode from "qrcode.react";
 import logo from "@images/logo.png";
 
-class ResumeQRCode extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {
-    this.setState({});
-  }
-
+class MyQRCode extends React.Component {
   render() {
     const { link, size } = this.props;
+    var logoSize = 40;
+    if (size < 200) {
+      logoSize = 30;
+    }
+
     return (
       <QRCode
         value={link}
         size={size}
         renderAs="svg"
         bgColor="#ffffff"
-        fgColor="#222629"
+        fgColor="#6b6e70"
         level="Q"
         imageSettings={{
           src: logo,
           x: null,
           y: null,
-          height: 60,
-          width: 60,
+          height: logoSize,
+          width: logoSize,
           excavate: true,
         }}
       />
@@ -35,4 +31,4 @@ class ResumeQRCode extends React.Component {
   }
 }
 
-export default ResumeQRCode;
+export default MyQRCode;

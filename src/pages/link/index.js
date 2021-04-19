@@ -7,7 +7,6 @@ class Link extends React.Component {
     this.state = {
       linkedin: "",
       github: "",
-      email: "",
       hassos: "",
       resume: "",
     };
@@ -17,7 +16,6 @@ class Link extends React.Component {
     this.setState({
       linkedin: mydata["profile"]["link"]["linkedin"]["username"],
       github: mydata["profile"]["link"]["github"]["username"],
-      email: mydata["profile"]["aboutme"]["email"],
       hassos: mydata["profile"]["link"]["hassos"]["url"],
       resume: mydata["profile"]["link"]["resume"]["url"],
     });
@@ -25,15 +23,12 @@ class Link extends React.Component {
 
   gotolink() {
     const { type } = this.props.match.params;
-    const { linkedin, github, email, hassos, resume } = this.state;
+    const { linkedin, github, hassos, resume } = this.state;
     if (type === "github") {
       window.location.href = "https://github.com/" + github;
       return null;
     } else if (type === "linkedin") {
       window.location.href = "https://linkedin.com/in/" + linkedin;
-      return null;
-    } else if (type === "contact") {
-      window.location.href = "mailto:" + email;
       return null;
     } else if (type === "hassos") {
       window.location.href = hassos;

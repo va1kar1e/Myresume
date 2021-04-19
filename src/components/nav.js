@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import mydata from "@mydata";
 import logo from "@images/logo.png";
-import Resume from "@pages/resume";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -10,20 +9,18 @@ class Nav extends React.Component {
     this.state = {
       url: "",
       linkedin: "",
-      resume: "",
     };
   }
 
   componentDidMount() {
     this.setState({
       linkedin: mydata["profile"]["link"]["linkedin"]["icon"],
-      resume: mydata["profile"]["link"]["resume"]["icon"],
       url: window.location.hostname,
     });
   }
 
   render() {
-    var { url, linkedin, resume } = this.state;
+    var { url, linkedin } = this.state;
     return (
       <header
         className="navbar has-background-dark"
@@ -64,7 +61,15 @@ class Nav extends React.Component {
               <Link to="/profile" className="navbar-item has-text-white">
                 Profile
               </Link>
-              <div className="navbar-item has-dropdown is-hoverable">
+              <Link
+                to={"/link/resume"}
+                className="navbar-item has-text-white"
+                target="_blank"
+                rel="noreference"
+              >
+                Resume
+              </Link>
+              {/* <div className="navbar-item has-dropdown is-hoverable">
                 <div className="navbar-link has-text-white is-hidden-touch">
                   More
                 </div>
@@ -73,7 +78,7 @@ class Nav extends React.Component {
                     Dashboard
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="navbar-end">
               <Link
@@ -87,49 +92,7 @@ class Nav extends React.Component {
                 </span>
                 <span className="has-text-primary">Linkedin</span>
               </Link>
-              <div
-                role="button"
-                className="navbar-item has-text-white"
-                aria-label="menu"
-                aria-expanded="true"
-                data-target="navMenu"
-                onClick={() => {
-                  var modal = document.querySelector(".modal");
-                  modal.classList.toggle("is-active");
-                }}
-              >
-                <span className="icon has-text-primary is-hidden-touch">
-                  <i className={resume}></i>
-                </span>
-                <span className="has-text-primary">Resume</span>
-              </div>
-              <div className="modal">
-                <div className="modal-background"></div>
-                <div className="modal-card">
-                  <header className="modal-card-head">
-                    <p className="modal-card-title has-text-primary has-text-weight-semibold">
-                      Resume
-                    </p>
-                    <button
-                      className="delete"
-                      aria-label="close"
-                      onClick={() => {
-                        var modal = document.querySelector(".modal");
-                        modal.classList.remove("is-active");
-                      }}
-                    ></button>
-                  </header>
-                  <section className="modal-card-body">
-                    <Resume />
-                  </section>
-                </div>
-              </div>
-              <Link
-                to="/link/contact"
-                className="navbar-item"
-                target="_blank"
-                rel="noreference"
-              >
+              <Link to="/contact" className="navbar-item">
                 <span className="icon has-text-primary is-hidden-touch">
                   <i className="fas fa-paper-plane"></i>
                 </span>
