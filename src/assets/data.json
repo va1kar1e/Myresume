@@ -1,195 +1,201 @@
 {
-  "profile": {
-    "link": {
-      "linkedin": {
-        "username": "siwanont",
-        "icon": "fab fa-linkedin-in"
-      },
-      "github": {
-        "username": "va1kar1e",
-        "icon": "fab fa-github"
-      },
-      "youtube": {
-        "srclus": "emprd8fwt80",
-        "explorercar": "lg-ndld06wy"
-      },
-      "hassos": {
-        "url": "http://siwanont.thddns.net:2280"
-      },
-      "resume": {
-        "name": "siwanonts-resume.pdf",
-        "url": "https://1drv.ms/b/s!AjHDWQYnUcljg7MCzbWdEEFUdH3VqA?e=oAYTg4",
-        "icon": "fas fa-file-pdf"
-      }
-    },
-    "aboutme": {
-      "name": "siwanont sittinam",
-      "jobtitle": "digital threat and vulnerability management engineer",
-      "email": "siwanont1@gmail.com",
-      "intro": "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive cybersecurity engineer. I am interested in cybersecurity, networking, data analytics and web development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
-    },
-    "education": {
-      "general": {
-        "university": "kasetsart university",
-        "faculty": "bachelor of engineering, computer engineering",
-        "period": "AUG 2015 - MAY 2019"
-      },
-      "thesis": {
-        "name": "search result clustering on thai internet forum using word2vec model",
-        "archievement": [
-          "Researching the Text Clustering by meaning in each context.",
-          "Words Tokenization with NLTK and Pythainlp library.",
-          "Words Prioritization with TF-IDF.",
-          "Words Grouping by Transforming text to Word2Vec model.",
-          "Building API services calculating Text Similarity with Word2Vec model using Flask and Gensim library.",
-          "Building a Web application to display data resulting from API services with ReactJS."
-        ]
-      },
-      "internship": {
-        "university": "kyoto institute of technology",
-        "laboratory": "software engineering laboratory",
-        "project": "making a fault-prones notification for developer team on raspberry pi",
-        "archievement": [
-          "Studying automated find Bugs with the Review code process.",
-          "Studying Face Detection and Recognition to build an authorization system with biometric",
-          "Working with Raspberry PI 3b+"
-        ]
-      },
-      "work": [
-        {
-          "where": "massive information and knowledge engineering laboratory",
-          "do": [
-            {
-              "name": "Social Network Analysis with Ego Network on Twitter data project",
-              "archievement": [
-                "Writing a research paper in order to study the relationship of Twitter users from tweets with Ego Network.",
-                "Classifying twitter user behavior from user's tweets with Google cloud natural language and Inserting results into mongodb.",
-                "Building a Web Visualization to visualize the relationship of users with NodeJS, ExpressJS, and Bootstrap and building an Ego Network Graph with D3JS."
-              ]
-            },
-            {
-              "name": "Ubuntu and Centos Server Administrator",
-              "archievement": []
-            },
-            {
-              "name": "Teacher Assistant for Python Classes",
-              "archievement": []
-            }
-          ]
-        },
-        {
-          "where": "ZEABUS: Autonomous Underwater Vehicle Laboratory",
-          "do": []
-        }
-      ],
-      "project": [
-        {
-          "name": "Trusted web domain analysis based on SSL/TLS Certificate",
-          "archievement": [
-            "Studying the Threat unawareness with the SSL/TLS certificate of the Top 50 university websites.",
-            "Collecting SSL/TLS Certificate and Ranking web domain trust with Testssl.sh and Javascript.",
-            "Building a Web dashboard to display the Rank of Web domain trust with description using NextJS and Semantic-UI."
-          ]
-        },
-        {
-          "name": "Explore a Danger area with a Robot using NodeMCU and P2P Camera",
-          "archievement": []
-        },
-        {
-          "name": "Web-based Hospital appointment management system using Django",
-          "archievement": []
-        }
-      ]
-    },
-    "work": [
-      {
-        "year": "OCT 2020 - PRESENT",
-        "icon": "fas fa-user-secret",
-        "color": "#7c5dd0",
-        "name": "siam commercial bank",
-        "keyword": "Thailand's First Indigenous Bank",
-        "role": "Digital threat and Vulnerability management engineer",
-        "team": "IT Security - Security Assessment Team (Red Team)",
-        "archiev": [
-          "Being responsible for Penetration testing, Vulnerability Assessment and Hardening.",
-          "Being responsible for Devsecops and Working with Automation Tools.",
-          "Being responsible for Cloud Security."
-        ]
-      },
-      {
-        "year": "JUN 2019 - MAY 2020",
-        "icon": "fas fa-server",
-        "color": "#1d5ff5",
-        "name": "refinitiv",
-        "keyword": "Formerly Thomson Reuters Financial & Risk",
-        "role": "Network engineer",
-        "team": "Datacenter Operation - Network Change Team",
-        "archiev": [
-          "Joining the Technology Graduate Trainee program.",
-          "Being responsible for LAN Implementation and Troubleshooting to resolve the incident by following the ITIL process.",
-          "Working with Network Automation Tools.",
-          "Working with the Architecture teams, Change Management teams, and Other teams to follow Enterprise Policy Standards.",
-          "Building the Tumbun Donation Platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; OMISE, logging transaction in MongoDB, and building API services connecting with the Front-end side by using NodeJS and ExpressJS."
-        ]
-      },
-      {
-        "year": "JUN 2017 - AUG 2017",
-        "icon": "fas fa-code",
-        "color": "#7959f5",
-        "name": "internet marketing",
-        "keyword": "Also known as PANTIP - The popular internet forum in Thailand",
-        "role": "Full-stack Developer",
-        "team": "Data Science Team",
-        "archiev": [
-          "Being responsible for building a Web Dashboard. Monitoring active users and Analyzing social influencer with Social Graph and Trend Keywords with Wordcloud.",
-          "Building a Web application with nodejs, expressjs, and bootstrap and Text visualization with d3js. Processing and Storing data in mongodb."
-        ]
-      }
-    ],
-    "recognition": [
-      {
-        "what": "Consolation Prize Award",
-        "when": "Huawei ICT Competition 2019",
-        "who": "Huawei Technologies (Thailand)"
-      },
-      {
-        "what": "Creative Design Award",
-        "when": "Thailand financial cybersecurity 2017",
-        "who": "Electronic transactions development agency, Bank of Thailand, Securities and Exchange Commission"
-      }
-    ],
-    "cert": [
-      {
-        "name": "Comptia Network Vulnerability Assessment Professional",
-        "abb": "CNVP",
-        "badge": "cnvp.png",
-        "id": "https://www.youracclaim.com/earner/earned/badge/2a88695e-dc63-4ce6-91e3-e6703986715a/public_url"
-      },
-      {
-        "name": "Comptia Pentest+",
-        "abb": "PENTEST+",
-        "badge": "penp.png",
-        "id": "https://www.youracclaim.com/earner/earned/badge/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a/public_url"
-      },
-      {
-        "name": "Comptia Security+",
-        "abb": "SECURITY+",
-        "badge": "secp.png",
-        "id": "https://www.youracclaim.com/earner/earned/badge/93cef120-6f78-4592-a678-47d9c6f523e8/public_url"
-      },
-      {
-        "name": "HCIA Routing & Switching",
-        "abb": "HCIA R&S",
-        "badge": "hciars.png",
-        "id": ""
-      }
-    ],
-    "course": [
-      "OSCP",
-      "Comptia CYSA+",
-      "Comptia CASP+",
-      "CCNA: Routing & Switching"
-    ],
-    "interest": ["Web Development", "Internet of Things", "Photography"]
-  }
+	"profile": {
+		"link": {
+			"linkedin": {
+				"username": "siwanont",
+				"icon": "fab fa-linkedin-in"
+			},
+			"github": {
+				"username": "va1kar1e",
+				"icon": "fab fa-github"
+			},
+			"youtube": {
+				"srclus": "emprd8fwt80",
+				"explorercar": "lg-ndld06wy"
+			},
+			"hassos": {
+				"url": "http://siwanont.thddns.net:2280"
+			},
+			"resume": {
+				"name": "siwanonts-resume.pdf",
+				"url": "https://1drv.ms/b/s!AjHDWQYnUcljg7MCzbWdEEFUdH3VqA?e=oAYTg4",
+				"icon": "fas fa-file-pdf"
+			}
+		},
+		"aboutme": {
+			"name": "siwanont sittinam",
+			"jobtitle": "digital threat and vulnerability management engineer",
+			"email": "siwanont1@gmail.com",
+			"intro": "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive cybersecurity engineer. I am interested in cybersecurity, networking, data analytics and web development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
+		},
+		"education": {
+			"general": {
+				"university": "kasetsart university",
+				"faculty": "bachelor of engineering, computer engineering",
+				"period": "AUG 2015 - MAY 2019"
+			},
+			"thesis": {
+				"name": "search result clustering on thai internet forum using word2vec model",
+				"archievement": [
+					"Researching the Text Clustering by meaning in each context.",
+					"Words Tokenization with NLTK and Pythainlp library.",
+					"Words Prioritization with TF-IDF.",
+					"Words Grouping by Transforming text to Word2Vec model.",
+					"Building API services calculating Text Similarity with Word2Vec model using Flask and Gensim library.",
+					"Building a Web application to display data resulting from API services with ReactJS."
+				]
+			},
+			"internship": {
+				"university": "kyoto institute of technology",
+				"laboratory": "software engineering laboratory",
+				"project": "making a fault-prones notification for developer team on raspberry pi",
+				"archievement": [
+					"Studying automated find Bugs with the Review code process.",
+					"Studying Face Detection and Recognition to build an authorization system with biometric",
+					"Working with Raspberry PI 3b+"
+				]
+			},
+			"work": [
+				{
+					"where": "massive information and knowledge engineering laboratory",
+					"do": [
+						{
+							"name": "Social Network Analysis with Ego Network on Twitter data project",
+							"archievement": [
+								"Writing a research paper in order to study the relationship of Twitter users from tweets with Ego Network.",
+								"Classifying twitter user behavior from user's tweets with Google cloud natural language and Inserting results into mongodb.",
+								"Building a Web Visualization to visualize the relationship of users with NodeJS, ExpressJS, and Bootstrap and building an Ego Network Graph with D3JS."
+							]
+						},
+						{
+							"name": "Ubuntu and Centos Server Administrator",
+							"archievement": []
+						},
+						{
+							"name": "Teacher Assistant for Python Classes",
+							"archievement": []
+						}
+					]
+				},
+				{
+					"where": "ZEABUS: Autonomous Underwater Vehicle Laboratory",
+					"do": []
+				}
+			],
+			"project": [
+				{
+					"name": "Trusted web domain analysis based on SSL/TLS Certificate",
+					"archievement": [
+						"Studying the Threat unawareness with the SSL/TLS certificate of the Top 50 university websites.",
+						"Collecting SSL/TLS Certificate and Ranking web domain trust with Testssl.sh and Javascript.",
+						"Building a Web dashboard to display the Rank of Web domain trust with description using NextJS and Semantic-UI."
+					]
+				},
+				{
+					"name": "Explore a Danger area with a Robot using NodeMCU and P2P Camera",
+					"archievement": []
+				},
+				{
+					"name": "Web-based Hospital appointment management system using Django",
+					"archievement": []
+				}
+			]
+		},
+		"work": [
+			{
+				"year": "OCT 2020 - PRESENT",
+				"icon": "fas fa-user-secret",
+				"color": "#7c5dd0",
+				"name": "siam commercial bank",
+				"keyword": "Thailand's First Indigenous Bank",
+				"role": "Digital threat and Vulnerability management engineer",
+				"team": "IT Security - Security Assessment Team (Red Team)",
+				"archiev": [
+					"Being responsible for Penetration testing, Vulnerability Assessment and Hardening.",
+					"Being responsible for Devsecops and Working with Automation Tools.",
+					"Being responsible for Cloud Security."
+				]
+			},
+			{
+				"year": "JUN 2019 - MAY 2020",
+				"icon": "fas fa-server",
+				"color": "#1d5ff5",
+				"name": "refinitiv",
+				"keyword": "Formerly Thomson Reuters Financial & Risk",
+				"role": "Network engineer",
+				"team": "Datacenter Operation - Network Change Team",
+				"archiev": [
+					"Joining the Technology Graduate Trainee program.",
+					"Being responsible for LAN Implementation and Troubleshooting to resolve the incident by following the ITIL process.",
+					"Working with Network Automation Tools.",
+					"Working with the Architecture teams, Change Management teams, and Other teams to follow Enterprise Policy Standards.",
+					"Building the Tumbun Donation Platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; OMISE, logging transaction in MongoDB, and building API services connecting with the Front-end side by using NodeJS and ExpressJS."
+				]
+			},
+			{
+				"year": "JUN 2017 - AUG 2017",
+				"icon": "fas fa-code",
+				"color": "#7959f5",
+				"name": "internet marketing",
+				"keyword": "Also known as PANTIP - The popular internet forum in Thailand",
+				"role": "Full-stack Developer",
+				"team": "Data Science Team",
+				"archiev": [
+					"Being responsible for building a Web Dashboard. Monitoring active users and Analyzing social influencer with Social Graph and Trend Keywords with Wordcloud.",
+					"Building a Web application with nodejs, expressjs, and bootstrap and Text visualization with d3js. Processing and Storing data in mongodb."
+				]
+			}
+		],
+		"recognition": [
+			{
+				"what": "Consolation Prize Award",
+				"when": "Huawei ICT Competition 2019",
+				"who": "Huawei Technologies (Thailand)"
+			},
+			{
+				"what": "Creative Design Award",
+				"when": "Thailand financial cybersecurity 2017",
+				"who": "Electronic transactions development agency, Bank of Thailand, Securities and Exchange Commission"
+			}
+		],
+		"cert": [
+			{
+				"name": "Comptia Network Vulnerability Assessment Professional",
+				"abb": "CNVP",
+				"badge": "cnvp.png",
+				"id": "https://www.credly.com/badges/2a88695e-dc63-4ce6-91e3-e6703986715a"
+			},
+			{
+				"name": "Comptia Pentest+",
+				"abb": "PENTEST+",
+				"badge": "penp.png",
+				"id": "https://www.credly.com/badges/caf4df4f-b8f9-42fe-bfa7-610f6e837e3a"
+			},
+			{
+				"name": "Comptia Security+",
+				"abb": "SECURITY+",
+				"badge": "secp.png",
+				"id": "https://www.credly.com/badges/93cef120-6f78-4592-a678-47d9c6f523e8"
+			},
+			{
+				"name": "Cyber Security Foundation Professional Certificate",
+				"abb": "CSFPC",
+				"badge": "csfpc.png",
+				"id": "https://www.credly.com/badges/68992206-1af3-4a7c-8eab-48a2880792c7/"
+			},
+			{
+				"name": "HCIA Routing & Switching",
+				"abb": "HCIA R&S",
+				"badge": "hciars.png",
+				"id": ""
+			}
+		],
+		"course": [
+			"OSCP",
+			"Comptia CYSA+",
+			"Comptia CASP+",
+			"CCNA: Routing & Switching"
+		],
+		"interest": ["Web Development", "Internet of Things", "Photography"]
+	}
 }
