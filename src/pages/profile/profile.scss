@@ -8,7 +8,8 @@
 }
 
 .fixed {
-	position: fixed;
-	left: 80%;
-	top: 6em;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	// left: 80%;
+	top: 10%;
 }
