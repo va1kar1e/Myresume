@@ -23,7 +23,7 @@ class Nav extends React.Component {
 		var { url, linkedin } = this.state;
 		return (
 			<header
-				className="navbar is-fixed-top has-background-dark "
+				className="navbar is-fixed-top has-background-dark"
 				role="navigation"
 				aria-label="main navigation"
 			>
@@ -67,7 +67,7 @@ class Nav extends React.Component {
 								to="/profile"
 								className="navbar-item has-text-white"
 							>
-								Profile
+								My Profile
 							</Link>
 							<Link
 								to={"/link/resume"}
@@ -75,7 +75,7 @@ class Nav extends React.Component {
 								target="_blank"
 								rel="noreference"
 							>
-								Resume
+								My Resume
 							</Link>
 							{/* <div className="navbar-item has-dropdown is-hoverable">
                 <div className="navbar-link has-text-white is-hidden-touch">

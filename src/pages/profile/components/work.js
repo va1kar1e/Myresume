@@ -21,7 +21,9 @@ class ProfileWork extends React.Component {
 			<Fragment>
 				<section className="section">
 					<div className="content">
-						<p className="title has-text-primary">Work</p>
+						<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+							Work
+						</p>
 					</div>
 					{works ? (
 						works.map((work, index) => (
@@ -38,7 +40,7 @@ class ProfileWork extends React.Component {
 								</figure>
 								<div className="media-content">
 									<div className="content">
-										<p>
+										<p className="is-size-6">
 											<strong
 												className="is-capitalized"
 												style={{ color: work["color"] }}
@@ -58,39 +60,29 @@ class ProfileWork extends React.Component {
 											<br />
 											{work["keyword"]}
 										</p>
-										<figure
-											className="is-hidden-tablet"
-											style={{
-												color: work["color"],
-												marginTop: "0.5em",
-											}}
-										>
-											<span className="icon is-small">
-												<i
-													className={
-														work["icon"] + " fa-lg"
-													}
-												></i>
-											</span>
-										</figure>
 									</div>
 									<article className="media">
 										<div className="content">
-											<p style={{ color: work["color"] }}>
+											<p
+												style={{ color: work["color"] }}
+												className="has-text-weight-regular is-size-6"
+											>
 												Team: {work["team"]}
 											</p>
 										</div>
 									</article>
 									<article className="media has-text-grey-darker">
 										<div className="content">
-											<p className="has-text-weight-bold">
+											<p className="has-text-weight-regular is-size-6">
 												Responsibility
 											</p>
 											<ol>
 												{work["archiev"].map(
 													(arch, index) => (
 														<li key={index}>
-															{arch}
+															<p className="has-text-weight-regular is-size-6">
+																{arch}
+															</p>
 														</li>
 													)
 												)}

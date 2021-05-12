@@ -20,29 +20,30 @@ class ProfileRecognition extends React.Component {
 		return (
 			<Fragment>
 				<div className="content">
-					<p className="title has-text-primary">Recognitions</p>
+					<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+						Recognitions
+					</p>
 				</div>
-				<div className="tile is-ancestor">
-					{recognition ? (
-						recognition.map((r, index) => (
-							<div key={index} className="tile is-parent">
-								<article className="tile is-child notification">
-									<p className="title is-size-4-tablet is-size-5-mobile has-text-primary is-uppercase has-text-weight-bold">
-										{r["what"]}
-									</p>
-									<p className="subtitle is-size-5-tablet is-size-6-mobile has-text-grey-dark is-italic has-text-weight-semibold">
-										{r["when"]}
-									</p>
-									<p className="is-size-5-tablet is-size-6-mobile has-text-grey-dark has-text-weight-medium">
-										{r["who"]}
-									</p>
-								</article>
+
+				{recognition ? (
+					recognition.map((r, index) => (
+						<article key={index} class="media">
+							<div class="media-content">
+								<p className="is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
+									{r["what"]}
+								</p>
+								<p className="is-size-6 has-text-grey-dark has-text-weight-semibold">
+									{r["when"]}
+								</p>
+								<p className="is-size-6 has-text-grey-dark has-text-weight-medium">
+									{r["who"]}
+								</p>
 							</div>
-						))
-					) : (
-						<p>Loading...</p>
-					)}
-				</div>
+						</article>
+					))
+				) : (
+					<p>Loading...</p>
+				)}
 			</Fragment>
 		);
 	}

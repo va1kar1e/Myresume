@@ -49,7 +49,9 @@ class ProfileCert extends React.Component {
 		return (
 			<Fragment>
 				<div className="content">
-					<p className="title has-text-primary">Certificates</p>
+					<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+						Certificates
+					</p>
 				</div>
 				<div style={this.CONTAINER_STYLE()}>
 					<ReactCardCarousel autoplay={true} autoplay_speed={2500}>

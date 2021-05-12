@@ -20,12 +20,17 @@ class ProfileInterest extends React.Component {
 		return (
 			<Fragment>
 				<div className="content">
-					<p className="title has-text-primary">Interests</p>
+					<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+						Interests
+					</p>
 				</div>
 				<div className="tags are-medium">
 					{interest ? (
 						interest.map((i, index) => (
-							<span key={index} className="tag is-primary">
+							<span
+								key={index}
+								className="tag is-primary is-size-6"
+							>
 								{i}
 							</span>
 						))

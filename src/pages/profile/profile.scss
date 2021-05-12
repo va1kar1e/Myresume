@@ -1,6 +1,22 @@
 .hero-body-profile {
-	background-color: rgb(233, 233, 233);
-	padding: 1.5rem;
+	position: relative;
+	justify-content: center;
+
+	&::before {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+			url("../../assets/images/home-background.jpg") no-repeat center
+				center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		content: "";
+	}
 }
 
 .section {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ProfileWork from "./work";
 import ProfileEdu from "./edu";
 import ProfileRecognition from "./recognition";
@@ -18,37 +18,16 @@ class ProfileBody extends React.Component {
 
 	render() {
 		return (
-			<div className="container has-text-left">
-				<div className="tile is-ancestor">
-					<div className="tile is-parent">
-						<article
-							className="tile is-child notification"
-							id="work"
-						>
-							<ProfileWork />
-						</article>
-					</div>
-				</div>
-				<div className="tile is-ancestor">
-					<div className="tile is-parent">
-						<article
-							className="tile is-child notification"
-							id="education"
-						>
-							<ProfileEdu />
-						</article>
-					</div>
-				</div>
-				<div className="tile is-ancestor">
-					<div className="tile is-parent">
-						<article
-							className="tile is-child notification"
-							id="recognition"
-						>
-							<ProfileRecognition />
-						</article>
-					</div>
-				</div>
+			<Fragment>
+				<article className="notification" id="work">
+					<ProfileWork />
+				</article>
+				<article className="notification" id="education">
+					<ProfileEdu />
+				</article>
+				<article className="notification" id="recognition">
+					<ProfileRecognition />
+				</article>
 				<div className="tile is-ancestor">
 					<div className="tile is-parent">
 						<article
@@ -68,7 +47,7 @@ class ProfileBody extends React.Component {
 						</article>
 					</div>
 				</div>
-			</div>
+			</Fragment>
 		);
 	}
 }
