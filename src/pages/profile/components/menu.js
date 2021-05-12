@@ -14,7 +14,7 @@ class ProfileMenu extends React.Component {
 	render() {
 		return (
 			<Fragment>
-				<aside class="menu fixed">
+				<aside class="menu fixed is-hidden-touch">
 					<p class="title is-size-6 menu-label">Profile</p>
 					<ul class="menu-list">
 						<li>
