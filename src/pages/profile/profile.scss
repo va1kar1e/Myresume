@@ -1,8 +1,14 @@
 .hero-body-profile {
-  background-color: rgb(233, 233, 233);
-  padding: 1.5rem;
+	background-color: rgb(233, 233, 233);
+	padding: 1.5rem;
 }
 
 .section {
-  padding: 1.5rem;
+	padding: 1.5rem;
+}
+
+.fixed {
+	position: fixed;
+	left: 80%;
+	top: 6em;
 }
