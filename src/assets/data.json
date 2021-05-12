@@ -24,7 +24,7 @@
 		},
 		"aboutme": {
 			"name": "siwanont sittinam",
-			"jobtitle": "digital threat and vulnerability management engineer",
+			"jobtitle": "digital threat and vulnerability management officer",
 			"email": "siwanont1@gmail.com",
 			"intro": "Hi, My name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive cybersecurity engineer. I am interested in cybersecurity, networking, data analytics and web development. I constantly seek new knowledge and actively develop new skills to improve myself. I seek challenging chances where I can fully use my skills for the success of the organization."
 		},
@@ -109,7 +109,7 @@
 				"name": "siam commercial bank",
 				"keyword": "Thailand's First Indigenous Bank",
 				"role": "Digital threat and Vulnerability management engineer",
-				"team": "IT Security - Security Assessment Team (Red Team)",
+				"team": "IT Security Threat & Vulnerability - Security Assessment Team (Red Team)",
 				"archiev": [
 					"Being responsible for Penetration testing, Vulnerability Assessment and Hardening.",
 					"Being responsible for Devsecops and Working with Automation Tools.",
