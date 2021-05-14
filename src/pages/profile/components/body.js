@@ -28,25 +28,15 @@ class ProfileBody extends React.Component {
 				<article className="notification" id="recognition">
 					<ProfileRecognition />
 				</article>
-				<div className="tile is-ancestor">
-					<div className="tile is-parent">
-						<article
-							className="tile is-child notification"
-							id="certificate"
-						>
-							<ProfileCert />
-						</article>
-					</div>
-					<div className="tile is-parent">
-						<article
-							className="tile is-child notification"
-							id="interestncourse"
-						>
-							<ProfileInterest />
-							<ProfileCourse />
-						</article>
-					</div>
-				</div>
+				<article className="notification" id="certificate">
+					<ProfileCert />
+				</article>
+				<article className="notification" id="interest">
+					<ProfileInterest />
+				</article>
+				<article className="notification" id="course">
+					<ProfileCourse />
+				</article>
 			</Fragment>
 		);
 	}

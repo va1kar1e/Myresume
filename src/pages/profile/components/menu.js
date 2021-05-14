@@ -24,14 +24,14 @@ class ProfileMenu extends React.Component {
 			<Fragment>
 				<aside className="menu fixed is-hidden-touch has-text-left">
 					<ul className="menu-list">
-						<p class="menu-label">General</p>
+						<p className="menu-label">General</p>
 						<li>
 							<Link to="/">Home</Link>
 						</li>
 						<li>
 							<Link to="/link/resume">My Resume</Link>
 						</li>
-						<p class="menu-label">Profile</p>
+						<p className="menu-label">Profile</p>
 						<li>
 							<ul>
 								<li>
@@ -81,17 +81,28 @@ class ProfileMenu extends React.Component {
 								<li>
 									<HashLink
 										smooth
-										to="#interestncourse"
+										to="#interest"
 										scroll={(el) =>
 											this.scrollWithOffset(el)
 										}
 									>
-										Interests & Courses
+										Interests
+									</HashLink>
+								</li>
+								<li>
+									<HashLink
+										smooth
+										to="#course"
+										scroll={(el) =>
+											this.scrollWithOffset(el)
+										}
+									>
+										Courses
 									</HashLink>
 								</li>
 							</ul>
 						</li>
-						<p class="menu-label">Link</p>
+						<p className="menu-label">Link</p>
 						<li>
 							<ul>
 								<li>

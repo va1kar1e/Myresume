@@ -28,17 +28,17 @@ class ProfileEdu extends React.Component {
 		return (
 			<Fragment>
 				<div className="content">
-					<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+					<p className="title has-text-primary is-size3-tablet is-size-5-mobile">
 						Education
 					</p>
 				</div>
 				<article className="is-white media">
 					<div className="media-content">
 						<div className="content">
-							<h1 className="title is-size-4-tablet is-size-5-mobile has-text-primary is-uppercase">
+							<h1 className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
 								{general["university"]}
 							</h1>
-							<p className="subtitle is-size-6 has-text-grey-dark is-uppercase has-text-weight-regular">
+							<p className="subtitle is-size-6-tablet is-size-7-mobile has-text-grey-dark is-uppercase has-text-weight-regular">
 								{general["faculty"]}
 								<br />
 								<small>Period: {general["period"]}</small>
@@ -49,7 +49,7 @@ class ProfileEdu extends React.Component {
 								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
 									Thesis
 								</p>
-								<p className="is-size-6 has-text-grey-dark is-capitalized has-text-weight-regular">
+								<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark is-capitalized has-text-weight-regular">
 									{thesis["name"]}
 								</p>
 								<ol>
@@ -58,7 +58,7 @@ class ProfileEdu extends React.Component {
 											(arch, index) => (
 												<li
 													key={index}
-													className="is-size-6 has-text-grey-dark has-text-weight-regular"
+													className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
 												>
 													{arch}
 												</li>
@@ -72,15 +72,15 @@ class ProfileEdu extends React.Component {
 						</article>
 						<article className="media">
 							<div className="content">
-								<h1 className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase">
+								<h1 className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
 									Internship
 								</h1>
-								<p className="subtitle is-size-6 has-text-grey-dark is-uppercase has-text-weight-regular">
+								<p className="subtitle is-size-6-tablet is-size-7-mobile has-text-grey-dark is-uppercase has-text-weight-regular">
 									{internship["university"]}
 									<br />
 									{internship["laboratory"]}
 								</p>
-								<p className="is-size-6 has-text-grey-dark is-capitalized has-text-weight-regular">
+								<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark is-capitalized has-text-weight-regular">
 									{internship["project"]}
 								</p>
 								<ol>
@@ -89,7 +89,7 @@ class ProfileEdu extends React.Component {
 											(arch, index) => (
 												<li
 													key={index}
-													className="is-size-6 has-text-grey-dark has-text-weight-regular"
+													className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
 												>
 													{arch}
 												</li>
@@ -103,7 +103,7 @@ class ProfileEdu extends React.Component {
 						</article>
 						<article className="media">
 							<div className="content">
-								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase">
+								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
 									Work
 								</p>
 								{work ? (
@@ -112,7 +112,7 @@ class ProfileEdu extends React.Component {
 											<div className="content">
 												<ul>
 													<li>
-														<p className=" is-size-6 has-text-grey-dark is-capitalized has-text-weight-regular">
+														<p className=" is-size-6-tablet is-size-7-mobile has-text-grey-dark is-capitalized has-text-weight-regular">
 															{w["where"]}
 														</p>
 														<ul>
@@ -125,7 +125,7 @@ class ProfileEdu extends React.Component {
 																		key={
 																			index
 																		}
-																		className="is-size-6 has-text-grey-dark has-text-weight-regular"
+																		className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
 																	>
 																		{
 																			wdo[
@@ -140,13 +140,12 @@ class ProfileEdu extends React.Component {
 																					arch,
 																					index
 																				) => (
-																					<li>
-																						<p
-																							key={
-																								index
-																							}
-																							className="is-size-6 has-text-grey-dark has-text-weight-regular"
-																						>
+																					<li
+																						key={
+																							index
+																						}
+																					>
+																						<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular">
 																							{
 																								arch
 																							}
@@ -171,14 +170,14 @@ class ProfileEdu extends React.Component {
 						</article>
 						<article className="media">
 							<div className="content">
-								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase">
+								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
 									Project
 								</p>
-								{project ? (
-									project.map((p, index) => (
-										<ul key={index}>
-											<li>
-												<p className="is-size-6 has-text-grey-dark has-text-weight-regular">
+								<ul>
+									{project ? (
+										project.map((p, index) => (
+											<li key={index}>
+												<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular">
 													{p["name"]}
 												</p>
 												<ol>
@@ -186,7 +185,7 @@ class ProfileEdu extends React.Component {
 														(arch, index) => (
 															<li
 																key={index}
-																className="is-size-6 has-text-grey-dark has-text-weight-regular"
+																className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
 															>
 																{arch}
 															</li>
@@ -194,11 +193,11 @@ class ProfileEdu extends React.Component {
 													)}
 												</ol>
 											</li>
-										</ul>
-									))
-								) : (
-									<p>Loading...</p>
-								)}
+										))
+									) : (
+										<p>Loading...</p>
+									)}
+								</ul>
 							</div>
 						</article>
 					</div>

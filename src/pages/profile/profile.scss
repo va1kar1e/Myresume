@@ -1,7 +1,8 @@
 .hero-body-profile {
 	position: relative;
 	justify-content: center;
-
+	padding: 3rem 1.2rem 0.5rem;
+	padding-bottom: 1rem;
 	&::before {
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
 			url("../../assets/images/home-background.jpg") no-repeat center
@@ -19,8 +20,24 @@
 	}
 }
 
+.profile-mobile {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
 .section {
-	padding: 1.5rem;
+	padding: 0px 0px !important;
+}
+
+.notification {
+	margin-bottom: 0.5rem !important;
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+}
+
+.tile.is-parent {
+	padding: 0.75rem;
+	padding-bottom: 0.25rem !important;
 }
 
 .fixed {
@@ -28,4 +45,20 @@
 	position: sticky;
 	// left: 80%;
 	top: 10%;
+}
+
+.columns {
+	margin-top: 0.25rem;
+}
+
+.content ol {
+	list-style-position: outside;
+	margin-left: 1.25em;
+	font-size: 0.8rem;
+}
+
+.content ul {
+	list-style-position: outside;
+	margin-left: 1.25em;
+	font-size: 0.8rem;
 }

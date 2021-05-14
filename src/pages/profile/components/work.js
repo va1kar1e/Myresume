@@ -21,7 +21,7 @@ class ProfileWork extends React.Component {
 			<Fragment>
 				<section className="section">
 					<div className="content">
-						<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+						<p className="title has-text-primary is-size-3-tablet is-size-5-mobile">
 							Work
 						</p>
 					</div>
@@ -40,7 +40,7 @@ class ProfileWork extends React.Component {
 								</figure>
 								<div className="media-content">
 									<div className="content">
-										<p className="is-size-6">
+										<p className="is-size-6-tablet is-size-7-mobile">
 											<strong
 												className="is-capitalized"
 												style={{ color: work["color"] }}
@@ -53,6 +53,7 @@ class ProfileWork extends React.Component {
 											>
 												@{work["name"]}
 											</small>{" "}
+											<br className="is-hidden-desktop" />
 											<small>
 												{" "}
 												Period {work["year"]}
@@ -65,7 +66,7 @@ class ProfileWork extends React.Component {
 										<div className="content">
 											<p
 												style={{ color: work["color"] }}
-												className="has-text-weight-regular is-size-6"
+												className="has-text-weight-regular is-size-6-tablet is-size-7-mobile"
 											>
 												Team: {work["team"]}
 											</p>
@@ -73,14 +74,14 @@ class ProfileWork extends React.Component {
 									</article>
 									<article className="media has-text-grey-darker">
 										<div className="content">
-											<p className="has-text-weight-regular is-size-6">
+											<p className="has-text-weight-regular is-size-6-tablet is-size-7-mobile">
 												Responsibility
 											</p>
 											<ol>
 												{work["archiev"].map(
 													(arch, index) => (
 														<li key={index}>
-															<p className="has-text-weight-regular is-size-6">
+															<p className="has-text-weight-light is-size-6-tablet is-size-7-mobile">
 																{arch}
 															</p>
 														</li>

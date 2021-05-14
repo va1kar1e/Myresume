@@ -20,7 +20,7 @@ class ProfileInterest extends React.Component {
 		return (
 			<Fragment>
 				<div className="content">
-					<p className="title has-text-primary is-size-3-tablet is-size-4-mobile">
+					<p className="title has-text-primary is-size-3-tablet is-size-5-mobile">
 						Interests
 					</p>
 				</div>
@@ -29,7 +29,7 @@ class ProfileInterest extends React.Component {
 						interest.map((i, index) => (
 							<span
 								key={index}
-								className="tag is-primary is-size-6"
+								className="tag is-primary is-size-6-tablet is-size-7-mobile"
 							>
 								{i}
 							</span>

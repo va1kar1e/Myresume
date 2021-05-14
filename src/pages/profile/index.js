@@ -21,8 +21,8 @@ class Profile extends React.Component {
 				<div className="hero-head">
 					<Nav />
 				</div>
-				<div className="hero-body hero-body-profile">
-					<section className="section is-fullheight is-hidden-touch has-text-left">
+				<div className="hero-body hero-body-profile is-hidden-touch has-text-left">
+					<section className="section is-fullheight">
 						<div className="columns">
 							<div className="column is-2">
 								<ProfileMenu />
@@ -32,9 +32,11 @@ class Profile extends React.Component {
 							</div>
 						</div>
 					</section>
-					<div className="is-fullheight is-hidden-desktop has-text-left">
+				</div>
+				<div className="hero-body hero-body-profile profile-mobile is-hidden-desktop has-text-left">
+					<section className="section is-fullheight">
 						<ProfileBody />
-					</div>
+					</section>
 				</div>
 			</section>
 		);
