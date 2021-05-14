@@ -7,9 +7,7 @@ class ProfileEdu extends React.Component {
 		this.state = {
 			general: "",
 			thesis: "",
-			internship: "",
-			work: "",
-			project: "",
+			works: [],
 		};
 	}
 
@@ -17,14 +15,12 @@ class ProfileEdu extends React.Component {
 		this.setState({
 			general: mydata["profile"]["education"]["general"],
 			thesis: mydata["profile"]["education"]["thesis"],
-			internship: mydata["profile"]["education"]["internship"],
-			work: mydata["profile"]["education"]["work"],
-			project: mydata["profile"]["education"]["project"],
+			works: mydata["profile"]["education"]["work"],
 		});
 	}
 
 	render() {
-		var { general, thesis, internship, work, project } = this.state;
+		var { general, thesis, works } = this.state;
 		return (
 			<Fragment>
 				<div className="content">
@@ -35,134 +31,39 @@ class ProfileEdu extends React.Component {
 				<article className="is-white media">
 					<div className="media-content">
 						<div className="content">
-							<h1 className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
+							<p className="has-text-weight-bold is-size-5-tablet is-size-7-mobile has-text-primary">
 								{general["university"]}
-							</h1>
-							<p className="subtitle is-size-6-tablet is-size-7-mobile has-text-grey-dark is-uppercase has-text-weight-regular">
-								{general["faculty"]}
+								<br className="is-hidden-widescreen" />
+								<small className="has-text-weight-normal is-size-6-tablet has-text-dark">
+									{" "}
+									Period {general["period"]}
+								</small>
 								<br />
-								<small>Period: {general["period"]}</small>
+								<span className="has-text-weight-light is-size-6-tablet has-text-dark">
+									{general["faculty"]}
+								</span>
 							</p>
 						</div>
 						<article className="media">
 							<div className="content">
-								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
+								<p className="is-size-6-tablet is-size-7-mobile has-text-primary is-uppercase has-text-weight-bold">
 									Thesis
 								</p>
 								<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark is-capitalized has-text-weight-regular">
 									{thesis["name"]}
 								</p>
-								<ol>
-									{thesis ? (
-										thesis["archievement"].map(
-											(arch, index) => (
-												<li
-													key={index}
-													className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
-												>
-													{arch}
-												</li>
-											)
+								{thesis ? (
+									thesis["archievement"].map(
+										(arch, index) => (
+											<p
+												key={index}
+												className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
+											>
+												&nbsp;&nbsp;
+												{index + 1}. {arch}
+											</p>
 										)
-									) : (
-										<p>Loading...</p>
-									)}
-								</ol>
-							</div>
-						</article>
-						<article className="media">
-							<div className="content">
-								<h1 className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
-									Internship
-								</h1>
-								<p className="subtitle is-size-6-tablet is-size-7-mobile has-text-grey-dark is-uppercase has-text-weight-regular">
-									{internship["university"]}
-									<br />
-									{internship["laboratory"]}
-								</p>
-								<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark is-capitalized has-text-weight-regular">
-									{internship["project"]}
-								</p>
-								<ol>
-									{internship ? (
-										internship["archievement"].map(
-											(arch, index) => (
-												<li
-													key={index}
-													className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
-												>
-													{arch}
-												</li>
-											)
-										)
-									) : (
-										<p>Loading...</p>
-									)}
-								</ol>
-							</div>
-						</article>
-						<article className="media">
-							<div className="content">
-								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
-									Work
-								</p>
-								{work ? (
-									work.map((w, index) => (
-										<section key={index}>
-											<div className="content">
-												<ul>
-													<li>
-														<p className=" is-size-6-tablet is-size-7-mobile has-text-grey-dark is-capitalized has-text-weight-regular">
-															{w["where"]}
-														</p>
-														<ul>
-															{w["do"].map(
-																(
-																	wdo,
-																	index
-																) => (
-																	<li
-																		key={
-																			index
-																		}
-																		className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
-																	>
-																		{
-																			wdo[
-																				"name"
-																			]
-																		}
-																		<ol>
-																			{wdo[
-																				"archievement"
-																			].map(
-																				(
-																					arch,
-																					index
-																				) => (
-																					<li
-																						key={
-																							index
-																						}
-																					>
-																						<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular">
-																							{
-																								arch
-																							}
-																						</p>
-																					</li>
-																				)
-																			)}
-																		</ol>
-																	</li>
-																)
-															)}
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</section>
-									))
+									)
 								) : (
 									<p>Loading...</p>
 								)}
@@ -170,34 +71,38 @@ class ProfileEdu extends React.Component {
 						</article>
 						<article className="media">
 							<div className="content">
-								<p className="title is-size-5-tablet is-size-6-mobile has-text-primary is-uppercase has-text-weight-bold">
-									Project
+								<p className="is-size-6-tablet is-size-7-mobile has-text-primary is-uppercase has-text-weight-bold">
+									Extracurricular Works
 								</p>
-								<ul>
-									{project ? (
-										project.map((p, index) => (
-											<li key={index}>
-												<p className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular">
-													{p["name"]}
-												</p>
-												<ol>
-													{p["archievement"].map(
-														(arch, index) => (
-															<li
-																key={index}
-																className="is-size-6-tablet is-size-7-mobile has-text-grey-dark has-text-weight-regular"
-															>
-																{arch}
-															</li>
-														)
-													)}
-												</ol>
-											</li>
-										))
-									) : (
-										<p>Loading...</p>
-									)}
-								</ul>
+								{works ? (
+									works.map((work, index) => (
+										<p
+											key={index}
+											className="is-size-6-tablet is-size-7-mobile has-text-weight-regular"
+										>
+											-{" "}
+											<strong
+												className="is-capitalized"
+												style={{ color: work["color"] }}
+											>
+												{work["role"]}
+											</strong>{" "}
+											<small
+												className="is-capitalized has-text-weight-semibold"
+												style={{ color: work["color"] }}
+											>
+												@{work["name"]}
+											</small>{" "}
+											<br className="is-hidden-widescreen" />
+											<small className="has-text-weight-regular">
+												{" "}
+												Period {work["year"]}
+											</small>
+										</p>
+									))
+								) : (
+									<div className="is-loading">Loading...</div>
+								)}
 							</div>
 						</article>
 					</div>

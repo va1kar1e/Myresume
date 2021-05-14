@@ -1,53 +1,39 @@
 import React, { Fragment } from "react";
 import mydata from "@mydata";
 
-class ProfileWork extends React.Component {
+class ProfileProj extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			works: "",
+			projects: "",
 		};
 	}
 
 	componentDidMount() {
 		this.setState({
-			works: mydata["profile"]["work"],
+			projects: mydata["profile"]["projects"],
 		});
 	}
 
 	render() {
-		var { works } = this.state;
+		var { projects } = this.state;
 		return (
 			<Fragment>
 				<div className="content">
 					<p className="title has-text-primary is-size-3-tablet is-size-5-mobile">
-						Work Experience
+						Leaderships and Project
 					</p>
 				</div>
-				{works ? (
-					works.map((work, index) => (
+				{projects ? (
+					projects.map((work, index) => (
 						<article className="is-white media" key={index}>
-							<figure
-								className="media-left is-hidden-mobile"
-								style={{ color: work["color"] }}
-							>
-								<span className="icon is-large">
-									<i className={work["icon"] + " fa-2x"}></i>
-								</span>
-							</figure>
 							<div className="media-content">
 								<div className="content">
 									<p className="is-size-6-tablet is-size-7-mobile">
-										<strong
-											className="is-capitalized"
-											style={{ color: work["color"] }}
-										>
+										<strong className="is-capitalized has-text-primary">
 											{work["role"]}
 										</strong>{" "}
-										<small
-											className="is-uppercase has-text-weight-bold"
-											style={{ color: work["color"] }}
-										>
+										<small className="is-uppercase has-text-weight-bold has-text-primary">
 											@{work["name"]}
 										</small>{" "}
 										<br className="is-hidden-widescreen" />
@@ -56,20 +42,17 @@ class ProfileWork extends React.Component {
 											Period {work["year"]}
 										</small>
 										<br />
-										{work["keyword"]}
+										{work["where"]}
 									</p>
-								</div>
-								<article className="media">
-									<div className="content">
-										<p className="has-text-weight-normal is-size-6-tablet is-size-7-mobile">
-											{work["team"].split(",")[0]}
-											<br className="is-hidden-tablet" />
-											{work["team"].split(",")[1]}
-										</p>
+									{work["impact"] ? (
 										<p className="has-text-weight-normal is-size-6-tablet is-size-7-mobile has-text-justified">
 											&nbsp;&nbsp;&nbsp;&nbsp;
 											{work["impact"]}
 										</p>
+									) : (
+										""
+									)}
+									{work["utilization"] ? (
 										<p className="has-text-weight-normal is-size-6-tablet is-size-7-mobile has-text-justified">
 											<span
 												className="is-capitalized"
@@ -81,8 +64,10 @@ class ProfileWork extends React.Component {
 											</span>{" "}
 											: {work["utilization"]}
 										</p>
-									</div>
-								</article>
+									) : (
+										""
+									)}
+								</div>
 							</div>
 						</article>
 					))
@@ -94,4 +79,4 @@ class ProfileWork extends React.Component {
 	}
 }
 
-export default ProfileWork;
+export default ProfileProj;

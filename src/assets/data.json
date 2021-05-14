@@ -1,5 +1,11 @@
 {
 	"profile": {
+		"aboutme": {
+			"name": "siwanont sittinam",
+			"jobtitle": "digital threat and vulnerability management officer",
+			"email": "siwanont1@gmail.com",
+			"intro": "Hello, my name is Books. I am a dedicated cybersecurity expert who is both passionate and industrious. I work in a variety of fields, including cybersecurity, computer networks, data analytics, and web development."
+		},
 		"link": {
 			"linkedin": {
 				"username": "siwanont",
@@ -22,16 +28,107 @@
 				"icon": "fas fa-file-pdf"
 			}
 		},
-		"aboutme": {
-			"name": "siwanont sittinam",
-			"jobtitle": "digital threat and vulnerability management officer",
-			"email": "siwanont1@gmail.com",
-			"intro": "Hi, my name is Siwanont Sittinam. I am a dedicated, hardworking, and proactive cybersecurity engineer. I am interested in cybersecurity, networking, data analytics and web development."
-		},
+		"work": [
+			{
+				"year": "October 2020 - Present",
+				"icon": "fas fa-user-secret",
+				"color": "#7c5dd0",
+				"name": "Siam Commercial Bank",
+				"keyword": "Thailand's First Indigenous Bank",
+				"role": "Digital threat and Vulnerability management officer",
+				"team": "IT Security Threat & Vulnerability - Security Assessment Team (Red Team)",
+				"utilization": "Vulnerability management tools, Cloud security management tools, Source code analysis tools, Python",
+				"impact": "As the cybersecurity consultant in charge, conduct a vulnerability assessment and hardening in accordance with CIS standards. Creating automatic self-service applications for vulnerability assessment and hardening in order to secure all enterprise applications and meet Bank of Thailand standards."
+			},
+			{
+				"year": "June 2019 - May 2020",
+				"icon": "fas fa-server",
+				"color": "#1d5ff5",
+				"name": "Refinitiv, an LSEG group",
+				"keyword": "Formerly Thomson Reuters Financial & Risk",
+				"role": "Network engineer",
+				"team": "Datacenter Operation - Network Change Team., Joining the Technology graduate trainee program.",
+				"utilization": "Router, Switch, Web Application Firewall, Load Balancer, Network automation, Python",
+				"impact": "Being in charge of LAN implementation and troubleshooting in order to resolve the incident. Using the ITIL method, collaborate with Architecture, Change Management, and other departments to provide 24-hour productive financial services in compliance with Enterprise policies."
+			},
+			{
+				"year": "June 2018 - August 2018",
+				"icon": "fas fa-graduation-cap",
+				"color": "#bfb20a",
+				"name": "Kyoto Institute of Technology",
+				"keyword": "",
+				"role": "Software Engineer Intern",
+				"team": "Software Engineering Laboratory",
+				"utilization": "Python, OpenCV, NodeJS, ExpressJS, ReactJS, and MongoDB",
+				"impact": "Building a Fault-prone warning for Developer team applications on Raspberry Pi 3B+ using an automatic detecting bugs mechanism in static code analysis and biometric authentication with face recognition."
+			},
+			{
+				"year": "May 2017 - August 2017",
+				"icon": "fas fa-code",
+				"color": "#7959f5",
+				"name": "Internet Marketing",
+				"keyword": "Also known as PANTIP - The popular internet forum in Thailand",
+				"role": "Freelance Full-stack Developer",
+				"team": "Data Science Team",
+				"utilization": "PHP with Phalcon Framework, NodeJS, ExpressJS, Bootstrap, D3JS, and MongoDB.",
+				"impact": "Building a Pantip web dashboard for monitoring forum point promotions, studying user behavior, analyzing the relationship between influencers and regular users using a Social graph, and displaying real-time trending keywords using Word cloud to aid strategic decision-making and have a digital marketing edge."
+			}
+		],
+		"projects": [
+			{
+				"name": "Tumbun donation platform",
+				"where": "Company sustainability project – Refinitiv",
+				"year": "December 2019 - May 2020",
+				"role": "Back-end Developer",
+				"utilization": "Omise, NodeJS, ExpressJS, AngularJS, and MongoDB",
+				"impact": "Being in charge of managing financial transactions through a payment gateway and developing secure payment API services, as well as developing a web-based donation website to assist the poor."
+			},
+			{
+				"name": "Trusted web domain analysis based on SSL/TLS Certificate",
+				"where": "Cybersecurity Course - Kasetsart University",
+				"year": "January 2019 - May 2019",
+				"role": "Software Engineer",
+				"utilization": "TestSSL.sh, NextJS, and Semantic-UI.",
+				"impact": "Studying the threat unawareness associated with the SSL/TLS certificates and developing a web dashboard to monitor the trust of the top 50 university websites using SSL/TLS certificates in order to improve Thailand universities' cybersecurity self-awareness."
+			},
+			{
+				"name": "Computer Programming 101 for 1st year students",
+				"where": "Faculty of Engineering - Kasetsart University",
+				"year": "May 2016 - May 2019",
+				"role": "Teacher Assistant and Linux server administrator",
+				"utilization": "Ubuntu, Centos, C#, Python",
+				"impact": ""
+			},
+			{
+				"name": "Social network analysis with Ego network on Twitter data",
+				"where": "Massive information and Knowledge engineering laboratory - Kasetsart University",
+				"year": "August 2017 - May 2018",
+				"role": "Junior Research Student",
+				"utilization": "Python, Tweepy API, Google Natural Language, MongoDB, ReactJS, and D3JS.",
+				"impact": "Studying Topic Modeling methods to construct Ego Network analysis and developing a web-based visualization application that shows the relationship by user-by-topic matrix on Twitter data, receiving USD 1,000 university scholarship."
+			},
+
+			{
+				"name": "Web-based Hospital appointment management system",
+				"where": "Software Engineering Course - Kasetsart University",
+				"year": "August 2017 - Dec 2017",
+				"role": "Lead Back-end Developer",
+				"utilization": "Python with Django Framwork",
+				"impact": ""
+			},
+			{
+				"name": "Explore a Danger area with a Robot using ESP8266 and P2P Camera",
+				"where": "Practicum Course - Kasetsart University",
+				"year": "August 2016 - Dec 2016",
+				"role": "Software Engineer",
+				"utilization": "ESP8266, C++, Javascript, Bootstrap, Blynk",
+				"impact": ""
+			}
+		],
 		"education": {
 			"general": {
-				"university": "kasetsart university",
-				"faculty": "bachelor of engineering, computer engineering",
+				"university": "Kasetsart University @Bangkok, Thailand",
+				"faculty": "Bachelor of Engineering, Computer Engineering",
 				"period": "AUG 2015 - MAY 2019"
 			},
 			"thesis": {
@@ -45,107 +142,19 @@
 					"Building a Web application to display data resulting from API services with ReactJS."
 				]
 			},
-			"internship": {
-				"university": "kyoto institute of technology",
-				"laboratory": "software engineering laboratory",
-				"project": "making a fault-prones notification for developer team on raspberry pi",
-				"archievement": [
-					"Studying automated find Bugs with the Review code process.",
-					"Studying Face Detection and Recognition to build an authorization system with biometric",
-					"Working with Raspberry PI 3b+"
-				]
-			},
 			"work": [
 				{
-					"where": "massive information and knowledge engineering laboratory",
-					"do": [
-						{
-							"name": "Social Network Analysis with Ego Network on Twitter data project",
-							"archievement": [
-								"Writing a research paper in order to study the relationship of Twitter users from tweets with Ego Network.",
-								"Classifying twitter user behavior from user's tweets with Google cloud natural language and Inserting results into mongodb.",
-								"Building a Web Visualization to visualize the relationship of users with NodeJS, ExpressJS, and Bootstrap and building an Ego Network Graph with D3JS."
-							]
-						},
-						{
-							"name": "Ubuntu and Centos Server Administrator",
-							"archievement": []
-						},
-						{
-							"name": "Teacher Assistant for Python Classes",
-							"archievement": []
-						}
-					]
+					"name": "ZEABUS: Autonomous Underwater Vehicle Laboratory",
+					"role": "Junior electrician",
+					"year": "August 2015 - May 2016"
 				},
 				{
-					"where": "ZEABUS: Autonomous Underwater Vehicle Laboratory",
-					"do": []
-				}
-			],
-			"project": [
-				{
-					"name": "Trusted web domain analysis based on SSL/TLS Certificate",
-					"archievement": [
-						"Studying the Threat unawareness with the SSL/TLS certificate of the Top 50 university websites.",
-						"Collecting SSL/TLS Certificate and Ranking web domain trust with Testssl.sh and Javascript.",
-						"Building a Web dashboard to display the Rank of Web domain trust with description using NextJS and Semantic-UI."
-					]
-				},
-				{
-					"name": "Explore a Danger area with a Robot using NodeMCU and P2P Camera",
-					"archievement": []
-				},
-				{
-					"name": "Web-based Hospital appointment management system using Django",
-					"archievement": []
+					"name": "Massive information and Knowledge engineering Laboratory",
+					"role": "Junior Research Student",
+					"year": "May 2016 - May 2019"
 				}
 			]
 		},
-		"work": [
-			{
-				"year": "OCT 2020 - PRESENT",
-				"icon": "fas fa-user-secret",
-				"color": "#7c5dd0",
-				"name": "siam commercial bank",
-				"keyword": "Thailand's First Indigenous Bank",
-				"role": "Digital threat and Vulnerability management officer",
-				"team": "IT Security Threat & Vulnerability - Security Assessment Team (Red Team)",
-				"archiev": [
-					"Being responsible for Penetration testing, Vulnerability Assessment and Hardening.",
-					"Being responsible for Devsecops and Working with Automation Tools.",
-					"Being responsible for Cloud Security."
-				]
-			},
-			{
-				"year": "JUN 2019 - MAY 2020",
-				"icon": "fas fa-server",
-				"color": "#1d5ff5",
-				"name": "refinitiv, an LSEG group",
-				"keyword": "Formerly Thomson Reuters Financial & Risk",
-				"role": "Network engineer",
-				"team": "Datacenter Operation - Network Change Team",
-				"archiev": [
-					"Joining the Technology Graduate Trainee program.",
-					"Being responsible for LAN Implementation and Troubleshooting to resolve the incident by following the ITIL process.",
-					"Working with Network Automation Tools.",
-					"Working with the Architecture teams, Change Management teams, and Other teams to follow Enterprise Policy Standards.",
-					"Building the Tumbun Donation Platform that is a part of the company sustainability project to help people living in poverty. being responsible for enabling financial services through a payment gateway; OMISE, logging transaction in MongoDB, and building API services connecting with the Front-end side by using NodeJS and ExpressJS."
-				]
-			},
-			{
-				"year": "JUN 2017 - AUG 2017",
-				"icon": "fas fa-code",
-				"color": "#7959f5",
-				"name": "internet marketing",
-				"keyword": "Also known as PANTIP - The popular internet forum in Thailand",
-				"role": "Full-stack Developer",
-				"team": "Data Science Team",
-				"archiev": [
-					"Being responsible for building a Web Dashboard. Monitoring active users and Analyzing social influencer with Social Graph and Trend Keywords with Wordcloud.",
-					"Building a Web application with nodejs, expressjs, and bootstrap and Text visualization with d3js. Processing and Storing data in mongodb."
-				]
-			}
-		],
 		"recognition": [
 			{
 				"what": "Consolation Prize Award",
@@ -191,10 +200,10 @@
 			}
 		],
 		"course": [
-			"OSCP",
-			"Comptia CYSA+",
-			"Comptia CASP+",
-			"CCNA: Routing & Switching"
+			"Offensive Security - OSCP",
+			"CompTIA - CYSA+",
+			"CompTIA - CASP+",
+			"Cisco - CCNA: Routing & Switching"
 		],
 		"interest": ["Web Development", "Internet of Things", "Photography"]
 	}

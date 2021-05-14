@@ -48,6 +48,17 @@ class ProfileMenu extends React.Component {
 								<li>
 									<HashLink
 										smooth
+										to="#project"
+										scroll={(el) =>
+											this.scrollWithOffset(el)
+										}
+									>
+										Projects
+									</HashLink>
+								</li>
+								<li>
+									<HashLink
+										smooth
 										to="#education"
 										scroll={(el) =>
 											this.scrollWithOffset(el)

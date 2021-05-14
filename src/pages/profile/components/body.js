@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import ProfileWork from "./work";
 import ProfileEdu from "./edu";
+import ProfileProj from "./projects";
 import ProfileRecognition from "./recognition";
 import ProfileCert from "./cert";
 import ProfileInterest from "./interest";
@@ -22,6 +23,9 @@ class ProfileBody extends React.Component {
 				<article className="notification" id="work">
 					<ProfileWork />
 				</article>
+				<article className="notification" id="project">
+					<ProfileProj />
+				</article>
 				<article className="notification" id="education">
 					<ProfileEdu />
 				</article>
@@ -31,11 +35,11 @@ class ProfileBody extends React.Component {
 				<article className="notification" id="certificate">
 					<ProfileCert />
 				</article>
-				<article className="notification" id="interest">
-					<ProfileInterest />
-				</article>
 				<article className="notification" id="course">
 					<ProfileCourse />
+				</article>
+				<article className="notification" id="interest">
+					<ProfileInterest />
 				</article>
 			</Fragment>
 		);
