@@ -1,28 +1,43 @@
-// Color variables
-$main-green: #86c232;
-$green: #43611e;
-$white: #ffffff;
-$dark: #222629;
-$grey-darker: #474b4f;
-$grey-dark: #6b6e70;
-$yellow: #e8cd01;
-
 // Override Bulma's global variables
-$primary: $main-green;
-$success: $green;
-$link: $main-green;
-$warning: $yellow;
-$navbar-dropdown-background-color: $dark;
-$navbar-dropdown-item-hover-background-color: $grey-darker;
-$navbar-item-hover-background-color: $grey-darker;
-$body-background-color: $grey-dark;
-$footer-padding: 2rem 1.5rem 2rem;
-$modal-card-head-background-color: $grey-darker;
-$modal-card-body-background-color: $grey-dark;
-$menu-item-color: $white;
-$menu-label-color: $main-green;
-$menu-label-font-size: 1em;
 
-// Import only what you need from Bulma
+// Font variables
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700");
+$family-sans-serif: "Kanit", sans-serif;
+$family-primary: $family-sans-serif;
+
+// Color variables
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 4%);
+$light: hsl(0, 0%, 96%);
+$dark: hsl(0, 0%, 21%);
+$primary: hsl(110, 64%, 55%);
+$link: hsl(217, 71%, 53%);
+$info: hsl(204, 77%, 59%);
+$success: hsl(141, 53%, 56%);
+$warning: #e8cd01;
+$danger: hsl(348, 100%, 61%);
+$grey-darker: hsl(205, 12%, 20%);
+$grey-dark: hsl(204, 2%, 43%);
+
+// Components Variable
+// Background Color
+$body-background-color: $grey-darker;
+// Navbar
+$navbar-background-color: $dark;
+$navbar-dropdown-background-color: $dark;
+$navbar-dropdown-arrow: $white;
+$navbar-burger-color: $primary;
+$navbar-item-hover-background-color: $grey-dark;
+$navbar-dropdown-item-hover-background-color: $grey-dark;
+$navbar-item-active-color: $grey-dark;
+// Footer
+$footer-padding: 1rem 1rem 1rem;
+// $modal-card-head-background-color: $grey-darker;
+// $modal-card-body-background-color: $grey-dark;
+// $menu-item-color: $white;
+// $menu-label-color: $primary;
+// $menu-label-font-size: 1em;
+
+// Import Bulma Core
 @import "bulma/bulma";
 @import "@creativebulma/bulma-tooltip";

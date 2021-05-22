@@ -10,9 +10,12 @@ import "@fortawesome/fontawesome-free/js/fontawesome.js";
 // My Router
 import Router from "@router";
 
+// Main SCSS
+import "./index.scss";
+
 const AppWithRouter = () => (
 	<BrowserRouter>
-		<Router />;
+		<Router />
 	</BrowserRouter>
 );
 ReactDOM.render(<AppWithRouter />, document.getElementById("root"));

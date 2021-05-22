@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+// Add My Data
 import mydata from "@mydata";
 import logo from "@images/logo.png";
 
@@ -8,112 +10,123 @@ class Nav extends React.Component {
 		super(props);
 		this.state = {
 			url: "",
-			linkedin: "",
+			resume: "",
 		};
 	}
 
 	componentDidMount() {
 		this.setState({
-			linkedin: mydata["profile"]["link"]["linkedin"]["icon"],
-			url: window.location.hostname,
+			url: this.getHostname(),
+			resume: mydata["profile"]["link"]["resume"],
 		});
 	}
 
-	render() {
-		var { url, linkedin } = this.state;
+	getHostname = () => {
+		var hostname = window.location.hostname.split(".");
+		if (hostname.length > 1) {
+			return hostname[hostname.length - 2];
+		} else {
+			return hostname[hostname.length - 1];
+		}
+	};
+
+	mobileOnclick = () => {
+		var burger = document.querySelector(".burger");
+		var nav = document.querySelector("#navMenu");
+		burger.classList.toggle("is-active");
+		nav.classList.toggle("is-active");
+	};
+
+	getMenuText = (text) => {
 		return (
-			<header
-				className="navbar is-fixed-top has-background-dark"
+			<p className="is-size-6-desktop is-size-6-touch has-text-white-bis">
+				{text}
+			</p>
+		);
+	};
+
+	render() {
+		var { url, resume } = this.state;
+		return (
+			<nav
+				className="navbar is-fixed-top"
 				role="navigation"
 				aria-label="main navigation"
 			>
-				<div className="container">
-					<div className="navbar-brand">
-						<Link to="/" className="navbar-item">
+				<div className="navbar-brand has-background-grey-darker">
+					<Link to="/" className="navbar-item">
+						<figure className="image logoimg">
 							<img
 								src={logo}
-								height="50"
-								alt=""
-								className="pr-2"
+								className="is-rounded"
+								alt="Logo Navbar"
 							/>
-							<p className="title is-size-3-tablet is-size-5-mobile has-text-primary is-capitalized">
-								{url}
-							</p>
-						</Link>
-						<div
-							role="button"
-							className="navbar-burger burger"
-							aria-label="menu"
-							aria-expanded="false"
-							data-target="navMenu"
-							onClick={() => {
-								var burger = document.querySelector(".burger");
-								var nav = document.querySelector("#navMenu");
-								burger.classList.toggle("is-active");
-								nav.classList.toggle("is-active");
-							}}
-						>
-							<span aria-hidden="true"></span>
-							<span aria-hidden="true"></span>
-							<span aria-hidden="true"></span>
-						</div>
-					</div>
-					<div className="navbar-menu" id="navMenu">
-						<div className="navbar-start">
-							<Link to="/" className="navbar-item has-text-white">
-								Home
-							</Link>
-							<Link
-								to="/profile"
-								className="navbar-item has-text-white"
-							>
-								My Profile
-							</Link>
-							<Link
-								to={"/link/resume"}
-								className="navbar-item has-text-white"
-								target="_blank"
-								rel="noreference"
-							>
-								My Resume
-							</Link>
-							{/* <div className="navbar-item has-dropdown is-hoverable">
-                <div className="navbar-link has-text-white is-hidden-touch">
-                  More
-                </div>
-                <div className="navbar-dropdown">
-                  <Link to="/dashboard" className="navbar-item has-text-white">
-                    Dashboard
-                  </Link>
-                </div>
-              </div> */}
-						</div>
-						<div className="navbar-end">
-							<Link
-								to="/link/linkedin"
-								className="navbar-item"
-								target="_blank"
-								rel="noreference"
-							>
-								<span className="icon has-text-primary is-hidden-touch">
-									<i className={linkedin}></i>
-								</span>
-								<span className="has-text-primary">
-									Linkedin
-								</span>
-							</Link>
-							<Link to="/contact" className="navbar-item">
-								<span className="icon has-text-primary is-hidden-touch">
-									<i className="fas fa-paper-plane"></i>
-								</span>
-								<span className="has-text-primary">
-									Contact Me
-								</span>
-							</Link>
-						</div>
+						</figure>
+						<p className="is-size-4-desktop is-size-5-touch has-text-primary is-capitalized">
+							{url}
+						</p>
+					</Link>
+					<div
+						role="button"
+						className="burger navbar-burger"
+						aria-label="menu"
+						aria-expanded="false"
+						data-target="navMenu"
+						onClick={() => this.mobileOnclick()}
+					>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
 					</div>
 				</div>
-			</header>
+				<div
+					className="navbar-menu has-background-grey-darker"
+					id="navMenu"
+				>
+					<div className="navbar-start">
+						<Link to="/" className="navbar-item">
+							{this.getMenuText("Home")}
+						</Link>
+						<Link to="/profile" className="navbar-item">
+							{this.getMenuText("My Profile")}
+						</Link>
+						<div className="navbar-item has-dropdown is-hoverable">
+							<div className="navbar-link has-text-white is-hidden-touch">
+								{this.getMenuText("More")}
+							</div>
+							<div className="navbar-dropdown">
+								<Link to="/dashboard" className="navbar-item">
+									{this.getMenuText("Dashboard")}
+								</Link>
+								{/* <hr className="navbar-divider" /> */}
+							</div>
+						</div>
+					</div>
+					<div className="navbar-end">
+						<a
+							className="navbar-item"
+							href={resume["url"]}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<span className="icon has-text-primary is-hidden-touch">
+								<i className={resume["icon"]}></i>
+							</span>
+							<p className="is-size-6-desktop is-size-6-touch has-text-primary">
+								Download My Resume
+							</p>
+						</a>
+						<Link to="/contact" className="navbar-item">
+							<span className="icon has-text-primary is-hidden-touch">
+								<i className="fas fa-paper-plane"></i>
+							</span>
+							<p className="is-size-6-desktop is-size-6-touch has-text-primary">
+								Contact Me
+							</p>
+						</Link>
+					</div>
+				</div>
+			</nav>
 		);
 	}
 }
