@@ -1,14 +1,4 @@
-@charset "utf-8";
-
-// Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-
-// Update Bulma's global variables
-// Font-Family
-$family-sans-serif: "Nunito", sans-serif;
-$family-primary: $family-sans-serif;
-
-// Color
+// Color variables
 $main-green: #86c232;
 $green: #43611e;
 $white: #ffffff;
@@ -17,6 +7,7 @@ $grey-darker: #474b4f;
 $grey-dark: #6b6e70;
 $yellow: #e8cd01;
 
+// Override Bulma's global variables
 $primary: $main-green;
 $success: $green;
 $link: $main-green;
@@ -32,23 +23,6 @@ $menu-item-color: $white;
 $menu-label-color: $main-green;
 $menu-label-font-size: 1em;
 
-// Responsive
-
 // Import only what you need from Bulma
 @import "bulma/bulma";
 @import "@creativebulma/bulma-tooltip";
-
-.App {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-
-body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.navbar-menu {
-	background-color: $dark;
-}

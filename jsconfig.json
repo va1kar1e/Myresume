@@ -1,20 +1,23 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "baseUrl": "./src",
+    "baseUrl": "src/",
     "jsx": "react",
     "paths": {
       "@pages/*": [
-        "./pages/*"
+        "pages/*"
       ],
       "@components/*": [
-        "./components/*"
+        "pages/components/*"
+      ],
+      "@router": [
+        "pages/router.js"
       ],
       "@mydata": [
-        "./assets/data.json"
+        "assets/data.json"
       ],
       "@images/*": [
-        "./assets/images/*"
+        "assets/images/*"
       ]
     }
   },

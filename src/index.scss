@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// Font variables
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+$family-sans-serif: "Nunito", sans-serif;
+$family-primary: $family-sans-serif;
+
+@import "./mybullma.scss";
+
+// .App {
+// 	text-align: center;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// body {
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+// .navbar-menu {
+// 	background-color: $dark;
+// }

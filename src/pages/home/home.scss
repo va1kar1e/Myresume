@@ -1,25 +1,34 @@
-.hero-body-home {
-  position: relative;
-  justify-content: center;
+// .hero-body-home {
+// 	position: relative;
+// 	justify-content: center;
 
-  &::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-      url("../../assets/images/home-background.jpg") no-repeat center center
-        fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    content: "";
-  }
-}
+// 	&::before {
+// 		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+// 			url("../../assets/images/home-background.jpg") no-repeat center
+// 				center fixed;
+// 		-webkit-background-size: cover;
+// 		-moz-background-size: cover;
+// 		-o-background-size: cover;
+// 		background-size: cover;
+// 		position: absolute;
+// 		top: 0px;
+// 		right: 0px;
+// 		bottom: 0px;
+// 		left: 0px;
+// 		content: "";
+// 	}
+// }
 
-.field {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+// .field {
+// 	margin-top: 10px;
+// 	margin-bottom: 10px;
+// }
+
+// .button-down {
+// 	position: sticky;
+// 	position: -webkit-sticky;
+// 	position: -moz-sticky;
+// 	position: -ms-sticky;
+// 	position: -o-sticky;
+// 	bottom: 0px;
+// }

@@ -1,17 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
+// Font Awesome
+import "@fortawesome/fontawesome-free/js/brands.js";
+import "@fortawesome/fontawesome-free/js/solid.js";
+import "@fortawesome/fontawesome-free/js/fontawesome.js";
+
+// My Router
+import Router from "@router";
+
 const AppWithRouter = () => (
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+	<BrowserRouter>
+		<Router />;
+	</BrowserRouter>
 );
 ReactDOM.render(<AppWithRouter />, document.getElementById("root"));
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
