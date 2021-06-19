@@ -26,38 +26,37 @@ class HomeButtonBar extends React.Component {
 		return (
 			<Fragment>
 				<Divider mywidth={"12em"} />
-				<div className="field is-grouped is-justify-content-center">
-					<p className="control">
-						<a
-							href={
-								"https://linkedin.com/in/" +
-								linkedin["username"]
-							}
-							target="_blank"
-							rel="noreferrer"
+				<div className="buttons is-justify-content-center">
+					<a
+						href={"https://linkedin.com/in/" + linkedin["username"]}
+						target="_blank"
+						rel="noreferrer"
+						className="button"
+					>
+						<span
+							className="icon is-large"
+							data-tooltip="My Linkedin"
 						>
-							<span
-								className="icon has-text-success is-large has-tooltip-bottom has-tooltip-primary"
-								data-tooltip="My Linkedin"
-							>
-								<i className={linkedin["icon"] + " fa-2x"}></i>
-							</span>
-						</a>
-						<a
-							href={"https://github.com/" + github["username"]}
-							target="_blank"
-							rel="noreferrer"
+							<i className={linkedin["icon"] + " fa-2x"}></i>
+						</span>
+						<p>Linkedin</p>
+					</a>
+					<a
+						href={"https://github.com/" + github["username"]}
+						target="_blank"
+						rel="noreferrer"
+						className="button"
+					>
+						<span
+							className="icon is-large"
+							data-tooltip="My GitHub"
 						>
-							<span
-								className="icon has-text-success is-large has-tooltip-bottom has-tooltip-primary"
-								data-tooltip="My Github"
-							>
-								<i className={github["icon"] + " fa-2x"}></i>
-							</span>
-						</a>
-					</p>
+							<i className={github["icon"] + " fa-2x"}></i>
+						</span>
+						<p>GitHub</p>
+					</a>
 				</div>
-				<Divider mywidth={"12em"} />
+				{/* <Divider mywidth={"12em"} /> */}
 				{/* <div className="field is-grouped is-justify-content-center">
 					<p className="control">
 						<a

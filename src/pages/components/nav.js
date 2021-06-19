@@ -116,14 +116,6 @@ class Nav extends React.Component {
 								Download My Resume
 							</p>
 						</a>
-						<Link to="/contact" className="navbar-item">
-							<span className="icon has-text-primary is-hidden-touch">
-								<i className="fas fa-paper-plane"></i>
-							</span>
-							<p className="is-size-6-desktop is-size-6-touch has-text-primary">
-								Contact Me
-							</p>
-						</Link>
 					</div>
 				</div>
 			</nav>

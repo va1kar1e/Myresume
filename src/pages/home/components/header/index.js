@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import HomeButtonBar from "./components/buttonbar";
+import HomeScrolldownButton from "./components/scrolldownbutton";
 
 import mydata from "@mydata";
 
@@ -29,7 +28,7 @@ class HomeHeader extends React.Component {
 				<h1 className="is-size-2-desktop is-size-3-touch is-uppercase has-text-primary has-text-centered has-text-weight-bold">
 					{name}
 				</h1>
-				<h2 className="is-size-3-desktop is-size-6-touch is-uppercase has-text-light has-text-centered">
+				<h2 className="is-size-3-desktop is-size-4-touch is-uppercase has-text-light has-text-centered">
 					{jobtitle}
 				</h2>
 				<br />
@@ -37,18 +36,8 @@ class HomeHeader extends React.Component {
 					<span className="is-hidden-touch">&emsp;&emsp;&ensp;</span>
 					{intro}
 				</h2>
-				{/* <br />
-				<HomeButtonBar /> */}
 				<br />
-				<div className="field is-justify-content-center button-down">
-					<p className="control">
-						<Link to="/" target="_blank" rel="noreference">
-							<span className="icon has-text-white is-large">
-								<i class="fas fa-chevron-circle-down fa-2x"></i>
-							</span>
-						</Link>
-					</p>
-				</div>
+				<HomeScrolldownButton />
 			</div>
 		);
 	}

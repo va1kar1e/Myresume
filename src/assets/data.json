@@ -2,7 +2,7 @@
 	"profile": {
 		"aboutme": {
 			"name": "siwanont sittinam",
-			"jobtitle": "digital threat and vulnerability management officer",
+			"jobtitle": "cybersecurity engineer",
 			"email": "siwanont1@gmail.com",
 			"intro": "Hello, my name is Books. I am a dedicated cybersecurity expert who is both passionate and industrious. I work in a variety of fields, including cybersecurity, computer networks, data analytics, and web development."
 		},
@@ -77,7 +77,7 @@
 		"projects": [
 			{
 				"name": "Tumbun donation platform",
-				"where": "Company sustainability project – Refinitiv",
+				"where": "Company Sustainability Project – Refinitiv",
 				"year": "December 2019 - May 2020",
 				"role": "Back-end Developer",
 				"utilization": "Omise, NodeJS, ExpressJS, AngularJS, and MongoDB",
@@ -127,7 +127,8 @@
 		],
 		"education": {
 			"general": {
-				"university": "Kasetsart University @Bangkok, Thailand",
+				"university": "Kasetsart University",
+				"where": "Bangkok, Thailand",
 				"faculty": "Bachelor of Engineering, Computer Engineering",
 				"period": "AUG 2015 - MAY 2019"
 			},
@@ -163,8 +164,8 @@
 			},
 			{
 				"what": "Creative Design Award",
-				"when": "Thailand financial cybersecurity 2017",
-				"who": "Electronic transactions development agency, Bank of Thailand, Securities and Exchange Commission"
+				"when": "Thailand Financial Cybersecurity 2017",
+				"who": "Electronic Transactions Development Agency, Bank of Thailand, Securities and Exchange Commission"
 			}
 		],
 		"cert": [
