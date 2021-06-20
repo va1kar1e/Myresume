@@ -12,8 +12,9 @@ class Router extends React.Component {
 		return (
 			<Switch>
 				<Route exact path="/" component={Home} />
-				<Route path="/profile" component={Profile} />
-				<Route path="/dashboard" component={Dashboard} />
+				<Route exact path="/profile" component={Profile} />
+				<Route exact path="/dashboard" component={Dashboard} />
+				<Route exact path="/dashboard/:page" component={Dashboard} />
 				<Route component={NotFound} />
 			</Switch>
 		);

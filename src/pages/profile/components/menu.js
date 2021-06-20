@@ -95,7 +95,7 @@ class ProfileMenu extends React.Component {
 												this.scrollWithOffset(el)
 											}
 										>
-											Courses
+											Courses & Skills
 										</HashLink>
 									</li>
 									<li>

@@ -69,15 +69,23 @@ class ProfileWork extends React.Component {
 									</div>
 
 									<div className="content">
-										<p className="has-text-weight-normal is-size-6-tablet is-size-6-mobile has-text-dark">
-											{work["team"].split(",")[0]}
-											<br className="is-hidden-tablet" />
-											{work["team"].split(",")[1]}
-										</p>
-										<p className="has-text-weight-normal is-size-6-tablet is-size-6-mobile has-text-dark has-text-justified">
-											&nbsp;&nbsp;&nbsp;&nbsp;
-											{work["impact"]}
-										</p>
+										{work["team"] ? (
+											<p className="has-text-weight-normal is-size-6-tablet is-size-6-mobile has-text-dark">
+												{work["team"].split(",")[0]}
+												<br className="is-hidden-tablet" />
+												{work["team"].split(",")[1]}
+											</p>
+										) : (
+											""
+										)}
+										{work["impact"] ? (
+											<p className="has-text-weight-normal is-size-6-tablet is-size-6-mobile has-text-dark has-text-justified">
+												&nbsp;&nbsp;&nbsp;&nbsp;
+												{work["impact"]}
+											</p>
+										) : (
+											""
+										)}
 										{work["utilization"] ? (
 											<p className="has-text-weight-normal is-size-6-tablet is-size-6-mobile has-text-dark has-text-justified">
 												<span

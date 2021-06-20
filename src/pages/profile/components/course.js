@@ -21,7 +21,7 @@ class ProfileCourse extends React.Component {
 			<section className="section section-profile" id="course">
 				<div className="content">
 					<h1 className="title has-text-primary is-size-3-tablet is-size-4-mobile">
-						Courses
+						Courses & Skills
 					</h1>
 				</div>
 				<div className="tags are-medium">

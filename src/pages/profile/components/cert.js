@@ -48,7 +48,7 @@ class ProfileCert extends React.Component {
 		var { cert } = this.state;
 
 		return (
-			<section className="section p-auto" id="certificate">
+			<section className="section section-profile" id="certificate">
 				<div className="content">
 					<h1 className="title has-text-primary is-size-3-tablet is-size-4-mobile">
 						Certificates
