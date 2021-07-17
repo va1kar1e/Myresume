@@ -12,55 +12,28 @@ class Dashboard extends React.Component {
 		super(props);
 		this.state = {
 			isAuthenticated: false,
+			name: "",
 		};
-		this.checkIfAuthenticated.bind(this);
-		this.setAuthenticated.bind(this);
+		this.setAuthenticated = this.setAuthenticated.bind(this);
 	}
 
-	setAuthenticated() {
-		console.log("setAuthenticated");
-		let { isAuthenticated } = this.state;
-		console.log(isAuthenticated);
-		this.setState({ isAuthenticated: !isAuthenticated });
-		console.log(isAuthenticated);
-	}
-
-	checkIfAuthenticated() {
-		let { isAuthenticated } = this.state;
-
-		if (isAuthenticated) {
-			return (
-				<Fragment>
-					<section className="section is-large">
-						<p className="title is-size-3-tablet is-size-5-mobile is-uppercase has-text-weight-bold has-text-primary">
-							Hello User
-						</p>
-						<p className="buttons">
-							<Logout setAuthenticated={this.setAuthenticated} />
-						</p>
-					</section>
-					<Footer />
-				</Fragment>
-			);
+	setAuthenticated(getName, googleId) {
+		if (googleId === "103058431504099979556") {
+			this.setState({
+				isAuthenticated: true,
+				name: getName,
+			});
 		} else {
-			return (
-				<Fragment>
-					<section className="section is-large">
-						<p className="title is-size-3-tablet is-size-5-mobile is-uppercase has-text-weight-bold has-text-primary">
-							Not Authorize
-						</p>
-						<p className="buttons">
-							<Login setAuthenticated={this.setAuthenticated} />
-						</p>
-					</section>
-					<Footer />
-				</Fragment>
-			);
+			this.setState({
+				isAuthenticated: false,
+				name: getName,
+			});
 		}
 	}
 
 	render() {
 		let { page } = this.props.match.params;
+		let { isAuthenticated, name } = this.state;
 
 		return (
 			<div className="dashboard is-full-height">
@@ -70,15 +43,29 @@ class Dashboard extends React.Component {
 
 				<div className="dashboard-main is-scrollable">
 					<Nav />
-					{this.checkIfAuthenticated()}
-					{/* {page ? (
+					{isAuthenticated ? (
 						<Fragment>
-							<section className="section is-large">
+							<section className="section is-small">
 								<p className="title is-size-3-tablet is-size-5-mobile is-uppercase has-text-weight-bold has-text-primary">
-									Main {page}
+									Hello : {name}
+								</p>
+								{page ? (
+									<Fragment>
+										<section className="section is-large">
+											<p className="title is-size-3-tablet is-size-5-mobile is-uppercase has-text-weight-bold has-text-primary">
+												Main {page}
+											</p>
+										</section>
+									</Fragment>
+								) : (
+									<Fragment></Fragment>
+								)}
+								<p className="buttons">
+									<Logout
+										setAuthenticated={this.setAuthenticated}
+									/>
 								</p>
 							</section>
-							<Footer />
 						</Fragment>
 					) : (
 						<Fragment>
@@ -86,9 +73,15 @@ class Dashboard extends React.Component {
 								<p className="title is-size-3-tablet is-size-5-mobile is-uppercase has-text-weight-bold has-text-primary">
 									Not Authorize
 								</p>
+								<p className="buttons">
+									<Login
+										setAuthenticated={this.setAuthenticated}
+									/>
+								</p>
 							</section>
 						</Fragment>
-					)} */}
+					)}
+					<Footer />
 				</div>
 			</div>
 		);
