@@ -8,18 +8,18 @@ class Logout extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
-		this.onLogoutSuccess.bind(this);
-		this.onFailure.bind(this);
+		this.onLogoutSuccess = this.onLogoutSuccess.bind(this);
+		this.onFailure = this.onFailure.bind(this);
 	}
 
 	onLogoutSuccess = (res) => {
-		console.log("Logged out Success");
+		// console.log("Logged out Success");
 		alert("Logged out Successfully ✌");
-		this.props.setAuthenticated();
+		this.props.setAuthenticated("", "");
 	};
 
 	onFailure = () => {
-		console.log("Handle failure cases");
+		// console.log("Handle failure cases");
 	};
 
 	render() {
