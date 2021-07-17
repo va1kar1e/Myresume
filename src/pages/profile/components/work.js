@@ -26,11 +26,8 @@ class ProfileWork extends React.Component {
 				</div>
 				{works ? (
 					works.map((work, index) => (
-						<Fragment>
-							<div
-								className="card has-background-light"
-								key={index}
-							>
+						<Fragment key={index}>
+							<div className="card has-background-light">
 								<div className="card-content">
 									<div className="media">
 										<div className="media-left is-hidden-mobile">

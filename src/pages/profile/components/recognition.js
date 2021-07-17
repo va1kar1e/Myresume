@@ -27,11 +27,8 @@ class ProfileRecognition extends React.Component {
 
 				{recognition ? (
 					recognition.map((r, index) => (
-						<Fragment>
-							<div
-								className="card has-background-light"
-								key={index}
-							>
+						<Fragment key={index}>
+							<div className="card has-background-light">
 								<div className="card-content">
 									<div className="media">
 										<div className="media-content">

@@ -53,7 +53,7 @@ class Dashboard extends React.Component {
 									<Fragment>
 										<section className="section is-large">
 											<p className="title is-size-3-tablet is-size-5-mobile is-uppercase has-text-weight-bold has-text-primary">
-												Main {page}
+												{page}
 											</p>
 										</section>
 									</Fragment>
