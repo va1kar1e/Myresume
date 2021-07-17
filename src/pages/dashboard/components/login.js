@@ -11,21 +11,21 @@ class Login extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
-		this.onLoginSuccess.bind(this);
-		this.onFailure.bind(this);
+		this.onLoginSuccess = this.onLoginSuccess.bind(this);
+		this.onFailure = this.onFailure.bind(this);
 	}
 
 	onLoginSuccess = (res) => {
-		console.log("Login Success: currentUser:", res.profileObj);
-		alert(
-			`Logged in successfully welcome ${res.profileObj} 😍. \n See console for full profile object.`
-		);
+		// console.log("Login Success: currentUser:", res.profileObj["givenName"]);
 		refreshTokenSetup(res);
-		this.props.setAuthenticated();
+		this.props.setAuthenticated(
+			res.profileObj["name"],
+			res.profileObj["googleId"]
+		);
 	};
 
 	onFailure = () => {
-		console.log("Handle failure cases");
+		// console.log("Handle failure cases");
 	};
 
 	render() {
